@@ -1,0 +1,974 @@
+{
+  "services": [
+    {
+      "slug": "residency-by-property",
+      "title": "Residency by Property",
+      "pillar": "residency-solutions",
+      "icon": "building",
+      "summary": "UAE residency secured through a qualifying property investment, handled from eligibility check to Emirates ID.",
+      "description": "DSD guides property investors through the UAE's investor residency route end to end — confirming the property qualifies, preparing the application file, and coordinating the medical and Emirates ID steps that follow approval.",
+      "included": [
+        {
+          "title": "Property and title-deed eligibility review",
+          "description": "We check your title deed and property value against the current investor-residency thresholds before anything is filed.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Application file preparation and submission",
+          "description": "We prepare your complete application file and submit it to the relevant authority on your behalf.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Medical test and Emirates ID coordination",
+          "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-120%22%20y%3D%22-80%22%20width%3D%22240%22%20height%3D%22160%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-55%22%20cy%3D%220%22%20r%3D%2230%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%22-30%22%20x2%3D%2295%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%2210%22%20x2%3D%2295%22%20y2%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2245%22%20y1%3D%2245%22%20x2%3D%2245%22%20y2%3D%2280%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2227%22%20y1%3D%2262%22%20x2%3D%2263%22%20y2%3D%2262%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Dependant sponsorship guidance once approved",
+          "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%22-40%22%20cy%3D%22-70%22%20r%3D%2238%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-115%2090%20v-40%20a75%2075%200%200%201%20150%200%20v40%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22-40%22%20r%3D%2230%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M10%2090%20v-30%20a60%2060%200%200%201%20115%20-15%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221300%22%20cy%3D%22150%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22780%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%2260%22%20y%3D%22260%22%20width%3D%22480%22%20height%3D%22340%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2220%22%20y1%3D%22260%22%20x2%3D%22300%22%20y2%3D%2260%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22580%22%20y1%3D%22260%22%20x2%3D%22300%22%20y2%3D%2260%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2220%22%20y1%3D%22260%22%20x2%3D%22580%22%20y2%3D%22260%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22140%22%20y%3D%22340%22%20width%3D%2270%22%20height%3D%2270%22%20rx%3D%226%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22270%22%20y%3D%22340%22%20width%3D%2270%22%20height%3D%2270%22%20rx%3D%226%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22400%22%20y%3D%22340%22%20width%3D%2270%22%20height%3D%2270%22%20rx%3D%226%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22255%22%20y%3D%22470%22%20width%3D%22100%22%20height%3D%22130%22%20rx%3D%226%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "uae-golden-visa-property-investment-guide"
+      ],
+      "teamMemberSlugs": [
+        "amina-al-suwaidi"
+      ],
+      "stats": [
+        {
+          "value": 10,
+          "suffix": "yr",
+          "label": "Visa validity"
+        },
+        {
+          "value": 5,
+          "suffix": " business days",
+          "label": "Typical file review"
+        }
+      ],
+      "process": [
+        {
+          "title": "Property & Intent Review",
+          "description": "We start with your title deed, property value, and ownership structure, and understand what you're aiming for — residency for yourself, or for your family as well."
+        },
+        {
+          "title": "Eligibility Confirmation",
+          "description": "We check your property against the current investor-residency thresholds and flag anything — an outstanding mortgage, a shared title, an under-construction unit — that needs resolving first."
+        },
+        {
+          "title": "Application Preparation & Submission",
+          "description": "We prepare your full application file and submit it to the relevant authority, coordinating every supporting document so nothing comes back for correction."
+        },
+        {
+          "title": "Medical, Emirates ID & Completion",
+          "description": "Once approved, we coordinate your medical test and Emirates ID appointment through to a completed residency, with guidance on sponsoring dependants if you plan to extend it to family."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does my property qualify me for UAE residency?",
+          "answer": "Not every property qualifies. Eligibility depends on the property's value, its registration status, and how the title is held — we run a quick check against the current thresholds before you commit to anything further."
+        },
+        {
+          "question": "How is residency by property different from other routes?",
+          "answer": "It doesn't depend on an employer or a trade licence — once approved, your residency stands on the property itself. That makes it the most stable route for an investor who isn't planning to work or run a business in the UAE."
+        },
+        {
+          "question": "Can I add my family later?",
+          "answer": "Yes. Most clients secure their own residency first, then sponsor a spouse and children once their status is active — we can scope both stages from the start if you already know you will want to."
+        }
+      ]
+    },
+    {
+      "slug": "residency-by-business",
+      "title": "Residency by Business",
+      "pillar": "residency-solutions",
+      "icon": "briefcase",
+      "summary": "Investor and partner visas tied to a UAE company you own or co-own, aligned with your incorporation timeline.",
+      "description": "For founders incorporating a UAE entity, DSD times the investor or partner visa application to land alongside company formation, so ownership documents and residency paperwork move in step rather than in separate queues.",
+      "included": [
+        {
+          "title": "Investor/partner visa eligibility review",
+          "description": "We confirm your shareholding or partner status actually qualifies for an investor visa before you apply.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Coordination with company incorporation timeline",
+          "description": "We sequence your visa application against your incorporation steps so neither one stalls waiting on the other.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-110%22%20y%3D%22-90%22%20width%3D%22220%22%20height%3D%22190%22%20rx%3D%2214%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-110%22%20y1%3D%22-40%22%20x2%3D%22110%22%20y2%3D%22-40%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-120%22%20x2%3D%22-60%22%20y2%3D%22-60%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22-120%22%20x2%3D%2260%22%20y2%3D%22-60%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-55%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2255%22%20cy%3D%2210%22%20r%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-25%22%20cy%3D%2260%22%20r%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2260%22%20r%3D%2210%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Application file preparation and submission",
+          "description": "We prepare your full visa file and submit it once your company structure is in place.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Renewal reminders ahead of expiry",
+          "description": "We track your visa's expiry date and reach out with time to renew before it lapses.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%22115%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22-65%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2245%22%20y2%3D%2220%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M75%20-75%20a115%20115%200%200%201%2030%2045%22%20fill%3D%22none%22%20transform%3D%22rotate(20)%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22160%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22185%22%20cy%3D%22790%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%2260%22%20y%3D%22220%22%20width%3D%22480%22%20height%3D%22330%22%20rx%3D%2224%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M220%20220%20v-60%20a40%2040%200%200%201%2040%20-40%20h80%20a40%2040%200%200%201%2040%2040%20v60%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22380%22%20x2%3D%22540%22%20y2%3D%22380%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22260%22%20y%3D%22350%22%20width%3D%2280%22%20height%3D%2260%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [],
+      "teamMemberSlugs": [
+        "amina-al-suwaidi",
+        "rashid-al-mansoori"
+      ],
+      "stats": [
+        {
+          "value": 2,
+          "suffix": "-3 yr",
+          "label": "Visa validity"
+        },
+        {
+          "value": 100,
+          "suffix": "%",
+          "label": "Foreign ownership eligible routes"
+        }
+      ]
+    },
+    {
+      "slug": "residency-by-employment",
+      "title": "Residency by Employment",
+      "pillar": "residency-solutions",
+      "icon": "badge-check",
+      "summary": "Employment-sponsored residency for professionals relocating to a confirmed UAE role.",
+      "description": "DSD supports both employers and incoming employees through the labour card, entry permit, and Emirates ID sequence that turns a signed offer into a resident visa.",
+      "included": [
+        {
+          "title": "Offer letter and labour contract review",
+          "description": "We review your offer letter and labour contract to confirm they support a clean visa application.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-75%22%20x2%3D%2260%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-35%22%20x2%3D%2260%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%225%22%20x2%3D%2220%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-55%2075%20q20%20-30%2045%20-10%20q20%2015%2040%20-10%20l30%20-30%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Entry permit and labour card processing support",
+          "description": "We coordinate your entry permit and labour card processing with your employer's PRO from start to finish.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-120%22%20y%3D%22-70%22%20width%3D%22200%22%20height%3D%22140%22%20rx%3D%2214%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-65%22%20cy%3D%220%22%20r%3D%2226%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-10%22%20y1%3D%22-25%22%20x2%3D%2255%22%20y2%3D%22-25%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-10%22%20y1%3D%2210%22%20x2%3D%2255%22%20y2%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2295%22%20cy%3D%2270%22%20r%3D%2245%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M75%2070%20l14%2016%20l28%20-34%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Medical test and Emirates ID coordination",
+          "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-120%22%20y%3D%22-80%22%20width%3D%22240%22%20height%3D%22160%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-55%22%20cy%3D%220%22%20r%3D%2230%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%22-30%22%20x2%3D%2295%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%2210%22%20x2%3D%2295%22%20y2%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2245%22%20y1%3D%2245%22%20x2%3D%2245%22%20y2%3D%2280%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2227%22%20y1%3D%2262%22%20x2%3D%2263%22%20y2%3D%2262%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Dependant sponsorship guidance once approved",
+          "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%22-40%22%20cy%3D%22-70%22%20r%3D%2238%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-115%2090%20v-40%20a75%2075%200%200%201%20150%200%20v40%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2270%22%20cy%3D%22-40%22%20r%3D%2230%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M10%2090%20v-30%20a60%2060%200%200%201%20115%20-15%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221340%22%20cy%3D%22170%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22170%22%20cy%3D%22800%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22260%22%20stroke-dasharray%3D%2226%2022%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22300%22%20cy%3D%22300%22%20r%3D%22170%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M210%20300%20l60%2060%20l120%20-140%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [],
+      "teamMemberSlugs": [
+        "amina-al-suwaidi"
+      ],
+      "stats": [
+        {
+          "value": 2,
+          "suffix": "-3 yr",
+          "label": "Visa validity"
+        },
+        {
+          "value": 1,
+          "suffix": " business day",
+          "label": "Typical eligibility answer"
+        }
+      ]
+    },
+    {
+      "slug": "residency-by-family-sponsorship",
+      "title": "Residency by Family Sponsorship",
+      "pillar": "residency-solutions",
+      "icon": "users",
+      "summary": "Sponsor a spouse, child, or parent onto your existing UAE residency, with income and housing requirements checked upfront.",
+      "description": "Family sponsorship depends on the sponsor's income and registered accommodation as much as the family member's own documents. DSD checks both sides of the file before submission to avoid a stalled application.",
+      "included": [
+        {
+          "title": "Sponsor income and tenancy eligibility check",
+          "description": "We confirm the sponsor's income and tenancy contract meet the minimum requirements before an application is filed.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Document checklist per dependant type",
+          "description": "We give you the exact document list for each dependant — spouse, child, or parent — so nothing is missing.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-120%22%20width%3D%22200%22%20height%3D%22240%22%20rx%3D%2212%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22-65%22%20y%3D%22-155%22%20width%3D%22130%22%20height%3D%2250%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-65%20-55%20l16%2016%20l30%20-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-55%22%20x2%3D%2260%22%20y2%3D%22-55%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-65%205%20l16%2016%20l30%20-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%225%22%20x2%3D%2260%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-65%2065%20l16%2016%20l30%20-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2265%22%20x2%3D%2260%22%20y2%3D%2265%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Application file preparation and submission",
+          "description": "We prepare the complete sponsorship file and submit it to the relevant authority on your behalf.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Renewal reminders ahead of expiry",
+          "description": "We track each dependant's residency expiry and reach out with time to renew before it lapses.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%22115%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22-65%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2245%22%20y2%3D%2220%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M75%20-75%20a115%20115%200%200%201%2030%2045%22%20fill%3D%22none%22%20transform%3D%22rotate(20)%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221300%22%20cy%3D%22180%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22155%22%20cy%3D%22780%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22220%22%20cy%3D%22180%22%20r%3D%2280%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M80%20560%20v-80%20a140%20140%200%200%201%20280%200%20v80%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22420%22%20cy%3D%22230%22%20r%3D%2260%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M330%20560%20v-60%20a110%20110%200%200%201%20200%20-20%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "family-sponsorship-residency-requirements"
+      ],
+      "teamMemberSlugs": [
+        "amina-al-suwaidi"
+      ],
+      "stats": [
+        {
+          "value": 3,
+          "suffix": " yr",
+          "label": "Typical visa validity"
+        },
+        {
+          "value": 4,
+          "label": "Dependant types supported"
+        }
+      ]
+    },
+    {
+      "slug": "start-a-new-business",
+      "title": "Start a New Business in the UAE",
+      "pillar": "business-incorporation",
+      "icon": "building-2",
+      "summary": "Mainland or free zone incorporation, scoped against how and where you'll actually trade.",
+      "description": "DSD scopes mainland-versus-free-zone against a founder's real first-year trading plan rather than a generic recommendation, then handles licence application, name reservation, and initial approvals.",
+      "included": [
+        {
+          "title": "Mainland vs. free zone structuring advice",
+          "description": "We compare mainland and free zone options against your activity and target market before you commit to either.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M0%20120%20v-100%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%2020%20l-90%20-70%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%2020%20l90%20-70%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-90%22%20cy%3D%22-60%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22-60%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%2220%22%20r%3D%2216%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Trade name reservation and initial approval",
+          "description": "We reserve your trade name and secure initial approval from the relevant authority to get your file moving.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%22-10%22%20r%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-45%20-10%20l30%2035%20l65%20-80%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-40%2095%20l14%20-40%20h52%20l14%2040%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Licence application and submission",
+          "description": "We prepare and submit your full trade licence application once your structure and name are confirmed.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Bank account introduction support",
+          "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cline%20x1%3D%22-120%22%20y1%3D%22110%22%20x2%3D%22120%22%20y2%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22-110%2C-30%200%2C-110%20110%2C-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-95%22%20y1%3D%22-30%22%20x2%3D%22-95%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-40%22%20y1%3D%22-30%22%20x2%3D%22-40%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2220%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2275%22%20y1%3D%22-30%22%20x2%3D%2275%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-120%22%20y1%3D%22-30%22%20x2%3D%22120%22%20y2%3D%22-30%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22190%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22790%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%2270%22%20y%3D%22300%22%20width%3D%22180%22%20height%3D%22300%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22290%22%20y%3D%22180%22%20width%3D%22180%22%20height%3D%22420%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22510%22%20y%3D%22360%22%20width%3D%2260%22%20height%3D%220%22%20rx%3D%220%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22130%22%20y1%3D%22360%22%20x2%3D%22190%22%20y2%3D%22360%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22130%22%20y1%3D%22430%22%20x2%3D%22190%22%20y2%3D%22430%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22350%22%20y1%3D%22260%22%20x2%3D%22410%22%20y2%3D%22260%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22350%22%20y1%3D%22330%22%20x2%3D%22410%22%20y2%3D%22330%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22350%22%20y1%3D%22400%22%20x2%3D%22410%22%20y2%3D%22400%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M290%20180%20l90%20-90%20l90%2090%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "mainland-vs-free-zone-company-setup"
+      ],
+      "teamMemberSlugs": [
+        "rashid-al-mansoori"
+      ],
+      "stats": [
+        {
+          "value": 100,
+          "suffix": "%",
+          "label": "Foreign ownership eligible routes"
+        },
+        {
+          "value": 10,
+          "suffix": "+ business days",
+          "label": "Typical licence turnaround"
+        }
+      ]
+    },
+    {
+      "slug": "expand-an-existing-company",
+      "title": "Expand an Existing Company",
+      "pillar": "business-incorporation",
+      "icon": "trending-up",
+      "summary": "Branch registration, licence amendments, and additional activities for a company already operating elsewhere.",
+      "description": "For companies already established outside the UAE — or already licensed within it — DSD structures the expansion: a new branch, an added business activity, or a second jurisdiction, without disrupting the existing licence.",
+      "included": [
+        {
+          "title": "Branch or subsidiary structuring advice",
+          "description": "We advise on whether a branch or a subsidiary best fits your parent company's expansion into the UAE.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%22-100%22%20r%3D%2226%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-74%22%20x2%3D%220%22%20y2%3D%22-20%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-80%22%20y1%3D%22-20%22%20x2%3D%2280%22%20y2%3D%22-20%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-80%22%20y1%3D%22-20%22%20x2%3D%22-80%22%20y2%3D%2230%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2280%22%20y1%3D%22-20%22%20x2%3D%2280%22%20y2%3D%2230%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-80%22%20cy%3D%2265%22%20r%3D%2226%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%2265%22%20r%3D%2226%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Additional activity and amendment filing",
+          "description": "We file the additional activities or licence amendments your expansion requires with the relevant authority.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-120%22%20width%3D%22160%22%20height%3D%22220%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-75%22%20x2%3D%2230%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-35%22%20x2%3D%2230%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%225%22%20x2%3D%220%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M20%2060%20l70%20-70%20l30%2030%20l-70%2070%20l-38%208%20z%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Parent-company document attestation guidance",
+          "description": "We guide you through attesting your parent company's incorporation documents so they're accepted by UAE authorities.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l85%2035%20v80%20c0%2065%20-38%20100%20-85%20125%20c-47%20-25%20-85%20-60%20-85%20-125%20v-80%20z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-38%200%20l28%2028%20l55%20-62%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Bank account introduction support",
+          "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cline%20x1%3D%22-120%22%20y1%3D%22110%22%20x2%3D%22120%22%20y2%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22-110%2C-30%200%2C-110%20110%2C-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-95%22%20y1%3D%22-30%22%20x2%3D%22-95%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-40%22%20y1%3D%22-30%22%20x2%3D%22-40%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2220%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2275%22%20y1%3D%22-30%22%20x2%3D%2275%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-120%22%20y1%3D%22-30%22%20x2%3D%22120%22%20y2%3D%22-30%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221340%22%20cy%3D%22150%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22185%22%20cy%3D%22800%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cpolyline%20points%3D%2260%2C540%20200%2C400%20320%2C470%20560%2C180%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%3Cpolyline%20points%3D%22420%2C180%20560%2C180%20560%2C320%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22600%22%20x2%3D%22600%22%20y2%3D%22600%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "mainland-vs-free-zone-company-setup"
+      ],
+      "teamMemberSlugs": [
+        "rashid-al-mansoori"
+      ],
+      "stats": [
+        {
+          "value": 7,
+          "label": "Emirates covered"
+        },
+        {
+          "value": 15,
+          "suffix": "+ business days",
+          "label": "Typical expansion timeline"
+        }
+      ]
+    },
+    {
+      "slug": "corporate-tax-advisory",
+      "title": "Corporate Tax Advisory",
+      "pillar": "compliance-governance",
+      "icon": "calculator",
+      "summary": "Registration, exemption assessment, and filing support against your actual licence-linked deadlines.",
+      "description": "DSD confirms a business's Corporate Tax registration window against its own trade licence issue date, assesses free-zone qualifying-income exemptions where relevant, and manages filing so no deadline is missed by accident.",
+      "included": [
+        {
+          "title": "Registration deadline confirmation",
+          "description": "We confirm your exact corporate tax registration deadline based on your licence issue date, so nothing is missed.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-110%22%20y%3D%22-90%22%20width%3D%22220%22%20height%3D%22190%22%20rx%3D%2214%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-110%22%20y1%3D%22-40%22%20x2%3D%22110%22%20y2%3D%22-40%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-120%22%20x2%3D%22-60%22%20y2%3D%22-60%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22-120%22%20x2%3D%2260%22%20y2%3D%22-60%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-45%2030%20l30%2030%20l65%20-70%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Qualifying Free Zone Person exemption assessment",
+          "description": "We assess whether your free zone company actually qualifies for the 0% QFZP rate before you rely on it.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Annual return preparation support",
+          "description": "We support preparation of your annual corporate tax return so it's accurate and filed on time.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-60%22%20y%3D%22-130%22%20width%3D%22150%22%20height%3D%22190%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-100%22%20width%3D%22150%22%20height%3D%22190%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-65%22%20y1%3D%22-55%22%20x2%3D%2235%22%20y2%3D%22-55%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-65%22%20y1%3D%22-15%22%20x2%3D%2235%22%20y2%3D%22-15%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-65%22%20y1%3D%2225%22%20x2%3D%2210%22%20y2%3D%2225%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Penalty and late-filing risk review",
+          "description": "We review your filing history for gaps that could trigger a penalty, before the FTA finds them first.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l115%20210%20h-230%20z%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-40%22%20x2%3D%220%22%20y2%3D%2230%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%2270%22%20r%3D%228%22%20fill%3D%22%23FFFFFF%22%20stroke%3D%22none%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221300%22%20cy%3D%22160%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22170%22%20cy%3D%22780%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%22100%22%20y%3D%2280%22%20width%3D%22380%22%20height%3D%22500%22%20rx%3D%2220%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22180%22%20x2%3D%22430%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22150%22%20y%3D%22240%22%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%228%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22270%22%20y%3D%22240%22%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%228%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22150%22%20y%3D%22350%22%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%228%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22270%22%20y%3D%22350%22%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%228%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22150%22%20y%3D%22460%22%20width%3D%22200%22%20height%3D%2280%22%20rx%3D%228%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "corporate-tax-registration-deadlines-2026"
+      ],
+      "teamMemberSlugs": [
+        "fatima-hussain"
+      ],
+      "stats": [
+        {
+          "value": 9,
+          "suffix": "%",
+          "label": "Standard headline rate"
+        },
+        {
+          "value": 1,
+          "suffix": " business day",
+          "label": "Typical deadline check"
+        }
+      ]
+    },
+    {
+      "slug": "vat-registration-filing",
+      "title": "VAT Registration & Filing",
+      "pillar": "compliance-governance",
+      "icon": "receipt",
+      "summary": "Threshold assessment, registration, and recurring return filing that holds up under review.",
+      "description": "DSD assesses whether a business has crossed the mandatory or voluntary VAT registration threshold, registers it with the Federal Tax Authority, and manages recurring filings with the documentation evidence to support them.",
+      "included": [
+        {
+          "title": "Mandatory/voluntary threshold assessment",
+          "description": "We check your turnover against the mandatory and voluntary VAT registration thresholds to confirm where you stand.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M-110%2040%20a110%20110%200%200%201%20220%200%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2240%22%20x2%3D%2255%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%2240%22%20r%3D%2214%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-110%22%20y1%3D%2240%22%20x2%3D%22-90%22%20y2%3D%2240%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22110%22%20y1%3D%2240%22%20x2%3D%2290%22%20y2%3D%2240%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "FTA registration",
+          "description": "We handle your VAT registration with the Federal Tax Authority from application to confirmed TRN.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%22-10%22%20r%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-45%20-10%20l30%2035%20l65%20-80%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-40%2095%20l14%20-40%20h52%20l14%2040%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Recurring return preparation and filing",
+          "description": "We prepare and file your VAT returns on your filing cycle, so deadlines never catch you off guard.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-120%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-75%22%20y1%3D%22-75%22%20x2%3D%2215%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-75%22%20y1%3D%22-35%22%20x2%3D%2215%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M55%20-20%20a70%2070%200%201%201%20-15%20-45%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M25%20-75%20l30%20-10%20l5%2032%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Input-tax and export-evidence review",
+          "description": "We review your input-tax claims and export evidence to keep your filings defensible under audit.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22170%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22155%22%20cy%3D%22790%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M100%2060%20h340%20v460%20l-30%2030%20l-30%20-30%20l-30%2030%20l-30%20-30%20l-30%2030%20l-30%20-30%20l-30%2030%20l-30%20-30%20l-30%2030%20l-30%20-30%20l-30%2030%20z%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22180%22%20x2%3D%22380%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22260%22%20x2%3D%22380%22%20y2%3D%22260%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22340%22%20x2%3D%22300%22%20y2%3D%22340%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "vat-filing-common-mistakes-uae-businesses"
+      ],
+      "teamMemberSlugs": [
+        "fatima-hussain"
+      ],
+      "stats": [
+        {
+          "value": 5,
+          "suffix": "%",
+          "label": "Standard rate"
+        },
+        {
+          "value": 4,
+          "label": "Return cycles supported per year"
+        }
+      ]
+    },
+    {
+      "slug": "beneficial-ownership-ubo-filing",
+      "title": "Beneficial Ownership & UBO Filing",
+      "pillar": "compliance-governance",
+      "icon": "file-badge",
+      "summary": "Ownership-structure mapping and UBO register filing, kept current as ownership actually changes.",
+      "description": "DSD maps an entity's real ownership and control chain — not just the names on the trade licence — files the UBO register, and flags when a later ownership change means the register needs updating again.",
+      "included": [
+        {
+          "title": "Ownership and control structure mapping",
+          "description": "We map your full ownership and control chain to identify exactly who qualifies as a beneficial owner.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%22-100%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-95%22%20cy%3D%2260%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%2290%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2295%22%20cy%3D%2260%22%20r%3D%2224%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-76%22%20x2%3D%22-95%22%20y2%3D%2236%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-76%22%20x2%3D%220%22%20y2%3D%2266%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-76%22%20x2%3D%2295%22%20y2%3D%2236%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "UBO register filing",
+          "description": "We prepare and file your UBO register with the relevant authority within the required timeframe.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Nominee/legal-representative documentation",
+          "description": "We prepare the nominee or legal-representative documentation your ownership structure requires for a compliant filing.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-110%22%20y%3D%22-120%22%20width%3D%22150%22%20height%3D%22220%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-85%22%20y1%3D%22-75%22%20x2%3D%225%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-85%22%20y1%3D%22-35%22%20x2%3D%225%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-85%22%20y1%3D%225%22%20x2%3D%22-30%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%2230%22%20r%3D%2230%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M35%20115%20v-15%20a45%2045%200%200%201%2090%200%20v15%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Update filing on ownership change",
+          "description": "We file the required update whenever your ownership or control structure changes, keeping your register current.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-120%22%20width%3D%22160%22%20height%3D%22220%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-75%22%20x2%3D%2230%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-35%22%20x2%3D%2230%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%225%22%20x2%3D%220%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M20%2060%20l70%20-70%20l30%2030%20l-70%2070%20l-38%208%20z%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221340%22%20cy%3D%22180%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22800%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2270%22%20width%3D%22360%22%20height%3D%22460%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22160%22%20x2%3D%22390%22%20y2%3D%22160%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22230%22%20x2%3D%22390%22%20y2%3D%22230%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22300%22%20x2%3D%22320%22%20y2%3D%22300%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22420%22%20cy%3D%22440%22%20r%3D%2290%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M380%20440%20l30%2030%20l60%20-70%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [
+        "ubo-filing-what-changed-in-2026"
+      ],
+      "teamMemberSlugs": [
+        "fatima-hussain"
+      ],
+      "stats": [
+        {
+          "value": 1,
+          "suffix": " business day",
+          "label": "Typical structure review"
+        }
+      ]
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "title": "AML/KYC Compliance",
+      "pillar": "compliance-governance",
+      "icon": "shield-check",
+      "summary": "Anti-money-laundering policy, client due diligence, and registration support for regulated activities.",
+      "description": "For businesses in AML-regulated activities, DSD builds the internal policy, client due-diligence process, and goAML registration that examiners expect to see — sized to the business, not a boilerplate template.",
+      "included": [
+        {
+          "title": "AML/CFT policy drafting",
+          "description": "We draft AML/CFT policies tailored to your business, not a generic template that doesn't match how you operate.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-115%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22200%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-90%22%20y1%3D%22-65%22%20x2%3D%220%22%20y2%3D%22-65%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-90%22%20y1%3D%22-25%22%20x2%3D%220%22%20y2%3D%22-25%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M55%20-50%20l70%2028%20v55%20c0%2055%20-32%2082%20-70%20100%20c-38%20-18%20-70%20-45%20-70%20-100%20v-55%20z%22%20transform%3D%22translate(15%2C0)%20scale(0.62)%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Client due-diligence process design",
+          "description": "We design a client due-diligence process that's actually workable day to day, not just compliant on paper.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l85%2035%20v80%20c0%2065%20-38%20100%20-85%20125%20c-47%20-25%20-85%20-60%20-85%20-125%20v-80%20z%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-10%22%20cy%3D%22-5%22%20r%3D%2234%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2216%22%20y1%3D%2221%22%20x2%3D%2245%22%20y2%3D%2250%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "goAML registration support",
+          "description": "We support your registration on the goAML platform, a requirement for designated non-financial businesses and professions.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%22-10%22%20r%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-45%20-10%20l30%2035%20l65%20-80%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-40%2095%20l14%20-40%20h52%20l14%2040%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Staff awareness briefing",
+          "description": "We brief your team on their AML/CFT obligations so compliance doesn't rest on one person alone.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%22-70%22%20cy%3D%22-40%22%20r%3D%2234%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-125%2090%20v-20%20a55%2055%200%200%201%20110%200%20v20%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M40%20-100%20h130%20a14%2014%200%200%201%2014%2014%20v70%20a14%2014%200%200%201%20-14%2014%20h-90%20l-30%2030%20v-30%20h-10%20a14%2014%200%200%201%20-14%20-14%20v-70%20a14%2014%200%200%201%2014%20-14%20z%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221300%22%20cy%3D%22190%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22185%22%20cy%3D%22780%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M300%2040%20l220%2090%20v210%20c0%20170%20-100%20260%20-220%20320%20c-120%20-60%20-220%20-150%20-220%20-320%20v-210%20z%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M200%20300%20l70%2070%20l140%20-160%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [],
+      "teamMemberSlugs": [
+        "fatima-hussain"
+      ],
+      "stats": [
+        {
+          "value": 1,
+          "suffix": " business day",
+          "label": "Typical exposure assessment"
+        }
+      ]
+    },
+    {
+      "slug": "trade-licence-renewal-amendments",
+      "title": "Trade Licence Renewal & Amendments",
+      "pillar": "compliance-governance",
+      "icon": "file-check",
+      "summary": "Annual renewal and mid-cycle amendments handled ahead of the expiry date, not after it.",
+      "description": "DSD tracks a client's trade licence renewal date and manages the paperwork ahead of expiry, plus any mid-cycle amendment — a new activity, a shareholder change, a registered address update — as it comes up.",
+      "included": [
+        {
+          "title": "Renewal deadline tracking and reminders",
+          "description": "We track your trade licence expiry and reach out with time to renew before any grace period runs out.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%22115%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22-65%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2245%22%20y2%3D%2220%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M75%20-75%20a115%20115%200%200%201%2030%2045%22%20fill%3D%22none%22%20transform%3D%22rotate(20)%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Annual renewal filing",
+          "description": "We handle your annual trade licence renewal filing with the relevant authority from start to finish.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%2250%22%20x2%3D%220%22%20y2%3D%22-45%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-32%20-15%20l32%20-32%20l32%2032%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Activity, shareholder, or address amendments",
+          "description": "We file amendments to your licensed activities, shareholding, or registered address as your business changes.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-120%22%20width%3D%22160%22%20height%3D%22220%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-75%22%20x2%3D%2230%22%20y2%3D%22-75%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%22-35%22%20x2%3D%2230%22%20y2%3D%22-35%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-70%22%20y1%3D%225%22%20x2%3D%220%22%20y2%3D%225%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M20%2060%20l70%20-70%20l30%2030%20l-70%2070%20l-38%208%20z%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Immigration/establishment card renewal coordination",
+          "description": "We coordinate your immigration and establishment card renewals alongside your trade licence so nothing falls out of sync.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-120%22%20y%3D%22-70%22%20width%3D%22200%22%20height%3D%22140%22%20rx%3D%2214%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-65%22%20cy%3D%220%22%20r%3D%2226%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-10%22%20y1%3D%22-25%22%20x2%3D%2255%22%20y2%3D%22-25%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-10%22%20y1%3D%2210%22%20x2%3D%2255%22%20y2%3D%2210%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2295%22%20cy%3D%2270%22%20r%3D%2245%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M75%2070%20l14%2016%20l28%20-34%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22150%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22170%22%20cy%3D%22790%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%22100%22%20y%3D%2270%22%20width%3D%22360%22%20height%3D%22460%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22160%22%20x2%3D%22400%22%20y2%3D%22160%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22230%22%20x2%3D%22400%22%20y2%3D%22230%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22160%22%20y1%3D%22300%22%20x2%3D%22330%22%20y2%3D%22300%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M180%20430%20l60%2060%20l140%20-140%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [],
+      "teamMemberSlugs": [
+        "rashid-al-mansoori"
+      ],
+      "stats": [
+        {
+          "value": 3,
+          "suffix": " business days",
+          "label": "Typical renewal turnaround"
+        }
+      ]
+    },
+    {
+      "slug": "annual-accounting-bookkeeping",
+      "title": "Annual Accounting & Bookkeeping",
+      "pillar": "compliance-governance",
+      "icon": "clipboard-check",
+      "summary": "Books kept audit-ready year-round, so tax filing and licence renewal never start from a backlog.",
+      "description": "DSD maintains monthly bookkeeping and produces the annual financial statements a business needs for Corporate Tax filing, licence renewal, and bank relationship reviews — kept current, not reconstructed under deadline pressure.",
+      "included": [
+        {
+          "title": "Monthly bookkeeping",
+          "description": "We keep your books current every month, so year-end never turns into a scramble.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%2290%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22390%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cpath%20d%3D%22M-110%20-100%20h100%20a20%2020%200%200%201%2020%2020%20v170%20h-120%20z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M120%20-100%20h-100%20a20%2020%200%200%200%20-20%2020%20v170%20h120%20z%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-80%22%20x2%3D%220%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-90%22%20y1%3D%22-55%22%20x2%3D%22-30%22%20y2%3D%22-55%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-90%22%20y1%3D%22-15%22%20x2%3D%22-30%22%20y2%3D%22-15%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%22-55%22%20x2%3D%2290%22%20y2%3D%22-55%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%22-15%22%20x2%3D%2290%22%20y2%3D%22-15%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Annual financial statement preparation",
+          "description": "We prepare your annual financial statements in the format your authority and bank expect to see.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22380%22%20cy%3D%22100%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22380%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cline%20x1%3D%22-110%22%20y1%3D%22120%22%20x2%3D%22110%22%20y2%3D%22120%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-110%22%20y1%3D%22120%22%20x2%3D%22-110%22%20y2%3D%22-110%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22-80%22%20y%3D%2220%22%20width%3D%2245%22%20height%3D%22100%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%22-15%22%20y%3D%22-40%22%20width%3D%2245%22%20height%3D%22160%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2250%22%20y%3D%22-90%22%20width%3D%2245%22%20height%3D%22210%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Audit-readiness review",
+          "description": "We review your records against what an auditor will actually ask for, before the audit request arrives.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22390%22%20cy%3D%22110%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%22370%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-110%22%20width%3D%22140%22%20height%3D%22180%22%20rx%3D%2210%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-70%22%20x2%3D%2220%22%20y2%3D%22-70%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-60%22%20y1%3D%22-30%22%20x2%3D%2220%22%20y2%3D%22-30%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2240%22%20cy%3D%2260%22%20r%3D%2255%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2278%22%20y1%3D%2298%22%20x2%3D%22115%22%20y2%3D%22135%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        },
+        {
+          "title": "Bank statement reconciliation",
+          "description": "We reconcile your bank statements against your books monthly, catching discrepancies while they're still easy to trace.",
+          "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22400%22%20cy%3D%22120%22%20r%3D%22130%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2280%22%20cy%3D%22360%22%20r%3D%22150%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Cg%20transform%3D%22translate(240%2C240)%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cline%20x1%3D%22-120%22%20y1%3D%22110%22%20x2%3D%22120%22%20y2%3D%22110%22%2F%3E%0A%20%20%20%20%3Cpolygon%20points%3D%22-110%2C-30%200%2C-110%20110%2C-30%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-95%22%20y1%3D%22-30%22%20x2%3D%22-95%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%22-20%22%20y1%3D%22-30%22%20x2%3D%22-20%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%2255%22%20y1%3D%22-30%22%20x2%3D%2255%22%20y2%3D%2290%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2290%22%20cy%3D%2290%22%20r%3D%2242%22%20fill%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M72%2090%20l14%2016%20l28%20-34%22%2F%3E%0A%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E"
+        }
+      ],
+      "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url(%23bg)%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%221340%22%20cy%3D%22160%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%22155%22%20cy%3D%22800%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22%2F%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22%2F%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%20transform%3D%22translate(980%2C150)%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%22120%22%20width%3D%22380%22%20height%3D%22460%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22190%22%20y%3D%2270%22%20width%3D%22180%22%20height%3D%2280%22%20rx%3D%2216%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22260%22%20x2%3D%22410%22%20y2%3D%22260%22%2F%3E%0A%20%20%20%20%20%20%3Cline%20x1%3D%22150%22%20y1%3D%22330%22%20x2%3D%22410%22%20y2%3D%22330%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M180%20440%20l50%2050%20l120%20-120%22%2F%3E%0A%20%20%20%20%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E",
+      "relatedInsightSlugs": [],
+      "teamMemberSlugs": [
+        "fatima-hussain"
+      ],
+      "stats": [
+        {
+          "value": 12,
+          "suffix": "/yr",
+          "label": "Bookkeeping cycles maintained"
+        }
+      ]
+    }
+  ],
+  "servicePillarMeta": [
+    {
+      "pillar": "residency-solutions",
+      "label": "Residency Solutions",
+      "description": "Every UAE residency pathway — by property, business, employment, or family sponsorship — scoped against your actual situation."
+    },
+    {
+      "pillar": "business-incorporation",
+      "label": "Business Incorporation",
+      "description": "Mainland and free zone structuring for founders starting fresh or expanding an existing company into the UAE."
+    },
+    {
+      "pillar": "compliance-governance",
+      "label": "Compliance & Governance",
+      "description": "Corporate tax, VAT, UBO, AML, licence renewal, and bookkeeping — kept current, not reconstructed under deadline pressure."
+    }
+  ],
+  "complianceAreas": [
+    {
+      "slug": "corporate-tax",
+      "title": "Corporate Tax",
+      "summary": "Registration is tied to your trade licence issue date, not the calendar year — the most commonly missed deadline DSD sees.",
+      "description": "UAE Corporate Tax applies to most businesses operating under a UAE trade licence, with registration deadlines set relative to the licence's own issue date. A business that has not yet turned a profit still carries the registration obligation.",
+      "obligations": [
+        "Register within the deadline tied to your licence issue date",
+        "Assess Qualifying Free Zone Person exemption eligibility, if applicable",
+        "File an annual return even in a loss-making year",
+        "Retain supporting financial records for the statutory retention period"
+      ],
+      "notes": "Late registration triggers an administrative penalty independent of whether tax was actually owed for the period.",
+      "sourceName": "UAE Ministry of Finance",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": [
+        "corporate-tax-registration-deadlines-2026"
+      ]
+    },
+    {
+      "slug": "vat",
+      "title": "VAT (Value Added Tax)",
+      "summary": "Mandatory once taxable supplies cross the federal threshold — voluntary registration is available below it.",
+      "description": "VAT registration becomes mandatory once a business's taxable supplies and imports cross the federal threshold over a rolling 12-month period, with voluntary registration available at a lower threshold for businesses that want to reclaim input tax earlier.",
+      "obligations": [
+        "Monitor taxable turnover against the mandatory threshold",
+        "Register with the Federal Tax Authority once triggered",
+        "File returns on the assigned filing cycle",
+        "Retain export evidence for any zero-rated supply"
+      ],
+      "notes": "Input tax must be claimed in the return period the underlying invoice falls into, not a later period of convenience.",
+      "sourceName": "Federal Tax Authority",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": [
+        "vat-filing-common-mistakes-uae-businesses"
+      ]
+    },
+    {
+      "slug": "beneficial-ownership-ubo",
+      "title": "Beneficial Ownership (UBO)",
+      "summary": "Applies to who actually owns or controls an entity, not just the names on the trade licence.",
+      "description": "UBO regulations require most UAE entities to identify and file the individuals who ultimately own or exercise control over them — a distinction that matters most where ownership sits behind holding companies or nominee arrangements.",
+      "obligations": [
+        "Identify individuals meeting the ultimate ownership/control threshold",
+        "File the UBO register with the relevant licensing authority",
+        "Maintain a register of nominee directors/managers, if any",
+        "Update the filing whenever ownership or control changes"
+      ],
+      "notes": "A correct filing at incorporation does not remain correct automatically — a later ownership change carries its own update obligation.",
+      "sourceName": "UAE Ministry of Economy",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": [
+        "ubo-filing-what-changed-in-2026"
+      ]
+    },
+    {
+      "slug": "aml-kyc",
+      "title": "AML/KYC Compliance",
+      "summary": "Applies to Designated Non-Financial Businesses and Professions, not only banks and exchange houses.",
+      "description": "Businesses in specified regulated activities — including real estate brokers, precious metals dealers, and certain corporate service providers — carry anti-money-laundering obligations: a written policy, client due diligence, and suspicious-activity reporting through goAML.",
+      "obligations": [
+        "Assess whether your activity falls within a regulated DNFBP category",
+        "Adopt a written AML/CFT policy",
+        "Perform client due diligence before onboarding",
+        "Register and report through the goAML platform"
+      ],
+      "notes": "Obligations apply from the point an activity is regulated, regardless of transaction volume in any given period.",
+      "sourceName": "UAE Central Bank",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": []
+    },
+    {
+      "slug": "trade-licence-renewal",
+      "title": "Trade Licence Renewal",
+      "summary": "An expired licence affects immigration and banking standing, not just the ability to trade.",
+      "description": "Trade licences are issued on an annual cycle and must be renewed before expiry to remain valid — an expired licence can also affect an entity's establishment card and, by extension, its employees' visa status.",
+      "obligations": [
+        "Track the licence expiry date ahead of the renewal window",
+        "Settle any outstanding fines before renewal is accepted",
+        "Renew the associated establishment/immigration card in step",
+        "File any activity or shareholder amendment alongside renewal, if applicable"
+      ],
+      "sourceName": "Dubai Department of Economy and Tourism",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": []
+    },
+    {
+      "slug": "annual-accounting-bookkeeping",
+      "title": "Annual Accounting & Bookkeeping",
+      "summary": "Books are now a Corporate Tax input, not just a year-end formality.",
+      "description": "Since Corporate Tax filing depends on accurate annual financial statements, bookkeeping errors carried through the year now surface directly in a business's tax return — not just its own management reporting.",
+      "obligations": [
+        "Maintain monthly bookkeeping records",
+        "Reconcile bank statements against the general ledger",
+        "Prepare annual financial statements",
+        "Retain records for the statutory retention period"
+      ],
+      "sourceName": "UAE Ministry of Finance",
+      "heroImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "relatedInsightSlugs": []
+    }
+  ],
+  "insights": [
+    {
+      "slug": "uae-golden-visa-property-investment-guide",
+      "title": "UAE Golden Visa Through Property: What Qualifies in 2026",
+      "category": "Residency",
+      "summary": "A plain breakdown of the property investment thresholds and title-deed requirements behind the 10-year Golden Visa route.",
+      "body": [
+        "Property-based residency is one of the most direct routes into the UAE for investors who already know where they want to buy. The core requirement is a minimum property value, held in the investor's own name, with the title deed registered before the visa application is submitted.",
+        "Off-plan property is treated differently to completed units, and mortgaged property is only eligible once a minimum equity threshold is paid down — this is the single most common reason applications get delayed, so it is worth confirming before an offer is made, not after.",
+        "DSD reviews the title deed and payment structure with a client before any application is filed, so the eligibility question is answered in days, not after a rejected submission."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-07-14",
+      "touchesCompliance": false,
+      "relatedServiceSlugs": [
+        "residency-by-property"
+      ],
+      "relatedInsightSlugs": [
+        "family-sponsorship-residency-requirements"
+      ]
+    },
+    {
+      "slug": "corporate-tax-registration-deadlines-2026",
+      "title": "Corporate Tax Registration: Deadlines and Late-Filing Penalties",
+      "category": "Compliance",
+      "summary": "Registration windows are tied to licence issue date, not the calendar year — missing one is the most common avoidable penalty DSD sees.",
+      "body": [
+        "UAE Corporate Tax registration deadlines are set relative to each business's own trade licence issue date, not a single fixed calendar date — which is why so many businesses miss theirs without realising a deadline had passed at all.",
+        "A late registration triggers an administrative penalty regardless of whether any tax was actually owed for the period. The registration obligation exists independently of profitability.",
+        "This is general guidance, not legal or tax advice — DSD recommends confirming your specific registration window against your trade licence with a compliance specialist before relying on any date mentioned here."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-06-02",
+      "touchesCompliance": true,
+      "relatedServiceSlugs": [
+        "corporate-tax-advisory"
+      ],
+      "relatedInsightSlugs": [
+        "vat-filing-common-mistakes-uae-businesses"
+      ]
+    },
+    {
+      "slug": "vat-filing-common-mistakes-uae-businesses",
+      "title": "Five VAT Filing Mistakes DSD Sees Most Often",
+      "category": "Compliance",
+      "summary": "From late input-tax claims to misclassified zero-rated exports — the recurring errors that turn a routine filing into a corrected one.",
+      "body": [
+        "The most frequent VAT filing error DSD encounters is claiming input tax in the wrong return period, rather than the period the underlying invoice actually falls into. This alone accounts for a large share of the corrections businesses end up needing to file.",
+        "A close second is misclassifying an export as zero-rated without holding the export evidence the Federal Tax Authority actually expects to see on request — the classification itself may be correct, but the paper trail behind it is what gets checked.",
+        "This is general guidance, not legal or tax advice — treat it as a checklist of things to verify with a compliance specialist, not a substitute for reviewing your own filing."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-05-19",
+      "touchesCompliance": true,
+      "relatedServiceSlugs": [
+        "vat-registration-filing"
+      ],
+      "relatedInsightSlugs": [
+        "corporate-tax-registration-deadlines-2026"
+      ]
+    },
+    {
+      "slug": "mainland-vs-free-zone-company-setup",
+      "title": "Mainland or Free Zone: How to Actually Decide",
+      "category": "Incorporation",
+      "summary": "The right structure depends on where your clients are, not which jurisdiction has the lower headline fee.",
+      "body": [
+        "The mainland-versus-free-zone decision is usually framed as a cost comparison, but the question that actually determines the right answer is where the business's clients and suppliers are based — a free zone entity trading only with mainland UAE clients adds friction a mainland licence would not.",
+        "Free zones remain the simpler route for businesses trading internationally or serving other free zone entities, with 100% foreign ownership and streamlined setup timelines.",
+        "DSD scopes this against the client's actual first-year trading plan, not a generic recommendation, before proposing a structure."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-04-08",
+      "touchesCompliance": false,
+      "relatedServiceSlugs": [
+        "start-a-new-business",
+        "expand-an-existing-company"
+      ],
+      "relatedInsightSlugs": []
+    },
+    {
+      "slug": "ubo-filing-what-changed-in-2026",
+      "title": "UBO Filing: What Changed in 2026",
+      "category": "Compliance",
+      "summary": "An update to the beneficial ownership disclosure requirements that most existing entities still haven't acted on.",
+      "body": [
+        "Beneficial ownership disclosure requirements apply to the individuals who ultimately own or control an entity, not only the names listed on the trade licence — a distinction that matters most for entities with layered or multi-jurisdiction ownership structures.",
+        "An entity that filed correctly at incorporation still has an ongoing obligation to update its UBO register whenever ownership or control actually changes, not just at renewal.",
+        "This is general guidance, not legal or tax advice — DSD reviews an entity's actual ownership structure against the current filing requirement rather than relying on what was filed at setup."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-03-11",
+      "touchesCompliance": true,
+      "relatedServiceSlugs": [
+        "beneficial-ownership-ubo-filing"
+      ],
+      "relatedInsightSlugs": [
+        "corporate-tax-registration-deadlines-2026"
+      ]
+    },
+    {
+      "slug": "family-sponsorship-residency-requirements",
+      "title": "Sponsoring Family Members: Income Thresholds and Housing Rules",
+      "category": "Residency",
+      "summary": "The income and accommodation requirements behind a spouse, child, or parent sponsorship application, explained plainly.",
+      "body": [
+        "Family sponsorship eligibility is assessed against the sponsor's own residency status, minimum income, and the accommodation registered under their name — a tenancy contract in someone else's name is the most common reason an otherwise-eligible application stalls.",
+        "Sponsoring a parent carries its own, stricter income threshold on top of the standard family requirements, and is assessed separately from a spouse or child application.",
+        "DSD checks the sponsor's documentation against the current thresholds before submission, so gaps are caught before they cost an application cycle."
+      ],
+      "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
+      "publishDate": "2026-02-17",
+      "touchesCompliance": false,
+      "relatedServiceSlugs": [
+        "residency-by-family-sponsorship"
+      ],
+      "relatedInsightSlugs": [
+        "uae-golden-visa-property-investment-guide"
+      ]
+    }
+  ],
+  "team": [
+    {
+      "slug": "amina-al-suwaidi",
+      "name": "Amina Al Suwaidi",
+      "role": "Head of Residency Advisory",
+      "bio": "Amina leads DSD's residency practice, guiding property investors, business owners, and families through every UAE visa pathway from first eligibility check to Emirates ID in hand.",
+      "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
+      "email": "amina@dsdcop.com",
+      "linkedin": "https://www.linkedin.com/"
+    },
+    {
+      "slug": "rashid-al-mansoori",
+      "name": "Rashid Al Mansoori",
+      "role": "Head of Business Incorporation",
+      "bio": "Rashid structures new UAE entities and expansions for founders entering the market, weighing mainland and free zone routes against each client's actual operating plans.",
+      "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
+      "email": "rashid@dsdcop.com",
+      "linkedin": "https://www.linkedin.com/"
+    },
+    {
+      "slug": "fatima-hussain",
+      "name": "Fatima Hussain",
+      "role": "Compliance & Tax Lead",
+      "bio": "Fatima keeps DSD clients ahead of corporate tax, VAT, UBO, and AML obligations — translating federal requirements into a plain checklist for founders who are not tax specialists.",
+      "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
+      "email": "fatima@dsdcop.com",
+      "linkedin": "https://www.linkedin.com/"
+    },
+    {
+      "slug": "omar-el-sayed",
+      "name": "Omar El Sayed",
+      "role": "Client Relations Manager",
+      "bio": "Omar is usually the first person a prospective client speaks with — scoping the enquiry and routing it to the right specialist across residency, incorporation, or compliance.",
+      "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
+      "phone": "+971 58 588 9033",
+      "whatsapp": "+971 58 588 9033"
+    }
+  ],
+  "founder": {
+    "name": "Sultan Al Marzooqi",
+    "role": "Founder & Managing Director",
+    "bio": "Sultan founded DSD Corporate Services to give founders and relocating professionals a single, straight-talking advisory relationship across residency, incorporation, and compliance — instead of juggling three separate consultants who don't talk to each other. He still reviews every client's route personally before the first consultation.",
+    "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
+    "email": "info@dsdcop.com",
+    "linkedin": "https://www.linkedin.com/"
+  },
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote": "DSD walked us through the free zone versus mainland decision without pushing us toward whichever was easier for them to file. That alone made the setup worth it.",
+      "name": "Karan Mehta",
+      "role": "Founder, logistics startup",
+      "avatar": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e"
+    },
+    {
+      "id": "t2",
+      "quote": "Our corporate tax registration deadline was tied to a licence date I honestly hadn't tracked. DSD caught it with weeks to spare.",
+      "name": "Lena Fischer",
+      "role": "Managing Director, consulting firm",
+      "avatar": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e"
+    },
+    {
+      "id": "t3",
+      "quote": "The property residency process had more moving pieces than I expected. Having one advisor across the title deed, the medical, and the Emirates ID made it painless.",
+      "name": "Yusuf Rahman",
+      "role": "Property investor",
+      "avatar": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e"
+    },
+    {
+      "id": "t4",
+      "quote": "We'd already tried self-filing VAT before coming to DSD. The difference wasn't the filing itself — it was catching mistakes we didn't know we were making.",
+      "name": "Priya Nair",
+      "role": "Operations Director, retail group",
+      "avatar": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e"
+    }
+  ],
+  "stats": [
+    {
+      "id": "clients-served",
+      "value": 250,
+      "suffix": "+",
+      "label": "Clients served"
+    },
+    {
+      "id": "years-experience",
+      "value": 8,
+      "suffix": "+",
+      "label": "Years of UAE market experience"
+    },
+    {
+      "id": "repeat-referral-rate",
+      "value": 70,
+      "suffix": "%",
+      "label": "Repeat & referral rate"
+    },
+    {
+      "id": "emirates-covered",
+      "value": 7,
+      "label": "Emirates covered"
+    }
+  ],
+  "pricingTiers": [
+    {
+      "id": "essentials",
+      "name": "Essentials",
+      "description": "A single residency or incorporation matter, handled start to finish.",
+      "price": "AED 4,500",
+      "period": "starting at",
+      "features": [
+        "One service engagement (residency or incorporation)",
+        "Document checklist and eligibility review",
+        "Application preparation and submission",
+        "Email support throughout"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "description": "Incorporation plus your first year of compliance, so nothing slips between the two.",
+      "price": "AED 12,000",
+      "period": "starting at",
+      "features": [
+        "Company incorporation (mainland or free zone)",
+        "First-year Corporate Tax and VAT registration",
+        "Trade licence renewal reminders",
+        "Priority response within one business day"
+      ],
+      "highlighted": true
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "description": "Ongoing advisory across residency, incorporation, and compliance for an established business.",
+      "price": "Custom",
+      "features": [
+        "Dedicated advisor across all three pillars",
+        "Ongoing bookkeeping and annual filings",
+        "UBO and AML compliance maintenance",
+        "Quarterly compliance review call"
+      ]
+    }
+  ]
+}

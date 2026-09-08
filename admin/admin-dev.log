@@ -1,0 +1,58 @@
+
+> dsd-admin@0.0.0 dev
+> vite
+
+
+  VITE v8.2.2  ready in 968 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+20:43:58 [vite] (client) [console.error] [LoginPage/onSubmit] TypeError: Failed to fetch
+    at request (http://localhost:5174/src/lib/api/client.ts:34:20)
+    at Object.post (http://localhost:5174/src/lib/api/client.ts:80:24)
+    at Object.mutationFn (http://localhost:5174/src/lib/api/auth.ts:16:56)
+    at Object.fn (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1648:25)
+    at run (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:664:46)
+    at Object.start (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:700:20)
+    at Mutation.execute (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1685:31)
+    at async login (http://localhost:5174/src/contexts/AuthContext.tsx:45:22)
+    at async onSubmit (http://localhost:5174/src/pages/LoginPage.tsx:27:4)
+    at async http://localhost:5174/node_modules/.vite/deps/react-hook-form.js?v=c15de737:2443:14
+20:45:01 [vite] (client) [console.error] [LoginPage/onSubmit] TypeError: Failed to fetch
+    at request (http://localhost:5174/src/lib/api/client.ts:34:20)
+    at Object.post (http://localhost:5174/src/lib/api/client.ts:80:24)
+    at Object.mutationFn (http://localhost:5174/src/lib/api/auth.ts:16:56)
+    at Object.fn (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1648:25)
+    at run (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:664:46)
+    at Object.start (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:700:20)
+    at Mutation.execute (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1685:31)
+    at async login (http://localhost:5174/src/contexts/AuthContext.tsx:45:22)
+    at async onSubmit (http://localhost:5174/src/pages/LoginPage.tsx:27:4)
+    at async http://localhost:5174/node_modules/.vite/deps/react-hook-form.js?v=c15de737:2443:14
+20:46:52 [vite] (client) [console.error] [LoginPage/onSubmit] TypeError: Failed to fetch
+    at request (http://localhost:5174/src/lib/api/client.ts:34:20)
+    at Object.post (http://localhost:5174/src/lib/api/client.ts:80:24)
+    at Object.mutationFn (http://localhost:5174/src/lib/api/auth.ts:16:56)
+    at Object.fn (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1648:25)
+    at run (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:664:46)
+    at Object.start (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:700:20)
+    at Mutation.execute (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1685:31)
+    at async login (http://localhost:5174/src/contexts/AuthContext.tsx:45:22)
+    at async onSubmit (http://localhost:5174/src/pages/LoginPage.tsx:27:4)
+    at async http://localhost:5174/node_modules/.vite/deps/react-hook-form.js?v=c15de737:2443:14
+20:48:52 [vite] (client) [console.error] [LoginPage/onSubmit] TypeError: Failed to fetch
+    at request (http://localhost:5174/src/lib/api/client.ts:34:20)
+    at Object.post (http://localhost:5174/src/lib/api/client.ts:80:24)
+    at Object.mutationFn (http://localhost:5174/src/lib/api/auth.ts:16:56)
+    at Object.fn (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1648:25)
+    at run (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:664:46)
+    at Object.start (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:700:20)
+    at Mutation.execute (http://localhost:5174/node_modules/.vite/deps/@tanstack_react-query.js?v=c15de737:1685:31)
+    at async login (http://localhost:5174/src/contexts/AuthContext.tsx:45:22)
+    at async onSubmit (http://localhost:5174/src/pages/LoginPage.tsx:27:4)
+    at async http://localhost:5174/node_modules/.vite/deps/react-hook-form.js?v=c15de737:2443:14
+20:50:22 [vite] (client) [console.error] [LoginPage/onSubmit] Error: This account doesn't have admin access.
+    at login (http://localhost:5174/src/contexts/AuthContext.tsx:58:10)
+    at async onSubmit (http://localhost:5174/src/pages/LoginPage.tsx:27:4)
+    at async http://localhost:5174/node_modules/.vite/deps/react-hook-form.js?v=c15de737:2443:14
