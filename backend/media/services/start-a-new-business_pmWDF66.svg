@@ -1,0 +1,29 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1B33"/>
+      <stop offset="60%" stop-color="#123B8C"/>
+      <stop offset="100%" stop-color="#0B2760"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="190" r="260" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="200" cy="790" r="320" fill="#E31E2D" opacity="0.06"/>
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="300" x2="1600" y2="180"/>
+    <line x1="0" y1="620" x2="1600" y2="740"/>
+  </g>
+  <g transform="translate(980,150)" opacity="0.16" stroke="#FFFFFF" fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    
+      <rect x="70" y="300" width="180" height="300" rx="10"/>
+      <rect x="290" y="180" width="180" height="420" rx="10"/>
+      <rect x="510" y="360" width="60" height="0" rx="0"/>
+      <line x1="130" y1="360" x2="190" y2="360"/>
+      <line x1="130" y1="430" x2="190" y2="430"/>
+      <line x1="350" y1="260" x2="410" y2="260"/>
+      <line x1="350" y1="330" x2="410" y2="330"/>
+      <line x1="350" y1="400" x2="410" y2="400"/>
+      <path d="M290 180 l90 -90 l90 90"/>
+    
+  </g>
+</svg>
