@@ -3,43 +3,66 @@ import { useState } from "react";
 import Box from "@mui/joy/Box";
 import IconButton from "@mui/joy/IconButton";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
+import {
+  Building2,
+  ChevronDown,
+  Handshake,
+  House,
+  IdCard,
+  Mail,
+  Menu,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  Tag,
+  User,
+  X,
+  type LucideIcon,
+} from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/common/SocialIcon";
 import { ThemeToggle } from "@/components/common/ThemeToggle";
 import { useAuth } from "@/contexts/AuthContext";
-import { servicePillarMeta } from "@/lib/api/services";
+import { curatedComplianceAreas } from "@/lib/api/compliance";
+import { incorporationPillarMeta, servicePillarMeta } from "@/lib/api/services";
 import { IMAGES } from "@/lib/utils";
 
 type NavDropdownItem = { to: string; label: string };
-type NavItem = { to: string; label: string; dropdown?: NavDropdownItem[] };
+// `to` is optional in the type for resilience (a future trigger-only item could still
+// need it), but every current item has one now that Incorporation has its own /incorporation
+// hub. `icon` drives the mobile drawer's icon-per-item list per the client's
+// mobile-structure spec — desktop nav intentionally stays icon-free, matching that spec's
+// own mobile-only icon table.
+type NavItem = { to?: string; label: string; icon: LucideIcon; dropdown?: NavDropdownItem[] };
 
 const NAV_ITEMS: NavItem[] = [
-  { to: "/", label: "Home" },
-  {
-    to: "/residency",
-    label: "Residency",
-    dropdown: [
-      ...servicePillarMeta.map((pillar) => ({ to: `/residency/${pillar.pillar}`, label: pillar.label })),
-
-    ],
-  },
-  { to: "/compliance", label: "Compliance",dropdown: [
-      { to: "/compliance/cooperate_governance", label: "Cooperate Governance" },
-  ]},
+  { to: "/", label: "Home", icon: House },
+  { to: "/about", label: "About Us", icon: User },
   {
     to: "/incorporation",
     label: "Incorporation",
-    dropdown: [
-      { to: "/incorporation/local_sponsorship", label: "Local Sponsorship" },
-      { to: "/incorporation/ejari", label: "EJARI" },
-      { to: "/incorporation/start_new_bussiness", label: "Start New Business" },
-      { to: "/incorporation/expand_existing_business", label: "Expand Existing Business" },
-    ],
-  }
+    icon: Building2,
+    dropdown: incorporationPillarMeta.map((pillar) => ({ to: `/incorporation/${pillar.pillar}`, label: pillar.label })),
+  },
+  {
+    to: "/residency",
+    label: "Residency",
+    icon: IdCard,
+    dropdown: servicePillarMeta.map((pillar) => ({ to: `/residency/${pillar.pillar}`, label: pillar.label })),
+  },
+  {
+    to: "/compliance",
+    label: "Compliance",
+    icon: ShieldCheck,
+    dropdown: curatedComplianceAreas.map((area) => ({ to: `/compliance/${area.slug}`, label: area.label })),
+  },
+  { to: "/partner-with-us", label: "Partner with Us", icon: Handshake },
+  { to: "/pricing", label: "Pricing", icon: Tag },
 ];
+
+const WHATSAPP_URL = "https://wa.me/971585889033";
 
 const SCROLL_THRESHOLD = 60;
 
@@ -106,13 +129,30 @@ export function Navbar() {
         >
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 md:px-6">
           <Link to="/" className="flex items-center gap-2" onClick={closeMobile}>
-            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-20 w-20" />
+            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-10 w-auto object-contain" />
 
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
             {NAV_ITEMS.map((item) => {
-              const isActive = location.pathname === item.to || (item.to !== "/" && location.pathname.startsWith(item.to));
+              const isActive =
+                item.to != null &&
+                (location.pathname === item.to || (item.to !== "/" && location.pathname.startsWith(item.to)));
+              const linkClassName = `relative flex items-center gap-1 px-3 py-2 text-sm font-medium ${
+                transparent ? "text-white" : isActive ? "text-primary" : "text-text-primary"
+              } hover:opacity-80`;
+              const linkContent = (
+                <>
+                  {item.label}
+                  {item.dropdown && <ChevronDown size={14} />}
+                  {isActive && !item.dropdown && (
+                    <motion.span
+                      layoutId="nav-underline"
+                      className={`absolute -bottom-0.5 left-3 right-3 h-0.5 ${transparent ? "bg-white" : "bg-primary"}`}
+                    />
+                  )}
+                </>
+              );
               return (
                 <div
                   key={item.label}
@@ -120,21 +160,15 @@ export function Navbar() {
                   onMouseEnter={() => item.dropdown && setOpenDropdown(item.label)}
                   onMouseLeave={() => item.dropdown && setOpenDropdown(null)}
                 >
-                  <Link
-                    to={item.to}
-                    className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium ${
-                      transparent ? "text-white" : isActive ? "text-primary" : "text-text-primary"
-                    } hover:opacity-80`}
-                  >
-                    {item.label}
-                    {item.dropdown && <ChevronDown size={14} />}
-                    {isActive && !item.dropdown && (
-                      <motion.span
-                        layoutId="nav-underline"
-                        className={`absolute -bottom-0.5 left-3 right-3 h-0.5 ${transparent ? "bg-white" : "bg-primary"}`}
-                      />
-                    )}
-                  </Link>
+                  {item.to ? (
+                    <Link to={item.to} className={linkClassName}>
+                      {linkContent}
+                    </Link>
+                  ) : (
+                    <button type="button" className={`${linkClassName} cursor-default`} aria-haspopup="true">
+                      {linkContent}
+                    </button>
+                  )}
 
                   <AnimatePresence>
                     {item.dropdown && openDropdown === item.label && (
@@ -178,6 +212,20 @@ export function Navbar() {
                Contact Us
               </CtaButton>
             </div>
+            <IconButton
+              component="a"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="plain"
+              aria-label="Chat on WhatsApp"
+              sx={{
+                color: transparent ? "var(--color-text-inverse)" : "var(--color-text-primary)",
+                display: { xs: "flex", md: "none" },
+              }}
+            >
+              <MessageCircle size={22} />
+            </IconButton>
             <IconButton
               variant="plain"
               onClick={() => setMobileOpen(true)}
@@ -228,7 +276,10 @@ export function Navbar() {
                         onClick={() => setMobileDropdownOpen((cur) => (cur === item.label ? null : item.label))}
                         className="flex w-full items-center justify-between rounded-md px-2 py-3 text-left text-base font-medium text-white"
                       >
-                        {item.label}
+                        <span className="flex items-center gap-3">
+                          <item.icon size={18} className="shrink-0 text-white/70" />
+                          {item.label}
+                        </span>
                         <motion.span animate={{ rotate: mobileDropdownOpen === item.label ? 180 : 0 }}>
                           <ChevronDown size={16} />
                         </motion.span>
@@ -255,16 +306,17 @@ export function Navbar() {
                         )}
                       </AnimatePresence>
                     </div>
-                  ) : (
+                  ) : item.to ? (
                     <Link
                       key={item.label}
                       to={item.to}
                       onClick={closeMobile}
-                      className="rounded-md px-2 py-3 text-base font-medium text-white"
+                      className="flex items-center gap-3 rounded-md px-2 py-3 text-base font-medium text-white"
                     >
+                      <item.icon size={18} className="shrink-0 text-white/70" />
                       {item.label}
                     </Link>
-                  ),
+                  ) : null,
                 )}
                 <Link
                   to={user ? "/account" : "/login"}

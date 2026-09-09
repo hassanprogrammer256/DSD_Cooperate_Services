@@ -55,13 +55,13 @@ export function LoginPage() {
         {formError && <p className="rounded-lg bg-error-light px-4 py-3 text-sm text-error">{formError}</p>}
 
         <FormControl error={!!errors.email} required>
-          <FormLabel>Email Address</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Email Address</FormLabel>
           <Input type="email" {...register("email")} />
           {errors.email && <FormHelperText>{errors.email.message}</FormHelperText>}
         </FormControl>
 
         <FormControl error={!!errors.password} required>
-          <FormLabel>Password</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Password</FormLabel>
           <Input type="password" {...register("password")} />
           {errors.password && <FormHelperText>{errors.password.message}</FormHelperText>}
         </FormControl>

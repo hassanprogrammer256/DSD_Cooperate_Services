@@ -16,7 +16,7 @@ export function FormSwitchField<TFieldValues extends FieldValues>({ label, name,
       control={control}
       render={({ field }) => (
         <FormControl orientation="horizontal" sx={{ justifyContent: "space-between" }}>
-          <FormLabel>{label}</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>{label}</FormLabel>
           <Switch checked={!!field.value} onChange={(e) => field.onChange(e.target.checked)} />
         </FormControl>
       )}

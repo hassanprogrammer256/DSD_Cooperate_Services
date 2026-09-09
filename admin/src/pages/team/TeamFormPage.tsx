@@ -70,6 +70,7 @@ export function TeamFormPage() {
     <div className="max-w-lg">
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">{isCreate ? "New Team Member" : "Edit Team Member"}</h1>
       <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+        <FormFileField label="Photo" name="photo" control={control} currentUrl={existing?.photo} required={isCreate} />
         <FormTextField label="Slug" registration={register("slug")} error={errors.slug?.message} required />
         <FormTextField label="Name" registration={register("name")} error={errors.name?.message} required />
         <FormTextField label="Role" registration={register("role")} error={errors.role?.message} required />
@@ -78,7 +79,6 @@ export function TeamFormPage() {
         <FormTextField label="Phone" registration={register("phone")} error={errors.phone?.message} />
         <FormTextField label="WhatsApp" registration={register("whatsapp")} error={errors.whatsapp?.message} />
         <FormTextField label="LinkedIn URL" registration={register("linkedin")} error={errors.linkedin?.message} />
-        <FormFileField label="Photo" name="photo" control={control} currentUrl={existing?.photo} required={isCreate} />
         <div className="mt-2 flex gap-2">
           <Button type="submit" color="primary" loading={isSubmitting}>
             Save

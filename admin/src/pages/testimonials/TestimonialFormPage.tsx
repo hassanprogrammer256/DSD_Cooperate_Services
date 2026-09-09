@@ -59,10 +59,10 @@ export function TestimonialFormPage() {
     <div className="max-w-md">
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">{isCreate ? "New Testimonial" : "Edit Testimonial"}</h1>
       <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+        <FormFileField label="Avatar" name="avatar" control={control} currentUrl={existing?.avatar} required={isCreate} />
         <FormTextField label="Name" registration={register("name")} error={errors.name?.message} required />
         <FormTextField label="Role" registration={register("role")} error={errors.role?.message} required />
         <FormTextareaField label="Quote" registration={register("quote")} error={errors.quote?.message} required />
-        <FormFileField label="Avatar" name="avatar" control={control} currentUrl={existing?.avatar} required={isCreate} />
         <div className="mt-2 flex gap-2">
           <Button type="submit" color="primary" loading={isSubmitting}>
             Save

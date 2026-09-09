@@ -7,6 +7,7 @@ export type StaffUser = {
   email: string;
   name: string;
   phone: string;
+  photo: string | null;
   isStaff: boolean;
 };
 
@@ -102,6 +103,43 @@ export type PricingTier = {
 };
 
 export type OrderStatus = "pending" | "paid" | "failed";
+
+// Mirrors backend/leads/serializers.py's LeadSerializer exactly.
+export type LeadStatus =
+  | "new"
+  | "contacted"
+  | "qualified"
+  | "proposal"
+  | "documentation"
+  | "in_progress"
+  | "completed"
+  | "lost";
+
+export type Lead = {
+  id: number;
+  reference: string;
+  name: string;
+  mobile: string;
+  email: string;
+  country: string;
+  company: string;
+  mainService: string;
+  subService: string;
+  requirement: string;
+  preferredContactMethod: string;
+  preferredContactTime: string;
+  attachment: string | null;
+  status: LeadStatus;
+  sourceUrl: string;
+  deviceType: string;
+  createdAt: string;
+};
+
+export type LeadStats = {
+  total: number;
+  byStatus: Record<string, number>;
+  byService: Record<string, number>;
+};
 
 export type AdminOrder = {
   id: number;

@@ -13,12 +13,14 @@ import { Controller, useForm, type Control } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import { FileDropzone } from "@/components/common/FileDropzone";
 import { FormFileField } from "@/components/common/form/FormFileField";
 import { FormMultiSelectField } from "@/components/common/form/FormMultiSelectField";
 import { FormTextField } from "@/components/common/form/FormTextField";
 import { FormTextareaField } from "@/components/common/form/FormTextareaField";
 import { ApiError } from "@/lib/api/client";
 import { insightsApi, servicesApi, teamApi } from "@/lib/api/content";
+import { useUploadMediaMutation } from "@/lib/api/media";
 import { buildContentPayload } from "@/lib/contentPayload";
 import { serviceSchema, type ServiceFormValues } from "@/lib/validation/serviceSchema";
 
@@ -27,6 +29,32 @@ const PILLAR_OPTIONS = [
   { value: "business-incorporation", label: "Business Incorporation" },
   { value: "compliance-governance", label: "Compliance & Governance" },
 ];
+
+// Uploads immediately on file selection (there's no separate form-level "save" step
+// for this nested value — the JSONField just wants a URL string) and reports the
+// resulting URL back up to IncludedListField's own state.
+function IncludedItemImage({ value, onChange }: { value: string; onChange: (url: string) => void }) {
+  const uploadMedia = useUploadMediaMutation();
+
+  return (
+    <FileDropzone
+      label="Image"
+      accept="image/*"
+      currentUrl={value || null}
+      helperText={
+        uploadMedia.isPending
+          ? "Uploading…"
+          : uploadMedia.isError
+            ? "Upload failed — please try again."
+            : undefined
+      }
+      onFileChange={(file) => {
+        if (!file) return;
+        uploadMedia.mutate(file, { onSuccess: (result) => onChange(result.url) });
+      }}
+    />
+  );
+}
 
 function IncludedListField({ control }: { control: Control<ServiceFormValues> }) {
   return (
@@ -48,9 +76,9 @@ function IncludedListField({ control }: { control: Control<ServiceFormValues> })
 
         // Stacked per-item block, not the single-row layout the other list fields
         // below use — title/description/image don't fit three-across at this form's
-        // max-w-lg width. `image` is a plain URL/data-URI text field for now (these
-        // are seeded as generated placeholder art); a real per-item file upload would
-        // need its own storage, not just a richer JSONField list entry.
+        // max-w-lg width. Image is a real upload (IncludedItemImage below), not a
+        // pasted URL/data-URI — see progress-tracker.md's 2026-09-09 entry for why
+        // that changed and MediaUploadView for where the file actually lands.
         return (
           <div className="flex flex-col gap-1.5">
             <FormLabel>Included</FormLabel>
@@ -58,25 +86,22 @@ function IncludedListField({ control }: { control: Control<ServiceFormValues> })
               {items.map((item, index) => (
                 <div key={index} className="flex flex-col gap-2 rounded-md border border-border p-3">
                   <div className="flex items-start gap-2">
-                    <Input
-                      placeholder="Title"
-                      value={item.title}
-                      onChange={(e) => update(index, { title: e.target.value })}
-                      sx={{ flex: 1 }}
-                    />
+                    <div className="flex-1">
+                      <IncludedItemImage value={item.image} onChange={(url) => update(index, { image: url })} />
+                    </div>
                     <IconButton variant="plain" color="danger" aria-label="Remove" onClick={() => remove(index)}>
                       <X size={16} />
                     </IconButton>
                   </div>
                   <Input
+                    placeholder="Title"
+                    value={item.title}
+                    onChange={(e) => update(index, { title: e.target.value })}
+                  />
+                  <Input
                     placeholder="Description"
                     value={item.description}
                     onChange={(e) => update(index, { description: e.target.value })}
-                  />
-                  <Input
-                    placeholder="Image URL"
-                    value={item.image}
-                    onChange={(e) => update(index, { image: e.target.value })}
                   />
                 </div>
               ))}
@@ -367,6 +392,7 @@ export function ServiceFormPage() {
     <div className="max-w-lg">
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">{isCreate ? "New Service" : "Edit Service"}</h1>
       <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+        <FormFileField label="Hero Image" name="heroImage" control={control} currentUrl={existing?.heroImage} required={isCreate} />
         <FormTextField label="Slug" registration={register("slug")} error={errors.slug?.message} required />
         <FormTextField label="Title" registration={register("title")} error={errors.title?.message} required />
 
@@ -406,7 +432,6 @@ export function ServiceFormPage() {
           control={control}
           options={(team ?? []).map((t) => ({ value: t.slug, label: t.name }))}
         />
-        <FormFileField label="Hero Image" name="heroImage" control={control} currentUrl={existing?.heroImage} required={isCreate} />
         <div className="mt-2 flex gap-2">
           <Button type="submit" color="primary" loading={isSubmitting}>
             Save

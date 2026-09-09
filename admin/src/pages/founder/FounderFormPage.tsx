@@ -49,12 +49,12 @@ export function FounderFormPage() {
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">Founder</h1>
       <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
         <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+          <FormFileField label="Photo" name="photo" control={control} currentUrl={data?.photo} />
           <FormTextField label="Name" registration={register("name")} error={errors.name?.message} required />
           <FormTextField label="Role" registration={register("role")} error={errors.role?.message} required />
           <FormTextareaField label="Bio" registration={register("bio")} error={errors.bio?.message} required />
           <FormTextField label="Email" registration={register("email")} error={errors.email?.message} />
           <FormTextField label="LinkedIn URL" registration={register("linkedin")} error={errors.linkedin?.message} />
-          <FormFileField label="Photo" name="photo" control={control} currentUrl={data?.photo} />
           <div className="mt-2">
             <Button type="submit" color="primary" loading={isSubmitting}>
               Save

@@ -27,6 +27,15 @@ const palette = {
   neutral: { softBg: neutrals.light.surfaceSecondary },
 };
 
+// Same focus-style fix as src/theme/joyTheme.ts — see that file's comment for why.
+const focusStyle = {
+  "&:focus-within": {
+    borderColor: "var(--color-primary)",
+    boxShadow: "0 0 0 3px var(--color-primary-light)",
+  },
+  "& :focus-visible": { outline: "none" },
+};
+
 export const joyTheme = extendTheme({
   fontFamily: {
     body: "var(--font-sans)",
@@ -38,5 +47,17 @@ export const joyTheme = extendTheme({
   },
   breakpoints: {
     values: { xs: 0, sm: 640, md: 768, lg: 1024, xl: 1280 },
+  },
+  components: {
+    JoyInput: { styleOverrides: { root: focusStyle } },
+    JoyTextarea: { styleOverrides: { root: focusStyle } },
+    JoySelect: { styleOverrides: { root: focusStyle } },
+    // Same fix as src/theme/joyTheme.ts, at the theme level rather than per call site —
+    // see that file's comment. This admin app in particular has far more Joy form
+    // fields than the public site, so the un-customized `neutral` text color was
+    // invisible in dark mode across nearly every content-type form.
+    JoyFormLabel: { styleOverrides: { root: { color: "var(--color-text-primary)" } } },
+    JoyCheckbox: { styleOverrides: { label: { color: "var(--color-text-primary)" } } },
+    JoyRadio: { styleOverrides: { label: { color: "var(--color-text-primary)" } } },
   },
 });

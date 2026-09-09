@@ -5,6 +5,7 @@ from content.views import (
     ComplianceAreaViewSet,
     FounderDetailView,
     InsightArticleViewSet,
+    MediaUploadView,
     PricingTierViewSet,
     ServiceViewSet,
     StatViewSet,
@@ -23,5 +24,6 @@ router.register("pricing-tiers", PricingTierViewSet, basename="pricing-tier")
 
 urlpatterns = [
     path("founder/", FounderDetailView.as_view(), name="founder-detail"),
+    path("admin/media/upload/", MediaUploadView.as_view(), name="media-upload"),
     path("", include(router.urls)),
 ]

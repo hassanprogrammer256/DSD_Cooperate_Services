@@ -82,6 +82,7 @@ export function InsightFormPage() {
     <div className="max-w-lg">
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">{isCreate ? "New Insight" : "Edit Insight"}</h1>
       <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+        <FormFileField label="Cover Image" name="coverImage" control={control} currentUrl={existing?.coverImage} required={isCreate} />
         <FormTextField label="Slug" registration={register("slug")} error={errors.slug?.message} required />
         <FormTextField label="Title" registration={register("title")} error={errors.title?.message} required />
         <FormTextField label="Category" registration={register("category")} error={errors.category?.message} required />
@@ -95,7 +96,6 @@ export function InsightFormPage() {
           control={control}
           options={(data ?? []).filter((i) => i.slug !== slug).map((i) => ({ value: i.slug, label: i.title }))}
         />
-        <FormFileField label="Cover Image" name="coverImage" control={control} currentUrl={existing?.coverImage} required={isCreate} />
         <div className="mt-2 flex gap-2">
           <Button type="submit" color="primary" loading={isSubmitting}>
             Save

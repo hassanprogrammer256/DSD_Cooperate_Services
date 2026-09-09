@@ -1,4 +1,4 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { FaqAccordion } from "@/components/common/FaqAccordion";
@@ -9,29 +9,33 @@ import { ProcessSteps } from "@/components/common/ProcessSteps";
 import { QueryState } from "@/components/common/QueryState";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { StatCounter } from "@/components/common/StatCounter";
-import { TeamMemberCard } from "@/components/common/TeamMemberCard";
 import { ClosingCta } from "@/components/sections/ClosingCta";
 import { ApiError } from "@/lib/api/client";
 import { useInsightsQuery } from "@/lib/api/insights";
-import { useServiceDetailQuery } from "@/lib/api/services";
-import { useTeamQuery } from "@/lib/api/team";
+import { canonicalServicePath, useServiceDetailQuery } from "@/lib/api/services";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 export function ServiceDetailPage() {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
   const serviceQuery = useServiceDetailQuery(slug ?? "");
   const insightsQuery = useInsightsQuery();
-  const teamQuery = useTeamQuery();
 
   const service = serviceQuery.data;
   useDocumentTitle(service?.title ?? "Service");
 
   if (serviceQuery.error instanceof ApiError && serviceQuery.error.status === 404) {
-    return <Navigate to="/services" replace />;
+    return <Navigate to="/residency" replace />;
+  }
+
+  if (service) {
+    const canonicalPath = canonicalServicePath(service);
+    if (location.pathname !== canonicalPath) {
+      return <Navigate to={canonicalPath} replace />;
+    }
   }
 
   const relatedInsights = insightsQuery.data?.filter((article) => service?.relatedInsightSlugs.includes(article.slug)) ?? [];
-  const teamMembers = teamQuery.data?.filter((member) => service?.teamMemberSlugs.includes(member.slug)) ?? [];
 
   return (
     <QueryState
@@ -67,7 +71,7 @@ export function ServiceDetailPage() {
               <h2 className="mt-2 font-display text-2xl font-bold text-accent md:text-3xl">{service.philosophy_title}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-white/80">{service.description}</p>
               <div className="mt-6">
-                <CtaButton to="/contact">Schedule a Call</CtaButton>
+                <CtaButton to="/pricing">Get Started</CtaButton>
               </div>
             </div>
 
@@ -98,17 +102,6 @@ export function ServiceDetailPage() {
                 <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {relatedInsights.map((article) => (
                     <InsightCard key={article.slug} article={article} />
-                  ))}
-                </div>
-              </>
-            )}
-
-            {teamMembers.length > 0 && (
-              <>
-                <h2 className="mt-14 font-display text-xl font-semibold text-text-primary">Team Members</h2>
-                <div className="mt-4 flex flex-wrap justify-center gap-6">
-                  {teamMembers.map((member) => (
-                    <TeamMemberCard key={member.slug} member={member} />
                   ))}
                 </div>
               </>

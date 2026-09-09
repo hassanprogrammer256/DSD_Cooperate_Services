@@ -52,25 +52,25 @@ export function RegisterPage() {
         {formError && <p className="rounded-lg bg-error-light px-4 py-3 text-sm text-error">{formError}</p>}
 
         <FormControl error={!!errors.name} required>
-          <FormLabel>Full Name</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Full Name</FormLabel>
           <Input {...register("name")} />
           {errors.name && <FormHelperText>{errors.name.message}</FormHelperText>}
         </FormControl>
 
         <FormControl error={!!errors.email} required>
-          <FormLabel>Email Address</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Email Address</FormLabel>
           <Input type="email" {...register("email")} />
           {errors.email && <FormHelperText>{errors.email.message}</FormHelperText>}
         </FormControl>
 
         <FormControl error={!!errors.phone}>
-          <FormLabel>Phone Number</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Phone Number</FormLabel>
           <Input type="tel" {...register("phone")} />
           {errors.phone && <FormHelperText>{errors.phone.message}</FormHelperText>}
         </FormControl>
 
         <FormControl error={!!errors.password} required>
-          <FormLabel>Password</FormLabel>
+          <FormLabel sx={{ color: "var(--color-text-primary)" }}>Password</FormLabel>
           <Input type="password" {...register("password")} />
           {errors.password && <FormHelperText>{errors.password.message}</FormHelperText>}
         </FormControl>

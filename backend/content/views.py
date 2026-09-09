@@ -1,5 +1,11 @@
+import uuid
+
+from django.core.files.storage import default_storage
 from rest_framework import generics, permissions, viewsets
 from rest_framework.exceptions import NotFound
+from rest_framework.parsers import MultiPartParser
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from content.models import ComplianceArea, Founder, InsightArticle, PricingTier, Service, Stat, Testimonial, TeamMember
 from content.serializers import (
@@ -82,3 +88,35 @@ class FounderDetailView(generics.RetrieveUpdateAPIView):
         if founder is None:
             raise NotFound("No founder profile has been set yet.")
         return founder
+
+
+ALLOWED_UPLOAD_EXTENSIONS = {"jpg", "jpeg", "png", "svg", "webp"}
+MAX_UPLOAD_SIZE_BYTES = 5 * 1024 * 1024  # 5MB
+
+
+class MediaUploadView(APIView):
+    """Generic staff-only file upload for images embedded inside a JSONField — a
+    Service.included item's own image has no model FileField to upload against
+    directly, unlike hero_image/photo/avatar, which already had real file upload via
+    their own model field. Returns the saved file's absolute URL; the admin app stores
+    that string in the JSON, replacing what used to be a raw data: URI. See
+    progress-tracker.md's 2026-09-09 entry."""
+
+    permission_classes = [permissions.IsAdminUser]
+    parser_classes = [MultiPartParser]
+
+    def post(self, request):
+        upload = request.FILES.get("file")
+        if not upload:
+            return Response({"detail": "No file provided."}, status=400)
+
+        ext = upload.name.rsplit(".", 1)[-1].lower() if "." in upload.name else ""
+        if ext not in ALLOWED_UPLOAD_EXTENSIONS:
+            return Response({"detail": "Unsupported file type. Use JPG, PNG, SVG, or WebP."}, status=400)
+        if upload.size > MAX_UPLOAD_SIZE_BYTES:
+            return Response({"detail": "File is too large — the limit is 5MB."}, status=400)
+
+        filename = f"uploads/{uuid.uuid4().hex}.{ext}"
+        saved_path = default_storage.save(filename, upload)
+        url = request.build_absolute_uri(default_storage.url(saved_path))
+        return Response({"url": url}, status=201)

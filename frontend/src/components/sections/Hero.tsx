@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Building2, Handshake, IdCard, ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import heroBg from "@/assets/images/hero/home_hero_bg.png";
 import { CtaButton } from "@/components/common/CtaButton";
@@ -13,6 +15,15 @@ const itemVariants = {
 };
 
 const TAGLINE = "Plan with a clear strategy • Structure for stability • Grow with long-term vision";
+
+// New 2026-09-09, per the client's mobile-structure spec's Home hero section — a quick
+// jump to each of the 4 main pillars, above the fold.
+const PILLAR_LINKS = [
+  { to: "/incorporation", label: "Incorporation", icon: Building2 },
+  { to: "/residency", label: "Residency", icon: IdCard },
+  { to: "/compliance", label: "Compliance", icon: ShieldCheck },
+  { to: "/partner-with-us", label: "Partner with Us", icon: Handshake },
+];
 
 export function Hero() {
   return (
@@ -53,11 +64,23 @@ export function Hero() {
         >
           {TAGLINE}
         </motion.p>
-        <motion.div variants={itemVariants} className="mt-8 flex flex-wrap items-center gap-4">
+        <motion.div variants={itemVariants} className="mt-8 flex flex-wrap gap-3">
+          {PILLAR_LINKS.map(({ to, label, icon: Icon }) => (
+            <Link
+              key={to}
+              to={to}
+              className="flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-medium text-white hover:border-accent hover:bg-white/15"
+            >
+              <Icon size={16} />
+              {label}
+            </Link>
+          ))}
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-4">
           <CtaButton to="/contact" size="lg">
-            Book a Consultation
+            Contact Us
           </CtaButton>
-          
         </motion.div>
       </motion.div>
     </section>

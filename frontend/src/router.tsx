@@ -7,6 +7,7 @@ import { CompliancePage } from "@/pages/CompliancePage";
 import { ComplianceDetailPage } from "@/pages/ComplianceDetailPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
+import { IncorporationPage } from "@/pages/IncorporationPage";
 import { InsightDetailPage } from "@/pages/InsightDetailPage";
 import { InsightsPage } from "@/pages/InsightsPage";
 import { CookiePolicyPage } from "@/pages/legal/CookiePolicyPage";
@@ -31,6 +32,8 @@ export const router = createBrowserRouter([
       { path: "/about", element: <AboutPage /> },
       { path: "/residency", element: <ServicesPage /> },
       { path: "/residency/:slug", element: <ServiceDetailPage /> },
+      { path: "/incorporation", element: <IncorporationPage /> },
+      { path: "/incorporation/:slug", element: <ServiceDetailPage /> },
       { path: "/compliance", element: <CompliancePage /> },
       { path: "/compliance/:slug", element: <ComplianceDetailPage /> },
       { path: "/insights", element: <InsightsPage /> },

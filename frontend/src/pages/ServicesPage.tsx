@@ -1,81 +1,113 @@
-import { motion } from "framer-motion";
+import { Award, Calculator, FileText, HeartPulse, IdCard, MessageCircle, Send, ShieldCheck, TrendingUp, Users } from "lucide-react";
 
-import { CtaButton } from "@/components/common/CtaButton";
-import { PageHeroBanner } from "@/components/common/PageHeroBanner";
-import { QueryState } from "@/components/common/QueryState";
-import { SectionHeading } from "@/components/common/SectionHeading";
-import { ServiceCard } from "@/components/common/ServiceCard";
-import placeholderPhoto from "@/assets/images/placeholders/placeholder-photo.svg";
-import { TeamCarousel } from "@/components/sections/TeamCarousel";
-import { servicePillarMeta, useServicesQuery } from "@/lib/api/services";
+import { LeadForm } from "@/components/common/LeadForm";
+import { PillarHero } from "@/components/common/PillarHero";
+import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
+import { ServicesShowcase } from "@/components/common/ServicesShowcase";
+import { WhyStrip } from "@/components/common/WhyStrip";
+import placeholderPhoto from "@/assets/images/hero/residency.png";
+import { servicePillarMeta } from "@/lib/api/services";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
+const SHOWCASE_ICONS = [IdCard, TrendingUp, Users, Award, FileText];
+
+// Same static-pillar-meta pattern as IncorporationPage.tsx — see that file's comment.
 export function ServicesPage() {
-  useDocumentTitle("Services");
-  const { data: services, isLoading, isError, refetch } = useServicesQuery();
+  useDocumentTitle("Residency");
+
+  const showcaseItems = servicePillarMeta.map((pillar, index) => ({
+    icon: SHOWCASE_ICONS[index % SHOWCASE_ICONS.length],
+    title: pillar.label,
+    description: pillar.description,
+    to: `/residency/${pillar.pillar}`,
+  }));
 
   return (
     <>
-      <PageHeroBanner
+      <PillarHero
         image={placeholderPhoto}
-        eyebrow="What We Do"
-        title="Our Services"
-        description="Every route to UAE residency DSD supports — choose the pathway that matches your situation."
+        eyebrow="Residency Services"
+        title="Your Future"
+        highlight="in the UAE."
+        description="We provide expert support for UAE residency, investor visas, family sponsorship and Golden Visa solutions — making your move to the UAE simple and stress-free."
+        quickLinks={servicePillarMeta.map((pillar) => ({
+          icon: IdCard,
+          label: pillar.label,
+          to: `/residency/${pillar.pillar}`,
+        }))}
+        primaryCta={{ label: "Get Started", to: "#lead-form" }}
+        secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
       />
 
-      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-        <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
-          {servicePillarMeta.map((pillar, pillarIndex) => {
-            // Each servicePillarMeta entry's `pillar` value is a specific service slug
-            // (see Navbar's dropdown, which links `/residency/${pillar.pillar}` directly
-            // to that service) — not the backend Service.pillar category — so this
-            // matches by slug, always at most one card per section.
-            const service = services?.find((s) => s.slug === pillar.pillar);
-            return (
-              <div key={pillar.pillar} id={pillar.pillar} className="scroll-mt-24 not-first:mt-16">
-                <SectionHeading align="left" title={pillar.label} description={pillar.description} />
-                {service && (
-                  <motion.div
-                    className="mt-8 max-w-sm"
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <ServiceCard service={service} colorIndex={pillarIndex} detailed />
-                  </motion.div>
-                )}
-              </div>
-            );
-          })}
-        </QueryState>
-      </div>
+      <WhyStrip
+        title="Why Choose UAE Residency?"
+        description="Live, work, and invest in one of the world's most dynamic and welcoming countries."
+        items={[
+          { icon: Calculator, title: "Tax Benefits", description: "No personal income tax on your UAE residency status." },
+          { icon: Users, title: "Family Sponsorship", description: "Bring your spouse, children, or parents with you." },
+          { icon: HeartPulse, title: "World-Class Healthcare", description: "Access to leading private and public healthcare." },
+          { icon: ShieldCheck, title: "Safe & Secure Environment", description: "One of the world's safest countries to live and raise a family." },
+        ]}
+      />
 
-      <section
-        className="relative bg-cover bg-center py-16 md:py-20"
-        style={{ backgroundImage: `url(${placeholderPhoto})` }}
-      >
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(120deg, rgba(10,27,51,0.88) 0%, rgba(10,27,51,0.55) 60%, rgba(10,27,51,0.35) 100%)",
-          }}
+      <ServicesShowcase
+        title="Our Residency Services"
+        description="Tailored solutions for individuals, families, and investors."
+        items={showcaseItems}
+        photoCard={{
+          image: placeholderPhoto,
+          title: "Your Family's Future in the UAE",
+          description: "Expert support for a smooth and hassle-free process.",
+          ctaLabel: "Learn More",
+          ctaTo: "/residency",
+        }}
+      />
+
+      <section id="lead-form" className="mx-auto max-w-3xl scroll-mt-24 px-4 py-16 md:px-6">
+        <LeadForm
+          defaultMainService="residency"
+          title="Apply for UAE Residency"
+          description="Get expert assistance for your UAE residency application. Fill in your details and our team will guide you through the process."
         />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-center md:px-6">
-          <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
-            Not sure which route fits your situation?
-          </h2>
-          <p className="max-w-xl text-white/80">
-            Book a consultation and we'll scope the right residency, incorporation, or compliance path for you.
-          </p>
-          <CtaButton to="/contact" size="lg">
-            Book a Consultation
-          </CtaButton>
-        </div>
       </section>
 
-      <TeamCarousel />
+      <PillarProcessSteps
+        description="A simple, clear, and efficient process to get your residency in the UAE."
+        steps={[
+          { icon: MessageCircle, title: "Initial Consultation", description: "Discuss your needs." },
+          { icon: FileText, title: "Document Review", description: "Check your documents and requirements." },
+          { icon: Send, title: "Application", description: "Submit to relevant authorities." },
+          { icon: HeartPulse, title: "Medical & Emirates ID", description: "Complete medical and ID process." },
+          { icon: Award, title: "Visa Issuance", description: "Receive your residency visa." },
+          { icon: ShieldCheck, title: "Ongoing Support", description: "We're here for your journey." },
+        ]}
+      />
+
+      <section className="relative bg-cover bg-center py-16 md:py-20" style={{ backgroundImage: `url(${placeholderPhoto})` }}>
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(120deg, rgba(10,27,51,0.88) 0%, rgba(10,27,51,0.55) 60%, rgba(10,27,51,0.35) 100%)" }}
+        />
+        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-center md:px-6">
+          <h2 className="font-display text-2xl font-bold text-white md:text-3xl">Ready to Apply for Residency?</h2>
+          <p className="max-w-xl text-white/80">
+            Take the first step towards your new life in the UAE. Our team is ready to guide you.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="#lead-form" className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-dark">
+              Get Started
+            </a>
+            <a
+              href="https://wa.me/971585889033"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-white/40 px-6 py-3 text-sm font-semibold text-white hover:border-white"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

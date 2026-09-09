@@ -11,7 +11,7 @@ class UserAdmin(DjangoUserAdmin):
     list_display = ["email", "name", "is_staff", "is_active"]
     fieldsets = (
         (None, {"fields": ("email", "password")}),
-        ("Personal info", {"fields": ("name", "phone")}),
+        ("Personal info", {"fields": ("name", "phone", "photo")}),
         ("Permissions", {"fields": ("is_active", "is_staff", "is_superuser", "groups", "user_permissions")}),
         ("Important dates", {"fields": ("last_login", "date_joined")}),
     )

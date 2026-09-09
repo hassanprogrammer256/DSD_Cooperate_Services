@@ -12,6 +12,11 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=150)
     phone = models.CharField(max_length=32, blank=True)
+    # Shown in the admin app's sidebar (name + photo) — see progress-tracker.md's
+    # 2026-09-09 entry. Set via Django's own /admin/ (accounts/admin.py) for now; no
+    # self-service profile editor exists yet. Optional — the sidebar falls back to an
+    # initials avatar rather than a fabricated stock photo when this is unset.
+    photo = models.FileField(upload_to="staff/", blank=True, null=True)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS: list[str] = []

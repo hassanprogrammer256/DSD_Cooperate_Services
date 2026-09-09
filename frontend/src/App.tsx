@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Outlet, useLocation } from "react-router-dom";
 
 import { Footer } from "@/components/layout/Footer";
+import { MobileBottomTabBar } from "@/components/layout/MobileBottomTabBar";
+import { MobileFloatingActions } from "@/components/layout/MobileFloatingActions";
 import { Navbar } from "@/components/layout/Navbar";
 
 const pageVariants = {
@@ -27,6 +29,12 @@ export function App() {
     window.scrollTo(0, 0);
   }, [location.pathname, location.hash]);
 
+  useLayoutEffect(() => {
+    const canonicalUrl = `${window.location.origin}${location.pathname}`;
+    const canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (canonicalLink) canonicalLink.href = canonicalUrl;
+  }, [location.pathname]);
+
   return (
     <>
       <Navbar />
@@ -43,7 +51,11 @@ export function App() {
           <Outlet />
         </motion.main>
       </AnimatePresence>
-      <Footer />
+      <div className="pb-16 lg:pb-0">
+        <Footer />
+      </div>
+      <MobileFloatingActions />
+      <MobileBottomTabBar />
     </>
   );
 }

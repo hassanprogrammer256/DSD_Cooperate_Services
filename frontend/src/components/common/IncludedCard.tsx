@@ -29,7 +29,7 @@ export function IncludedCard({ item, index }: Props) {
         </div>
 
         <div className="flex flex-1 flex-col p-5">
-          <h3 className="font-display text-base font-semibold text-text-primary">{item.title}</h3>
+          <h3 className="font-display text-base font-semibold text-accent">{item.title}</h3>
           <p className="mt-2 flex-1 text-sm text-text-secondary">{item.description}</p>
           {/* <CtaButton to="/contact" size="sm" sx={{ mt: 3, alignSelf: "flex-start" }}>
             Book a Consultation

@@ -22,7 +22,7 @@ DATABASES = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # public site
-    "http://localhost:5174", "https://dsdcooperateservices.vercel.app/" # admin app (once scaffolded, Phase 14)
+    "http://localhost:5174", "https://dsdcooperateservices.vercel.app" # admin app (once scaffolded, Phase 14)
 ]
 
 # Refresh-token cookie (see accounts/views.py) — "Secure" requires HTTPS, which local

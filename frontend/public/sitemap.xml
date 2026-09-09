@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Static routes only — /residency/:slug, /compliance/:slug, /insights/:slug, and /team/:slug
+  are database-driven and can't be enumerated at build time without a server-side generation
+  step (out of scope for this "SEO basics" pass, see progress-tracker.md). /login, /register,
+  and /account are deliberately excluded — utility pages, not content Google should index.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://dsdcop.com/</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/about</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/residency</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/incorporation</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/compliance</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/insights</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/pricing</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/contact</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/legal</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/cookie-policy</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/privacy-policy</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/website-disclaimer</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://dsdcop.com/partner-with-us</loc><lastmod>2026-09-09</lastmod></url>
+</urlset>

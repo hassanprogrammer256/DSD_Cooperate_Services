@@ -25,7 +25,7 @@ export function LoginPage() {
     formState: { errors, isSubmitting },
   } = useForm<LoginFormValues>({ resolver: zodResolver(loginSchema) });
 
-  const from = (location.state as { from?: string } | null)?.from ?? "/services";
+  const from = (location.state as { from?: string } | null)?.from ?? "/dashboard";
 
   async function onSubmit(values: LoginFormValues) {
     setFormError(null);

@@ -21,6 +21,8 @@ import { StatFormPage } from "@/pages/stats/StatFormPage";
 import { PricingListPage } from "@/pages/pricing/PricingListPage";
 import { PricingFormPage } from "@/pages/pricing/PricingFormPage";
 import { OrdersListPage } from "@/pages/orders/OrdersListPage";
+import { LeadsListPage } from "@/pages/leads/LeadsListPage";
+import { DashboardPage } from "@/pages/DashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -34,7 +36,8 @@ export const router = createBrowserRouter([
           </ProtectedRoute>
         ),
         children: [
-          { path: "/", element: <Navigate to="/services" replace /> },
+          { path: "/", element: <Navigate to="/dashboard" replace /> },
+          { path: "/dashboard", element: <DashboardPage /> },
           { path: "/services", element: <ServicesListPage /> },
           { path: "/services/:slug", element: <ServiceFormPage /> },
           { path: "/compliance", element: <ComplianceListPage /> },
@@ -51,6 +54,7 @@ export const router = createBrowserRouter([
           { path: "/pricing", element: <PricingListPage /> },
           { path: "/pricing/:id", element: <PricingFormPage /> },
           { path: "/orders", element: <OrdersListPage /> },
+          { path: "/leads", element: <LeadsListPage /> },
         ],
       },
       { path: "*", element: <NotFoundPage /> },

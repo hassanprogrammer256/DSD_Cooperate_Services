@@ -28,6 +28,22 @@ const palette = {
   neutral: { softBg: neutrals.light.surfaceSecondary },
 };
 
+// Input/Textarea/Select's own :focus-within border+glow replaces the doubled-rectangle
+// look that came from combining index.css's generic `:focus-visible { outline: 2px
+// solid ...; outline-offset: 2px }` (a real, load-bearing a11y default kept for every
+// other focusable element — buttons, links, checkboxes) with the field's own border,
+// which read as two overlapping rectangles. `& :focus-visible { outline: none }`
+// suppresses that generic outline specifically on the control living inside one of
+// these three, since this border+glow is itself a fully WCAG-2.4.7-compliant focus
+// indicator — never remove the generic rule itself, only opt these three out of it.
+const focusStyle = {
+  "&:focus-within": {
+    borderColor: "var(--color-primary)",
+    boxShadow: "0 0 0 3px var(--color-primary-light)",
+  },
+  "& :focus-visible": { outline: "none" },
+};
+
 export const joyTheme = extendTheme({
   fontFamily: {
     body: "var(--font-sans)",
@@ -43,5 +59,19 @@ export const joyTheme = extendTheme({
   // hamburger button and the desktop nav it replaces show/hide out of sync.
   breakpoints: {
     values: { xs: 0, sm: 640, md: 768, lg: 1024, xl: 1280 },
+  },
+  components: {
+    JoyInput: { styleOverrides: { root: focusStyle } },
+    JoyTextarea: { styleOverrides: { root: focusStyle } },
+    JoySelect: { styleOverrides: { root: focusStyle } },
+    // FormLabel/Checkbox/Radio's text all come from Joy's `neutral` palette, which this
+    // theme deliberately doesn't customize beyond softBg (see the top-of-file comment)
+    // — so it stayed frozen at Joy's light-mode default and was invisible on a dark
+    // card. Fixed once here, at the theme level, instead of an sx override repeated at
+    // every call site (a dozen+ found already, admin's own form fields included — see
+    // progress-tracker.md's 2026-09-09 entry).
+    JoyFormLabel: { styleOverrides: { root: { color: "var(--color-text-primary)" } } },
+    JoyCheckbox: { styleOverrides: { label: { color: "var(--color-text-primary)" } } },
+    JoyRadio: { styleOverrides: { label: { color: "var(--color-text-primary)" } } },
   },
 });

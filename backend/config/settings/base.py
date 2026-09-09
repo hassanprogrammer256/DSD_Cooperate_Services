@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "accounts",
     "content",
     "orders",
+    "leads",
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,11 @@ EMAIL_HOST_USER = env("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="")
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="info@dsdcop.com")
+
+# Where the internal "new website enquiry" notification goes — defaults to the same
+# inbox everything else on this site already uses. See leads/emails.py.
+LEAD_NOTIFICATION_EMAIL = env("LEAD_NOTIFICATION_EMAIL", default=DEFAULT_FROM_EMAIL)
+
+# Inert until a real external CRM exists — empty by default, see leads/webhooks.py.
+# Never assume a value here; an empty string is the correct, honest default.
+LEAD_WEBHOOK_URL = env("LEAD_WEBHOOK_URL", default="")

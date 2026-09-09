@@ -1,4 +1,24 @@
-export type ServicePillar = "residency-by-property" | "residency-by-business" | "residency-by-employment" | "residency-by-family-sponsorship" ;
+// Curated Service *slugs* for the /residency and /incorporation hub pages (see
+// servicePillarMeta/incorporationPillarMeta in src/lib/api/services.ts) — NOT the
+// backend Service.pillar enum below, despite the similar name.
+export type ServicePillar =
+  | "uae-residency"
+  | "investor-residency"
+  | "family-residency"
+  | "golden-residency"
+  | "residency-support";
+
+export type IncorporationPillar =
+  | "company-formation"
+  | "business-licensing"
+  | "international-structures"
+  | "corporate-structuring"
+  | "corporate-documentation";
+
+// The real backend Service.pillar enum (backend/content/models.py's Service.Pillar) —
+// used to route a service to its canonical detail-page URL prefix, see
+// ServiceDetailPage.tsx's pillar-aware redirect.
+export type ServiceCategoryPillar = "residency-solutions" | "business-incorporation" | "compliance-governance";
 
 export type ServiceStat = {
   value: number;
@@ -9,7 +29,7 @@ export type ServiceStat = {
 export type Service = {
   slug: string;
   title: string;
-  pillar: ServicePillar;
+  pillar: ServiceCategoryPillar;
   philosophy_title: string;
   icon: string; // key into src/lib/icons.ts's serviceIcons map
   summary: string;
@@ -122,6 +142,7 @@ export type User = {
   email: string;
   name: string;
   phone: string;
+  photo: string | null;
   isStaff: boolean;
 };
 

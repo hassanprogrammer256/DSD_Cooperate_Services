@@ -82,6 +82,7 @@ export function ComplianceFormPage() {
     <div className="max-w-lg">
       <h1 className="mb-6 font-display text-xl font-bold text-text-primary">{isCreate ? "New Compliance Area" : "Edit Compliance Area"}</h1>
       <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="flex flex-col gap-4" noValidate>
+        <FormFileField label="Hero Image" name="heroImage" control={control} currentUrl={existing?.heroImage} required={isCreate} />
         <FormTextField label="Slug" registration={register("slug")} error={errors.slug?.message} required />
         <FormTextField label="Title" registration={register("title")} error={errors.title?.message} required />
         <FormTextareaField label="Summary" registration={register("summary")} error={errors.summary?.message} required />
@@ -95,7 +96,6 @@ export function ComplianceFormPage() {
           control={control}
           options={(insights ?? []).map((i) => ({ value: i.slug, label: i.title }))}
         />
-        <FormFileField label="Hero Image" name="heroImage" control={control} currentUrl={existing?.heroImage} required={isCreate} />
         <div className="mt-2 flex gap-2">
           <Button type="submit" color="primary" loading={isSubmitting}>
             Save

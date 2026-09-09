@@ -2,14 +2,17 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { FacebookIcon, InstagramIcon, LinkedinIcon, WhatsappIcon, XIcon } from "@/components/common/SocialIcon";
-import { useServicesQuery } from "@/lib/api/services";
+import { canonicalServicePath, curatedServiceSlugs, useServicesQuery } from "@/lib/api/services";
+import { IMAGES } from "@/lib/utils";
 
 const QUICK_LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
+  { to: "/residency", label: "Residency" },
+  { to: "/incorporation", label: "Incorporation" },
   { to: "/compliance", label: "Compliance" },
   { to: "/insights", label: "Insights" },
+  { to: "/partner-with-us", label: "Partner With Us" },
   { to: "/pricing", label: "Pricing" },
   { to: "/contact", label: "Contact" },
 ];
@@ -17,7 +20,6 @@ const QUICK_LINKS = [
 const LEGAL_LINKS = [
   { to: "/cookie-policy", label: "Cookie Policy" },
   { to: "/privacy-policy", label: "Privacy Policy" },
-  { to: "/partner-with-us", label: "Partner With Us" },
   { to: "/website-disclaimer", label: "Website Disclaimer" },
 ];
 
@@ -36,12 +38,13 @@ export function Footer() {
   // stays quiet otherwise. See ui-rules.md's Loading & Error States section for why
   // primary content areas get the full QueryState treatment and this doesn't.
   const { data: services } = useServicesQuery();
+  const curatedFooterServices = services?.filter((service) => curatedServiceSlugs.includes(service.slug));
 
   return (
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="font-display text-xl font-extrabold">DSD Corporate Services</span>
+          <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-12 w-auto object-contain" />
           <p className="mt-3 text-sm text-white/70">
             UAE residency, business incorporation, and compliance advisory based in Dubai — helping founders,
             investors, and relocating professionals enter and operate in the UAE market with confidence.
@@ -78,9 +81,9 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Services</h3>
           <ul className="mt-4 flex flex-col gap-2">
-            {services?.map((service) => (
+            {curatedFooterServices?.map((service) => (
               <li key={service.slug}>
-                <Link to={`/services/${service.slug}`} className="text-sm text-white/72 hover:text-white">
+                <Link to={canonicalServicePath(service)} className="text-sm text-white/72 hover:text-white">
                   {service.title}
                 </Link>
               </li>
