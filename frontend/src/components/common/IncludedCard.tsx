@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-import { CtaButton } from "@/components/common/CtaButton";
 import type { ServiceIncludedItem } from "@/types";
 
 type Props = {
