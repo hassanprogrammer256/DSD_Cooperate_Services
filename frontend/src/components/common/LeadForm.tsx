@@ -69,7 +69,7 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
         <p className="mx-auto mt-3 max-w-md text-sm text-text-secondary">
           We have received your enquiry and our team will review your requirements and contact you shortly.
         </p>
-        <p className="mt-4 font-mono text-sm font-semibold text-text-primary">Reference No.: {reference}</p>
+       
         <div className="mt-6">
           <CtaButton onClick={() => setReference(null)}>Send Another Enquiry</CtaButton>
         </div>
@@ -93,14 +93,7 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
       )}
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div className="sm:col-span-2">
-          <FileDropzone
-            label="Upload Supporting Documents (Optional)"
-            accept=".pdf,.jpg,.jpeg,.png"
-            helperText="Accepted: PDF, JPG, PNG"
-            onFileChange={setFile}
-          />
-        </div>
+     
 
         <FormControl error={!!errors.mainService} required>
           <FormLabel sx={labelSx}>Select Service</FormLabel>
@@ -182,6 +175,14 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
           <FormLabel sx={labelSx}>Tell Us About Your Requirement</FormLabel>
           <Textarea minRows={4} placeholder="Briefly describe what you need help with..." {...register("requirement")} />
           {errors.requirement && <FormHelperText>{errors.requirement.message}</FormHelperText>}
+             <div className="sm:col-span-2">
+          <FileDropzone
+            label="Upload Supporting Documents (Optional)"
+            accept=".pdf,.jpg,.jpeg,.png"
+            helperText="Accepted: PDF, JPG, PNG"
+            onFileChange={setFile}
+          />
+        </div>
         </FormControl>
 
         <FormControl error={!!errors.preferredContactMethod} className="sm:col-span-2">
