@@ -1,4 +1,4 @@
-import { ArrowUpRight, CircleCheck } from "lucide-react";
+import { ArrowUpRight} from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
