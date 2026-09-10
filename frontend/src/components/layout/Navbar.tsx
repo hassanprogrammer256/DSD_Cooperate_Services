@@ -23,7 +23,6 @@ import { Link, useLocation } from "react-router-dom";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/common/SocialIcon";
-import { ThemeToggle } from "@/components/common/ThemeToggle";
 import { useAuth } from "@/contexts/AuthContext";
 import { curatedComplianceAreas } from "@/lib/api/compliance";
 import { incorporationPillarMeta, servicePillarMeta } from "@/lib/api/services";
@@ -129,7 +128,7 @@ export function Navbar() {
         >
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 md:px-6">
           <Link to="/" className="flex items-center gap-2" onClick={closeMobile}>
-            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-10 w-auto object-contain" />
+            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-20 w-auto object-contain" />
 
           </Link>
 
@@ -197,7 +196,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            {/* <Link
+          {/* <Link
               to={user ? "/account" : "/login"}
               aria-label={user ? "My Account" : "Log In"}
               className={`hidden items-center justify-center rounded-full p-2 hover:opacity-80 lg:flex ${
@@ -205,13 +204,13 @@ export function Navbar() {
               }`}
             >
               <User size={18} />
-            </Link> */}
-            <ThemeToggle inverse={transparent} />
-            <div className="hidden md:block">
+            </Link>  */}
+            {/* <ThemeToggle inverse={transparent} /> */}
+            {/* <div className="hidden md:block">
               <CtaButton to="/contact" size="sm">
                Contact Us
               </CtaButton>
-            </div>
+            </div> */}
             <IconButton
               component="a"
               href={WHATSAPP_URL}

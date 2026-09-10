@@ -46,17 +46,16 @@ export function Hero() {
         className="relative mx-auto max-w-7xl px-4 py-16 md:px-6"
       >
         <motion.span variants={itemVariants} className="text-xs font-semibold uppercase tracking-wide text-accent">
-          UAE Residency · Incorporation · Compliance
+          UAE Residency · Incorporation · Compliance · Licensing
         </motion.span>
         <motion.h1
           variants={itemVariants}
           className="mt-4 max-w-2xl font-display text-4xl font-bold text-white md:text-5xl md:leading-[1.15]"
         >
-        Strategic advisory for your UAE company, setup entry and residency
+        Strategic Advisory , Straightforward Execution
         </motion.h1>
         <motion.p variants={itemVariants} className="mt-4 max-w-xl text-white/82">
-          DSD Corporate Services guides founders, investors, and relocating professionals through every UAE
-          residency, incorporation, and compliance decision — with a straight answer, not a sales pitch.
+          DSD Corporate Services guides founders, investors, and relocating professionals end-to-end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
         </motion.p>
         <motion.p
           variants={itemVariants}
@@ -79,7 +78,10 @@ export function Hero() {
 
         <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-4">
           <CtaButton to="/contact" size="lg">
-            Contact Us
+            Immigration
+          </CtaButton>
+          <CtaButton to="/contact" size="lg" sx={{background:"transparent", border:"1px solid white", color:"white", "&:hover":{background:"white", color:"#0A1B33"}}}>
+           More
           </CtaButton>
         </motion.div>
       </motion.div>

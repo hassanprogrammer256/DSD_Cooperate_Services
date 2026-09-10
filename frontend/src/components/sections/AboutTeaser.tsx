@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import aboutImage from "@/assets/images/about/about_teaser.webp";
+import aboutImage from "@/assets/images/about/7.webp";
 
 export function AboutTeaser() {
   return (
@@ -22,9 +22,9 @@ export function AboutTeaser() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4 }}
         >
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">About DSD</span>
+          <span className="text-xs font-semibold uppercase tracking-wide text-accent">What Sets up Apart</span>
           <h2 className="mt-2 font-display text-3xl font-bold text-text-primary md:text-4xl">
-            A Dubai advisory built around one relationship, not three.
+            Single-Point Accountability
           </h2>
           <p className="mt-4 text-text-secondary">
             DSD Corporate Services helps founders, investors, and relocating professionals enter and operate in

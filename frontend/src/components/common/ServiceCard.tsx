@@ -36,7 +36,7 @@ export function ServiceCard({ service, colorIndex, detailed = false }: Props) {
         to={`/residency/${service.slug}`}
         className="flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors duration-300 group-hover:border-accent/50"
       >
-        <div className="relative aspect-video overflow-hidden">
+        <div className="relative aspect-square overflow-hidden">
           <img
             src={service.heroImage}
             alt={service.title}
@@ -47,20 +47,10 @@ export function ServiceCard({ service, colorIndex, detailed = false }: Props) {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col p-6">
-          <h3 className="font-display text-lg font-semibold text-text-primary">{service.title}</h3>
-          <p className="mt-2 flex-1 text-sm text-text-secondary">{detailed ? service.description : service.summary}</p>
+     <div className="flex flex-1 flex-col p-6"> 
+          <h3 className="font-display text-lg font-semibold text-accent">{service.title}</h3> 
+          <p className="mt-2 flex-1 text-sm text-text-secondary">{detailed ? service.description : service.summary}</p> 
 
-          {detailed && (
-            <ul className="mt-4 flex flex-col gap-2">
-              {service.included.slice(0, 4).map((item) => (
-                <li key={item.title} className="flex items-start gap-2 text-sm text-text-secondary">
-                  <CircleCheck size={16} className="mt-0.5 shrink-0 text-primary" />
-                  {item.title}
-                </li>
-              ))}
-            </ul>
-          )}
 
           <span className="mt-4 flex items-center gap-1 text-sm font-medium text-primary">
             {detailed ? "View Full Details" : "Learn More"}

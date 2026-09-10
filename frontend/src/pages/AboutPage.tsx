@@ -3,19 +3,17 @@ import { Handshake, Mail, MapPin, Phone } from "lucide-react";
 import { CtaButton } from "@/components/common/CtaButton";
 import { ConsentGate } from "@/components/common/ConsentGate";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
-import { QueryState } from "@/components/common/QueryState";
 import aboutHero from "@/assets/images/hero/about_hero.jpg";
 import aboutMission from "@/assets/images/about/about_dsd.jpeg";
 import { PhilosophyStrip } from "@/components/sections/PhilosophyStrip";
-import { useFounderQuery } from "@/lib/api/founder";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
-const OFFICE_ADDRESS = "1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, United Arab Emirates";
-const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent("Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, UAE")}&output=embed`;
+const OFFICE_ADDRESS = "1st floor, office 06, Al habeb building, umm hurair st. oud metha, Dubai, UAE";
+const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent("Al habeb building, umm hurair st. oud metha, Dubai, UAE")}&output=embed`;
 
 export function AboutPage() {
   useDocumentTitle("About");
-  const { data: founder, isLoading, isError, refetch } = useFounderQuery();
+  // const { data: founder, isLoading, isError, refetch } = useFounderQuery();
 
   return (
     <>
@@ -47,7 +45,7 @@ export function AboutPage() {
       </div>
 
       <PhilosophyStrip />
-
+{/* 
       <div className="bg-surface-secondary">
         <div className="mx-auto max-w-7xl px-4 py-16 text-center md:px-6 md:py-20">
           <span className="text-xs font-semibold uppercase tracking-wide text-accent">Meet the Founder</span>
@@ -64,7 +62,7 @@ export function AboutPage() {
             </QueryState>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
@@ -80,6 +78,12 @@ export function AboutPage() {
                 <Phone size={18} className="shrink-0 text-primary" />
                 <a href="tel:+971585889033" className="font-mono hover:text-primary">
                   +971 58 588 9033
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="shrink-0 text-primary" />
+                <a href="tel:+97144298282" className="font-mono hover:text-primary">
+                  +971 44 298 282
                 </a>
               </li>
               <li className="flex items-center gap-3">

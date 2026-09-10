@@ -17,10 +17,11 @@ export function ServicesOverview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
       <SectionHeading
-        eyebrow="What We Do"
-        title="Every UAE move, one"
-        highlight="advisory relationship."
-        description="Residency, incorporation, and compliance — DSD scopes the route that actually fits your situation."
+        eyebrow=""
+        title="What "
+        highlight="We Do"
+       
+        description="One Advisory relationship for every UAE move you make. From Residency and Incorporation to ongoing compliance, DSD doesnt just check boxes, we mapout the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
       />
 
       <div className="mt-10">
