@@ -36,7 +36,7 @@ export function PhilosophyStrip() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 bg-navy-elevated rounded-lg text-white">
       <h2 className="text-md font-bold text-center text-left text-accent">Our Core Philosophy.</h2>
-<h4 className="text-5xl font-medium text-center text-white text-left max-w-3xl">Strategic Driving strategic interventions that reshape and elevate your business trajectory</h4>
+<h4 className="text-5xl font-medium text-center text-white text-left max-w-3xl">Driving strategic interventions that reshape and elevate your business trajectory</h4>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {PRINCIPLES.map((principle, index) => (
           <motion.div
