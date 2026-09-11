@@ -102,7 +102,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Marketing communications",
     paragraphs: [
-      "Where permitted, we may use your contact information to send information about DSD services, business updates, or promotional offers. You may opt out at any time using the unsubscribe option, by replying with an opt-out request, or by contacting info@dsdcop.com. Opting out of marketing will not prevent essential messages about an active enquiry, application, payment, or service.",
+      "Where permitted, we may use your contact information to send information about DSD services, business updates, or promotional offers. You may opt out at any time using the unsubscribe option, by replying with an opt-out request, or by contacting www.dsdcorps.com. Opting out of marketing will not prevent essential messages about an active enquiry, application, payment, or service.",
     ],
   },
   {
@@ -144,7 +144,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Contact us",
     paragraphs: [
-      "For questions, requests, or complaints concerning personal information, contact us using the details below. Requests may also be submitted to info@dsdcop.com.",
+      "For questions, requests, or complaints concerning personal information, contact us using the details below. Requests may also be submitted to www.dsdcorps.com.",
     ],
   },
 ];
@@ -163,7 +163,7 @@ export function PrivacyPolicyPage() {
 
       <p className="mt-10 border-t border-border pt-6 text-sm text-text-muted">
         DSD Corporate Services · 1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, United
-        Arab Emirates · +971 58 588 9033 · info@dsdcop.com
+        Arab Emirates · +971 58 588 9033 · www.dsdcorps.com
       </p>
     </section>
   );

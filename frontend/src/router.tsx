@@ -7,6 +7,8 @@ import { CompliancePage } from "@/pages/CompliancePage";
 import { ComplianceDetailPage } from "@/pages/ComplianceDetailPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
+import { ImmigrationPage } from "@/pages/ImmigrationPage";
+import { ImmigrationRegulationsPage } from "@/pages/ImmigrationRegulationsPage";
 import { IncorporationPage } from "@/pages/IncorporationPage";
 import { InsightDetailPage } from "@/pages/InsightDetailPage";
 import { InsightsPage } from "@/pages/InsightsPage";
@@ -16,6 +18,7 @@ import { PartnerWithUsPage } from "@/pages/legal/PartnerWithUsPage";
 import { PrivacyPolicyPage } from "@/pages/legal/PrivacyPolicyPage";
 import { WebsiteDisclaimerPage } from "@/pages/legal/WebsiteDisclaimerPage";
 import { LoginPage } from "@/pages/LoginPage";
+import { MOHREPage } from "@/pages/MOHREPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PricingPage } from "@/pages/PricingPage";
 import { RegisterPage } from "@/pages/RegisterPage";
@@ -38,6 +41,12 @@ export const router = createBrowserRouter([
       { path: "/compliance/:slug", element: <ComplianceDetailPage /> },
       { path: "/insights", element: <InsightsPage /> },
       { path: "/insights/:slug", element: <InsightDetailPage /> },
+      // Direct-link landing pages — deliberately not in the Navbar (per explicit
+      // client instruction). Reachable from the Home hero's pillar quick-links,
+      // Footer Quick Links, and contextual links on /compliance and /residency.
+      { path: "/mohre", element: <MOHREPage /> },
+      { path: "/immigration", element: <ImmigrationPage /> },
+      { path: "/immigration/regulations", element: <ImmigrationRegulationsPage /> },
       { path: "/team/:slug", element: <TeamMemberDetailPage /> },
       { path: "/pricing", element: <PricingPage /> },
       { path: "/login", element: <LoginPage /> },

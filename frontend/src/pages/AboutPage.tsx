@@ -88,8 +88,8 @@ export function AboutPage() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="shrink-0 text-primary" />
-                <a href="mailto:info@dsdcop.com" className="hover:text-primary">
-                  info@dsdcop.com
+                <a href="mailto:www.dsdcorps.com" className="hover:text-primary">
+                  www.dsdcorps.com
                 </a>
               </li>
             </ul>

@@ -1,6 +1,7 @@
+import { CompanyLogoMarquee } from "@/components/common/CompanyLogoMarquee";
 import { QueryState } from "@/components/common/QueryState";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { TestimonialCard } from "@/components/common/TestimonialCard";
+import { TestimonialsCarousel } from "@/components/common/TestimonialsCarousel";
 import { useTestimonialsQuery } from "@/lib/api/testimonials";
 
 export function Testimonials() {
@@ -9,16 +10,21 @@ export function Testimonials() {
   return (
     <section className="bg-surface-secondary">
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-        <SectionHeading eyebrow="Client Feedback" title="What clients say" highlight="about working with DSD." />
+        <SectionHeading eyebrow="Client Feedback" title="What clients say about working with DSD." highlight="" />
 
         <div className="mt-10">
           <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {testimonials?.map((testimonial) => (
-                <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-              ))}
-            </div>
+            <TestimonialsCarousel testimonials={testimonials ?? []} />
           </QueryState>
+        </div>
+      </div>
+
+      <div className="border-t border-border py-10">
+        <p className="text-center text-xs font-semibold uppercase tracking-wide text-text-muted">
+          Trusted by teams from
+        </p>
+        <div className="mt-6">
+          <CompanyLogoMarquee />
         </div>
       </div>
     </section>

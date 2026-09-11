@@ -78,7 +78,7 @@ export function PartnerWithUsPage() {
         />
         <p className="mt-10 border-t border-border pt-6 text-center text-sm text-text-muted">
           DSD Corporate Services · 1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai,
-          United Arab Emirates · +971 58 588 9033 · info@dsdcop.com
+          United Arab Emirates · +971 58 588 9033 · www.dsdcorps.com
         </p>
       </section>
     </>

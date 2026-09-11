@@ -61,7 +61,7 @@ export function TapCheckoutPanel({ tier, onCancel, onPaid }: TapCheckoutPanelPro
       setErrorMessage(
         err instanceof ApiError
           ? err.message
-          : "Something went wrong — please try again or contact info@dsdcop.com",
+          : "Something went wrong — please try again or contact www.dsdcorps.com",
       );
     } finally {
       setSubmitting(false);

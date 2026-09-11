@@ -2,8 +2,8 @@ import { ArrowUpRight} from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import { serviceIcons } from "@/lib/icons";
-import { badgeColorAt, type BadgeColor } from "@/lib/utils";
+// import { serviceIcons } from "@/lib/icons";
+// import { badgeColorAt, type BadgeColor } from "@/lib/utils";
 import type { Service } from "@/types";
 
 type Props = {
@@ -12,17 +12,17 @@ type Props = {
   detailed?: boolean;
 };
 
-const BADGE_CLASSES: Record<BadgeColor, string> = {
-  primary: "bg-primary-light text-primary",
-  accent: "bg-accent-light text-accent",
-  success: "bg-success-light text-success",
-  warning: "bg-warning-light text-warning",
-  info: "bg-info-light text-info",
-};
+// const BADGE_CLASSES: Record<BadgeColor, string> = {
+//   primary: "bg-primary-light text-primary",
+//   accent: "bg-accent-light text-accent",
+//   success: "bg-success-light text-success",
+//   warning: "bg-warning-light text-warning",
+//   info: "bg-info-light text-info",
+// };
 
-export function ServiceCard({ service, colorIndex, detailed = false }: Props) {
-  const Icon = serviceIcons[service.icon];
-  const badgeClass = BADGE_CLASSES[badgeColorAt(colorIndex)];
+export function ServiceCard({ service,  detailed = false }: Props) {
+  // const Icon = serviceIcons[service.icon];
+  // const badgeClass = BADGE_CLASSES[badgeColorAt(colorIndex)];
 
   return (
     <motion.div
@@ -42,9 +42,9 @@ export function ServiceCard({ service, colorIndex, detailed = false }: Props) {
             alt={service.title}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <div className={`absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-lg ${badgeClass}`}>
+          {/* <div className={`absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-lg ${badgeClass}`}>
             {Icon && <Icon size={20} />}
-          </div>
+          </div> */}
         </div>
 
      <div className="flex flex-1 flex-col p-6"> 

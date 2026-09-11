@@ -64,9 +64,9 @@ export function ContactPage() {
               <Phone size={20} className="shrink-0 text-primary" />
               <span className="font-mono">+971 58 588 9033</span>
             </a>
-            <a href="mailto:info@dsdcop.com" className="flex items-center gap-3 text-text-secondary hover:text-primary">
+            <a href="mailto:www.dsdcorps.com" className="flex items-center gap-3 text-text-secondary hover:text-primary">
               <Mail size={20} className="shrink-0 text-primary" />
-              <span>info@dsdcop.com</span>
+              <span>www.dsdcorps.com</span>
             </a>
           </div>
 

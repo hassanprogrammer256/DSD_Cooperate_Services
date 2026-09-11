@@ -14,7 +14,7 @@ export function AboutTeaser() {
           transition={{ duration: 0.4 }}
           src={aboutImage}
           alt="DSD Corporate Services"
-          className="aspect-[4/3] w-full rounded-xl object-cover"
+          className="aspect-4/3 w-full rounded-xl object-cover"
         />
         <motion.div
           initial={{ opacity: 0, x: 16 }}
@@ -22,7 +22,7 @@ export function AboutTeaser() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4 }}
         >
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">What Sets up Apart</span>
+          <span className="text-xs font-semibold uppercase tracking-wide text-accent">Who We Are</span>
           <h2 className="mt-2 font-display text-3xl font-bold text-text-primary md:text-4xl">
             Single-Point Accountability
           </h2>

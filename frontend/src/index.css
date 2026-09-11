@@ -190,6 +190,27 @@ html body {
   display: none;
 }
 
+/* Infinite logo marquee (CompanyLogoMarquee) — a plain CSS transform loop, not
+   framer-motion or a JS interval: smoothest option since it runs off the compositor
+   thread instead of competing with React re-renders, and it doesn't need any JS to
+   stay perfectly seamless. The track renders the logo list twice back-to-back and
+   translates by exactly -50%, so the second copy lines up pixel-for-pixel with where
+   the first started — the loop never visibly resets. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Same tie-breaking problem as the html body rule above: Joy CssBaseline sets
    color-scheme off its own (frozen-to-light) [data-joy-color-scheme] attribute, not
    ours, and wins the specificity tie by loading later. html[data-theme=...] outranks

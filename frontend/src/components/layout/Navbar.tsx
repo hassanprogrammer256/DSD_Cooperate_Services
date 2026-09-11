@@ -27,13 +27,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import { curatedComplianceAreas } from "@/lib/api/compliance";
 import { incorporationPillarMeta, servicePillarMeta } from "@/lib/api/services";
 import { IMAGES } from "@/lib/utils";
+import { ThemeToggle } from "../common/ThemeToggle";
 
 type NavDropdownItem = { to: string; label: string };
-// `to` is optional in the type for resilience (a future trigger-only item could still
-// need it), but every current item has one now that Incorporation has its own /incorporation
-// hub. `icon` drives the mobile drawer's icon-per-item list per the client's
-// mobile-structure spec — desktop nav intentionally stays icon-free, matching that spec's
-// own mobile-only icon table.
+
 type NavItem = { to?: string; label: string; icon: LucideIcon; dropdown?: NavDropdownItem[] };
 
 const NAV_ITEMS: NavItem[] = [
@@ -57,8 +54,9 @@ const NAV_ITEMS: NavItem[] = [
     icon: ShieldCheck,
     dropdown: curatedComplianceAreas.map((area) => ({ to: `/compliance/${area.slug}`, label: area.label })),
   },
-  { to: "/partner-with-us", label: "Partner with Us", icon: Handshake },
-  { to: "/pricing", label: "Pricing", icon: Tag },
+    { to: "/pricing", label: "Pricing", icon: Tag },
+  { to: "/partner-with-us", label: "Partner with Us", icon: Handshake }
+
 ];
 
 const WHATSAPP_URL = "https://wa.me/971585889033";
@@ -102,8 +100,8 @@ export function Navbar() {
               <a href="tel:+971585889033" className="font-mono hover:text-white">
                 +971 58 588 9033
               </a>
-              <a href="mailto:info@dsdcop.com" className="hover:text-white">
-                info@dsdcop.com
+              <a href="mailto:www.dsdcorps.com" className="hover:text-white">
+                www.dsdcorps.com
               </a>
               <div className="flex items-center gap-3">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -205,7 +203,7 @@ export function Navbar() {
             >
               <User size={18} />
             </Link>  */}
-            {/* <ThemeToggle inverse={transparent} /> */}
+           <ThemeToggle inverse={transparent} /> 
             {/* <div className="hidden md:block">
               <CtaButton to="/contact" size="sm">
                Contact Us
@@ -330,8 +328,8 @@ export function Navbar() {
                 <a href="tel:+971585889033" className="flex items-center gap-2 text-sm font-mono text-white/80">
                   <Phone size={16} /> +971 58 588 9033
                 </a>
-                <a href="mailto:info@dsdcop.com" className="flex items-center gap-2 text-sm text-white/80">
-                  <Mail size={16} /> info@dsdcop.com
+                <a href="mailto:www.dsdcorps.com" className="flex items-center gap-2 text-sm text-white/80">
+                  <Mail size={16} /> www.dsdcorps.com
                 </a>
                 <CtaButton to="/contact" onClick={closeMobile}>
                   Book a Consultation

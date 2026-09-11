@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { Building2, Handshake, IdCard, ShieldCheck } from "lucide-react";
+import { Briefcase, Building2, Handshake, IdCard, ShieldCheck, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import heroBg from "@/assets/images/hero/home_hero_bg.png";
-import { CtaButton } from "@/components/common/CtaButton";
 
 const containerVariants = {
   animate: { transition: { staggerChildren: 0.08 } },
@@ -23,6 +22,8 @@ const PILLAR_LINKS = [
   { to: "/residency", label: "Residency", icon: IdCard },
   { to: "/compliance", label: "Compliance", icon: ShieldCheck },
   { to: "/partner-with-us", label: "Partner with Us", icon: Handshake },
+  { to: "/mohre", label: "MOHRE", icon: Briefcase },
+  { to: "/immigration", label: "Immigration", icon: Users },
 ];
 
 export function Hero() {
@@ -76,14 +77,15 @@ export function Hero() {
           ))}
         </motion.div>
 
-        <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-4">
+        {/* <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-4">
+          <CtaButton to="/contact" size="lg" sx={{background:"transparent", border:"1px solid white", color:"white", "&:hover":{background:"white", color:"#0A1B33"}}}>
+           MOHRE
+          </CtaButton>
           <CtaButton to="/contact" size="lg">
             Immigration
           </CtaButton>
-          <CtaButton to="/contact" size="lg" sx={{background:"transparent", border:"1px solid white", color:"white", "&:hover":{background:"white", color:"#0A1B33"}}}>
-           More
-          </CtaButton>
-        </motion.div>
+          
+        </motion.div> */}
       </motion.div>
     </section>
   );

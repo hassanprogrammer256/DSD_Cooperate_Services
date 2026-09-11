@@ -1,8 +1,9 @@
-import { Calculator, FileText, RefreshCw, Scale, Send, ShieldAlert, ShieldCheck } from "lucide-react";
+import { Briefcase, Calculator, FileText, RefreshCw, Scale, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
 import { PillarHero } from "@/components/common/PillarHero";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
+import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
 import { WhyStrip } from "@/components/common/WhyStrip";
 import placeholderPhoto from "@/assets/images/placeholders/placeholder-photo.svg";
@@ -50,6 +51,16 @@ export function CompliancePage() {
           General guidance, not legal or tax advice — always confirm your specific obligations with a qualified
           professional.
         </p>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-4 pt-6 md:px-6">
+        <RelatedTopicLink
+          icon={Briefcase}
+          title="Also Need Labour Law Guidance?"
+          description="MOHRE work permits, the Wage Protection System, and Emiratisation quotas for UAE employers."
+          to="/mohre"
+          ctaLabel="Explore MOHRE Compliance"
+        />
       </div>
 
       <WhyStrip

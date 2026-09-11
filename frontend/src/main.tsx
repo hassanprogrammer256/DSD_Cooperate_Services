@@ -27,9 +27,7 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    {/* injectFirst puts Joy's emotion styles ahead of Tailwind's in <head>, so a
-        Tailwind utility (e.g. lg:hidden on a Joy component) wins the cascade tie
-        instead of losing to Joy's own base styles. */}
+
     <StyledEngineProvider injectFirst>
       <CssVarsProvider theme={joyTheme} defaultMode="light" disableTransitionOnChange>
         <CssBaseline />

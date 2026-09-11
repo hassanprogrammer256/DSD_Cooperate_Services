@@ -1,8 +1,9 @@
-import { Award, Calculator, FileText, HeartPulse, IdCard, MessageCircle, Send, ShieldCheck, TrendingUp, Users } from "lucide-react";
+import { Award, Calculator, FileText, HeartPulse, IdCard, MessageCircle, Plane, Send, ShieldCheck, TrendingUp, Users } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
 import { PillarHero } from "@/components/common/PillarHero";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
+import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
 import { WhyStrip } from "@/components/common/WhyStrip";
 import placeholderPhoto from "@/assets/images/hero/residency.png";
@@ -38,6 +39,16 @@ export function ServicesPage() {
         primaryCta={{ label: "Get Started", to: "#lead-form" }}
         secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
       />
+
+      <div className="mx-auto max-w-3xl px-4 pt-10 md:px-6">
+        <RelatedTopicLink
+          icon={Plane}
+          title="Need Visa or Immigration Support?"
+          description="Employment, investor, and family visas, entry permits, and Establishment Card services."
+          to="/immigration"
+          ctaLabel="Explore Immigration Services"
+        />
+      </div>
 
       <WhyStrip
         title="Why Choose UAE Residency?"

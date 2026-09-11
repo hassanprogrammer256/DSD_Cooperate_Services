@@ -12,32 +12,31 @@ type Principle = {
 const PRINCIPLES: Principle[] = [
   {
     icon: Landmark,
-    title: "Domain Experience",
-    description: "Years spent inside UAE residency, incorporation, and compliance rules — not generalist advice applied to a specialist problem.",
+    title: "Deep Domain Authority",
+    description: "Years of firsthand operational mastery inside UAE residency, corporate incorporation, and regulatory compliance. specialized execution, never generalist theory.",
   },
   {
     icon: Handshake,
-    title: "Collaborative Approach",
-    description: "One advisor across your whole engagement, not a handoff between departments every time your situation changes.",
+    title: "Continuous Partnership",
+    description: "A single, senior advisor manages your engagement from inception to execution. Your context is never lost to internal handoffs or departmental silos.",
   },
   {
     icon: FileCheck,
-    title: "Evidence-Led Advice",
-    description: "Recommendations grounded in your actual documents and circumstances, not a generic template applied to every client.",
+    title: "Evidence-Led Guidance",
+    description: "Recommendations built strictly around your actual operational data, assets, and unique corporate circumstances — never a repurposed template or generic checklist.",
   },
   {
     icon: ClipboardCheck,
-    title: "Execution Awareness",
-    description: "We know what actually happens at the counter, not just what the regulation says on paper.",
+    title: "Practical Realism",
+    description: "We understand the difference between what the regulation says on paper and how it is enforced at the counter. Ground-level reality dictates our strategy",
   },
 ];
 
 export function PhilosophyStrip() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 bg-navy-elevated rounded-lg text-white">
-      <h2 className="text-md font-bold text-center text-left text-accent">Our Philosophical Principles</h2>
-<h4 className="text-5xl font-medium text-center text-white text-left max-w-3xl">Strategic Interventions that Transform our Clients' Business
-Trajectory</h4>
+      <h2 className="text-md font-bold text-center text-left text-accent">Our Core Philosophy.</h2>
+<h4 className="text-5xl font-medium text-center text-white text-left max-w-3xl">Strategic Driving strategic interventions that reshape and elevate your business trajectory</h4>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {PRINCIPLES.map((principle, index) => (
           <motion.div

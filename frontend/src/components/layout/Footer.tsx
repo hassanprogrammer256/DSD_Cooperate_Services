@@ -11,6 +11,8 @@ const QUICK_LINKS = [
   { to: "/residency", label: "Residency" },
   { to: "/incorporation", label: "Incorporation" },
   { to: "/compliance", label: "Compliance" },
+  { to: "/mohre", label: "MOHRE" },
+  { to: "/immigration", label: "Immigration" },
   { to: "/insights", label: "Insights" },
   { to: "/partner-with-us", label: "Partner With Us" },
   { to: "/pricing", label: "Pricing" },
@@ -46,8 +48,8 @@ export function Footer() {
         <div>
           <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-12 w-auto object-contain" />
           <p className="mt-3 text-sm text-white/70">
-            UAE residency, business incorporation, and compliance advisory based in Dubai — helping founders,
-            investors, and relocating professionals enter and operate in the UAE market with confidence.
+
+ High-precision UAE residency, corporate incorporation, and compliance advisory based in Dubai. We guide founders, investors, businesses and global talent through seamless market entry and operational setup.
           </p>
           <div className="mt-5 flex items-center gap-3">
             {SOCIAL_LINKS.map(({ href, label, Icon }) => (
@@ -106,8 +108,8 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} className="shrink-0" />
-              <a href="mailto:info@dsdcop.com" className="hover:text-white">
-                info@dsdcop.com
+              <a href="mailto:www.dsdcorps.com" className="hover:text-white">
+                www.dsdcorps.com
               </a>
             </li>
           </ul>

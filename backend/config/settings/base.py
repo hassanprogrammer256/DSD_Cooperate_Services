@@ -124,7 +124,7 @@ EMAIL_PORT = env.int("EMAIL_PORT", default=587)
 EMAIL_HOST_USER = env("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="")
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="info@dsdcop.com")
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="www.dsdcorps.com")
 
 # Where the internal "new website enquiry" notification goes — defaults to the same
 # inbox everything else on this site already uses. See leads/emails.py.
