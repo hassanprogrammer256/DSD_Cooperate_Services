@@ -21,7 +21,7 @@ export function ServicesOverview() {
         title="What "
         highlight="We Do"
        
-        description="One Advisory relationship for every UAE move you make. From Residency and Incorporation to ongoing compliance, DSD doesnt just check boxes, we mapout the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
+        description="One Advisory relationship for every UAE move you make. From Residency and Incorporation to ongoing compliance, DSD doesnt just check boxes, we map out the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
       />
 
       <div className="mt-10">

@@ -21,20 +21,18 @@ export function AboutPage() {
         image={aboutHero}
         eyebrow="About DSD"
         title="Our Story"
-        description="A Dubai advisory built to give founders and relocating professionals one straight-talking relationship across residency, incorporation, and compliance."
+        description="A Dubai-based advisory designed for seamless execution, giving founders, Innovators, businesses and relocating professionals one direct, trusted partner across residency, incorporation and compliance."
       />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 md:px-6 md:py-20 lg:grid-cols-2">
         <img src={aboutMission} alt="A DSD advisor and client shaking hands" className="aspect-[4/3] w-full rounded-xl object-cover" />
         <div>
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">Our Mission</span>
-          <h2 className="mt-2 font-display text-3xl font-bold text-text-primary md:text-4xl">
-            One advisory relationship, not three.
+      
+          <h2 className="mt-2 font-display text-3xl font-bold text-accent md:text-4xl">
+            Our Mission
           </h2>
           <p className="mt-4 text-text-secondary">
-            DSD Corporate Services exists because founders and relocating professionals kept ending up with three
-            separate consultants — one for residency, one for incorporation, one for compliance — who didn't talk
-            to each other. We built DSD to be the single relationship that actually does.
+          A Unified Advisory Model DSD Corporate Services was founded to fix a broken industry standard: the fragmented handoff between separate residency, incorporation, and compliance consultants. We act as your single, accountable partner. We connect every dot across your visa status, corporate setup and regulatory duties, delivering bespoke execution tailored entirely to your reality.
           </p>
           <p className="mt-4 text-text-secondary">
             Every client works with an advisor who can see their whole picture: the visa route, the company
