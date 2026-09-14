@@ -95,12 +95,7 @@ MAX_UPLOAD_SIZE_BYTES = 5 * 1024 * 1024  # 5MB
 
 
 class MediaUploadView(APIView):
-    """Generic staff-only file upload for images embedded inside a JSONField — a
-    Service.included item's own image has no model FileField to upload against
-    directly, unlike hero_image/photo/avatar, which already had real file upload via
-    their own model field. Returns the saved file's absolute URL; the admin app stores
-    that string in the JSON, replacing what used to be a raw data: URI. See
-    progress-tracker.md's 2026-09-09 entry."""
+
 
     permission_classes = [permissions.IsAdminUser]
     parser_classes = [MultiPartParser]

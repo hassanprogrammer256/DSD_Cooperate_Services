@@ -14,7 +14,7 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
 
   return (
     <section
-      className="relative bg-cover bg-center py-20 md:py-28"
+      className="relative bg-cover bg-center py-20 md:py-28 flex flex-col gap-3"
       style={{ backgroundImage: `url(${image})` }}
     >
       <div
@@ -33,7 +33,8 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
         <h1 className="font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
         {description && <p className={`mt-4 text-white/82 ${isCenter ? "mx-auto max-w-2xl" : "mx-auto max-w-2xl lg:mx-0"}`}>{description}</p>}
         {children && (
-          <div className={`mt-6 flex flex-wrap items-center gap-4 ${isCenter ? "justify-center" : "justify-center lg:justify-start"}`}>
+          <div className={`mt-6 flex flex-col flex-wrap  gap-4 ${isCenter ? "justify-center" : "justify-center lg:justify-start"}`}>
+            
             {children}
           </div>
         )}

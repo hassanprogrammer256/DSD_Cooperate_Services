@@ -34,11 +34,7 @@ export function AboutPage() {
           <p className="mt-4 text-text-secondary">
           A Unified Advisory Model DSD Corporate Services was founded to fix a broken industry standard: the fragmented handoff between separate residency, incorporation, and compliance consultants. We act as your single, accountable partner. We connect every dot across your visa status, corporate setup and regulatory duties, delivering bespoke execution tailored entirely to your reality.
           </p>
-          <p className="mt-4 text-text-secondary">
-            Every client works with an advisor who can see their whole picture: the visa route, the company
-            structure, and the ongoing obligations that come with both — scoped to their actual situation, not a
-            generic template.
-          </p>
+          
         </div>
       </div>
 

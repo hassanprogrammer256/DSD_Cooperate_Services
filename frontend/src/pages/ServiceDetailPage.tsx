@@ -14,6 +14,7 @@ import { ApiError } from "@/lib/api/client";
 import { useInsightsQuery } from "@/lib/api/insights";
 import { canonicalServicePath, useServiceDetailQuery } from "@/lib/api/services";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
+import { Testimonials } from "@/components/sections/Testimonials";
 
 export function ServiceDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -46,13 +47,11 @@ export function ServiceDetailPage() {
       {service && (
         <>
           <PageHeroBanner image={service.heroImage} align="left" title={service.title} description={service.summary}>
-            <CtaButton to="/contact">Book a Consultation</CtaButton>
-            <Link
-              to="/pricing"
-              className="rounded-md border border-white/40 px-5 py-2.5 text-sm font-semibold text-white hover:border-white"
-            >
-              View Pricing
-            </Link>
+            <h4 className=" max-w-2xl text-white/80">{service.description}</h4>
+              <div className="flex gap-4 flex-wrap justify-center lg:justify-start">
+                <CtaButton to="/pricing">Get Started</CtaButton>
+              
+              </div>
           </PageHeroBanner>
 
           {service.stats.length > 0 && (
@@ -65,50 +64,8 @@ export function ServiceDetailPage() {
             </div>
           )}
 
-          <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-            <div className="rounded-lg bg-navy-elevated px-6 py-12 text-center md:px-10 md:py-16">
-          
-              <h2 className="mt-2 font-display text-2xl font-bold text-accent md:text-3xl">{service.philosophy_title}</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-white/80">{service.description}</p>
-              <div className="mt-6">
-                <CtaButton to="/pricing">Get Started</CtaButton>
-              </div>
-            </div>
-
-            <h2 className="mt-14 font-display text-xl font-semibold text-text-primary">What's Included</h2>
-            <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {service.included.map((item, index) => (
-                <IncludedCard key={item.title} item={item} index={index} />
-              ))}
-            </div>
-
-            <ProcessSteps
-              steps={service.process}
-              title={`How We Help You Reach Your ${service.title} Goals`}
-            />
-
-            {service.faqs.length > 0 && (
-              <div className="mt-14">
-                <SectionHeading title="Frequently Asked" highlight="Questions" />
-                <div className="mx-auto mt-8 max-w-3xl">
-                  <FaqAccordion faqs={service.faqs} />
-                </div>
-              </div>
-            )}
-
-            {relatedInsights.length > 0 && (
-              <>
-                <h2 className="mt-14 font-display text-xl font-semibold text-text-primary">Related Insights</h2>
-                <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {relatedInsights.map((article) => (
-                    <InsightCard key={article.slug} article={article} />
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-
           <ClosingCta />
+          <Testimonials />
         </>
       )}
     </QueryState>

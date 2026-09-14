@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import { animate, motion, useInView, useMotionValue, useTransform } from "framer-motion";
+import { CtaButton } from "./CtaButton";
 
 type Props = {
   value: number;
@@ -23,11 +24,13 @@ export function StatCounter({ value, suffix, label }: Props) {
 
   return (
     <div ref={ref} className="flex flex-col items-center gap-1 text-center">
-      <span className="font-mono text-3xl font-bold text-white md:text-4xl">
-        <motion.span>{rounded}</motion.span>
-        {suffix}
-      </span>
-      <span className="text-sm font-medium text-white/72">{label}</span>
-    </div>
+  
+        <span className="font-mono text-3xl font-bold text-white md:text-4xl">
+          <motion.span>{rounded}</motion.span>
+          {suffix}
+        </span>
+        <span className="text-sm font-medium text-white/72">{label}</span>
+      </div>
+
   );
 }

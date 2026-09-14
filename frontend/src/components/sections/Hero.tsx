@@ -13,10 +13,8 @@ const itemVariants = {
   animate: { opacity: 1, y: 0 },
 };
 
-const TAGLINE = "Plan with a clear strategy • Structure for stability • Grow with long-term vision";
+const TAGLINE = "Plan with a clear strategy • Structure for stability • Grow with long term vision";
 
-// New 2026-09-09, per the client's mobile-structure spec's Home hero section — a quick
-// jump to each of the 4 main pillars, above the fold.
 const PILLAR_LINKS = [
   { to: "/incorporation", label: "Incorporation", icon: Building2 },
   { to: "/residency", label: "Residency", icon: IdCard },
@@ -56,7 +54,7 @@ export function Hero() {
         Strategic Advisory , Straightforward Execution
         </motion.h1>
         <motion.p variants={itemVariants} className="mt-4 max-w-xl text-white/82">
-          DSD Corporate Services guides founders, investors, and relocating professionals end-to-end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
+          DSD Corporate Services guides founders, investors,, and relocating professionals end to end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
         </motion.p>
         <motion.p
           variants={itemVariants}
