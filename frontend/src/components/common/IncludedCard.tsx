@@ -17,8 +17,6 @@ export function IncludedCard({ item, index }: Props) {
       whileHover={{ y: -6 }}
       className="group relative h-full"
     >
-
-
       <div className="flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface shadow-sm transition-colors duration-300 group-hover:border-accent/50">
         <div className="aspect-video overflow-hidden">
           <img
@@ -31,9 +29,6 @@ export function IncludedCard({ item, index }: Props) {
         <div className="flex flex-1 flex-col p-5">
           <h3 className="font-display text-base font-semibold text-accent">{item.title}</h3>
           <p className="mt-2 flex-1 text-sm text-text-secondary">{item.description}</p>
-          {/* <CtaButton to="/contact" size="sm" sx={{ mt: 3, alignSelf: "flex-start" }}>
-            Book a Consultation
-          </CtaButton> */}
         </div>
       </div>
     </motion.div>

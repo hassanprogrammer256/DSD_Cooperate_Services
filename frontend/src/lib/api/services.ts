@@ -21,22 +21,22 @@ export const servicePillarMeta: { pillar: ServicePillar; label: string; descript
   {
     pillar: "investor-residency",
     label: "Investor Residency",
-    description: "Residency earned through capital — a qualifying property purchase, business investment, or company ownership.",
+    description: "Residency earned through capital — a qualifying property purchase, business investment or company ownership.",
   },
   {
     pillar: "family-residency",
     label: "Family Residency",
-    description: "Sponsor your spouse, children, or parents under your own UAE residency status.",
+    description: "Sponsor your spouse, children or parents under your own UAE residency status.",
   },
   {
     pillar: "golden-residency",
     label: "Golden Residency",
-    description: "The UAE's long-term residency visa for qualifying investors, property owners, and specialised talent — up to 10 years, renewable.",
+    description: "The UAE's long-term residency visa for qualifying investors, property owners  specialised talent — up to 10 years, renewable.",
   },
   {
     pillar: "residency-support",
     label: "Residency Support",
-    description: "Ongoing residency administration after approval — renewals, status changes, and cancellations.",
+    description: "Ongoing residency administration after approval — renewals, status changes  cancellations.",
   },
 ];
 
@@ -51,22 +51,22 @@ export const incorporationPillarMeta: { pillar: IncorporationPillar; label: stri
   {
     pillar: "business-licensing",
     label: "Business Licensing",
-    description: "Trade licence renewal, activity amendments, and additional-activity filings for a company already operating.",
+    description: "Trade licence renewal, activity amendments  additional-activity filings for a company already operating.",
   },
   {
     pillar: "international-structures",
     label: "International Structures",
-    description: "Branch registration, holding structures, and multi-jurisdiction setups for companies already operating outside the UAE.",
+    description: "Branch registration, holding structures  multi-jurisdiction setups for companies already operating outside the UAE.",
   },
   {
     pillar: "corporate-structuring",
     label: "Corporate Structuring",
-    description: "Shareholding, governance, and management structuring for a company being formed or reorganised.",
+    description: "Shareholding, governance  management structuring for a company being formed or reorganised.",
   },
   {
     pillar: "corporate-documentation",
     label: "Corporate Documentation",
-    description: "MOA/AOA drafting, resolutions, and the constitutional paperwork every UAE company has to keep current.",
+    description: "MOA/AOA drafting, resolutions  the constitutional paperwork every UAE company has to keep current.",
   },
 ];
 

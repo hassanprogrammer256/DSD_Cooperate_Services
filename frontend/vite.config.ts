@@ -14,7 +14,7 @@ export default defineConfig({
   },
   server: {
     // backend/ and admin/ are separate apps (Django backend, admin React app) living
-    // as siblings in this repo — Vite has no reason to watch them, and Python's venv
+    // as siblings in this repo — Vite has no reason to watch them  Python's venv
     // in particular contains locked binaries during creation that crash the watcher.
     watch: {
       ignored: ["**/backend/**", "**/admin/**"],

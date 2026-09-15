@@ -14,17 +14,17 @@ const PARTNER_TYPES = [
   {
     icon: Briefcase,
     title: "Professional Partners",
-    description: "Lawyers, accountants, and advisors whose clients regularly need UAE company-formation or residency support.",
+    description: "Lawyers, accountants  advisors whose clients regularly need UAE company-formation or residency support.",
   },
   {
     icon: Building2,
     title: "Corporate Partners",
-    description: "Companies that regularly refer their own clients, staff, or portfolio businesses for UAE incorporation and residency.",
+    description: "Companies that regularly refer their own clients, staff or portfolio businesses for UAE incorporation and residency.",
   },
   {
     icon: Globe,
     title: "International Partners",
-    description: "Overseas advisors and agencies supporting clients relocating to, or expanding into, the UAE.",
+    description: "Overseas advisors and agencies supporting clients relocating to or expanding into, the UAE.",
   },
   {
     icon: Users,
@@ -78,7 +78,7 @@ export function PartnerWithUsPage() {
         />
         <p className="mt-10 border-t border-border pt-6 text-center text-sm text-text-muted">
           DSD Corporate Services · 1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai,
-          United Arab Emirates · +971 58 588 9033 · www.dsdcorps.com
+          United Arab Emirates · +971 58 588 9033 · info@dsdgrp.com
         </p>
       </section>
     </>

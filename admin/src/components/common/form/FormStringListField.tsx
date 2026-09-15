@@ -45,7 +45,7 @@ export function FormStringListField<TFieldValues extends FieldValues>({
         }
 
         // Not wrapped in a Joy FormControl — FormControl allows exactly one control
-        // component as a child, and this field renders one Input/Textarea per list
+        // component as a child  this field renders one Input/Textarea per list
         // item (Joy logs "A FormControl can contain only one control component" and
         // its aria wiring gets confused otherwise, since FormLabel/FormControl are
         // designed around a single field, not a repeating group).

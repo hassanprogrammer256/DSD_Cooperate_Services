@@ -44,7 +44,7 @@ export function ServicesPage() {
         <RelatedTopicLink
           icon={Plane}
           title="Need Visa or Immigration Support?"
-          description="Employment, investor, and family visas, entry permits, and Establishment Card services."
+          description="Employment, investor  family visas, entry permits  Establishment Card services."
           to="/immigration"
           ctaLabel="Explore Immigration Services"
         />
@@ -52,10 +52,10 @@ export function ServicesPage() {
 
       <WhyStrip
         title="Why Choose UAE Residency?"
-        description="Live, work, and invest in one of the world's most dynamic and welcoming countries."
+        description="Live, work  invest in one of the world's most dynamic and welcoming countries."
         items={[
           { icon: Calculator, title: "Tax Benefits", description: "No personal income tax on your UAE residency status." },
-          { icon: Users, title: "Family Sponsorship", description: "Bring your spouse, children, or parents with you." },
+          { icon: Users, title: "Family Sponsorship", description: "Bring your spouse, children or parents with you." },
           { icon: HeartPulse, title: "World-Class Healthcare", description: "Access to leading private and public healthcare." },
           { icon: ShieldCheck, title: "Safe & Secure Environment", description: "One of the world's safest countries to live and raise a family." },
         ]}
@@ -63,7 +63,7 @@ export function ServicesPage() {
 
       <ServicesShowcase
         title="Our Residency Services"
-        description="Tailored solutions for individuals, families, and investors."
+        description="Tailored solutions for individuals, families  investors."
         items={showcaseItems}
         photoCard={{
           image: placeholderPhoto,
@@ -83,7 +83,7 @@ export function ServicesPage() {
       </section>
 
       <PillarProcessSteps
-        description="A simple, clear, and efficient process to get your residency in the UAE."
+        description="A simple, clear  efficient process to get your residency in the UAE."
         steps={[
           { icon: MessageCircle, title: "Initial Consultation", description: "Discuss your needs." },
           { icon: FileText, title: "Document Review", description: "Check your documents and requirements." },

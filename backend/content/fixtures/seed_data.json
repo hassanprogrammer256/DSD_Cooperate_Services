@@ -6,7 +6,7 @@
       "pillar": "residency-solutions",
       "icon": "building",
       "summary": "UAE residency secured through a qualifying property investment, handled from eligibility check to Emirates ID.",
-      "description": "DSD guides property investors through the UAE's investor residency route end to end — confirming the property qualifies, preparing the application file, and coordinating the medical and Emirates ID steps that follow approval.",
+      "description": "DSD guides property investors through the UAE's investor residency route end to end — confirming the property qualifies, preparing the application file  coordinating the medical and Emirates ID steps that follow approval.",
       "included": [
         {
           "title": "Property and title-deed eligibility review",
@@ -51,7 +51,7 @@
       "process": [
         {
           "title": "Property & Intent Review",
-          "description": "We start with your title deed, property value, and ownership structure, and understand what you're aiming for — residency for yourself, or for your family as well."
+          "description": "We start with your title deed, property value  ownership structure  understand what you're aiming for — residency for yourself, or for your family as well."
         },
         {
           "title": "Eligibility Confirmation",
@@ -69,7 +69,7 @@
       "faqs": [
         {
           "question": "Does my property qualify me for UAE residency?",
-          "answer": "Not every property qualifies. Eligibility depends on the property's value, its registration status, and how the title is held — we run a quick check against the current thresholds before you commit to anything further."
+          "answer": "Not every property qualifies. Eligibility depends on the property's value, its registration status  how the title is held — we run a quick check against the current thresholds before you commit to anything further."
         },
         {
           "question": "How is residency by property different from other routes?",
@@ -135,7 +135,7 @@
       "pillar": "residency-solutions",
       "icon": "badge-check",
       "summary": "Employment-sponsored residency for professionals relocating to a confirmed UAE role.",
-      "description": "DSD supports both employers and incoming employees through the labour card, entry permit, and Emirates ID sequence that turns a signed offer into a resident visa.",
+      "description": "DSD supports both employers and incoming employees through the labour card, entry permit  Emirates ID sequence that turns a signed offer into a resident visa.",
       "included": [
         {
           "title": "Offer letter and labour contract review",
@@ -230,7 +230,7 @@
       "pillar": "business-incorporation",
       "icon": "building-2",
       "summary": "Mainland or free zone incorporation, scoped against how and where you'll actually trade.",
-      "description": "DSD scopes mainland-versus-free-zone against a founder's real first-year trading plan rather than a generic recommendation, then handles licence application, name reservation, and initial approvals.",
+      "description": "DSD scopes mainland-versus-free-zone against a founder's real first-year trading plan rather than a generic recommendation, then handles licence application, name reservation  initial approvals.",
       "included": [
         {
           "title": "Mainland vs. free zone structuring advice",
@@ -278,7 +278,7 @@
       "title": "Expand an Existing Company",
       "pillar": "business-incorporation",
       "icon": "trending-up",
-      "summary": "Branch registration, licence amendments, and additional activities for a company already operating elsewhere.",
+      "summary": "Branch registration, licence amendments  additional activities for a company already operating elsewhere.",
       "description": "For companies already established outside the UAE — or already licensed within it — DSD structures the expansion: a new branch, an added business activity, or a second jurisdiction, without disrupting the existing licence.",
       "included": [
         {
@@ -326,8 +326,8 @@
       "title": "Corporate Tax Advisory",
       "pillar": "compliance-governance",
       "icon": "calculator",
-      "summary": "Registration, exemption assessment, and filing support against your actual licence-linked deadlines.",
-      "description": "DSD confirms a business's Corporate Tax registration window against its own trade licence issue date, assesses free-zone qualifying-income exemptions where relevant, and manages filing so no deadline is missed by accident.",
+      "summary": "Registration, exemption assessment  filing support against your actual licence-linked deadlines.",
+      "description": "DSD confirms a business's Corporate Tax registration window against its own trade licence issue date, assesses free-zone qualifying-income exemptions where relevant  manages filing so no deadline is missed by accident.",
       "included": [
         {
           "title": "Registration deadline confirmation",
@@ -375,8 +375,8 @@
       "title": "VAT Registration & Filing",
       "pillar": "compliance-governance",
       "icon": "receipt",
-      "summary": "Threshold assessment, registration, and recurring return filing that holds up under review.",
-      "description": "DSD assesses whether a business has crossed the mandatory or voluntary VAT registration threshold, registers it with the Federal Tax Authority, and manages recurring filings with the documentation evidence to support them.",
+      "summary": "Threshold assessment, registration  recurring return filing that holds up under review.",
+      "description": "DSD assesses whether a business has crossed the mandatory or voluntary VAT registration threshold, registers it with the Federal Tax Authority  manages recurring filings with the documentation evidence to support them.",
       "included": [
         {
           "title": "Mandatory/voluntary threshold assessment",
@@ -424,7 +424,7 @@
       "pillar": "compliance-governance",
       "icon": "file-badge",
       "summary": "Ownership-structure mapping and UBO register filing, kept current as ownership actually changes.",
-      "description": "DSD maps an entity's real ownership and control chain — not just the names on the trade licence — files the UBO register, and flags when a later ownership change means the register needs updating again.",
+      "description": "DSD maps an entity's real ownership and control chain — not just the names on the trade licence — files the UBO register  flags when a later ownership change means the register needs updating again.",
       "included": [
         {
           "title": "Ownership and control structure mapping",
@@ -467,8 +467,8 @@
       "title": "AML/KYC Compliance",
       "pillar": "compliance-governance",
       "icon": "shield-check",
-      "summary": "Anti-money-laundering policy, client due diligence, and registration support for regulated activities.",
-      "description": "For businesses in AML-regulated activities, DSD builds the internal policy, client due-diligence process, and goAML registration that examiners expect to see — sized to the business, not a boilerplate template.",
+      "summary": "Anti-money-laundering policy, client due diligence  registration support for regulated activities.",
+      "description": "For businesses in AML-regulated activities, DSD builds the internal policy, client due-diligence process  goAML registration that examiners expect to see — sized to the business, not a boilerplate template.",
       "included": [
         {
           "title": "AML/CFT policy drafting",
@@ -552,7 +552,7 @@
       "pillar": "compliance-governance",
       "icon": "clipboard-check",
       "summary": "Books kept audit-ready year-round, so tax filing and licence renewal never start from a backlog.",
-      "description": "DSD maintains monthly bookkeeping and produces the annual financial statements a business needs for Corporate Tax filing, licence renewal, and bank relationship reviews — kept current, not reconstructed under deadline pressure.",
+      "description": "DSD maintains monthly bookkeeping and produces the annual financial statements a business needs for Corporate Tax filing, licence renewal  bank relationship reviews — kept current, not reconstructed under deadline pressure.",
       "included": [
         {
           "title": "Monthly bookkeeping",
@@ -594,11 +594,11 @@
       "pillar": "business-incorporation",
       "icon": "users",
       "summary": "Clarity on when a UAE national partner or service agent is actually required — and when 100% foreign ownership already covers you.",
-      "description": "Local sponsorship rules have changed significantly: most ordinary mainland activities no longer require a UAE national shareholder or service agent. DSD checks your specific activity, legal form, and Emirate against the current rules before recommending whether a local partner is legally required, commercially useful, or unnecessary altogether.",
+      "description": "Local sponsorship rules have changed significantly: most ordinary mainland activities no longer require a UAE national shareholder or service agent. DSD checks your specific activity, legal form  Emirate against the current rules before recommending whether a local partner is legally required, commercially useful, or unnecessary altogether.",
       "included": [
         {
           "title": "Sponsorship requirement assessment",
-          "description": "We check your licensed activity, legal form, and Emirate against current ownership rules before recommending any local partner or agent.",
+          "description": "We check your licensed activity, legal form  Emirate against current ownership rules before recommending any local partner or agent.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%22-70%22%20x2%3D%2255%22%20y2%3D%22-70%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%22-30%22%20x2%3D%2255%22%20y2%3D%22-30%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%2210%22%20x2%3D%2210%22%20y2%3D%2210%22/%3E%3Cpath%20d%3D%22M-20%2055%20l30%2030%20l60%20-70%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
@@ -608,7 +608,7 @@
         },
         {
           "title": "Shareholder and agency agreement guidance",
-          "description": "We guide the drafting of shareholder, service-agent, or agency agreements that protect your ownership, control, and exit rights.",
+          "description": "We guide the drafting of shareholder, service-agent, or agency agreements that protect your ownership, control  exit rights.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l85%2035%20v80%20c0%2065%20-38%20100%20-85%20125%20c-47%20-25%20-85%20-60%20-85%20-125%20v-80%20z%22/%3E%3Cpath%20d%3D%22M-38%200%20l28%2028%20l55%20-62%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
@@ -641,8 +641,8 @@
       "title": "EJARI",
       "pillar": "business-incorporation",
       "icon": "file-check",
-      "summary": "Dubai's mandatory tenancy-registration system — required for a mainland licence, employee visas, and DEWA activation alike.",
-      "description": "Ejari is the Dubai Land Department's official system for registering residential and commercial tenancy contracts. For a company, a valid commercial Ejari is commonly required to obtain or renew a mainland trade licence, support employee visa applications, and activate DEWA at the premises — DSD manages registration, renewal, and cancellation so it never becomes a bottleneck to your licence.",
+      "summary": "Dubai's mandatory tenancy-registration system — required for a mainland licence, employee visas  DEWA activation alike.",
+      "description": "Ejari is the Dubai Land Department's official system for registering residential and commercial tenancy contracts. For a company, a valid commercial Ejari is commonly required to obtain or renew a mainland trade licence, support employee visa applications  activate DEWA at the premises — DSD manages registration, renewal  cancellation so it never becomes a bottleneck to your licence.",
       "included": [
         {
           "title": "Tenancy contract registration",
@@ -651,12 +651,12 @@
         },
         {
           "title": "Document preparation and verification",
-          "description": "We prepare and check the Emirates ID, trade licence, and authority documents Ejari registration requires before submission.",
+          "description": "We prepare and check the Emirates ID, trade licence  authority documents Ejari registration requires before submission.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Crect%20x%3D%22-90%22%20y%3D%22-120%22%20width%3D%22180%22%20height%3D%22240%22%20rx%3D%2210%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%22-70%22%20x2%3D%2255%22%20y2%3D%22-70%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%22-30%22%20x2%3D%2255%22%20y2%3D%22-30%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%2210%22%20x2%3D%2210%22%20y2%3D%2210%22/%3E%3Cpath%20d%3D%22M-20%2055%20l30%2030%20l60%20-70%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
           "title": "Renewal and cancellation management",
-          "description": "We track your Ejari's expiry against your tenancy and trade-licence cycles, and handle renewal or proper cancellation when you move or close.",
+          "description": "We track your Ejari's expiry against your tenancy and trade-licence cycles  handle renewal or proper cancellation when you move or close.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Crect%20x%3D%22-100%22%20y%3D%22-90%22%20width%3D%22200%22%20height%3D%22180%22%20rx%3D%2210%22/%3E%3Cline%20x1%3D%22-100%22%20y1%3D%22-40%22%20x2%3D%22100%22%20y2%3D%22-40%22/%3E%3Cline%20x1%3D%22-55%22%20y1%3D%22-115%22%20x2%3D%22-55%22%20y2%3D%22-65%22/%3E%3Cline%20x1%3D%2255%22%20y1%3D%22-115%22%20x2%3D%2255%22%20y2%3D%22-65%22/%3E%3Cpath%20d%3D%22M-30%2030%20l25%2025%20l55%20-60%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
@@ -687,7 +687,7 @@
       "pillar": "residency-solutions",
       "icon": "badge-check",
       "summary": "A clear starting point for every UAE residency route — property, business, employment, or family — scoped to your situation before you commit to one.",
-      "description": "UAE residency isn't one visa — it's several distinct routes, each with its own eligibility rules, sponsor requirements, and renewal cycle. DSD starts every residency enquiry here: understanding your situation first, then pointing you to the specific pathway that actually fits, rather than defaulting to whichever route is best known.",
+      "description": "UAE residency isn't one visa — it's several distinct routes, each with its own eligibility rules, sponsor requirements  renewal cycle. DSD starts every residency enquiry here: understanding your situation first, then pointing you to the specific pathway that actually fits, rather than defaulting to whichever route is best known.",
       "included": [
         {
           "title": "Eligibility scoping across every route",
@@ -779,7 +779,7 @@
       "pillar": "residency-solutions",
       "icon": "users",
       "summary": "Sponsor your spouse, children, or parents under your own UAE residency status.",
-      "description": "A UAE resident can generally sponsor immediate family members — and in some cases parents — onto their own residency status. DSD handles the sponsorship eligibility check, the paperwork, and the medical/Emirates ID steps for every family member being added.",
+      "description": "A UAE resident can generally sponsor immediate family members — and in some cases parents — onto their own residency status. DSD handles the sponsorship eligibility check, the paperwork  the medical/Emirates ID steps for every family member being added.",
       "included": [
         {
           "title": "Sponsor eligibility confirmation",
@@ -788,7 +788,7 @@
         },
         {
           "title": "Dependent documentation preparation",
-          "description": "We prepare the marriage, birth, and attestation documents each family member's application requires.",
+          "description": "We prepare the marriage, birth  attestation documents each family member's application requires.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l85%2035%20v80%20c0%2065%20-38%20100%20-85%20125%20c-47%20-25%20-85%20-60%20-85%20-125%20v-80%20z%22/%3E%3Cpath%20d%3D%22M-38%200%20l28%2028%20l55%20-62%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
@@ -823,8 +823,8 @@
       "title": "Golden Residency",
       "pillar": "residency-solutions",
       "icon": "file-badge",
-      "summary": "The UAE's long-term residency visa for qualifying investors, property owners, and specialised talent — up to 10 years, renewable.",
-      "description": "Golden Residency is the UAE's long-term visa category for qualifying investors, real-estate owners above a set threshold, and specialised professionals — offering a multi-year validity period without the annual renewal cycle standard visas require. DSD confirms which Golden Residency category you qualify under and manages the nomination and application process.",
+      "summary": "The UAE's long-term residency visa for qualifying investors, property owners  specialised talent — up to 10 years, renewable.",
+      "description": "Golden Residency is the UAE's long-term visa category for qualifying investors, real-estate owners above a set threshold  specialised professionals — offering a multi-year validity period without the annual renewal cycle standard visas require. DSD confirms which Golden Residency category you qualify under and manages the nomination and application process.",
       "included": [
         {
           "title": "Category eligibility assessment",
@@ -869,8 +869,8 @@
       "title": "Residency Support",
       "pillar": "residency-solutions",
       "icon": "clipboard-check",
-      "summary": "Ongoing residency administration after approval — renewals, status changes, and cancellations, handled without you tracking every deadline yourself.",
-      "description": "Getting approved is the start, not the end, of managing UAE residency status. DSD provides ongoing support after your initial approval — tracking renewal windows, handling status changes like a new sponsor or address, and managing cancellations correctly when a residency status needs to end.",
+      "summary": "Ongoing residency administration after approval — renewals, status changes  cancellations, handled without you tracking every deadline yourself.",
+      "description": "Getting approved is the start, not the end, of managing UAE residency status. DSD provides ongoing support after your initial approval — tracking renewal windows, handling status changes like a new sponsor or address  managing cancellations correctly when a residency status needs to end.",
       "included": [
         {
           "title": "Renewal deadline tracking",
@@ -915,7 +915,7 @@
       "pillar": "business-incorporation",
       "icon": "building-2",
       "summary": "End-to-end UAE company setup — from choosing mainland or free zone to your first trade licence.",
-      "description": "Company Formation covers the full path from an initial structuring decision to a live trade licence: confirming mainland versus free zone fit, reserving your trade name, and submitting the licence application itself. DSD scopes this against your actual first-year trading plan, not a generic recommendation.",
+      "description": "Company Formation covers the full path from an initial structuring decision to a live trade licence: confirming mainland versus free zone fit, reserving your trade name  submitting the licence application itself. DSD scopes this against your actual first-year trading plan, not a generic recommendation.",
       "included": [
         {
           "title": "Mainland vs. free zone structuring advice",
@@ -961,8 +961,8 @@
       "title": "Business Licensing",
       "pillar": "business-incorporation",
       "icon": "file-badge",
-      "summary": "Trade licence renewal, activity amendments, and additional-activity filings for a company already operating.",
-      "description": "A trade licence isn't a one-time document — it needs renewing annually, and any new activity or amendment has to be filed with the relevant authority before you act on it. DSD manages licence renewal, activity additions, and amendment filings so a lapsed or out-of-scope licence never disrupts your operations.",
+      "summary": "Trade licence renewal, activity amendments  additional-activity filings for a company already operating.",
+      "description": "A trade licence isn't a one-time document — it needs renewing annually  any new activity or amendment has to be filed with the relevant authority before you act on it. DSD manages licence renewal, activity additions  amendment filings so a lapsed or out-of-scope licence never disrupts your operations.",
       "included": [
         {
           "title": "Annual licence renewal",
@@ -1008,8 +1008,8 @@
       "title": "International Structures",
       "pillar": "business-incorporation",
       "icon": "briefcase",
-      "summary": "Branch registration, holding structures, and multi-jurisdiction setups for companies already operating outside the UAE.",
-      "description": "For companies already established elsewhere, entering the UAE market usually means choosing between a branch, a subsidiary, or a holding structure that sits above both. DSD structures the entry to fit how the parent company actually operates, and manages the parent-company document attestation UAE authorities require.",
+      "summary": "Branch registration, holding structures  multi-jurisdiction setups for companies already operating outside the UAE.",
+      "description": "For companies already established elsewhere, entering the UAE market usually means choosing between a branch, a subsidiary, or a holding structure that sits above both. DSD structures the entry to fit how the parent company actually operates  manages the parent-company document attestation UAE authorities require.",
       "included": [
         {
           "title": "Branch vs. subsidiary structuring",
@@ -1054,8 +1054,8 @@
       "title": "Corporate Structuring",
       "pillar": "business-incorporation",
       "icon": "clipboard-check",
-      "summary": "Shareholding, governance, and management structuring for a company being formed or reorganised.",
-      "description": "How a company's ownership, management, and signing authority are structured affects everything from bank account approval to future investment rounds. DSD structures shareholding and governance arrangements to match how the business will actually be run — not just what's fastest to file.",
+      "summary": "Shareholding, governance  management structuring for a company being formed or reorganised.",
+      "description": "How a company's ownership, management  signing authority are structured affects everything from bank account approval to future investment rounds. DSD structures shareholding and governance arrangements to match how the business will actually be run — not just what's fastest to file.",
       "included": [
         {
           "title": "Shareholding structure design",
@@ -1064,12 +1064,12 @@
         },
         {
           "title": "Governance and signing-authority setup",
-          "description": "We set up board, management, and bank-signing authority matching how the company will actually run.",
+          "description": "We set up board, management  bank-signing authority matching how the company will actually run.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%20-120%20l85%2035%20v80%20c0%2065%20-38%20100%20-85%20125%20c-47%20-25%20-85%20-60%20-85%20-125%20v-80%20z%22/%3E%3Cpath%20d%3D%22M-38%200%20l28%2028%20l55%20-62%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
           "title": "Shareholder agreement guidance",
-          "description": "We guide the drafting of shareholder agreements covering exit, transfer, and dispute terms.",
+          "description": "We guide the drafting of shareholder agreements covering exit, transfer  dispute terms.",
           "image": "data:image/svg+xml,%3Csvg%20width%3D%22480%22%20height%3D%22480%22%20viewBox%3D%220%200%20480%20480%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22480%22%20height%3D%22480%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22388.8%22%20cy%3D%2291.2%22%20r%3D%22129.60000000000002%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%2291.2%22%20cy%3D%22388.8%22%20r%3D%22148.8%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28240.0%2C240.0%29%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2216%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.94%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-70%22%20cy%3D%22-40%22%20r%3D%2246%22/%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%22-40%22%20r%3D%2246%22/%3E%3Cpath%20d%3D%22M-116%2020%20l46%2046%20l24%20-24%20l24%2024%20l24%20-24%20l24%2024%20l46%20-46%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E"
         },
         {
@@ -1099,8 +1099,8 @@
       "title": "Corporate Documentation",
       "pillar": "business-incorporation",
       "icon": "file-check",
-      "summary": "MOA/AOA drafting, resolutions, and the constitutional paperwork every UAE company has to keep current.",
-      "description": "A company's constitutional documents — its Memorandum and Articles of Association, shareholder resolutions, and powers of attorney — need to stay accurate as the company changes, not just correct at incorporation. DSD drafts and maintains this documentation so it reflects the company's real, current structure.",
+      "summary": "MOA/AOA drafting, resolutions  the constitutional paperwork every UAE company has to keep current.",
+      "description": "A company's constitutional documents — its Memorandum and Articles of Association, shareholder resolutions  powers of attorney — need to stay accurate as the company changes, not just correct at incorporation. DSD drafts and maintains this documentation so it reflects the company's real, current structure.",
       "included": [
         {
           "title": "MOA/AOA drafting",
@@ -1155,7 +1155,7 @@
     {
       "pillar": "compliance-governance",
       "label": "Compliance & Governance",
-      "description": "Corporate tax, VAT, UBO, AML, licence renewal, and bookkeeping — kept current, not reconstructed under deadline pressure."
+      "description": "Corporate tax, VAT, UBO, AML, licence renewal  bookkeeping — kept current, not reconstructed under deadline pressure."
     }
   ],
   "complianceAreas": [
@@ -1217,7 +1217,7 @@
       "slug": "aml-kyc",
       "title": "AML/KYC Compliance",
       "summary": "Applies to Designated Non-Financial Businesses and Professions, not only banks and exchange houses.",
-      "description": "Businesses in specified regulated activities — including real estate brokers, precious metals dealers, and certain corporate service providers — carry anti-money-laundering obligations: a written policy, client due diligence, and suspicious-activity reporting through goAML.",
+      "description": "Businesses in specified regulated activities — including real estate brokers, precious metals dealers  certain corporate service providers — carry anti-money-laundering obligations: a written policy, client due diligence  suspicious-activity reporting through goAML.",
       "obligations": [
         "Assess whether your activity falls within a regulated DNFBP category",
         "Adopt a written AML/CFT policy",
@@ -1263,16 +1263,16 @@
       "slug": "corporate-governance",
       "title": "Corporate Governance",
       "summary": "The record-keeping and structural discipline most non-compliance actually traces back to — not a one-time filing.",
-      "description": "Corporate governance covers the constitutional records, resolutions, and ownership documentation every UAE company must keep current — memorandum and articles of association, shareholder registers, resolutions, and signing authority. DSD sees the same governance gaps recur across founders: missed renewal deadlines, informal ownership changes, and undocumented management authority that only surface during a bank review or licence renewal.",
+      "description": "Corporate governance covers the constitutional records, resolutions  ownership documentation every UAE company must keep current — memorandum and articles of association, shareholder registers, resolutions  signing authority. DSD sees the same governance gaps recur across founders: missed renewal deadlines, informal ownership changes  undocumented management authority that only surface during a bank review or licence renewal.",
       "obligations": [
-        "Maintain a structured compliance calendar covering trade-licence, tax, and permit renewal deadlines",
-        "Keep constitutional documents, shareholder registers, and resolutions accurate and current",
+        "Maintain a structured compliance calendar covering trade-licence, tax  permit renewal deadlines",
+        "Keep constitutional documents, shareholder registers  resolutions accurate and current",
         "Update beneficial-ownership records whenever shareholders, directors, or managers change",
         "Retain accounting records at the company's headquarters for at least five years",
         "Ensure only properly authorised signatories operate bank accounts and sign contracts",
-        "Coordinate licence, immigration, and residency renewals rather than treating them separately"
+        "Coordinate licence, immigration  residency renewals rather than treating them separately"
       ],
-      "notes": "Founders most often lose control of compliance not through one large mistake but by treating governance as administrative overhead rather than a risk-management function that protects the company's licence, banking relationships, and reputation.",
+      "notes": "Founders most often lose control of compliance not through one large mistake but by treating governance as administrative overhead rather than a risk-management function that protects the company's licence, banking relationships  reputation.",
       "sourceName": "UAE Commercial Companies Law",
       "heroImage": "data:image/svg+xml,%3Csvg%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20role%3D%22img%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1B33%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23123B8C%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230B2760%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%22900%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22190%22%20r%3D%22260%22%20fill%3D%22%23FFFFFF%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22790%22%20r%3D%22320%22%20fill%3D%22%23E31E2D%22%20opacity%3D%220.06%22/%3E%0A%20%20%3Cg%20opacity%3D%220.12%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%221%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22300%22%20x2%3D%221600%22%20y2%3D%22180%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22620%22%20x2%3D%221600%22%20y2%3D%22740%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3Cg%20transform%3D%22translate%281130%2C390%29%20scale%281.7%29%22%20opacity%3D%220.16%22%20stroke%3D%22%23FFFFFF%22%20fill%3D%22none%22%20stroke-width%3D%2214%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20y1%3D%22-110%22%20x2%3D%220%22%20y2%3D%22100%22/%3E%3Cline%20x1%3D%22-110%22%20y1%3D%22-70%22%20x2%3D%22110%22%20y2%3D%22-70%22/%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22-110%22%20r%3D%2214%22/%3E%3Cpath%20d%3D%22M-110%20-70%20l-45%2080%20a50%2050%200%200%200%2090%200%20z%22/%3E%3Cpath%20d%3D%22M110%20-70%20l-45%2080%20a50%2050%200%200%200%2090%200%20z%22/%3E%3Cline%20x1%3D%22-60%22%20y1%3D%22120%22%20x2%3D%2260%22%20y2%3D%22120%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E",
       "relatedInsightSlugs": [
@@ -1282,8 +1282,8 @@
     {
       "slug": "corporate-compliance",
       "title": "Corporate Compliance",
-      "summary": "The umbrella obligation — keeping your licence, records, and structure aligned with what's actually true about your company.",
-      "description": "Corporate compliance is the ongoing discipline of keeping a company's trade licence, constitutional records, and operational activities aligned with what's actually true — not a single filing, but a continuous standard every UAE company is held to.",
+      "summary": "The umbrella obligation — keeping your licence, records  structure aligned with what's actually true about your company.",
+      "description": "Corporate compliance is the ongoing discipline of keeping a company's trade licence, constitutional records  operational activities aligned with what's actually true — not a single filing, but a continuous standard every UAE company is held to.",
       "obligations": [
         "Operate only within your trade licence's approved activities",
         "Keep constitutional documents and shareholder records current",
@@ -1298,7 +1298,7 @@
     {
       "slug": "accounting-reporting",
       "title": "Accounting & Reporting",
-      "summary": "Bookkeeping and financial statements accurate enough to support tax filings, audits, and bank due diligence.",
+      "summary": "Bookkeeping and financial statements accurate enough to support tax filings, audits  bank due diligence.",
       "description": "Every UAE company needs financial records reliable enough to support its own tax filings — not reconstructed after the fact. DSD keeps bookkeeping current and produces financial statements that hold up under audit, financing, or bank scrutiny.",
       "obligations": [
         "Maintain complete, current bookkeeping — not reconstructed after the fact",
@@ -1330,8 +1330,8 @@
     {
       "slug": "aml-kyc-compliance",
       "title": "AML / KYC",
-      "summary": "Customer due diligence, screening, and reporting obligations for businesses captured under DNFBP rules.",
-      "description": "AML/KYC obligations apply in full force to certain regulated businesses, and DSD determines whether your licensed activity brings you within scope — then builds the customer due diligence, screening, and reporting practice that scope requires.",
+      "summary": "Customer due diligence, screening  reporting obligations for businesses captured under DNFBP rules.",
+      "description": "AML/KYC obligations apply in full force to certain regulated businesses  DSD determines whether your licensed activity brings you within scope — then builds the customer due diligence, screening  reporting practice that scope requires.",
       "obligations": [
         "Determine whether your licensed activity falls under DNFBP obligations",
         "Verify client and beneficial-owner identity before onboarding",
@@ -1347,7 +1347,7 @@
       "slug": "regulatory-support",
       "title": "Regulatory Support",
       "summary": "Sector-specific approvals and regulator relationships beyond the standard trade licence.",
-      "description": "Some activities need approval from a regulator beyond the standard trade licence — healthcare, financial services, and transport among them. DSD identifies which additional approvals your activity actually requires and manages the relationship with that regulator.",
+      "description": "Some activities need approval from a regulator beyond the standard trade licence — healthcare, financial services  transport among them. DSD identifies which additional approvals your activity actually requires and manages the relationship with that regulator.",
       "obligations": [
         "Identify whether your activity requires a sector-specific regulatory approval",
         "Prepare and submit the additional approval application",
@@ -1362,8 +1362,8 @@
     {
       "slug": "annual-compliance",
       "title": "Annual Compliance",
-      "summary": "The recurring calendar of renewals, filings, and reviews every UAE company runs every year.",
-      "description": "Beyond any single obligation, every UAE company works against a recurring annual calendar — licence renewal, tax filings, UBO review, and financial statement preparation, each on its own cycle. DSD maintains that calendar so nothing is left to memory.",
+      "summary": "The recurring calendar of renewals, filings  reviews every UAE company runs every year.",
+      "description": "Beyond any single obligation, every UAE company works against a recurring annual calendar — licence renewal, tax filings, UBO review  financial statement preparation, each on its own cycle. DSD maintains that calendar so nothing is left to memory.",
       "obligations": [
         "Renew your trade licence before its annual expiry",
         "File Corporate Tax and VAT returns on their respective cycles",
@@ -1384,7 +1384,7 @@
       "summary": "A plain breakdown of the property investment thresholds and title-deed requirements behind the 10-year Golden Visa route.",
       "body": [
         "Property-based residency is one of the most direct routes into the UAE for investors who already know where they want to buy. The core requirement is a minimum property value, held in the investor's own name, with the title deed registered before the visa application is submitted.",
-        "Off-plan property is treated differently to completed units, and mortgaged property is only eligible once a minimum equity threshold is paid down — this is the single most common reason applications get delayed, so it is worth confirming before an offer is made, not after.",
+        "Off-plan property is treated differently to completed units  mortgaged property is only eligible once a minimum equity threshold is paid down — this is the single most common reason applications get delayed, so it is worth confirming before an offer is made, not after.",
         "DSD reviews the title deed and payment structure with a client before any application is filed, so the eligibility question is answered in days, not after a rejected submission."
       ],
       "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
@@ -1482,8 +1482,8 @@
       "category": "Residency",
       "summary": "The income and accommodation requirements behind a spouse, child, or parent sponsorship application, explained plainly.",
       "body": [
-        "Family sponsorship eligibility is assessed against the sponsor's own residency status, minimum income, and the accommodation registered under their name — a tenancy contract in someone else's name is the most common reason an otherwise-eligible application stalls.",
-        "Sponsoring a parent carries its own, stricter income threshold on top of the standard family requirements, and is assessed separately from a spouse or child application.",
+        "Family sponsorship eligibility is assessed against the sponsor's own residency status, minimum income  the accommodation registered under their name — a tenancy contract in someone else's name is the most common reason an otherwise-eligible application stalls.",
+        "Sponsoring a parent carries its own, stricter income threshold on top of the standard family requirements  is assessed separately from a spouse or child application.",
         "DSD checks the sponsor's documentation against the current thresholds before submission, so gaps are caught before they cost an application cycle."
       ],
       "coverImage": "data:image/svg+xml,%3csvg%20width='1600'%20height='900'%20viewBox='0%200%201600%20900'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20image%20pending%20real%20photography'%3e%3cdefs%3e%3clinearGradient%20id='bg'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%230A1B33'/%3e%3cstop%20offset='60%25'%20stop-color='%23123B8C'/%3e%3cstop%20offset='100%25'%20stop-color='%230B2760'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='1600'%20height='900'%20fill='url(%23bg)'/%3e%3ccircle%20cx='1300'%20cy='150'%20r='260'%20fill='%23FFFFFF'%20opacity='0.05'/%3e%3ccircle%20cx='200'%20cy='780'%20r='320'%20fill='%23E31E2D'%20opacity='0.06'/%3e%3cg%20opacity='0.12'%20stroke='%23FFFFFF'%20stroke-width='1'%3e%3cline%20x1='0'%20y1='300'%20x2='1600'%20y2='180'/%3e%3cline%20x1='0'%20y1='620'%20x2='1600'%20y2='740'/%3e%3c/g%3e%3c/svg%3e",
@@ -1502,7 +1502,7 @@
       "slug": "amina-al-suwaidi",
       "name": "Amina Al Suwaidi",
       "role": "Head of Residency Advisory",
-      "bio": "Amina leads DSD's residency practice, guiding property investors, business owners, and families through every UAE visa pathway from first eligibility check to Emirates ID in hand.",
+      "bio": "Amina leads DSD's residency practice, guiding property investors, business owners  families through every UAE visa pathway from first eligibility check to Emirates ID in hand.",
       "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
       "email": "amina@dsdcop.com",
       "linkedin": "https://www.linkedin.com/"
@@ -1520,7 +1520,7 @@
       "slug": "fatima-hussain",
       "name": "Fatima Hussain",
       "role": "Compliance & Tax Lead",
-      "bio": "Fatima keeps DSD clients ahead of corporate tax, VAT, UBO, and AML obligations — translating federal requirements into a plain checklist for founders who are not tax specialists.",
+      "bio": "Fatima keeps DSD clients ahead of corporate tax, VAT, UBO  AML obligations — translating federal requirements into a plain checklist for founders who are not tax specialists.",
       "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
       "email": "fatima@dsdcop.com",
       "linkedin": "https://www.linkedin.com/"
@@ -1538,9 +1538,9 @@
   "founder": {
     "name": "Sultan Al Marzooqi",
     "role": "Founder & Managing Director",
-    "bio": "Sultan founded DSD Corporate Services to give founders and relocating professionals a single, straight-talking advisory relationship across residency, incorporation, and compliance — instead of juggling three separate consultants who don't talk to each other. He still reviews every client's route personally before the first consultation.",
+    "bio": "Sultan founded DSD Corporate Services to give founders and relocating professionals a single, straight-talking advisory relationship across residency, incorporation  compliance — instead of juggling three separate consultants who don't talk to each other. He still reviews every client's route personally before the first consultation.",
     "photo": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e",
-    "email": "www.dsdcorps.com",
+    "email": "info@dsdgrp.com",
     "linkedin": "https://www.linkedin.com/"
   },
   "testimonials": [
@@ -1560,7 +1560,7 @@
     },
     {
       "id": "t3",
-      "quote": "The property residency process had more moving pieces than I expected. Having one advisor across the title deed, the medical, and the Emirates ID made it painless.",
+      "quote": "The property residency process had more moving pieces than I expected. Having one advisor across the title deed, the medical  the Emirates ID made it painless.",
       "name": "Yusuf Rahman",
       "role": "Property investor",
       "avatar": "data:image/svg+xml,%3csvg%20width='200'%20height='200'%20viewBox='0%200%20200%20200'%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20aria-label='Placeholder%20headshot%20pending%20real%20photography'%3e%3ccircle%20cx='100'%20cy='100'%20r='100'%20fill='%23E8EEFB'/%3e%3ccircle%20cx='100'%20cy='82'%20r='34'%20fill='%23123B8C'%20opacity='0.55'/%3e%3cpath%20d='M40%20176c8-38%2040-58%2060-58s52%2020%2060%2058'%20fill='%23123B8C'%20opacity='0.55'/%3e%3c/svg%3e"
@@ -1629,7 +1629,7 @@
     {
       "id": "enterprise",
       "name": "Enterprise",
-      "description": "Ongoing advisory across residency, incorporation, and compliance for an established business.",
+      "description": "Ongoing advisory across residency, incorporation  compliance for an established business.",
       "price": "Custom",
       "features": [
         "Dedicated advisor across all three pillars",

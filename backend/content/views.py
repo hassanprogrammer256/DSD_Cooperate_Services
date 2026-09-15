@@ -107,7 +107,7 @@ class MediaUploadView(APIView):
 
         ext = upload.name.rsplit(".", 1)[-1].lower() if "." in upload.name else ""
         if ext not in ALLOWED_UPLOAD_EXTENSIONS:
-            return Response({"detail": "Unsupported file type. Use JPG, PNG, SVG, or WebP."}, status=400)
+            return Response({"detail": "Unsupported file type. Use JPG, PNG, SVG or WebP."}, status=400)
         if upload.size > MAX_UPLOAD_SIZE_BYTES:
             return Response({"detail": "File is too large — the limit is 5MB."}, status=400)
 

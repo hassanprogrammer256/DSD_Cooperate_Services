@@ -52,7 +52,7 @@ class AdminLeadListView(generics.ListAPIView):
 class AdminLeadUpdateView(generics.UpdateAPIView):
     """Staff-only — the one write action this phase supports (see
     progress-tracker.md's 2026-09-09 entry for what's deliberately out of scope: the
-    8-stage-pipeline UI, auto-routing, auto-priority, and dedup all stay unbuilt)."""
+    8-stage-pipeline UI, auto-routing, auto-priority  dedup all stay unbuilt)."""
 
     queryset = Lead.objects.all()
     serializer_class = LeadStatusUpdateSerializer

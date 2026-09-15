@@ -23,7 +23,7 @@ export const faqEntrySchema = z.object({
 });
 
 export const serviceSchema = z.object({
-  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers, and hyphens only"),
+  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers  hyphens only"),
   title: z.string().min(1, "Required"),
   pillar: z.enum(["residency-solutions", "business-incorporation", "compliance-governance"]),
   icon: z.string().min(1, "Required — must match a key in src/lib/icons.ts's serviceIcons"),

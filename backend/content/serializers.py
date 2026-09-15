@@ -20,6 +20,7 @@ from content.models import (
 
 class ServiceSerializer(serializers.ModelSerializer):
     heroImage = serializers.FileField(source="hero_image")
+    ctaLabel = serializers.CharField(source="cta_label", required=False, allow_blank=True)
     # Writable (a queryset, not read_only=True) so the admin app (Phase 14) can manage
     # these relations, not just read them — see progress-tracker.md's Phase 14 entry.
     # required=False only on these relation fields (a Service can have zero related
@@ -36,7 +37,7 @@ class ServiceSerializer(serializers.ModelSerializer):
         fields = [
             "slug", "title", "pillar", "icon", "summary", "description", "philosophy_title",
             "included", "heroImage", "relatedInsightSlugs", "teamMemberSlugs", "stats",
-            "process", "faqs",
+            "process", "faqs", "ctaLabel",
         ]
 
 
@@ -50,7 +51,7 @@ class ComplianceAreaSerializer(serializers.ModelSerializer):
     class Meta:
         model = ComplianceArea
         fields = [
-            "slug", "title", "summary", "description", "obligations",
+            "slug", "title", "summary", "description", "obligations", "included",
             "notes", "sourceName", "heroImage", "relatedInsightSlugs",
         ]
 

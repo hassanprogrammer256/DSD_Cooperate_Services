@@ -31,7 +31,7 @@ export function AccountPage() {
     // flushSync forces the navigation to /home to actually commit — unmounting
     // ProtectedRoute — before logout() clears `user`. Without it, both this navigate
     // and ProtectedRoute's own reactive redirect-to-/login (fired when `user` goes
-    // null) can still be in flight together, and the loser is non-deterministic.
+    // null) can still be in flight together  the loser is non-deterministic.
     flushSync(() => {
       navigate("/");
     });

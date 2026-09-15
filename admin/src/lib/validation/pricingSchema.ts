@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const pricingTierSchema = z.object({
-  id: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers, and hyphens only"),
+  id: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers  hyphens only"),
   name: z.string().min(1, "Required"),
   description: z.string().min(1, "Required"),
   price: z.string().min(1, "Required — the display string, e.g. \"AED 4,500\" or \"Custom\""),

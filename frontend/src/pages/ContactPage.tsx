@@ -19,7 +19,7 @@ export function ContactPage() {
         image={placeholderPhoto}
         eyebrow="Get in Touch"
         title="Contact DSD"
-        description="Tell us what you're trying to do in the UAE, and we'll respond within one business day."
+        description="Tell us what you're trying to do in the UAE  we'll respond within one business day."
       />
 
       <section className="mx-auto max-w-3xl px-4 py-20 md:px-6">
@@ -46,7 +46,7 @@ export function ContactPage() {
           <span className="text-xs font-semibold uppercase tracking-wide text-accent">Visit Our Office</span>
           <h2 className="mt-2 font-display text-2xl font-bold text-text-primary md:text-3xl">We're based in Dubai</h2>
           <p className="mt-3 text-text-secondary">
-            Drop by, call, or email — whichever's easiest. We typically respond to every enquiry within one business
+            Drop by, call or email — whichever's easiest. We typically respond to every enquiry within one business
             day.
           </p>
 
@@ -64,9 +64,9 @@ export function ContactPage() {
               <Phone size={20} className="shrink-0 text-primary" />
               <span className="font-mono">+971 58 588 9033</span>
             </a>
-            <a href="mailto:www.dsdcorps.com" className="flex items-center gap-3 text-text-secondary hover:text-primary">
+            <a href="mailto:info@dsdgrp.com" className="flex items-center gap-3 text-text-secondary hover:text-primary">
               <Mail size={20} className="shrink-0 text-primary" />
-              <span>www.dsdcorps.com</span>
+              <span>info@dsdgrp.com</span>
             </a>
           </div>
 

@@ -9,7 +9,7 @@ import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 // Direct-link landing page — deliberately not in the Navbar's top-level items (per
 // explicit client instruction). Reachable from the Home hero's pillar quick-links,
-// a contextual link on /compliance, and the Footer's Quick Links. Content condensed
+// a contextual link on /compliance  the Footer's Quick Links. Content condensed
 // (not invented) from the client-supplied MOHRE.docx brief — see progress-tracker.md.
 // No LeadForm here: the source doc is a compliance primer only, with no services
 // pitch of its own, so none is invented — same "detail page, not a hub" shape as
@@ -24,25 +24,25 @@ export function MOHREPage() {
         align="left"
         eyebrow="Labour Law Compliance"
         title="MOHRE Compliance & UAE Labour Law"
-        description="The Ministry of Human Resources and Emiratisation (MOHRE) governs employment relationships, work permits, and workplace compliance across the UAE private sector."
+        description="The Ministry of Human Resources and Emiratisation (MOHRE) governs employment relationships, work permits  workplace compliance across the UAE private sector."
       >
         <CtaButton to="/contact">Book a Consultation</CtaButton>
       </PageHeroBanner>
 
       <RegulatoryPrimer
-        intro="The Ministry of Human Resources and Emiratisation (MOHRE) operates the UAE's labor framework, governing employment relationships, labor quotas, work permits, and workplace compliance. Governed primarily by Federal Decree-Law No. 33 of 2021 (as amended by Federal Decree-Law No. 9 of 2024), the system regulates private-sector employer obligations and employee rights across the UAE."
+        intro="The Ministry of Human Resources and Emiratisation (MOHRE) operates the UAE's labor framework, governing employment relationships, labor quotas, work permits  workplace compliance. Governed primarily by Federal Decree-Law No. 33 of 2021 (as amended by Federal Decree-Law No. 9 of 2024), the system regulates private sector employer obligations and employee rights across the UAE."
         pillars={[
           {
             icon: Building2,
             title: "Company Labor File & Establishment Card",
             description:
-              "Once a business receives its immigration card, it must open a Labor Establishment File with MOHRE — generating the company's labor profile and enabling it to apply for employee labor quotas, issue work permits, and register electronic labor contracts.",
+              "Once a business receives its immigration card, it must open a Labor Establishment File with MOHRE — generating the company's labor profile and enabling it to apply for employee labor quotas, issue work permits  register electronic labor contracts.",
           },
           {
             icon: IdCard,
             title: "Work Permits",
             description:
-              "Authorizations issued to employees before residency visa stamping. MOHRE issues full-time, part-time, temporary, freelance, and remote work permits.",
+              "Authorizations issued to employees before residency visa stamping. MOHRE issues full-time, part-time, temporary, freelance  remote work permits.",
           },
           {
             icon: Wallet,
@@ -54,7 +54,7 @@ export function MOHREPage() {
             icon: Users,
             title: "Emiratisation (Nafis Program)",
             description:
-              "Statutory quota mandates requiring private-sector establishments with 50+ employees to meet specific annual targets for hiring UAE nationals into skilled roles.",
+              "Statutory quota mandates requiring private sector establishments with 50+ employees to meet specific annual targets for hiring UAE nationals into skilled roles.",
           },
         ]}
         authorities={[
@@ -62,7 +62,7 @@ export function MOHREPage() {
             icon: Landmark,
             name: "MOHRE — Ministry of Human Resources and Emiratisation",
             description:
-              "The federal ministry overseeing labor relations, issuing work permits, managing employee-employer disputes, setting labor classifications, and monitoring private-sector workplace compliance nationwide.",
+              "The federal ministry overseeing labor relations, issuing work permits, managing employee-employer disputes, setting labor classifications  monitoring private sector workplace compliance nationwide.",
           },
         ]}
         penalties={[
@@ -70,7 +70,7 @@ export function MOHREPage() {
             icon: Ban,
             title: "Illegal Employment & Unpermitted Work",
             description:
-              "Employing a worker without a valid MOHRE work permit, or issuing a permit and leaving the employee without actual work, incurs fines ranging from AED 100,000 to AED 1,000,000 per violation.",
+              "Employing a worker without a valid MOHRE work permit or issuing a permit and leaving the employee without actual work, incurs fines ranging from AED 100,000 to AED 1,000,000 per violation.",
           },
           {
             icon: FileX,
@@ -82,7 +82,7 @@ export function MOHREPage() {
             icon: CreditCard,
             title: "Wage Protection System (WPS) Non-Compliance",
             description:
-              "Failure to pay salaries on time triggers automated actions ranging from warning alerts to work permit freezes, administrative fines, and referral to judicial enforcement.",
+              "Failure to pay salaries on time triggers automated actions ranging from warning alerts to work permit freezes, administrative fines  referral to judicial enforcement.",
           },
           {
             icon: Scale,
@@ -104,7 +104,7 @@ export function MOHREPage() {
         <RelatedTopicLink
           icon={Scale}
           title="Explore UAE Compliance Essentials"
-          description="Corporate tax, VAT, UBO filing, and other regulatory areas DSD supports beyond labour law."
+          description="Corporate tax, VAT, UBO filing  other regulatory areas DSD supports beyond labour law."
           to="/compliance"
           ctaLabel="Visit Compliance Hub"
         />

@@ -1,6 +1,6 @@
 // Builds the request body for a content create/update. Plain JSON whenever no file
 // field actually has a new File selected (the common case) — a JS array there is
-// unambiguous either way (a relation list or a JSONField list), and an empty array
+// unambiguous either way (a relation list or a JSONField list)  an empty array
 // correctly means "clear this," which DRF's JSON parsing handles natively.
 //
 // Once any file IS present, the whole request must go multipart, which has no native

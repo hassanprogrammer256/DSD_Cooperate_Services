@@ -15,7 +15,7 @@ type Props = {
 };
 
 // Shared "compliance primer" content block — intro, operational pillars, regulatory
-// authority(ies), and legal compliance & penalties. Used by both MOHREPage and
+// authority(ies)  legal compliance & penalties. Used by both MOHREPage and
 // ImmigrationRegulationsPage, which are built from the same client-supplied docx
 // template (Main Pillars & Corporate Integration / Regulatory Authority / Legal
 // Compliance & Penalties) — one component, two content payloads, rather than

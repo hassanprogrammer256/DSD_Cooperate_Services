@@ -12,7 +12,7 @@ type Props = {
 
 // Small "related topic" link banner — connects a page to a related landing page
 // that isn't part of the Navbar (MOHRE/Immigration) without building a full nav
-// entry for it. Reused on CompliancePage, ServicesPage (Residency), and
+// entry for it. Reused on CompliancePage, ServicesPage (Residency) 
 // ImmigrationPage — the same "three similar uses" threshold ui-registry.md's
 // LegalSection precedent already used to justify a shared component.
 export function RelatedTopicLink({ icon: Icon, title, description, to, ctaLabel }: Props) {

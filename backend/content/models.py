@@ -2,7 +2,7 @@ from django.db import models
 
 # FileField, not ImageField, on every photo/hero/cover field below — deliberately.
 # Django's ImageField validates via Pillow, which can't open SVG (a raster-only
-# library), and this project's current placeholder images are SVGs (see
+# library)  this project's current placeholder images are SVGs (see
 # progress-tracker.md's Known Gaps — no real photography exists yet). FileField skips
 # that validation and works identically for the real JPG/PNG photography that
 # eventually replaces these placeholders — nothing here needs to change later.
@@ -76,8 +76,12 @@ class Service(models.Model):
     hero_image = models.FileField(upload_to="services/")
     stats = models.JSONField(default=list)  # list[{value, suffix, label}]
     philosophy_title = models.CharField(max_length=200, blank=True)  # optional — "Our Philosophy" section title
-    process = models.JSONField(default=list)  # list[{title, description}] — "how we help" steps, optional
-    faqs = models.JSONField(default=list)  # list[{question, answer}], optional
+    # Optional per-service override for the hero CTA's label (e.g. "Start Your Investor
+    # Residency Journey") — falls back to ServiceDetailPage.tsx's pillar-based default
+    # ("Get Started" / "Start Your Setup") when blank.
+    cta_label = models.CharField(max_length=100, blank=True)
+    process = models.JSONField(default=list,null=True,blank=True)  # list[{title, description}] — "how we help" steps, optional
+    faqs = models.JSONField(default=list,null=True , blank=True )  # list[{question, answer}], optionall
     related_insights = models.ManyToManyField(InsightArticle, blank=True, related_name="related_services")
     team_members = models.ManyToManyField(TeamMember, blank=True, related_name="services")
 
@@ -94,6 +98,10 @@ class ComplianceArea(models.Model):
     summary = models.CharField(max_length=300)
     description = models.TextField()
     obligations = models.JSONField(default=list)  # list[str]
+    # Same shape as Service.included (list[{title, description, image}]) — added so the
+    # compliance detail page can render the same "What's Included" card grid the
+    # residency/incorporation detail pages use, per the 2026-09-15 page-parity redesign.
+    included = models.JSONField(default=list)
     notes = models.TextField(blank=True)
     # Rendered as plain "— Source Name" attribution text on the frontend — never a
     # fabricated clickable link. See architecture.md's regulatory-content invariant.

@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
       { path: "/insights/:slug", element: <InsightDetailPage /> },
       // Direct-link landing pages — deliberately not in the Navbar (per explicit
       // client instruction). Reachable from the Home hero's pillar quick-links,
-      // Footer Quick Links, and contextual links on /compliance and /residency.
+      // Footer Quick Links  contextual links on /compliance and /residency.
       { path: "/mohre", element: <MOHREPage /> },
       { path: "/immigration", element: <ImmigrationPage /> },
       { path: "/immigration/regulations", element: <ImmigrationRegulationsPage /> },

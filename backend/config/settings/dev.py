@@ -1,13 +1,13 @@
 """
 Local development. SQLite, not Postgres — see architecture.md's Hosting Proposal and
 progress-tracker.md's pivot record for why: no local Postgres/Docker was available in
-this build environment, and SQLite-for-dev / Postgres-for-prod is Django's own default
+this build environment  SQLite-for-dev / Postgres-for-prod is Django's own default
 pattern, not a project-specific hack. Swap DATABASES below for a local Postgres the
 moment one is available, to catch dev/prod differences earlier.
 """
 
 from .base import *  # noqa: F401,F403
-from .base import BASE_DIR, env
+from .base import BASE_DIR
 
 DEBUG = True
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Static routes only — /residency/:slug, /compliance/:slug, /insights/:slug, and /team/:slug
+  Static routes only — /residency/:slug, /compliance/:slug, /insights/:slug  /team/:slug
   are database-driven and can't be enumerated at build time without a server-side generation
   step (out of scope for this "SEO basics" pass, see progress-tracker.md). /login, /register,
   and /account are deliberately excluded — utility pages, not content Google should index.

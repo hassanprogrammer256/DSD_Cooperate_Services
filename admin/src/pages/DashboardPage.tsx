@@ -31,7 +31,7 @@ const SERVICE_LABELS: { key: string; label: string }[] = [
 ];
 
 // First 5 slots of the /dataviz skill's validated default categorical palette —
-// DSD's own tokens don't cover an 8-hue identity set, and these pass every CVD/
+// DSD's own tokens don't cover an 8-hue identity set  these pass every CVD/
 // contrast check out of the box (see references/palette.md), so used as-is here
 // rather than hand-picking unvalidated colors for a true identity (nominal) chart.
 const CATEGORICAL = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4"];

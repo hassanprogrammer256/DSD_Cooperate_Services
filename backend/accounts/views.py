@@ -17,7 +17,7 @@ REFRESH_COOKIE_MAX_AGE = 7 * 24 * 60 * 60  # matches SIMPLE_JWT["REFRESH_TOKEN_L
 
 def _set_refresh_cookie(response: Response, refresh_token: str) -> None:
     # See library-docs.md's simplejwt section for why this exists: the refresh token
-    # must never be reachable from JS (httponly), and must never be present in a JSON
+    # must never be reachable from JS (httponly)  must never be present in a JSON
     # response body.
     response.set_cookie(
         REFRESH_COOKIE_NAME,

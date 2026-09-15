@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const statSchema = z.object({
-  id: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers, and hyphens only"),
+  id: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers  hyphens only"),
   value: z.number().int(),
   suffix: z.string(),
   label: z.string().min(1, "Required"),

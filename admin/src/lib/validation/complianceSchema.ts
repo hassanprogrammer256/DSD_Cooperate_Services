@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const complianceAreaSchema = z.object({
-  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers, and hyphens only"),
+  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers  hyphens only"),
   title: z.string().min(1, "Required"),
   summary: z.string().min(1, "Required"),
   description: z.string().min(1, "Required"),

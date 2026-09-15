@@ -81,7 +81,7 @@ export function ImmigrationPage() {
         eyebrow="Immigration Services"
         title="UAE Immigration,"
         highlight="Made Simple."
-        description="Moving, working, investing, or building a life in the UAE comes with important immigration requirements. DSD Corporate Services provides professional support for UAE visa and residency procedures — from initial applications to renewals, amendments, and cancellations."
+        description="Moving, working, investing or building a life in the UAE comes with important immigration requirements. DSD Corporate Services provides professional support for UAE visa and residency procedures — from initial applications to renewals, amendments  cancellations."
         quickLinks={[
           { icon: Briefcase, label: "Employment Visas", to: "#lead-form" },
           { icon: Users, label: "Investor Visas", to: "#lead-form" },
@@ -96,7 +96,7 @@ export function ImmigrationPage() {
         <RelatedTopicLink
           icon={Scale}
           title="Understand UAE Immigration Law"
-          description="Entry/residence visa rules, the ICP & GDRFA authorities, and the compliance penalties employers and sponsors should know."
+          description="Entry/residence visa rules, the ICP & GDRFA authorities  the compliance penalties employers and sponsors should know."
           to="/immigration/regulations"
           ctaLabel="Read the Legal Framework"
         />
@@ -104,7 +104,7 @@ export function ImmigrationPage() {
 
       <WhyStrip
         title="Why Choose DSD?"
-        description="Complete immigration support for entrepreneurs, investors, employers, employees, and family members."
+        description="Complete immigration support for entrepreneurs, investors, employers, employees  family members."
         items={[
           { icon: UserCheck, title: "Expert Guidance", description: "Our team helps you understand the process and required documentation." },
           { icon: Send, title: "Efficient Processing", description: "We manage submissions and follow-ups to help reduce unnecessary delays." },
@@ -115,7 +115,7 @@ export function ImmigrationPage() {
 
       <ServicesShowcase
         title="Our Immigration Services"
-        description="Whether you're an entrepreneur, investor, employer, employee, or family member, DSD assists throughout your immigration journey."
+        description="Whether you're an entrepreneur, investor, employer, employee or family member, DSD assists throughout your immigration journey."
         items={showcaseItems}
         photoCard={{
           image: heroImage,

@@ -63,9 +63,30 @@ const TIER_CONTENT_FALLBACKS: Record<string, Required<PricingTierExtras>> = {
     bestFor: "Established SMEs | Multiple Employees | Companies with Recurring Government Requirements",
     highlightTitle: "Annual Advantage",
     highlightBody:
-      "Pay once and maintain continuous PRO support throughout the year with a predictable professional-services budget.",
+      "Pay once and maintain continuous PRO support throughout the year with a predictable professional services budget.",
     ctaLabel: "Become an Enterprise Client",
     feesNote: "Government, authority and third-party fees are excluded and billed separately at actual cost.",
+  },
+};
+
+// The compact "SIMPLE PRICING. PROFESSIONAL SERVICE." strip from pricing.txt — a
+// scannable one-liner + tag per tier that scroll-links down to the matching full
+// card below (`#tier-${id}`, the anchor every full card already carries).
+const QUICK_COMPARE_FALLBACKS: Record<string, { oneLiner: string; tag: string; ctaLabel: string }> = {
+  basic: {
+    oneLiner: "Pay only when you need us.",
+    tag: "Ideal for occasional requirements",
+    ctaLabel: "Request a Service",
+  },
+  growth: {
+    oneLiner: "Ongoing PRO support for growing businesses.",
+    tag: "Our recommended plan for SMEs",
+    ctaLabel: "Start Monthly Retainer",
+  },
+  enterprise: {
+    oneLiner: "Year-round PRO partnership with priority support.",
+    tag: "Best value for established businesses",
+    ctaLabel: "Become an Enterprise Client",
   },
 };
 
@@ -78,10 +99,9 @@ const DEFAULT_TIER_CONTENT: Required<PricingTierExtras> = {
   feesNote: "Government and third-party fees are charged separately at actual cost.",
 };
 
-function getTierContent<Tier extends { name: string }>(tier: Tier): Required<PricingTierExtras> {
+function getTierContent<Tier extends { id: string }>(tier: Tier): Required<PricingTierExtras> {
   const apiExtras = tier as Tier & PricingTierExtras;
-  const fallback =
-    TIER_CONTENT_FALLBACKS[tier.name?.toLowerCase().trim() ?? ""] ?? DEFAULT_TIER_CONTENT;
+  const fallback = TIER_CONTENT_FALLBACKS[tier.id] ?? DEFAULT_TIER_CONTENT;
 
   return {
     subtitle: apiExtras.subtitle ?? fallback.subtitle,
@@ -172,7 +192,33 @@ export function PricingPage() {
         <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
           {/* Quick-compare strip: a scannable summary of the same tiers rendered
               in full below, for anyone who just wants price + one line + a button. */}
- 
+          <div className="mb-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {pricingTiers?.map((tier) => {
+              const quick = QUICK_COMPARE_FALLBACKS[tier.id];
+              if (!quick) return null;
+
+              return (
+                <a
+                  key={tier.id}
+                  href={`#tier-${tier.id}`}
+                  className="flex flex-col rounded-xl border border-border bg-surface p-5 text-center transition-colors hover:border-accent"
+                >
+                  <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-text-primary">
+                    {tier.name}
+                  </h3>
+                  <p className="mt-2 text-xl font-bold text-text-primary">
+                    {tier.price}
+                    {tier.period && <span className="ml-1 text-xs font-normal text-text-muted">/ {tier.period}</span>}
+                  </p>
+                  <p className="mt-2 text-sm text-text-secondary">{quick.oneLiner}</p>
+                  <p className="mt-1 text-xs font-medium text-accent">{quick.tag}</p>
+                  <span className="mt-4 rounded-md border border-border px-4 py-2 text-sm font-semibold text-text-primary">
+                    {quick.ctaLabel}
+                  </span>
+                </a>
+              );
+            })}
+          </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {pricingTiers?.map((tier) => {
@@ -314,7 +360,7 @@ export function PricingPage() {
           </h3>
           <p className="mt-3 text-sm text-text-secondary">
             DSD professional service fees cover our PRO administration and support. Government fees, authority
-            charges, medical examinations, Emirates ID fees, typing-centre charges, courier fees, attestation
+            charges, medical examinations, Emirates ID fees, typing centre charges, courier fees, attestation
             charges and other third-party costs are not included unless specifically stated in a written
             quotation.
           </p>

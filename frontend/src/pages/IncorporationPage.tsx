@@ -28,7 +28,7 @@ export function IncorporationPage() {
         eyebrow="Incorporation Services"
         title="Your Business."
         highlight="Our Expertise."
-        description="We help you establish and grow your business in the UAE with seamless company formation, licensing, and corporate structuring solutions."
+        description="We help you establish and grow your business in the UAE with seamless company formation, licensing  corporate structuring solutions."
         quickLinks={incorporationPillarMeta.map((pillar) => ({
           icon: Building2,
           label: pillar.label,
@@ -40,12 +40,12 @@ export function IncorporationPage() {
 
       <WhyStrip
         title="Why Incorporate in the UAE?"
-        description="Access a strategic location, world-class infrastructure, and a business-friendly environment designed for growth."
+        description="Access a strategic location, world-class infrastructure  a business-friendly environment designed for growth."
         items={[
           { icon: Award, title: "100% Foreign Ownership", description: "Full ownership eligible on most mainland and free zone routes." },
           { icon: FileBadge, title: "Tax Benefits", description: "Competitive corporate tax treatment and free zone incentives." },
           { icon: Globe, title: "Strategic Location", description: "A global logistics and trade hub connecting East and West." },
-          { icon: Handshake, title: "Access to Global Markets", description: "A base for trading across the GCC, Africa, and beyond." },
+          { icon: Handshake, title: "Access to Global Markets", description: "A base for trading across the GCC, Africa  beyond." },
         ]}
       />
 
@@ -71,7 +71,7 @@ export function IncorporationPage() {
       </section>
 
       <PillarProcessSteps
-        description="A simple, clear, and efficient process to get your business started."
+        description="A simple, clear  efficient process to get your business started."
         steps={[
           { icon: MessageCircle, title: "Initial Consultation", description: "Discuss your needs." },
           { icon: FileText, title: "Documentation", description: "Prepare required documents." },

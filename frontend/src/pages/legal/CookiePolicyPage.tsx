@@ -23,23 +23,23 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Similar technologies",
     paragraphs: [
-      "We may use technologies performing functions similar to cookies, including pixels and tracking tags, web beacons, local browser storage, software development kits, device identifiers, and embedded scripts. References to “cookies” in this policy include these similar technologies where appropriate.",
+      "We may use technologies performing functions similar to cookies, including pixels and tracking tags, web beacons, local browser storage, software development kits, device identifiers  embedded scripts. References to “cookies” in this policy include these similar technologies where appropriate.",
     ],
   },
   {
     heading: "Types of cookies we may use",
     paragraphs: [
-      "Strictly necessary cookies are required for the website to function properly and securely — loading pages, protecting forms against spam or misuse, maintaining security, remembering privacy selections, session management, and balancing traffic. Because these cookies are essential, they cannot normally be disabled through the website's cookie-preference tool.",
-      "Functional cookies remember choices such as language, region, display preferences, previously entered non-sensitive information, and customer-service selections. Where required, these are activated only after consent.",
-      "Analytics cookies help us understand how visitors interact with the website — pages visited, time spent, navigation paths, referral sources, browser and device type, general geographic region, and errors. Where required, these are activated only after consent.",
-      "Advertising and marketing cookies may measure advertising effectiveness, limit repeat ad display, build an understanding of visitor interests, and measure post-advertisement activity. They are used only where configured and after consent where required.",
-      "Social-media and embedded-content cookies may be placed by providers of embedded maps, videos, social buttons, or chat features. That processing is governed by the third party's own privacy and cookie policies.",
+      "Strictly necessary cookies are required for the website to function properly and securely — loading pages, protecting forms against spam or misuse, maintaining security, remembering privacy selections, session management  balancing traffic. Because these cookies are essential, they cannot normally be disabled through the website's cookie-preference tool.",
+      "Functional cookies remember choices such as language, region, display preferences, previously entered non-sensitive information  customer-service selections. Where required, these are activated only after consent.",
+      "Analytics cookies help us understand how visitors interact with the website — pages visited, time spent, navigation paths, referral sources, browser and device type, general geographic region  errors. Where required, these are activated only after consent.",
+      "Advertising and marketing cookies may measure advertising effectiveness, limit repeat ad display, build an understanding of visitor interests  measure post-advertisement activity. They are used only where configured and after consent where required.",
+      "Social-media and embedded-content cookies may be placed by providers of embedded maps, videos, social buttons or chat features. That processing is governed by the third party's own privacy and cookie policies.",
     ],
   },
   {
     heading: "Cookie consent",
     paragraphs: [
-      "When you first visit the website, you should be presented with a cookie notice allowing you to accept all optional cookies, reject all optional cookies, or select particular cookie categories.",
+      "When you first visit the website, you should be presented with a cookie notice allowing you to accept all optional cookies, reject all optional cookies or select particular cookie categories.",
       "Strictly necessary cookies may be used without an optional-cookie selection because they are required to operate the website. Optional cookies remain disabled until you make an affirmative selection where consent is required.",
     ],
   },
@@ -47,7 +47,7 @@ const SECTIONS: LegalSectionData[] = [
     heading: "Managing or withdrawing consent",
     paragraphs: [
       "You may change or withdraw your cookie selection at any time through the Cookie Settings link displayed on the website. Withdrawing consent does not affect the lawfulness of processing completed before consent was withdrawn.",
-      "You may also manage cookies through your browser settings, including viewing, deleting, or blocking cookies. Blocking cookies may affect website availability or functionality.",
+      "You may also manage cookies through your browser settings, including viewing, deleting or blocking cookies. Blocking cookies may affect website availability or functionality.",
     ],
   },
   {
@@ -61,9 +61,9 @@ const SECTIONS: LegalSectionData[] = [
     paragraphs: ["Depending on the cookies selected, information collected may include:"],
     list: [
       "IP address and cookie or device identifier",
-      "Browser, operating system, and device type",
+      "Browser, operating system  device type",
       "Approximate location and date/time of access",
-      "Pages viewed, buttons or links selected, and referral website",
+      "Pages viewed, buttons or links selected  referral website",
       "Website errors and advertising or campaign interactions",
     ],
   },
@@ -76,7 +76,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Changes to this Cookie Policy",
     paragraphs: [
-      "We may update this Cookie Policy when new website technology is introduced, cookie providers or purposes change, legal requirements change, or our privacy practices are updated. The revised policy will be published with an updated effective date.",
+      "We may update this Cookie Policy when new website technology is introduced, cookie providers or purposes change, legal requirements change or our privacy practices are updated. The revised policy will be published with an updated effective date.",
     ],
   },
   {
@@ -99,7 +99,7 @@ export function CookiePolicyPage() {
 
       <p className="mt-10 border-t border-border pt-6 text-sm text-text-muted">
         DSD Corporate Services · 1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, United
-        Arab Emirates · +971 58 588 9033 · www.dsdcorps.com
+        Arab Emirates · +971 58 588 9033 · info@dsdgrp.com
       </p>
     </section>
   );

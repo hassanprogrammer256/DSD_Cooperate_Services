@@ -1,62 +1,45 @@
-import { Handshake, Mail, MapPin, Phone } from "lucide-react";
+import { Handshake, Mail, MapPin, Phone, Smartphone } from "lucide-react";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { ConsentGate } from "@/components/common/ConsentGate";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
 import aboutHero from "@/assets/images/hero/about_hero.jpg";
 import aboutMission from "@/assets/images/about/about_dsd.jpeg";
-import { PhilosophyStrip } from "@/components/sections/PhilosophyStrip";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 const OFFICE_ADDRESS = "1st floor, office 06, Al habeb building, umm hurair st. oud metha, Dubai, UAE";
-const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent("Al habeb building, umm hurair st. oud metha, Dubai, UAE")}&output=embed`;
+const OFFICE_COORDINATES = { lat: 25.834608125684603, lng: 57.01326329403336 };
+const MAPS_EMBED_URL = `https://www.google.com/maps?q=${OFFICE_COORDINATES.lat},${OFFICE_COORDINATES.lng}&output=embed`;
 
 export function AboutPage() {
   useDocumentTitle("About");
-  // const { data: founder, isLoading, isError, refetch } = useFounderQuery();
 
   return (
     <>
       <PageHeroBanner
         image={aboutHero}
-        eyebrow="About DSD"
-        title="Our Story"
+        
+        eyebrow=""
+        title="ABOUT US"
         description="A Dubai-based advisory designed for seamless execution, giving founders, Innovators, businesses and relocating professionals one direct, trusted partner across residency, incorporation and compliance."
       />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 md:px-6 md:py-20 lg:grid-cols-2">
-        <img src={aboutMission} alt="A DSD advisor and client shaking hands" className="aspect-[4/3] w-full rounded-xl object-cover" />
+        <img src={aboutMission} alt="A DSD advisor and client shaking hands" className="aspect-4/3 w-full rounded-xl object-cover" />
         <div>
       
           <h2 className="mt-2 font-display text-3xl font-bold text-accent md:text-4xl">
             Our Mission
           </h2>
+          <span className="text-base text-text-secondary font-mono">
+          A Unified Advisory Model 
+          </span>
           <p className="mt-4 text-text-secondary">
-          A Unified Advisory Model DSD Corporate Services was founded to fix a broken industry standard: the fragmented handoff between separate residency, incorporation, and compliance consultants. We act as your single, accountable partner. We connect every dot across your visa status, corporate setup and regulatory duties, delivering bespoke execution tailored entirely to your reality.
+         DSD Corporate Services was founded to fix a broken industry standard: the fragmented handoff between separate residency, incorporation  compliance consultants. We act as your single, accountable partner. We connect every dot across your visa status, corporate setup and regulatory duties, delivering bespoke execution tailored entirely to your reality.
           </p>
           
         </div>
       </div>
-
-      <PhilosophyStrip />
-{/* 
-      <div className="bg-surface-secondary">
-        <div className="mx-auto max-w-7xl px-4 py-16 text-center md:px-6 md:py-20">
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">Meet the Founder</span>
-          <div className="mt-4">
-            <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
-              {founder && (
-                <>
-                  <img src={founder.photo} alt={founder.name} className="mx-auto h-28 w-28 rounded-full object-cover" />
-                  <p className="mt-4 font-display text-xl font-semibold text-text-primary">{founder.name}</p>
-                  <p className="text-sm font-medium text-primary">{founder.role}</p>
-                  <p className="mx-auto mt-4 max-w-2xl text-text-secondary">{founder.bio}</p>
-                </>
-              )}
-            </QueryState>
-          </div>
-        </div>
-      </div> */}
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
@@ -69,7 +52,7 @@ export function AboutPage() {
                 <span>{OFFICE_ADDRESS}</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="shrink-0 text-primary" />
+                <Smartphone size={18} className="shrink-0 text-primary" />
                 <a href="tel:+971585889033" className="font-mono hover:text-primary">
                   +971 58 588 9033
                 </a>
@@ -82,8 +65,8 @@ export function AboutPage() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="shrink-0 text-primary" />
-                <a href="mailto:www.dsdcorps.com" className="hover:text-primary">
-                  www.dsdcorps.com
+                <a href="mailto:info@dsdgrp.com" className="hover:text-primary">
+                  info@dsdgrp.com
                 </a>
               </li>
             </ul>
@@ -108,7 +91,7 @@ export function AboutPage() {
           <Handshake size={32} className="text-primary" />
           <h2 className="font-display text-xl font-semibold text-text-primary">Referral Programme</h2>
           <p className="max-w-xl text-text-secondary">
-            Know a founder or professional who needs UAE residency, incorporation, or compliance advice? Partner
+            Know a founder or professional who needs UAE residency, incorporation or compliance advice? Partner
             with DSD and we'll keep you informed every step of the way.
           </p>
           <CtaButton to="/partner-with-us">Partner With Us</CtaButton>

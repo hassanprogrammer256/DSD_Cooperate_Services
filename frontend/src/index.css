@@ -93,7 +93,7 @@
 }
 
 /* System-preference fallback for the instant before index.html's blocking init script
-   applies an explicit [data-theme], and for the no-JS case. Never wins over an explicit
+   applies an explicit [data-theme]  for the no-JS case. Never wins over an explicit
    choice. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -165,7 +165,7 @@ html {
 
 /* html body (not bare body) so this reliably outranks Joy CssBaseline's own `body {
    background-color: var(--joy-palette-background-body) }` rule — same specificity ties
-   are order-dependent, and Joy's global styles land after ours regardless of
+   are order-dependent  Joy's global styles land after ours regardless of
    StyledEngineProvider's injectFirst (see src/main.tsx). */
 html body {
   margin: 0;
@@ -192,7 +192,7 @@ html body {
 
 /* Infinite logo marquee (CompanyLogoMarquee) — a plain CSS transform loop, not
    framer-motion or a JS interval: smoothest option since it runs off the compositor
-   thread instead of competing with React re-renders, and it doesn't need any JS to
+   thread instead of competing with React re-renders  it doesn't need any JS to
    stay perfectly seamless. The track renders the logo list twice back-to-back and
    translates by exactly -50%, so the second copy lines up pixel-for-pixel with where
    the first started — the loop never visibly resets. */
@@ -213,7 +213,7 @@ html body {
 
 /* Same tie-breaking problem as the html body rule above: Joy CssBaseline sets
    color-scheme off its own (frozen-to-light) [data-joy-color-scheme] attribute, not
-   ours, and wins the specificity tie by loading later. html[data-theme=...] outranks
+   ours  wins the specificity tie by loading later. html[data-theme=...] outranks
    Joy's bare [data-joy-color-scheme=...] attribute selector unconditionally. */
 html[data-theme="light"] {
   color-scheme: light;

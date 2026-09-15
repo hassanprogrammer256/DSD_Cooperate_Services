@@ -13,7 +13,7 @@ const PRINCIPLES: Principle[] = [
   {
     icon: Landmark,
     title: "Deep Domain Authority",
-    description: "Years of firsthand operational mastery inside UAE residency, corporate incorporation, and regulatory compliance. specialized execution, never generalist theory.",
+    description: "Years of firsthand operational mastery inside UAE residency, corporate incorporation and regulatory compliance, specialized execution and never generalist theory.",
   },
   {
     icon: Handshake,
@@ -22,21 +22,21 @@ const PRINCIPLES: Principle[] = [
   },
   {
     icon: FileCheck,
-    title: "Evidence-Led Guidance",
-    description: "Recommendations built strictly around your actual operational data, assets, and unique corporate circumstances — never a repurposed template or generic checklist.",
+    title: "Evidence Led Guidance",
+    description: "Recommendations built strictly around your actual operational data, assets  and unique corporate circumstances never a repurposed template or generic checklist.",
   },
   {
     icon: ClipboardCheck,
     title: "Practical Realism",
-    description: "We understand the difference between what the regulation says on paper and how it is enforced at the counter. Ground-level reality dictates our strategy",
+    description: "We understand the difference between what the regulation says on paper and how it is enforced at the counter. Ground level reality dictates our strategy",
   },
 ];
 
 export function PhilosophyStrip() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 bg-navy-elevated rounded-lg text-white">
-      <h2 className="text-md font-bold text-center text-left text-accent">Our Core Philosophy.</h2>
-<h4 className="text-5xl font-medium text-center text-white text-left max-w-3xl">Driving strategic interventions that reshape and elevate your business trajectory</h4>
+      <h2 className="text-md font-bold text-center text-accent">Our Core Philosophy.</h2>
+<h4 className="text-5xl font-medium text-left text-white  max-w-3xl">Driving strategic interventions that reshape and elevate your business trajectory</h4>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {PRINCIPLES.map((principle, index) => (
           <motion.div
@@ -45,7 +45,7 @@ export function PhilosophyStrip() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="rounded-lg border border-navy hover:from-navy-elevated hover:to-navy bg-gradient-to-br from-navy to-navy-elevated p-6"
+            className="rounded-lg border border-navy hover:from-navy-elevated hover:to-navy bg-linear-to-br from-navy to-navy-elevated p-6"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-lg  text-accent">
               <principle.icon size={40} />

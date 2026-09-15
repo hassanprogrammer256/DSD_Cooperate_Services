@@ -24,11 +24,11 @@ export function AboutTeaser() {
         >
           <span className="text-xs font-semibold uppercase tracking-wide text-accent">Who We Are</span>
           <h2 className="mt-2 font-display text-3xl font-bold text-text-primary md:text-4xl">
-            Single-Point Accountability
+            Single Point Accountability
           </h2>
           <p className="mt-4 text-text-secondary">
-            DSD Corporate Services helps founders, investors, and relocating professionals enter and operate in
-            the UAE market with confidence — residency, incorporation, and compliance handled by one advisory
+            DSD Corporate Services helps founders, investors and relocating professionals enter and operate in
+            the UAE market with confidence, residency, incorporation and compliance handled by one advisory
             team instead of three separate consultants who don't talk to each other.
           </p>
           <Link to="/about" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:opacity-80">

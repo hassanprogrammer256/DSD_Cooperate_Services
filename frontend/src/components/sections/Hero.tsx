@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Briefcase, Building2, Handshake, IdCard, ShieldCheck, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import heroBg from "@/assets/images/hero/home_hero_bg.png";
+import heroBg from "@/assets/images/hero/home_hero-bg.png";
 
 const containerVariants = {
   animate: { transition: { staggerChildren: 0.08 } },
@@ -27,7 +27,7 @@ const PILLAR_LINKS = [
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-[600px] items-center bg-cover bg-center pt-24 md:min-h-[600px]"
+      className="relative flex min-h-150 items-center bg-cover bg-center pt-24 md:min-h-150"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div
@@ -51,10 +51,10 @@ export function Hero() {
           variants={itemVariants}
           className="mt-4 max-w-2xl font-display text-4xl font-bold text-white md:text-5xl md:leading-[1.15]"
         >
-        Strategic Advisory , Straightforward Execution
+        Strategic Advisory , Straight forward Execution
         </motion.h1>
         <motion.p variants={itemVariants} className="mt-4 max-w-xl text-white/82">
-          DSD Corporate Services guides founders, investors,, and relocating professionals end to end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
+          DSD Corporate Services guides founders, investors,  relocating professionals end to end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
         </motion.p>
         <motion.p
           variants={itemVariants}
@@ -74,16 +74,6 @@ export function Hero() {
             </Link>
           ))}
         </motion.div>
-
-        {/* <motion.div variants={itemVariants} className="mt-6 flex flex-wrap items-center gap-4">
-          <CtaButton to="/contact" size="lg" sx={{background:"transparent", border:"1px solid white", color:"white", "&:hover":{background:"white", color:"#0A1B33"}}}>
-           MOHRE
-          </CtaButton>
-          <CtaButton to="/contact" size="lg">
-            Immigration
-          </CtaButton>
-          
-        </motion.div> */}
       </motion.div>
     </section>
   );

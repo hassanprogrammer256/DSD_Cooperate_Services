@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -6,33 +6,38 @@ import { TestimonialCard } from "@/components/common/TestimonialCard";
 import type { Testimonial } from "@/types";
 
 const AUTOPLAY_MS = 6000;
+const CARDS_PER_SLIDE = 3;
 
 type Props = {
   testimonials: Testimonial[];
 };
 
-// Single-slide autoplay carousel with dot indicators — replaces the old static
-// grid-of-cards layout. One testimonial in view at a time (per explicit request),
-// advancing on a timer and pausable on hover/focus so a reader isn't fighting the
-// autoplay mid-read. Dot click both jumps to that slide and resets the timer, so a
-// manual choice doesn't get immediately overridden by the next tick.
 export function TestimonialsCarousel({ testimonials }: Props) {
+  const slides = useMemo(() => {
+    const chunks: Testimonial[][] = [];
+    for (let i = 0; i < testimonials.length; i += CARDS_PER_SLIDE) {
+      chunks.push(testimonials.slice(i, i + CARDS_PER_SLIDE));
+    }
+    return chunks;
+  }, [testimonials]);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    if (testimonials.length <= 1 || isPaused) return;
+    if (slides.length <= 1 || isPaused) return;
 
     const timer = window.setInterval(() => {
-      setActiveIndex((current) => (current + 1) % testimonials.length);
+      setActiveIndex((current) => (current + 1) % slides.length);
     }, AUTOPLAY_MS);
 
     return () => window.clearInterval(timer);
-  }, [testimonials.length, isPaused]);
+  }, [slides.length, isPaused]);
 
-  if (testimonials.length === 0) return null;
+  if (slides.length === 0) return null;
 
-  const active = testimonials[Math.min(activeIndex, testimonials.length - 1)];
+  const activeSlide = slides[Math.min(activeIndex, slides.length - 1)];
+  const activeSlideKey = activeSlide.map((testimonial) => testimonial.id).join("-");
 
   return (
     <div
@@ -41,27 +46,30 @@ export function TestimonialsCarousel({ testimonials }: Props) {
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
     >
-      <div className="relative mx-auto max-w-2xl overflow-hidden">
+      <div className="relative mx-auto max-w-6xl overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
-            key={active.id}
+            key={activeSlideKey}
             initial={{ opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -24 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
-            <TestimonialCard testimonial={active} />
+            {activeSlide.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+            ))}
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {testimonials.length > 1 && (
+      {slides.length > 1 && (
         <div className="mt-6 flex items-center justify-center gap-2">
-          {testimonials.map((testimonial, index) => (
+          {slides.map((slide, index) => (
             <button
-              key={testimonial.id}
+              key={slide.map((testimonial) => testimonial.id).join("-")}
               type="button"
-              aria-label={`Go to testimonial from ${testimonial.name}`}
+              aria-label={`Go to slide ${index + 1}`}
               aria-current={index === activeIndex}
               onClick={() => setActiveIndex(index)}
               className={`h-2.5 rounded-full transition-all ${

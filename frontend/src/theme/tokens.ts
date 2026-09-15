@@ -24,13 +24,13 @@ export const neutrals = {
   },
 } as const;
 
-// Fixed in both themes — white text/icons on navy, primary, and accent surfaces, none
+// Fixed in both themes — white text/icons on navy, primary  accent surfaces, none
 // of which ever lighten in dark mode, so this token deliberately does NOT invert
 // between themes.
 export const textInverse = "#FFFFFF";
 
 // Fixed in both themes — DSD's brand navy, not a neutral that should flip with the
-// page's own light/dark mode. Used for the hero overlay, stats strip, and footer.
+// page's own light/dark mode. Used for the hero overlay, stats strip  footer.
 export const navy = { base: "#0A1B33", elevated: "#060F1E" } as const;
 
 export const brand = {

@@ -41,6 +41,7 @@ export type Service = {
   stats: ServiceStat[];
   process: ServiceProcessStep[];
   faqs: ServiceFaq[];
+  ctaLabel?: string;
 };
 
 export type ServiceIncludedItem = {
@@ -65,6 +66,7 @@ export type ComplianceArea = {
   summary: string;
   description: string;
   obligations: string[];
+  included: ServiceIncludedItem[];
   notes?: string;
   sourceName?: string; // rendered as plain "— Source Name" attribution, never a fabricated link
   heroImage: string;

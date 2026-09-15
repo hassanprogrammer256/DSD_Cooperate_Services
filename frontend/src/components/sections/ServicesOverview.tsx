@@ -21,7 +21,7 @@ export function ServicesOverview() {
         title="What "
         highlight="We Do"
        
-        description="One Advisory relationship for every UAE move you make. From Residency and Incorporation to ongoing compliance, DSD doesnt just check boxes, we map out the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
+        description="From Residency and Incorporation to ongoing compliance. DSD doesnt just check boxes, we map out the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
       />
 
       <div className="mt-10">
@@ -36,7 +36,7 @@ export function ServicesOverview() {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
               >
-                <ServiceCard service={service} colorIndex={index} />
+                <ServiceCard service={service} />
               </motion.div>
             ))}
           </div>

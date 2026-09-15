@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileBottomTabBar } from "@/components/layout/MobileBottomTabBar";
 import { MobileFloatingActions } from "@/components/layout/MobileFloatingActions";
 import { Navbar } from "@/components/layout/Navbar";
+import { Testimonials } from "./components/sections/Testimonials";
 
 const pageVariants = {
   initial: { opacity: 0, y: 12 },
@@ -52,6 +53,7 @@ export function App() {
         </motion.main>
       </AnimatePresence>
       <div className="pb-16 lg:pb-0">
+        <Testimonials />
         <Footer />
       </div>
       <MobileFloatingActions />

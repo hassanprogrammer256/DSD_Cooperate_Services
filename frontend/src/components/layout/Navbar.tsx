@@ -95,13 +95,13 @@ export function Navbar() {
           className="hidden overflow-hidden bg-navy md:block"
         >
           <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-6 text-xs text-white/75">
-            <span>Advisory that saves time, cost, and mistakes.</span>
+            <span>Advisory that saves time, cost  mistakes.</span>
             <div className="flex items-center gap-5">
               <a href="tel:+971585889033" className="font-mono hover:text-white">
                 +971 58 588 9033
               </a>
-              <a href="mailto:www.dsdcorps.com" className="hover:text-white">
-                www.dsdcorps.com
+              <a href="mailto:info@dsdgrp.com" className="hover:text-white">
+                info@dsdgrp.com
               </a>
               <div className="flex items-center gap-3">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -194,21 +194,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-          {/* <Link
-              to={user ? "/account" : "/login"}
-              aria-label={user ? "My Account" : "Log In"}
-              className={`hidden items-center justify-center rounded-full p-2 hover:opacity-80 lg:flex ${
-                transparent ? "text-white" : "text-text-primary"
-              }`}
-            >
-              <User size={18} />
-            </Link>  */}
-           <ThemeToggle inverse={transparent} /> 
-            {/* <div className="hidden md:block">
-              <CtaButton to="/contact" size="sm">
-               Contact Us
-              </CtaButton>
-            </div> */}
+            <ThemeToggle inverse={transparent} />
             <IconButton
               component="a"
               href={WHATSAPP_URL}
@@ -328,8 +314,8 @@ export function Navbar() {
                 <a href="tel:+971585889033" className="flex items-center gap-2 text-sm font-mono text-white/80">
                   <Phone size={16} /> +971 58 588 9033
                 </a>
-                <a href="mailto:www.dsdcorps.com" className="flex items-center gap-2 text-sm text-white/80">
-                  <Mail size={16} /> www.dsdcorps.com
+                <a href="mailto:info@dsdgrp.com" className="flex items-center gap-2 text-sm text-white/80">
+                  <Mail size={16} /> info@dsdgrp.com
                 </a>
                 <CtaButton to="/contact" onClick={closeMobile}>
                   Book a Consultation

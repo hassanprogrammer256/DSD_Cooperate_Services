@@ -143,7 +143,7 @@ function StatsListField({ control }: { control: Control<ServiceFormValues> }) {
         }
 
         // Plain div, not a Joy FormControl — FormControl allows exactly one control
-        // component, and this renders 3 Inputs per stat row (see
+        // component  this renders 3 Inputs per stat row (see
         // FormStringListField.tsx's comment for the same reasoning).
         return (
           <div className="flex flex-col gap-1.5">

@@ -57,7 +57,7 @@ export function CompliancePage() {
         <RelatedTopicLink
           icon={Briefcase}
           title="Also Need Labour Law Guidance?"
-          description="MOHRE work permits, the Wage Protection System, and Emiratisation quotas for UAE employers."
+          description="MOHRE work permits, the Wage Protection System  Emiratisation quotas for UAE employers."
           to="/mohre"
           ctaLabel="Explore MOHRE Compliance"
         />
@@ -70,7 +70,7 @@ export function CompliancePage() {
           { icon: ShieldAlert, title: "Risk Mitigation", description: "Avoid penalties from missed deadlines and filings." },
           { icon: Scale, title: "Regulatory Alignment", description: "Stay aligned with UAE tax and corporate law." },
           { icon: RefreshCw, title: "Business Continuity", description: "Keep your licence and approvals in good standing." },
-          { icon: ShieldCheck, title: "Enhanced Credibility", description: "Build trust with banks, partners, and regulators." },
+          { icon: ShieldCheck, title: "Enhanced Credibility", description: "Build trust with banks, partners  regulators." },
         ]}
       />
 

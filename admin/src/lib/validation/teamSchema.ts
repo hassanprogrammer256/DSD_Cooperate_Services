@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const teamMemberSchema = z.object({
-  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers, and hyphens only"),
+  slug: z.string().min(1, "Required").regex(/^[a-z0-9-]+$/, "Lowercase letters, numbers  hyphens only"),
   name: z.string().min(1, "Required"),
   role: z.string().min(1, "Required"),
   bio: z.string().min(1, "Required"),
