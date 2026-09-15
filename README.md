@@ -1,13 +1,13 @@
 # DSD Corporate Services
 
 The website and admin platform for **DSD Corporate Services**, a Dubai-based advisory
-firm offering UAE residency, business incorporation, and regulatory compliance
+firm offering UAE residency, business incorporation  regulatory compliance
 services. The project is a monorepo with three independent apps that share one
 Django backend:
 
-- **Client site** (`frontend/`) — the public marketing site: service pages, pricing, lead forms, blog/insights, and a client account area with paid checkout.
+- **Client site** (`frontend/`) — the public marketing site: service pages, pricing, lead forms, blog/insights  a client account area with paid checkout.
 - **Admin panel** (`admin/`) — an internal dashboard for staff to manage site content (services, compliance areas, team, pricing, testimonials, leads) without touching code.
-- **Backend API** (`backend/`) — a Django REST Framework API both frontends talk to: content, auth, orders/payments, and lead capture.
+- **Backend API** (`backend/`) — a Django REST Framework API both frontends talk to: content, auth, orders/payments  lead capture.
 
 ## Tech stack
 
@@ -73,7 +73,7 @@ which is gitignored and always wins over the committed `.env`) and fill in real
 values locally. Never commit real secrets.
 
 - `backend/.env.example` — Django secret key, Tap Payments key, email/SMTP settings, lead notification routing.
-- `frontend/.env.example` / `admin/.env.example` — the API base URL the app talks to, and (frontend only) the Tap Payments publishable key.
+- `frontend/.env.example` / `admin/.env.example` — the API base URL the app talks to  (frontend only) the Tap Payments publishable key.
 
 ## Project structure
 

@@ -1,0 +1,82 @@
+name: Deploy to EC2
+
+# Pushing to master builds both React apps here on GitHub's runner, ships the
+# built dist/ folders to the EC2 box, then pulls + restarts the Django side
+# over SSH. See the EC2 Deployment Runbook artifact for the manual version of
+# every step this automates.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build client site
+        working-directory: frontend
+        run: |
+          echo "VITE_API_BASE_URL=http://${{ secrets.EC2_HOST }}" > .env.production
+          echo "VITE_TAP_PUBLIC_KEY=${{ secrets.VITE_TAP_PUBLIC_KEY }}" >> .env.production
+          npm ci
+          npm run build
+
+      - name: Build admin panel
+        working-directory: admin
+        run: |
+          echo "VITE_API_BASE_URL=http://${{ secrets.EC2_HOST }}" > .env.production
+          npm ci
+          npm run build
+
+      - name: Upload client build
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "frontend/dist/*"
+          target: "/tmp/client-dist"
+          strip_components: 2
+          overwrite: true
+
+      - name: Upload admin build
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "admin/dist/*"
+          target: "/tmp/admin-dist"
+          strip_components: 2
+          overwrite: true
+
+      - name: Pull, migrate, restart — over SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            cd ~/DSD_Cooperate_Services
+            git fetch origin master
+            git reset --hard origin/master
+
+            cd backend
+            source venv/bin/activate
+            pip install -r requirements.txt
+            export DJANGO_SETTINGS_MODULE=config.settings.prod
+            python manage.py migrate --noinput
+            python manage.py collectstatic --noinput
+            sudo systemctl restart gunicorn
+
+            sudo rm -rf /var/www/client/* /var/www/admin/*
+            sudo cp -r /tmp/client-dist/. /var/www/client/
+            sudo cp -r /tmp/admin-dist/.  /var/www/admin/
+            sudo chown -R www-data:www-data /var/www/client /var/www/admin
