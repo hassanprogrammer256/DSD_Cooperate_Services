@@ -54,7 +54,7 @@ const NAV_ITEMS: NavItem[] = [
     icon: ShieldCheck,
     dropdown: curatedComplianceAreas.map((area) => ({ to: `/compliance/${area.slug}`, label: area.label })),
   },
-    { to: "/pricing", label: "Pricing", icon: Tag },
+    { to: "/pricing", label: "PRO Services", icon: Tag },
   { to: "/partner-with-us", label: "Partner with Us", icon: Handshake }
 
 ];
@@ -234,14 +234,14 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={closeMobile}
-              className="fixed inset-0 z-[60] bg-black/50 lg:hidden"
+              className="fixed inset-0 z-60 bg-black/50 lg:hidden"
             />
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="fixed inset-y-0 right-0 z-[70] flex w-[85%] max-w-sm flex-col overflow-y-auto bg-navy px-6 py-6 lg:hidden"
+              className="fixed inset-y-0 right-0 z-70 flex w-[85%] max-w-sm flex-col overflow-y-auto bg-navy px-6 py-6 lg:hidden"
             >
               <div className="mb-6 flex items-center justify-between">
                 <span className="font-display text-lg font-bold text-white">DSD Corporate Services</span>

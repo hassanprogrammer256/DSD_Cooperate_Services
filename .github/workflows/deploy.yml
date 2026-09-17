@@ -1,9 +1,5 @@
 name: Deploy to EC2
 
-# Pushing to master builds both React apps here on GitHub's runner, ships the
-# built dist/ folders to the EC2 box, then pulls + restarts the Django side
-# over SSH. See the EC2 Deployment Runbook artifact for the manual version of
-# every step this automates.
 on:
   push:
     branches: [master]

@@ -7,9 +7,10 @@ type Props = {
   description?: ReactNode;
   align?: "center" | "left";
   children?: ReactNode;
+  eyebrowClassName?: string;
 };
 
-export function PageHeroBanner({ image, eyebrow, title, description, align = "center", children }: Props) {
+export function PageHeroBanner({ image, eyebrow, title, description, align = "center", children, eyebrowClassName }: Props) {
   const isCenter = align === "center";
 
   return (
@@ -29,7 +30,7 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
           isCenter ? "text-center" : "text-center lg:text-left"
         }`}
       >
-        {eyebrow && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-accent">{eyebrow}</div>}
+        {eyebrow && <div className={`${eyebrowClassName || " mb-2 text-xs font-semibold uppercase tracking-wide text-accent"}`}>{eyebrow}</div>}
         <h1 className="font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
         {description && <p className={`mt-4 text-white/82 ${isCenter ? "mx-auto max-w-2xl" : "mx-auto max-w-2xl lg:mx-0"}`}>{description}</p>}
         {children && (

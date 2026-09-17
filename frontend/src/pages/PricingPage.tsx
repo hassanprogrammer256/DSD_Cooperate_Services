@@ -185,7 +185,8 @@ export function PricingPage() {
         image={pricingHero}
         eyebrow="PRO Services Retainer"
         title="Your Government Work. Our Responsibility."
-        description="Government procedures shouldn't take your valuable time away from running your business. Choose the level of support that fits your business — from a single service to a complete annual PRO partnership."
+        description="Government procedures shouldn't take your valuable time away from running your business. Choose the level of support that fits your business from a single service to a complete annual PRO partnership."
+        eyebrowClassName="text-4xl font-black uppercase tracking-wide text-accent"
       />
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">

@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: build-admin-app
+        name: Build Admin App
+        entry: cmd /c 'cd admin && npm run build'
+        language: system
+        files: ^admin/
+        pass_filenames: false
+        stages: [pre-commit]
+
+      - id: build-frontend-app
+        name: Build Frontend App
+        entry: cmd /c 'cd frontend && npm run build'
+        language: system
+        files: ^frontend/
+        pass_filenames: false
+        stages: [pre-commit]
