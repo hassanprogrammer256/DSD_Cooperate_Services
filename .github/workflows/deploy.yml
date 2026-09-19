@@ -70,6 +70,7 @@ jobs:
             export DJANGO_SETTINGS_MODULE=config.settings.prod
             python manage.py migrate --noinput
             python manage.py collectstatic --noinput
+            sudo systemctl daemon-reload
             sudo systemctl restart gunicorn
 
             sudo rm -rf /var/www/client/* /var/www/admin/*
