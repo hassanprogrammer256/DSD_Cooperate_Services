@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { FacebookIcon, InstagramIcon, LinkedinIcon, WhatsappIcon, XIcon } from "@/components/common/SocialIcon";
+import { SentenceText } from "@/components/common/SentenceText";
 import { canonicalServicePath, curatedServiceSlugs, useServicesQuery } from "@/lib/api/services";
 import { IMAGES } from "@/lib/utils";
 
@@ -14,8 +15,9 @@ const QUICK_LINKS = [
   { to: "/mohre", label: "MOHRE" },
   { to: "/immigration", label: "Immigration" },
   { to: "/insights", label: "Insights" },
+  { to: "/local-sponsorship", label: "Local Sponsorship" },
   { to: "/partner-with-us", label: "Partner With Us" },
-  { to: "/pricing", label: "Pricing" },
+  { to: "/pricing", label: "PRO Services " },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -47,10 +49,9 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-12 w-auto object-contain" />
-          <p className="mt-3 text-sm text-white/70">
-
- High precision UAE residency, corporate incorporation and compliance advisory based in Dubai. We guide founders, investors, businesses and global talent through seamless market entry and operational setup.
-          </p>
+          <div className="mt-3 text-sm text-white/70">
+            <SentenceText text="High precision UAE residency, corporate incorporation and compliance advisory based in Dubai. We guide founders, investors, businesses and global talent through seamless market entry and operational setup." />
+          </div>
           <div className="mt-5 flex items-center gap-3">
             {SOCIAL_LINKS.map(({ href, label, Icon }) => (
               <a
@@ -68,7 +69,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Quick Links</h3>
+          <h3 className="text-sm font-bold capitalize tracking-wide text-accent">Quick Links</h3>
           <ul className="mt-4 flex flex-col gap-2">
             {QUICK_LINKS.map((link) => (
               <li key={link.to}>
@@ -81,7 +82,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Services</h3>
+          <h3 className="text-sm font-bold capitalize tracking-wide text-accent">Services</h3>
           <ul className="mt-4 flex flex-col gap-2">
             {curatedFooterServices?.map((service) => (
               <li key={service.slug}>
@@ -94,8 +95,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Contact</h3>
-          <ul className="mt-4 flex flex-col gap-3 text-sm text-white/72">
+          <h3 className="text-sm font-bold capitalize tracking-wide text-accent">Contact</h3>
+          <ul className="flex flex-col gap-3 text-sm text-white/72 mt-4">
             <li className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 shrink-0" />
               <span>1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, UAE</span>
@@ -113,19 +114,23 @@ export function Footer() {
               </a>
             </li>
           </ul>
+
+          <h3 className="mt-6 text-sm font-bold capitalize tracking-wide text-accent">Legal</h3>
+          <ul className="mt-4 flex flex-col gap-2">
+            {LEGAL_LINKS.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="text-sm text-white/72 hover:text-white">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
       <div className="bg-navy-elevated">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-6 py-4 text-xs text-white/55 sm:flex-row sm:justify-between">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-6 py-4 text-xs text-white/55">
           <span>© {year} DSD Corporate Services. All rights reserved.</span>
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            {LEGAL_LINKS.map((link) => (
-              <Link key={link.to} to={link.to} className="hover:text-white/80">
-                {link.label}
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

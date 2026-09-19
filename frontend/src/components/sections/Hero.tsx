@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Briefcase, Building2, Handshake, IdCard, ShieldCheck, Users } from "lucide-react";
+import { Briefcase, Building2, Handshake, IdCard, ShieldCheck, UserCheck, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import { SentenceText } from "@/components/common/SentenceText";
 import heroBg from "@/assets/images/hero/home_hero-bg.png";
 
 const containerVariants = {
@@ -22,6 +23,7 @@ const PILLAR_LINKS = [
   { to: "/partner-with-us", label: "Partner with Us", icon: Handshake },
   { to: "/mohre", label: "MOHRE", icon: Briefcase },
   { to: "/immigration", label: "Immigration", icon: Users },
+  { to: "/local-sponsorship", label: "Local Sponsorship", icon: UserCheck },
 ];
 
 export function Hero() {
@@ -44,18 +46,18 @@ export function Hero() {
         animate="animate"
         className="relative mx-auto max-w-7xl px-4 py-16 md:px-6"
       >
-        <motion.span variants={itemVariants} className="text-xs font-semibold uppercase tracking-wide text-accent">
-          UAE Residency · Incorporation · Compliance · Licensing
-        </motion.span>
+   
         <motion.h1
           variants={itemVariants}
           className="mt-4 max-w-2xl font-display text-4xl font-bold text-white md:text-5xl md:leading-[1.15]"
         >
-        Strategic Advisory , Straight forward Execution
+        Strategic Advisory,
+        <br />
+        Straightforward Execution
         </motion.h1>
-        <motion.p variants={itemVariants} className="mt-4 max-w-xl text-white/82">
-          DSD Corporate Services guides founders, investors,  relocating professionals end to end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry runaround.
-        </motion.p>
+        <motion.div variants={itemVariants} className="mt-4 max-w-xl text-white/82">
+          <SentenceText text="DSD Corporate Services guides businesses, founders, investors, innovators, startups and relocating professionals with end to end guidance across UAE Company setup, compliance and residency pathways. We believe in empowering our clients with transparent and practical insights ensuring you make confident decisions without the typical industry run around." />
+        </motion.div>
         <motion.p
           variants={itemVariants}
           className="mt-4 hidden max-w-xl text-sm text-white/70 sm:block"

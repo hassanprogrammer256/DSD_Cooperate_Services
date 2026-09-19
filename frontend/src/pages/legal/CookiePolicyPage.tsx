@@ -29,10 +29,10 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Types of cookies we may use",
     paragraphs: [
-      "Strictly necessary cookies are required for the website to function properly and securely — loading pages, protecting forms against spam or misuse, maintaining security, remembering privacy selections, session management  balancing traffic. Because these cookies are essential, they cannot normally be disabled through the website's cookie-preference tool.",
-      "Functional cookies remember choices such as language, region, display preferences, previously entered non-sensitive information  customer-service selections. Where required, these are activated only after consent.",
-      "Analytics cookies help us understand how visitors interact with the website — pages visited, time spent, navigation paths, referral sources, browser and device type, general geographic region  errors. Where required, these are activated only after consent.",
-      "Advertising and marketing cookies may measure advertising effectiveness, limit repeat ad display, build an understanding of visitor interests  measure post-advertisement activity. They are used only where configured and after consent where required.",
+      "Strictly necessary cookies are required for the website to function properly and securely: loading pages, protecting forms against spam or misuse, maintaining security, remembering privacy selections, session management and balancing traffic. Because these cookies are essential, they cannot normally be disabled through the website's cookie-preference tool.",
+      "Functional cookies remember choices such as language, region, display preferences, previously entered non-sensitive information and customer-service selections. Where required, these are activated only after consent.",
+      "Analytics cookies help us understand how visitors interact with the website: pages visited, time spent, navigation paths, referral sources, browser and device type, general geographic region and errors. Where required, these are activated only after consent.",
+      "Advertising and marketing cookies may measure advertising effectiveness, limit repeat ad display, build an understanding of visitor interests and measure post-advertisement activity. They are used only where configured and after consent where required.",
       "Social-media and embedded-content cookies may be placed by providers of embedded maps, videos, social buttons or chat features. That processing is governed by the third party's own privacy and cookie policies.",
     ],
   },

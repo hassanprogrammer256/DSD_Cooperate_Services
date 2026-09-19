@@ -50,7 +50,7 @@ export function InsightDetailPage() {
 
             {article.touchesCompliance && (
               <p className="mt-10 rounded-lg bg-info-light px-4 py-3 text-sm text-info">
-                General guidance, not legal or tax advice — always confirm your specific obligations with a qualified
+                General guidance, not legal or tax advice, always confirm your specific obligations with a qualified
                 professional.
               </p>
             )}
@@ -59,13 +59,13 @@ export function InsightDetailPage() {
               <div className="mt-14 border-t border-border pt-10">
                 {relatedServices.length > 0 && (
                   <>
-                    <h2 className="font-display text-lg font-semibold text-text-primary">Related Services</h2>
+                    <h2 className="font-display text-lg font-bold capitalize text-accent">Related Services</h2>
                     <ul className="mt-3 flex flex-wrap gap-2">
                       {relatedServices.map((service) => (
                         <li key={service.slug}>
                           <Link
                             to={`/services/${service.slug}`}
-                            className="rounded-full border border-border px-3 py-1.5 text-sm font-medium text-primary hover:border-primary"
+                            className="rounded-full border border-accent/30 px-3 py-1.5 text-sm font-medium text-primary hover:border-primary"
                           >
                             {service.title}
                           </Link>
@@ -77,7 +77,7 @@ export function InsightDetailPage() {
 
                 {relatedInsights.length > 0 && (
                   <>
-                    <h2 className="mt-8 font-display text-lg font-semibold text-text-primary">Related Insights</h2>
+                    <h2 className="mt-8 font-display text-lg font-bold capitalize text-accent">Related Insights</h2>
                     <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
                       {relatedInsights.map((item) => (
                         <InsightCard key={item.slug} article={item} />

@@ -38,8 +38,8 @@ export function RegisterPage() {
       console.error("[RegisterPage/onSubmit]", err);
       setFormError(
         err instanceof ApiError && err.status === 400
-          ? "That email is already registered — try logging in instead."
-          : "Couldn't create your account right now — please try again shortly.",
+          ? "That email is already registered, try logging in instead."
+          : "Couldn't create your account right now, please try again shortly.",
       );
     }
   }

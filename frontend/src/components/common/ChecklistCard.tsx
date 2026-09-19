@@ -14,7 +14,7 @@ const TONE_CLASSES: Record<NonNullable<Props["tone"]>, string> = {
 
 export function ChecklistCard({ icon: Icon = CircleCheck, tone = "primary", surface = "surface", children }: Props) {
   return (
-    <div className={`flex items-start gap-3 rounded-lg border border-border p-3.5 ${surface === "surface" ? "bg-surface" : "bg-surface-secondary"}`}>
+    <div className={`flex items-start gap-3 rounded-lg border border-accent/30 p-3.5 ${surface === "surface" ? "bg-surface" : "bg-surface-secondary"}`}>
       <div className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full ${TONE_CLASSES[tone]}`}>
         <Icon size={14} />
       </div>

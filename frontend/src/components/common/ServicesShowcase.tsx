@@ -34,12 +34,12 @@ export function ServicesShowcase({ title, description, items, photoCard }: Props
             >
               <Link
                 to={item.to}
-                className="block h-full rounded-lg border border-border bg-surface p-5 transition-colors hover:border-primary"
+                className="block h-full rounded-lg border border-accent/30 bg-surface p-5 transition-colors hover:border-primary"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-light text-primary">
                   <item.icon size={18} />
                 </div>
-                <p className="mt-3 font-display text-sm font-semibold text-text-primary">{item.title}</p>
+                <p className="mt-3 font-display text-sm font-bold capitalize text-accent">{item.title}</p>
                 <p className="mt-1 text-xs text-text-secondary">{item.description}</p>
               </Link>
             </motion.div>

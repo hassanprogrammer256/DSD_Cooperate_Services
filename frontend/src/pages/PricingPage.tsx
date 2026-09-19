@@ -12,8 +12,10 @@ import {
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 import { CtaButton } from "@/components/common/CtaButton";
+import { Marquee } from "@/components/common/Marquee";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
 import { QueryState } from "@/components/common/QueryState";
+import { SentenceText } from "@/components/common/SentenceText";
 import { TapCheckoutPanel } from "@/components/pricing/TapCheckoutPanel";
 import pricingHero from "@/assets/images/hero/pricing_hero.jpg";
 import { useAuth } from "@/contexts/AuthContext";
@@ -183,10 +185,24 @@ export function PricingPage() {
     <>
       <PageHeroBanner
         image={pricingHero}
-        eyebrow="PRO Services Retainer"
-        title="Your Government Work. Our Responsibility."
-        description="Government procedures shouldn't take your valuable time away from running your business. Choose the level of support that fits your business from a single service to a complete annual PRO partnership."
+        eyebrow="PRO Services"
+        title="Professional Government & Corporate Administration"
+        description={
+          <SentenceText text="PRO Services refer to professional assistance with applicable government-related documentation, applications, submissions, renewals and administrative procedures required for businesses operating in the UAE. PRO support can help companies save valuable time by coordinating relevant processes involving licensing, immigration, employment, MOHRE, visas, renewals and other government-related requirements within the agreed scope. With digital communication and remote document handling wherever permitted, businesses can manage many administrative requirements without repeatedly visiting government offices or service centres. Less paperwork. Less running around. More time to focus on your business." />
+        }
         eyebrowClassName="text-4xl font-black uppercase tracking-wide text-accent"
+      />
+
+      <Marquee
+        phrases={[
+          "Single Service Or Annual Retainer",
+          "Transparent PRO Pricing",
+          "Government Procedures Handled For You",
+          "No Hidden Fees",
+          "Choose The Support That Fits",
+        ]}
+        ctaLabel="Talk to Our Team"
+        ctaTo="/contact"
       />
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
@@ -202,9 +218,9 @@ export function PricingPage() {
                 <a
                   key={tier.id}
                   href={`#tier-${tier.id}`}
-                  className="flex flex-col rounded-xl border border-border bg-surface p-5 text-center transition-colors hover:border-accent"
+                  className="flex flex-col rounded-xl border border-accent/30 bg-surface p-5 text-center transition-colors hover:border-accent"
                 >
-                  <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-text-primary">
+                  <h3 className="font-display text-sm font-bold capitalize tracking-wide text-accent">
                     {tier.name}
                   </h3>
                   <p className="mt-2 text-xl font-bold text-text-primary">
@@ -213,7 +229,7 @@ export function PricingPage() {
                   </p>
                   <p className="mt-2 text-sm text-text-secondary">{quick.oneLiner}</p>
                   <p className="mt-1 text-xs font-medium text-accent">{quick.tag}</p>
-                  <span className="mt-4 rounded-md border border-border px-4 py-2 text-sm font-semibold text-text-primary">
+                  <span className="mt-4 rounded-md border border-accent/30 px-4 py-2 text-sm font-semibold text-text-primary">
                     {quick.ctaLabel}
                   </span>
                 </a>
@@ -241,7 +257,7 @@ export function PricingPage() {
                       Most Popular
                     </span>
                   )}
-                  <h2 className="font-display text-lg font-semibold text-text-primary">{tier.name}</h2>
+                  <h2 className="font-display text-lg font-bold capitalize text-accent">{tier.name}</h2>
                   {content.subtitle && (
                     <p className="mt-1 text-xs font-medium uppercase tracking-wide text-text-muted">
                       {content.subtitle}
@@ -281,7 +297,7 @@ export function PricingPage() {
 
                   {paidOrder ? (
                     <div className="mt-6 rounded-lg border border-success bg-success-light p-4 text-center">
-                      <p className="text-sm font-semibold text-success">Payment received — order #{paidOrder.id}</p>
+                      <p className="text-sm font-semibold text-success">Payment received, order #{paidOrder.id}</p>
                       <p className="mt-1 text-sm text-text-secondary">
                         {tier.name} · {paidOrder.currency} {paidOrder.amount}
                       </p>
@@ -332,7 +348,7 @@ export function PricingPage() {
 
         {/* Why Choose DSD */}
         <div className="mt-20 text-center">
-          <h2 className="font-display text-2xl font-semibold text-text-primary md:text-3xl">
+          <h2 className="font-display text-2xl font-bold capitalize text-accent md:text-3xl">
             One Partner. Multiple Government Requirements.
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-text-secondary">
@@ -344,19 +360,33 @@ export function PricingPage() {
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {WHY_DSD_POINTS.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="rounded-xl border border-border bg-surface p-5 text-center">
+            <div key={title} className="rounded-xl border border-accent/30 bg-surface p-5 text-center">
               <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-accent-light">
                 <Icon size={20} className="text-accent" />
               </div>
-              <h3 className="mt-3 text-sm font-semibold text-text-primary">{title}</h3>
+              <h3 className="mt-3 font-display text-sm font-bold capitalize text-accent">{title}</h3>
               <p className="mt-1 text-xs text-text-secondary">{description}</p>
             </div>
           ))}
         </div>
 
+        {/* Seamless support */}
+        <div className="mt-20 rounded-xl border border-accent/30 bg-surface-secondary p-8 text-center md:p-12">
+          <span className="font-display text-sm font-extrabold capitalize tracking-wide text-accent md:text-base">
+            Seamless Support. Wherever You Are.
+          </span>
+          <div className="mx-auto mt-4 max-w-2xl text-text-secondary">
+            <SentenceText text="Our services are structured to keep each requirement clear, coordinated and easy to manage, while avoiding unnecessary duplication between service areas. Where permitted, consultations, document sharing, submissions and coordination can be handled remotely. Where a government authority requires physical attendance, biometrics, medical testing, original documents, notarisation or another in-person procedure, the requirement will be clearly communicated in advance." />
+          </div>
+          <p className="mx-auto mt-6 max-w-2xl font-display text-lg font-semibold text-text-primary">
+            One Point of Contact. Multiple Corporate Requirements. Seamless Coordination.
+          </p>
+          <p className="mt-4 text-sm text-text-secondary">Tell us what you need. We'll help you understand the next step.</p>
+        </div>
+
         {/* Government fees disclaimer */}
-        <div className="mt-16 rounded-xl border border-border bg-surface p-6 md:p-8">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-text-primary">
+        <div className="mt-16 rounded-xl border border-accent/30 bg-surface p-6 md:p-8">
+          <h3 className="font-display text-sm font-bold capitalize tracking-wide text-accent">
             Government Fees Are Always Separate
           </h3>
           <p className="mt-3 text-sm text-text-secondary">
@@ -372,7 +402,7 @@ export function PricingPage() {
 
         {/* Closing CTA */}
         <div className="mt-16 flex flex-col items-center rounded-xl bg-accent-light px-6 py-12 text-center">
-          <h2 className="font-display text-2xl font-semibold text-text-primary md:text-3xl">
+          <h2 className="font-display text-2xl font-bold capitalize text-accent md:text-3xl">
             Ready to Simplify Your Government Administration?
           </h2>
           <p className="mt-3 max-w-xl text-sm text-text-secondary">

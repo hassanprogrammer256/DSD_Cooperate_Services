@@ -10,7 +10,7 @@ export function InsightCard({ article }: Props) {
   return (
     <Link
       to={`/insights/${article.slug}`}
-      className="block overflow-hidden rounded-xl border border-border bg-surface hover:border-primary"
+      className="block overflow-hidden rounded-xl border border-accent/30 bg-surface hover:border-primary"
     >
       <div className="relative aspect-video">
         <img src={article.coverImage} alt={article.title} className="h-full w-full object-cover" />

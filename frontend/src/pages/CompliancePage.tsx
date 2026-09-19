@@ -1,7 +1,9 @@
 import { Briefcase, Calculator, FileText, RefreshCw, Scale, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
+import { Marquee } from "@/components/common/Marquee";
 import { PillarHero } from "@/components/common/PillarHero";
+import { SentenceText } from "@/components/common/SentenceText";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
 import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
@@ -33,22 +35,35 @@ export function CompliancePage() {
     <>
       <PillarHero
         image={placeholderPhoto}
-        eyebrow="Compliance Services"
-        title="Stay Compliant."
-        highlight="Grow with Confidence."
-        description="We provide reliable and proactive compliance solutions to help your business meet regulatory requirements and minimize risk in the UAE."
+        eyebrow="Compliance"
+        title="Keeping Your Business Organised &"
+        highlight="Up to Date"
+        description={
+          <SentenceText text="Compliance refers to meeting the legal, regulatory, licensing and administrative requirements applicable to a business and its activities. Effective compliance helps businesses maintain their licences, fulfil applicable obligations, keep important records updated and avoid unnecessary administrative disruptions. Ongoing compliance support can include documentation, renewals, corporate administration and coordination of applicable regulatory or government-related requirements. Where possible, these requirements can be managed through remote communication and digital document submission, helping businesses stay organised without interrupting their daily operations. Stay compliant, stay organised and stay focused on your business." />
+        }
         quickLinks={curatedComplianceAreas.slice(0, 4).map((area) => ({
           icon: ShieldCheck,
           label: area.label,
           to: `/compliance/${area.slug}`,
         }))}
-        primaryCta={{ label: "Get Started", to: "#lead-form" }}
         secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
+      />
+
+      <Marquee
+        phrases={[
+          "Licensing & Renewals",
+          "Corporate Administration",
+          "Remote Communication",
+          "Digital Document Submission",
+          "Stay Compliant, Stay Organised",
+        ]}
+        ctaLabel="Request Support"
+        ctaTo="#lead-form"
       />
 
       <div className="mx-auto max-w-3xl px-4 pt-10 md:px-6">
         <p className="rounded-lg bg-info-light px-4 py-3 text-center text-sm text-info">
-          General guidance, not legal or tax advice — always confirm your specific obligations with a qualified
+          General guidance, not legal or tax advice, always confirm your specific obligations with a qualified
           professional.
         </p>
       </div>
@@ -91,7 +106,9 @@ export function CompliancePage() {
         <LeadForm
           defaultMainService="compliance"
           title="Request Compliance Support"
-          description="Get professional assistance with your compliance requirements. Our team will review your needs and provide the right solution."
+          description={
+            <SentenceText text="Get professional assistance with your compliance requirements. Our team will review your needs and provide the right solution." />
+          }
         />
       </section>
 

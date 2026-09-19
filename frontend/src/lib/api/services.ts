@@ -16,12 +16,12 @@ export const servicePillarMeta: { pillar: ServicePillar; label: string; descript
   {
     pillar: "uae-residency",
     label: "UAE Residency",
-    description: "Not sure which route fits? Start here — we scope your situation against every UAE residency pathway before recommending one.",
+    description: "Not sure which route fits? Start here, we scope your situation against every UAE residency pathway before recommending one.",
   },
   {
     pillar: "investor-residency",
     label: "Investor Residency",
-    description: "Residency earned through capital — a qualifying property purchase, business investment or company ownership.",
+    description: "Residency earned through capital, a qualifying property purchase, business investment or company ownership.",
   },
   {
     pillar: "family-residency",
@@ -31,12 +31,12 @@ export const servicePillarMeta: { pillar: ServicePillar; label: string; descript
   {
     pillar: "golden-residency",
     label: "Golden Residency",
-    description: "The UAE's long-term residency visa for qualifying investors, property owners  specialised talent — up to 10 years, renewable.",
+    description: "The UAE's long-term residency visa for qualifying investors, property owners and specialised talent, up to 10 years, renewable.",
   },
   {
-    pillar: "residency-support",
-    label: "Residency Support",
-    description: "Ongoing residency administration after approval — renewals, status changes  cancellations.",
+    pillar: "employment-residency",
+    label: "Employment Residency",
+    description: "UAE employment residency for your hires, work permits, status changes, medical fitness, Emirates ID and residence issuance, coordinated end to end.",
   },
 ];
 
@@ -46,7 +46,7 @@ export const incorporationPillarMeta: { pillar: IncorporationPillar; label: stri
   {
     pillar: "company-formation",
     label: "Company Formation",
-    description: "End-to-end UAE company setup — from choosing mainland or free zone to your first trade licence.",
+    description: "End-to-end UAE company setup, from choosing mainland or free zone to your first trade licence.",
   },
   {
     pillar: "business-licensing",

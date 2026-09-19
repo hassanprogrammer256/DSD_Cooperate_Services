@@ -50,12 +50,12 @@ export function AccountPage() {
         </button>
       </div>
 
-      <h2 className="mt-10 font-display text-lg font-semibold text-text-primary">Order History</h2>
+      <h2 className="mt-10 font-display text-lg font-bold capitalize text-accent">Order History</h2>
 
       <div className="mt-4">
         <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
           {orders && orders.length > 0 ? (
-            <div className="overflow-x-auto rounded-xl border border-border">
+            <div className="overflow-x-auto rounded-xl border border-accent/30">
               <table className="w-full text-left text-sm">
                 <thead>
                   <tr className="border-b border-border bg-surface-secondary text-xs uppercase tracking-wide text-text-muted">
@@ -90,7 +90,7 @@ export function AccountPage() {
               </table>
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-4 rounded-xl border border-border bg-surface-secondary p-10 text-center">
+            <div className="flex flex-col items-center gap-4 rounded-xl border border-accent/30 bg-surface-secondary p-10 text-center">
               <p className="text-text-secondary">You haven't purchased an advisory package yet.</p>
               <CtaButton to="/pricing">View Pricing</CtaButton>
             </div>

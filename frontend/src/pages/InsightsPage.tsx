@@ -15,7 +15,7 @@ export function InsightsPage() {
         image={placeholderPhoto}
         eyebrow="Insights"
         title="Residency & Compliance Insights"
-        description="Articles on UAE residency pathways and compliance updates — written plainly, not as legal advice."
+        description="Articles on UAE residency pathways and compliance updates, written plainly, not as legal advice."
       />
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">

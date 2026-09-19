@@ -18,7 +18,7 @@ export function FaqAccordion({ faqs }: Props) {
       {faqs.map((faq, index) => {
         const isOpen = openIndex === index;
         return (
-          <div key={faq.question} className="rounded-lg border border-border bg-surface">
+          <div key={faq.question} className="rounded-lg border border-accent/30 bg-surface">
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : index)}

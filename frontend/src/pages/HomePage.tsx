@@ -1,3 +1,4 @@
+import { Marquee } from "@/components/common/Marquee";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";
 import { ClosingCta } from "@/components/sections/ClosingCta";
 import { Hero } from "@/components/sections/Hero";
@@ -12,6 +13,17 @@ export function HomePage() {
   return (
     <>
       <Hero />
+      <Marquee
+        phrases={[
+          "Strategic Advisory, Straightforward Execution",
+          "UAE Residency • Incorporation • Compliance • Licensing",
+          "One Senior Advisor From Start To Finish",
+          "Transparent, Practical Guidance",
+          "Plan With A Clear Strategy",
+        ]}
+        ctaLabel="Book a Consultation"
+        ctaTo="/contact"
+      />
       <ServicesOverview />
       <StatsStrip />
       <AboutTeaser />

@@ -1,10 +1,11 @@
 import type { LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 
 type PrimerItem = { icon: LucideIcon; title: string; description: string };
 type Authority = { icon: LucideIcon; name: string; description: string };
 
 type Props = {
-  intro: string;
+  intro: ReactNode;
   pillarsHeading?: string;
   pillars: PrimerItem[];
   authoritiesHeading?: string;
@@ -35,12 +36,12 @@ export function RegulatoryPrimer({
 }: Props) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-      <p className="max-w-3xl text-text-secondary">{intro}</p>
+      <div className="max-w-3xl text-text-secondary">{intro}</div>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-text-primary">{pillarsHeading}</h2>
+      <h2 className="mt-12 font-display text-xl font-bold capitalize text-accent">{pillarsHeading}</h2>
       <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
         {pillars.map((item) => (
-          <div key={item.title} className="rounded-lg border border-border bg-surface p-5">
+          <div key={item.title} className="rounded-lg border border-accent/30 bg-surface p-5">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-light text-primary">
               <item.icon size={18} />
             </div>
@@ -50,12 +51,12 @@ export function RegulatoryPrimer({
         ))}
       </div>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-text-primary">{authoritiesHeading}</h2>
+      <h2 className="mt-12 font-display text-xl font-bold capitalize text-accent">{authoritiesHeading}</h2>
       <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
         {authorities.map((authority) => (
           <div
             key={authority.name}
-            className="flex items-start gap-3 rounded-lg border border-border bg-surface-secondary p-5"
+            className="flex items-start gap-3 rounded-lg border border-accent/30 bg-surface-secondary p-5"
           >
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-light text-primary">
               <authority.icon size={18} />
@@ -68,7 +69,7 @@ export function RegulatoryPrimer({
         ))}
       </div>
 
-      <h2 className="mt-12 font-display text-xl font-semibold text-text-primary">{penaltiesHeading}</h2>
+      <h2 className="mt-12 font-display text-xl font-bold capitalize text-accent">{penaltiesHeading}</h2>
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
         {penalties.map((item) => (
           <div key={item.title} className="flex items-start gap-3 rounded-lg border border-warning bg-warning-light p-3.5">
@@ -84,11 +85,11 @@ export function RegulatoryPrimer({
       </div>
 
       <div className="mt-10 max-w-3xl border-t border-border pt-6">
-        <p className="text-xs text-text-muted">— {sourceName}</p>
+        <p className="text-xs text-text-muted">Source: {sourceName}</p>
       </div>
 
       <p className="mt-6 max-w-3xl rounded-lg bg-info-light px-4 py-3 text-sm text-info">
-        General guidance, not legal or tax advice — always confirm your specific obligations with a qualified
+        General guidance, not legal or tax advice, always confirm your specific obligations with a qualified
         professional.
       </p>
     </div>

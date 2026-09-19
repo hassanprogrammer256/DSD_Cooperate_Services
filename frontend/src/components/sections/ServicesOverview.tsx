@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { QueryState } from "@/components/common/QueryState";
 import { SectionHeading } from "@/components/common/SectionHeading";
+import { SentenceText } from "@/components/common/SentenceText";
 import { ServiceCard } from "@/components/common/ServiceCard";
 import { useServicesQuery } from "@/lib/api/services";
 
@@ -17,11 +18,13 @@ export function ServicesOverview() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
       <SectionHeading
-        eyebrow=""
-        title="What "
-        highlight="We Do"
+        eyebrow="What We Do"
+        title=""
+        highlight=" "
        
-        description="From Residency and Incorporation to ongoing compliance. DSD doesnt just check boxes, we map out the custom pathway that genuinely aligns with your personal or bussiness goals No pre-packed packages, Just the right route for you."
+        description={
+          <SentenceText text="From Residency and Incorporation to ongoing compliance. DSD doesnot just check boxes, we map out the custom pathway that genuinely aligns with your personal or bussiness goals no pre-packed packages, Just the right route for you." />
+        }
       />
 
       <div className="mt-10">

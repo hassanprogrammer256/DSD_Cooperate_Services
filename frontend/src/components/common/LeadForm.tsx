@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
 import Checkbox from "@mui/joy/Checkbox";
 import FormControl from "@mui/joy/FormControl";
@@ -26,7 +26,7 @@ const labelSx = { color: "var(--color-text-primary)" };
 type Props = {
   defaultMainService?: MainServiceValue;
   title?: string;
-  description?: string;
+  description?: ReactNode;
 };
 
 export function LeadForm({ defaultMainService, title = "Tell Us What You Need", description }: Props) {
@@ -63,7 +63,7 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
   if (reference) {
     return (
       <div className="rounded-xl border border-success bg-success-light px-6 py-10 text-center">
-        <h3 className="font-display text-xl font-semibold text-text-primary">
+        <h3 className="font-display text-xl font-bold capitalize text-accent">
           Thank you for contacting DSD Corporate Services.
         </h3>
         <p className="mx-auto mt-3 max-w-md text-sm text-text-secondary">
@@ -81,14 +81,14 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
     <form
       onSubmit={(e) => void handleSubmit(onSubmit)(e)}
       noValidate
-      className="rounded-xl border border-border bg-surface p-6 shadow-sm md:p-8"
+      className="rounded-xl border border-accent/30 bg-surface p-6 shadow-sm md:p-8"
     >
-      <h3 className="font-display text-xl font-bold text-text-primary">{title}</h3>
-      {description && <p className="mt-2 text-sm text-text-secondary">{description}</p>}
+      <h3 className="font-display text-xl font-bold capitalize text-accent">{title}</h3>
+      {description && <div className="mt-2 text-sm text-text-secondary">{description}</div>}
 
       {createLead.isError && (
         <p className="mt-4 rounded-lg bg-error-light px-4 py-3 text-sm text-error">
-          Something went wrong sending your enquiry — please try again or contact us directly.
+          Something went wrong sending your enquiry, please try again or contact us directly.
         </p>
       )}
 

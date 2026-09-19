@@ -74,7 +74,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Processing times",
     paragraphs: [
-      "Any processing time communicated through this Website or by a DSD representative is an estimate based on the information available at that time. Processing may be affected by government working hours, public holidays, security checks, additional-document requests, system outages, regulatory changes or banking procedures — circumstances outside DSD's reasonable control.",
+      "Any processing time communicated through this Website or by a DSD representative is an estimate based on the information available at that time. Processing may be affected by government working hours, public holidays, security checks, additional-document requests, system outages, regulatory changes or banking procedures, circumstances outside DSD's reasonable control.",
     ],
   },
   {
@@ -100,7 +100,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "Intellectual property",
     paragraphs: [
-      "Unless otherwise stated, this Website and its contents — including the DSD name, branding, graphics, text, designs, photographs, videos, documents and other materials — are owned by or licensed to DSD Corporate Services and are protected under applicable UAE intellectual-property legislation.",
+      "Unless otherwise stated, this Website and its contents, including the DSD name, branding, graphics, text, designs, photographs, videos, documents and other materials, are owned by or licensed to DSD Corporate Services and are protected under applicable UAE intellectual-property legislation.",
       "Content on this Website may not be copied, reproduced, republished, distributed, modified, sold or commercially exploited without DSD's prior written permission, except where permitted by law.",
     ],
   },

@@ -1,10 +1,13 @@
 import { ClipboardCheck, FileCheck, Handshake, Landmark, type LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+
+import { SentenceText } from "@/components/common/SentenceText";
 
 type Principle = {
   icon: LucideIcon;
   title: string;
-  description: string;
+  description: ReactNode;
 };
 
 // DSD's own four differentiators, referenced against the reference site's
@@ -18,7 +21,7 @@ const PRINCIPLES: Principle[] = [
   {
     icon: Handshake,
     title: "Continuous Partnership",
-    description: "A single, senior advisor manages your engagement from inception to execution. Your context is never lost to internal handoffs or departmental silos.",
+    description: <SentenceText text="A single, senior advisor manages your engagement from inception to execution. Your context is never lost to internal handoffs or departmental silos." />,
   },
   {
     icon: FileCheck,
@@ -28,14 +31,14 @@ const PRINCIPLES: Principle[] = [
   {
     icon: ClipboardCheck,
     title: "Practical Realism",
-    description: "We understand the difference between what the regulation says on paper and how it is enforced at the counter. Ground level reality dictates our strategy",
+    description: <SentenceText text="We understand the difference between what the regulation says on paper and how it is enforced at the counter. Ground level reality dictates our strategy." />,
   },
 ];
 
 export function PhilosophyStrip() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 bg-navy-elevated rounded-lg text-white">
-      <h2 className="text-md font-bold text-center text-accent">Our Core Philosophy.</h2>
+      <h2 className="font-display text-lg font-extrabold capitalize text-center text-accent md:text-xl">Our Core Philosophy.</h2>
 <h4 className="text-5xl font-medium text-left text-white  max-w-3xl">Driving strategic interventions that reshape and elevate your business trajectory</h4>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {PRINCIPLES.map((principle, index) => (
@@ -50,8 +53,8 @@ export function PhilosophyStrip() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg  text-accent">
               <principle.icon size={40} />
             </div>
-            <h3 className="mt-4 font-display text-base font-semibold ">{principle.title}</h3>
-            <p className="mt-2 text-sm text-text-secondary">{principle.description}</p>
+            <h3 className="mt-4 font-display text-base font-bold capitalize text-accent">{principle.title}</h3>
+            <div className="mt-2 text-sm text-text-secondary">{principle.description}</div>
           </motion.div>
         ))}
       </div>

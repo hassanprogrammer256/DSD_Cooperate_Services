@@ -75,30 +75,6 @@ values locally. Never commit real secrets.
 - `backend/.env.example` — Django secret key, Tap Payments key, email/SMTP settings, lead notification routing.
 - `frontend/.env.example` / `admin/.env.example` — the API base URL the app talks to  (frontend only) the Tap Payments publishable key.
 
-## Project structure
-
-```text
-backend/
-  config/            # Django project settings (base/dev/prod) and URL routing
-  content/           # Services, compliance areas, team, pricing, testimonials — the main content API
-  accounts/          # Auth (JWT login/refresh) and user accounts
-  orders/            # Pricing checkout + Tap Payments integration
-  leads/             # Contact/lead-form capture and notifications
-  media/             # Uploaded images — tracked in git as the seed dataset for a working local demo
-
-frontend/src/
-  pages/             # One file per route
-  components/
-    common/          # Shared, reusable UI (cards, buttons, form fields)
-    sections/        # Page-section blocks composed from common/ (Hero, Testimonials, ...)
-    layout/          # Navbar, Footer, page chrome
-  lib/api/           # Typed API client + one file per resource (services, pricing, ...)
-  contexts/          # React context providers (auth)
-  assets/            # Images and fonts bundled at build time
-
-admin/src/           # Same shape as frontend/src, scoped to CRUD forms for each content type
-```
-
 ## Contributing
 
 1. **Branch from `master`**, name it for the change (`feature/x`, `fix/y`).

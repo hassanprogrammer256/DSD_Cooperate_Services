@@ -4,7 +4,9 @@ import contactPhoto from "@/assets/images/contact2.webp";
 import placeholderPhoto from "@/assets/images/contact1.png";
 import { CtaButton } from "@/components/common/CtaButton";
 import { LeadForm } from "@/components/common/LeadForm";
+import { Marquee } from "@/components/common/Marquee";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
+import { SentenceText } from "@/components/common/SentenceText";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 const OFFICE_ADDRESS = "1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, UAE";
@@ -22,7 +24,19 @@ export function ContactPage() {
         description="Tell us what you're trying to do in the UAE  we'll respond within one business day."
       />
 
-      <section className="mx-auto max-w-3xl px-4 py-20 md:px-6">
+      <Marquee
+        phrases={[
+          "We Respond Within One Business Day",
+          "Drop By, Call Or Email",
+          "Visit Our Dubai Office",
+          "Speak To Our Team",
+          "Start Your Enquiry Today",
+        ]}
+        ctaLabel="Send an Enquiry"
+        ctaTo="#contact-form"
+      />
+
+      <section id="contact-form" className="mx-auto max-w-3xl scroll-mt-24 px-4 py-20 md:px-6">
         <LeadForm
           title="Send Us a Message"
           description="Tell us what you're trying to do in the UAE and our team will get back to you within one business day."
@@ -35,7 +49,7 @@ export function ContactPage() {
           <a href="tel:+971585889033" className="font-mono font-semibold text-primary hover:opacity-80">
             +971 58 588 9033
           </a>{" "}
-          — or send the form above and we'll respond within one business day.
+          or send the form above and we'll respond within one business day.
         </p>
       </section>
 
@@ -43,12 +57,11 @@ export function ContactPage() {
         <img src={contactPhoto} alt="Two people shaking hands" className="w-full rounded-xl object-cover" />
 
         <div>
-          <span className="text-xs font-semibold uppercase tracking-wide text-accent">Visit Our Office</span>
+          <span className="font-display text-sm font-extrabold capitalize tracking-wide text-accent md:text-base">Visit Our Office</span>
           <h2 className="mt-2 font-display text-2xl font-bold text-text-primary md:text-3xl">We're based in Dubai</h2>
-          <p className="mt-3 text-text-secondary">
-            Drop by, call or email — whichever's easiest. We typically respond to every enquiry within one business
-            day.
-          </p>
+          <div className="mt-3 text-text-secondary">
+            <SentenceText text="Drop by, call or email, whichever's easiest. We typically respond to every enquiry within one business day." />
+          </div>
 
           <div className="mt-6 flex flex-col gap-4">
             <a

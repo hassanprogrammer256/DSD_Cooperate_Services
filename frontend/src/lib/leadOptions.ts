@@ -20,7 +20,7 @@ export const SUB_SERVICE_OPTIONS: Record<MainServiceValue, string[]> = {
     "International Structure",
     "Other",
   ],
-  residency: ["UAE Residency", "Investor Residency", "Family Residency", "Golden Residency", "Residency Support", "Other"],
+  residency: ["UAE Residency", "Investor Residency", "Family Residency", "Golden Residency", "Employment Residency", "Other"],
   compliance: [
     "Corporate Compliance",
     "Accounting & Reporting",

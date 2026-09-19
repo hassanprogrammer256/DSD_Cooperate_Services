@@ -1,9 +1,10 @@
 import { Ban, Building2, CreditCard, FileX, IdCard, Landmark, Scale, Siren, Users, Wallet } from "lucide-react";
 
-import { CtaButton } from "@/components/common/CtaButton";
+import { Marquee } from "@/components/common/Marquee";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
 import { RegulatoryPrimer } from "@/components/common/RegulatoryPrimer";
 import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
+import { SentenceText } from "@/components/common/SentenceText";
 import heroImage from "@/assets/images/hero/legal_hero.jpg";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
@@ -22,21 +23,35 @@ export function MOHREPage() {
       <PageHeroBanner
         image={heroImage}
         align="left"
-        eyebrow="Labour Law Compliance"
-        title="MOHRE Compliance & UAE Labour Law"
-        description="The Ministry of Human Resources and Emiratisation (MOHRE) governs employment relationships, work permits  workplace compliance across the UAE private sector."
-      >
-        <CtaButton to="/contact">Book a Consultation</CtaButton>
-      </PageHeroBanner>
+        eyebrow="MOHRE"
+        title="Simplifying Employment & Workforce Administration"
+        description={
+          <SentenceText text="MOHRE, the Ministry of Human Resources and Emiratisation, is the UAE federal authority responsible for various matters relating to employment and labour-sector administration within its applicable scope. Businesses may need to manage a range of employment-related procedures, documentation, applications and government requirements. Professional support can help employers coordinate these processes more efficiently, from documentation and applications to follow-ups and related administrative requirements. Where permitted, information and documents can be exchanged remotely, reducing unnecessary visits and making workforce administration more convenient. Simpler employment administration. Smoother business operations." />
+        }
+      />
+
+      <Marquee
+        phrases={[
+          "Labour Establishment Files",
+          "Work Permits & Quotas",
+          "Employment Contracts",
+          "MOHRE Compliance Support",
+          "UAE Labour Law Guidance",
+        ]}
+        ctaLabel="Book a Consultation"
+        ctaTo="/contact"
+      />
 
       <RegulatoryPrimer
-        intro="The Ministry of Human Resources and Emiratisation (MOHRE) operates the UAE's labor framework, governing employment relationships, labor quotas, work permits  workplace compliance. Governed primarily by Federal Decree-Law No. 33 of 2021 (as amended by Federal Decree-Law No. 9 of 2024), the system regulates private sector employer obligations and employee rights across the UAE."
+        intro={
+          <SentenceText text="The Ministry of Human Resources and Emiratisation (MOHRE) operates the UAE's labor framework, governing employment relationships, labor quotas, work permits and workplace compliance. Governed primarily by Federal Decree-Law No. 33 of 2021 (as amended by Federal Decree-Law No. 9 of 2024), the system regulates private sector employer obligations and employee rights across the UAE." />
+        }
         pillars={[
           {
             icon: Building2,
             title: "Company Labor File & Establishment Card",
             description:
-              "Once a business receives its immigration card, it must open a Labor Establishment File with MOHRE — generating the company's labor profile and enabling it to apply for employee labor quotas, issue work permits  register electronic labor contracts.",
+              "Once a business receives its immigration card, it must open a Labor Establishment File with MOHRE, generating the company's labor profile and enabling it to apply for employee labor quotas, issue work permits and register electronic labor contracts.",
           },
           {
             icon: IdCard,
@@ -60,7 +75,7 @@ export function MOHREPage() {
         authorities={[
           {
             icon: Landmark,
-            name: "MOHRE — Ministry of Human Resources and Emiratisation",
+            name: "MOHRE, Ministry of Human Resources and Emiratisation",
             description:
               "The federal ministry overseeing labor relations, issuing work permits, managing employee-employer disputes, setting labor classifications  monitoring private sector workplace compliance nationwide.",
           },
@@ -97,7 +112,7 @@ export function MOHREPage() {
               "Breaching mandatory workplace safety rules or the annual summer midday break restriction results in fines starting at AED 5,000 per worker, capped at AED 50,000 per incident.",
           },
         ]}
-        sourceName="Federal Decree-Law No. 33 of 2021 on the Regulation of Labour Relations, as amended by Federal Decree-Law No. 9 of 2024 — Ministry of Human Resources and Emiratisation (MOHRE)"
+        sourceName="Federal Decree-Law No. 33 of 2021 on the Regulation of Labour Relations, as amended by Federal Decree-Law No. 9 of 2024, Ministry of Human Resources and Emiratisation (MOHRE)"
       />
 
       <div className="mx-auto max-w-7xl px-4 pb-16 md:px-6">

@@ -1,3 +1,5 @@
+import { SentenceText } from "@/components/common/SentenceText";
+
 export type LegalSectionData = {
   heading: string;
   paragraphs?: string[];
@@ -9,13 +11,13 @@ type Props = LegalSectionData & { index: number };
 export function LegalSection({ index, heading, paragraphs, list }: Props) {
   return (
     <section className="mt-8">
-      <h2 className="font-display text-lg font-semibold text-text-primary">
+      <h2 className="font-display text-lg font-bold capitalize text-accent">
         {index}. {heading}
       </h2>
       {paragraphs?.map((paragraph, i) => (
-        <p key={i} className="mt-3 text-sm leading-relaxed text-text-secondary">
-          {paragraph}
-        </p>
+        <div key={i} className="mt-3 text-sm leading-relaxed text-text-secondary">
+          <SentenceText text={paragraph} />
+        </div>
       ))}
       {list && list.length > 0 && (
         <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-text-secondary">

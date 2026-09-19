@@ -6,7 +6,7 @@ export type ServicePillar =
   | "investor-residency"
   | "family-residency"
   | "golden-residency"
-  | "residency-support";
+  | "employment-residency";
 
 export type IncorporationPillar =
   | "company-formation"

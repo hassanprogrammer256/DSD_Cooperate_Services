@@ -95,7 +95,7 @@ export function Navbar() {
           className="hidden overflow-hidden bg-navy md:block"
         >
           <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-6 text-xs text-white/75">
-            <span>Advisory that saves time, cost  mistakes.</span>
+            <span>Advisory that saves time and costly mistakes.</span>
             <div className="flex items-center gap-5">
               <a href="tel:+971585889033" className="font-mono hover:text-white">
                 +971 58 588 9033
@@ -119,15 +119,23 @@ export function Navbar() {
         </motion.div>
 
         {/* Main nav */}
+        {/* The logo file itself is a solid dark/black-background PNG (not
+            transparent) — fine against a light header, but it disappears into a
+            dark-theme header's own dark surface. Rather than patching just the
+            logo, the whole header (once scrolled/non-transparent) fades from the
+            live --color-surface at its leading edge into solid white by the time
+            it reaches the logo, then stays white the rest of the way to the
+            viewport's edge — in light theme --color-surface is already white, so
+            the gradient collapses to solid white and nothing visibly changes. */}
         <header
           className={`h-16 border-b transition-colors duration-200 md:h-18 ${
-            transparent ? "border-transparent bg-transparent" : "border-border bg-surface shadow-sm"
+            transparent ? "border-transparent bg-transparent" : "border-border shadow-sm"
           }`}
+          style={transparent ? undefined : { background: "linear-gradient(90deg, var(--color-surface) 0%, #ffffff 0%, #ffffff 100%)" }}
         >
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 md:px-6">
           <Link to="/" className="flex items-center gap-2" onClick={closeMobile}>
-            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-20 w-auto object-contain" />
-
+            <img src={IMAGES.dsd_logo} alt="DSD Corporate Services" className="h-10 w-auto object-contain md:h-12" />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
@@ -135,8 +143,14 @@ export function Navbar() {
               const isActive =
                 item.to != null &&
                 (location.pathname === item.to || (item.to !== "/" && location.pathname.startsWith(item.to)));
+              // The header's background is forced toward white once scrolled
+              // (see the gradient above the <header> tag), regardless of the
+              // site's light/dark theme — so its text can't use theme-flipping
+              // text-text-primary (near-white in dark mode, invisible on that
+              // white background). --color-navy is fixed across both themes,
+              // so it stays legible here either way.
               const linkClassName = `relative flex items-center gap-1 px-3 py-2 text-sm font-medium ${
-                transparent ? "text-white" : isActive ? "text-primary" : "text-text-primary"
+                transparent ? "text-white" : isActive ? "text-primary" : "text-navy"
               } hover:opacity-80`;
               const linkContent = (
                 <>
@@ -174,7 +188,7 @@ export function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -8 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute left-1/2 top-full w-64 -translate-x-1/2 rounded-lg border border-border bg-surface p-2 shadow-lg"
+                        className="absolute left-1/2 top-full w-64 -translate-x-1/2 rounded-lg border border-accent/30 bg-surface p-2 shadow-lg"
                       >
                         {item.dropdown.map((sub) => (
                           <Link
@@ -194,7 +208,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle inverse={transparent} />
+            <ThemeToggle inverse={transparent} color={transparent ? undefined : "var(--color-navy)"} />
             <IconButton
               component="a"
               href={WHATSAPP_URL}
@@ -203,7 +217,7 @@ export function Navbar() {
               variant="plain"
               aria-label="Chat on WhatsApp"
               sx={{
-                color: transparent ? "var(--color-text-inverse)" : "var(--color-text-primary)",
+                color: transparent ? "var(--color-text-inverse)" : "var(--color-navy)",
                 display: { xs: "flex", md: "none" },
               }}
             >
@@ -214,7 +228,7 @@ export function Navbar() {
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               sx={{
-                color: transparent ? "var(--color-text-inverse)" : "var(--color-text-primary)",
+                color: transparent ? "var(--color-text-inverse)" : "var(--color-navy)",
                 display: { xs: "flex", lg: "none" },
               }}
             >

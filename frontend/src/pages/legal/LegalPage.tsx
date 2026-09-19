@@ -20,7 +20,7 @@ export function LegalPage() {
           <Link
             key={page.to}
             to={page.to}
-            className="rounded-lg border border-border bg-surface p-4 text-center text-sm font-medium text-text-primary hover:border-primary"
+            className="rounded-lg border border-accent/30 bg-surface p-4 text-center text-sm font-medium text-text-primary hover:border-primary"
           >
             {page.label}
           </Link>

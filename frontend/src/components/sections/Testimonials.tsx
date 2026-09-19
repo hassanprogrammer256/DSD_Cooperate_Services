@@ -10,7 +10,7 @@ export function Testimonials() {
   return (
     <section className="bg-surface-secondary">
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-        <SectionHeading eyebrow="Client Feedback" title="What clients say about working with DSD." highlight="" />
+        <SectionHeading eyebrow="Client Feedback" title="What clients say about Us" highlight="" />
 
         <div className="mt-10">
           <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>

@@ -8,7 +8,7 @@ type Props = {
 
 export function TestimonialCard({ testimonial }: Props) {
   return (
-    <div className="rounded-xl border border-border bg-surface p-6">
+    <div className="rounded-xl border border-accent/30 bg-surface p-6">
       <Quote size={28} className="text-primary-light" />
       <p className="mt-4 italic text-text-primary">{testimonial.quote}</p>
       <div className="mt-5 flex items-center gap-3">

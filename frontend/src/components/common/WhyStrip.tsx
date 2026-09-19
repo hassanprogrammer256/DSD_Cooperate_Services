@@ -27,12 +27,12 @@ export function WhyStrip({ title, description, items }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="rounded-lg border border-border bg-surface p-6 text-center"
+            className="rounded-lg border border-accent/30 bg-surface p-6 text-center"
           >
             <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-primary-light text-primary">
               <item.icon size={20} />
             </div>
-            <p className="mt-4 font-display text-base font-semibold text-text-primary">{item.title}</p>
+            <p className="mt-4 font-display text-base font-bold capitalize text-accent">{item.title}</p>
             <p className="mt-2 text-sm text-text-secondary">{item.description}</p>
           </motion.div>
         ))}

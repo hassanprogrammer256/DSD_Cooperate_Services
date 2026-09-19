@@ -27,7 +27,7 @@ export function TeamCarousel() {
               type="button"
               onClick={() => scrollBy(-1)}
               aria-label="Scroll team left"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-text-primary hover:border-primary"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 bg-surface text-text-primary hover:border-primary"
             >
               <ChevronLeft size={18} />
             </button>
@@ -35,7 +35,7 @@ export function TeamCarousel() {
               type="button"
               onClick={() => scrollBy(1)}
               aria-label="Scroll team right"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-text-primary hover:border-primary"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 bg-surface text-text-primary hover:border-primary"
             >
               <ChevronRight size={18} />
             </button>

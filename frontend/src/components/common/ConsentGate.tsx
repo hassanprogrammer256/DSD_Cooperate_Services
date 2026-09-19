@@ -38,7 +38,7 @@ export function ConsentGate({ category, title, description, children }: Props) {
   }
 
   return (
-    <div className="flex aspect-video flex-col items-center justify-center gap-3 rounded-xl border border-border bg-surface-secondary p-8 text-center">
+    <div className="flex aspect-video flex-col items-center justify-center gap-3 rounded-xl border border-accent/30 bg-surface-secondary p-8 text-center">
       <p className="font-display text-base font-semibold text-text-primary">{title}</p>
       {description && <p className="max-w-sm text-sm text-text-secondary">{description}</p>}
       <Button color="primary" onClick={handleAccept}>

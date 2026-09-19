@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 import { CtaButton } from "@/components/common/CtaButton";
@@ -14,10 +15,10 @@ type Props = {
   eyebrow: string;
   title: string;
   highlight: string;
-  description: string;
+  description: ReactNode;
   quickLinks: QuickLink[];
-  primaryCta: { label: string; to: string };
-  secondaryCta: { label: string; to: string };
+  primaryCta?: { label: string; to: string };
+  secondaryCta?: { label: string; to: string };
 };
 
 // Shared hero template for the 3 redesigned pillar hub pages (Incorporation/Residency/
@@ -41,20 +42,26 @@ export function PillarHero({ image, eyebrow, title, highlight, description, quic
         <motion.h1 variants={itemVariants} className="mt-3 max-w-2xl font-display text-3xl font-bold text-white md:text-5xl">
           {title} <span className="text-accent">{highlight}</span>
         </motion.h1>
-        <motion.p variants={itemVariants} className="mt-4 max-w-xl text-white/82">
+        <motion.div variants={itemVariants} className="mt-4 max-w-xl text-white/82">
           {description}
-        </motion.p>
-        <motion.div variants={itemVariants} className="mt-8 flex flex-wrap items-center gap-4">
-          <CtaButton to={primaryCta.to} size="lg">
-            {primaryCta.label}
-          </CtaButton>
-          <Link
-            to={secondaryCta.to}
-            className="rounded-md border border-white/40 px-5 py-2.5 text-sm font-semibold text-white hover:border-white"
-          >
-            {secondaryCta.label}
-          </Link>
         </motion.div>
+        {(primaryCta || secondaryCta) && (
+          <motion.div variants={itemVariants} className="mt-8 flex flex-wrap items-center gap-4">
+            {primaryCta && (
+              <CtaButton to={primaryCta.to} size="lg">
+                {primaryCta.label}
+              </CtaButton>
+            )}
+            {secondaryCta && (
+              <Link
+                to={secondaryCta.to}
+                className="rounded-md border border-white/40 px-5 py-2.5 text-sm font-semibold text-white hover:border-white"
+              >
+                {secondaryCta.label}
+              </Link>
+            )}
+          </motion.div>
+        )}
         <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-6">
           {quickLinks.map(({ icon: Icon, label, to }) => (
             <Link key={label} to={to} className="flex flex-col items-center gap-2 text-white/85 hover:text-white">

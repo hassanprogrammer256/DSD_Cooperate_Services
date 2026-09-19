@@ -33,7 +33,7 @@ export function PillarProcessSteps({ title = "Our Process", description, steps }
               <step.icon size={20} />
             </div>
             <p className="mt-3 font-mono text-xs font-semibold text-accent">{String(index + 1).padStart(2, "0")}</p>
-            <p className="mt-1 font-display text-sm font-semibold text-text-primary">{step.title}</p>
+            <p className="mt-1 font-display text-sm font-bold capitalize text-accent">{step.title}</p>
             <p className="mt-1 text-xs text-text-secondary">{step.description}</p>
           </motion.div>
         ))}

@@ -61,7 +61,7 @@ export function TapCheckoutPanel({ tier, onCancel, onPaid }: TapCheckoutPanelPro
       setErrorMessage(
         err instanceof ApiError
           ? err.message
-          : "Something went wrong — please try again or contact info@dsdgrp.com",
+          : "Something went wrong, please try again or contact info@dsdgrp.com",
       );
     } finally {
       setSubmitting(false);
@@ -70,7 +70,7 @@ export function TapCheckoutPanel({ tier, onCancel, onPaid }: TapCheckoutPanelPro
 
   if (!TAP_PUBLIC_KEY) {
     return (
-      <div className="mt-6 rounded-lg border border-border bg-surface-secondary p-4 text-center text-sm text-text-secondary">
+      <div className="mt-6 rounded-lg border border-accent/30 bg-surface-secondary p-4 text-center text-sm text-text-secondary">
         Online payment isn't configured in this environment yet.
         <div className="mt-3 flex justify-center gap-2">
           <CtaButton to="/contact" size="sm">
@@ -85,16 +85,16 @@ export function TapCheckoutPanel({ tier, onCancel, onPaid }: TapCheckoutPanelPro
   }
 
   return (
-    <div className="mt-6 rounded-lg border border-border bg-surface-secondary p-4">
+    <div className="mt-6 rounded-lg border border-accent/30 bg-surface-secondary p-4">
       <p className="text-sm text-text-secondary">
         Paying <span className="font-semibold text-text-primary">{tier.price}</span> for{" "}
         <span className="font-semibold text-text-primary">{tier.name}</span>
       </p>
 
-      <div id={containerId} className="mt-3 min-h-11 rounded-md border border-border bg-surface p-3">
+      <div id={containerId} className="mt-3 min-h-11 rounded-md border border-accent/30 bg-surface p-3">
         {sdkStatus === "loading" && <p className="text-xs text-text-muted">Loading secure card entry…</p>}
         {sdkStatus === "error" && (
-          <p className="text-xs text-error">Couldn't load the payment form — please refresh and try again.</p>
+          <p className="text-xs text-error">Couldn't load the payment form, please refresh and try again.</p>
         )}
       </div>
 

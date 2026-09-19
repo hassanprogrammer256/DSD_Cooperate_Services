@@ -15,9 +15,11 @@ import {
 } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
+import { Marquee } from "@/components/common/Marquee";
 import { PillarHero } from "@/components/common/PillarHero";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
 import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
+import { SentenceText } from "@/components/common/SentenceText";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
 import { WhyStrip } from "@/components/common/WhyStrip";
 import heroImage from "@/assets/images/about/about_teaser.webp";
@@ -78,18 +80,31 @@ export function ImmigrationPage() {
     <>
       <PillarHero
         image={heroImage}
-        eyebrow="Immigration Services"
-        title="UAE Immigration,"
-        highlight="Made Simple."
-        description="Moving, working, investing or building a life in the UAE comes with important immigration requirements. DSD Corporate Services provides professional support for UAE visa and residency procedures — from initial applications to renewals, amendments  cancellations."
+        eyebrow="Immigration"
+        title="Professional Support for Your UAE"
+        highlight="Immigration Requirements"
+        description={
+          <SentenceText text="Immigration services involve the procedures required for individuals to enter, remain or obtain the relevant immigration status in the UAE in accordance with applicable rules. Depending on the individual's circumstances, immigration processes may involve visas, entry permits, residency applications, status changes, documentation, approvals and other government procedures. Professional coordination helps simplify the journey by explaining requirements, organising documentation, coordinating applications and providing updates throughout the process. Where permitted, much of the initial consultation, documentation and coordination can be completed remotely. Any required in-person steps can be clearly communicated beforehand. Begin your immigration process from wherever you are, with every step clearly coordinated." />
+        }
         quickLinks={[
           { icon: Briefcase, label: "Employment Visas", to: "#lead-form" },
           { icon: Users, label: "Investor Visas", to: "#lead-form" },
           { icon: Handshake, label: "Family Visas", to: "#lead-form" },
           { icon: Building2, label: "Establishment Card", to: "#lead-form" },
         ]}
-        primaryCta={{ label: "Get Immigration Assistance", to: "#lead-form" }}
         secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
+      />
+
+      <Marquee
+        phrases={[
+          "Employment & Investor Visas",
+          "Family & Dependent Visas",
+          "Entry Permits & Status Change",
+          "Emirates ID Assistance",
+          "UAE Immigration Made Simple",
+        ]}
+        ctaLabel="Get Immigration Assistance"
+        ctaTo="#lead-form"
       />
 
       <div className="mx-auto max-w-7xl px-4 pt-10 md:px-6">

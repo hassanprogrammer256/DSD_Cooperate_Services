@@ -40,7 +40,7 @@ export function TeamMemberDetailPage() {
                     <a
                       href={`mailto:${member.email}`}
                       aria-label="Email"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-text-primary hover:border-primary"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 text-text-primary hover:border-primary"
                     >
                       <Mail size={18} />
                     </a>
@@ -49,7 +49,7 @@ export function TeamMemberDetailPage() {
                     <a
                       href={`tel:${member.phone.replace(/\s/g, "")}`}
                       aria-label="Phone"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-text-primary hover:border-primary"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 text-text-primary hover:border-primary"
                     >
                       <Phone size={18} />
                     </a>
@@ -60,7 +60,7 @@ export function TeamMemberDetailPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="WhatsApp"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-text-primary hover:border-primary"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 text-text-primary hover:border-primary"
                     >
                       <WhatsappIcon size={18} />
                     </a>
@@ -71,7 +71,7 @@ export function TeamMemberDetailPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-text-primary hover:border-primary"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-accent/30 text-text-primary hover:border-primary"
                     >
                       <LinkedinIcon size={18} />
                     </a>

@@ -16,3 +16,16 @@ repos:
         files: ^frontend/
         pass_filenames: false
         stages: [pre-commit]
+
+      # Dry-run only, against whatever DB the committer's local Django settings
+      # point at (DJANGO_SETTINGS_MODULE, default dev/sqlite) — never production.
+      # Blocks the commit if content still has the old " — " / Oxford-comma style,
+      # so it never regresses; the fix itself is applied to production separately
+      # and deliberately (see fix_copy_style.py's docstring), not from this hook.
+      - id: check-copy-style
+        name: Check Copy Style (em dash / Oxford comma)
+        entry: cmd /c 'cd backend && venv\Scripts\python.exe manage.py fix_copy_style'
+        language: system
+        files: ^backend/content/(models\.py|management/commands/fix_copy_style\.py|fixtures/)
+        pass_filenames: false
+        stages: [pre-commit]

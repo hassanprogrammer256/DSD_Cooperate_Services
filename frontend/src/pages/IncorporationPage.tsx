@@ -1,7 +1,9 @@
 import { Award, Building2, ClipboardCheck, FileBadge, FileText, Globe, Handshake, MessageCircle, Send, Settings } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
+import { Marquee } from "@/components/common/Marquee";
 import { PillarHero } from "@/components/common/PillarHero";
+import { SentenceText } from "@/components/common/SentenceText";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
 import { WhyStrip } from "@/components/common/WhyStrip";
@@ -25,17 +27,30 @@ export function IncorporationPage() {
     <>
       <PillarHero
         image={placeholderPhoto}
-        eyebrow="Incorporation Services"
-        title="Your Business."
-        highlight="Our Expertise."
-        description="We help you establish and grow your business in the UAE with seamless company formation, licensing  corporate structuring solutions."
+        eyebrow="Incorporation"
+        title="Establishing Your Business on a"
+        highlight="Strong Foundation"
+        description={
+          <SentenceText text="Incorporation is the legal process of establishing a company as a recognised business entity. It involves selecting the appropriate business structure, activity, jurisdiction, licensing requirements and completing the necessary registration and documentation. From initial consultation and document preparation to licensing and registration, the process can be professionally coordinated to make your business setup smooth, efficient and as seamless as possible. Where permitted, consultations, document submissions and much of the coordination can be handled remotely, allowing you to begin your UAE business journey without unnecessary travel. Start your business remotely. Establish it with confidence." />
+        }
         quickLinks={incorporationPillarMeta.map((pillar) => ({
           icon: Building2,
           label: pillar.label,
           to: `/incorporation/${pillar.pillar}`,
         }))}
-        primaryCta={{ label: "Get Started", to: "#lead-form" }}
         secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
+      />
+
+      <Marquee
+        phrases={[
+          "Business Incorporation",
+          "Licensing & Registration",
+          "Remote Consultations",
+          "Start Your Business Remotely",
+          "Establish With Confidence",
+        ]}
+        ctaLabel="Get Started"
+        ctaTo="#lead-form"
       />
 
       <WhyStrip

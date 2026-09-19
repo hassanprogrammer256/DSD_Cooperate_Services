@@ -1,7 +1,9 @@
 import { Award, Calculator, FileText, HeartPulse, IdCard, MessageCircle, Plane, Send, ShieldCheck, TrendingUp, Users } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
+import { Marquee } from "@/components/common/Marquee";
 import { PillarHero } from "@/components/common/PillarHero";
+import { SentenceText } from "@/components/common/SentenceText";
 import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
 import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
@@ -27,17 +29,30 @@ export function ServicesPage() {
     <>
       <PillarHero
         image={placeholderPhoto}
-        eyebrow="Residency Services"
-        title="Your Future"
-        highlight="in the UAE."
-        description="We provide expert support for UAE residency, investor visas, family sponsorship and Golden Visa solutions — making your move to the UAE simple and stress-free."
+        eyebrow="Residency"
+        title="Making Your UAE Residency Journey"
+        highlight="Simpler"
+        description={
+          <SentenceText text="Residency is the legal status that allows an eligible individual to live in the UAE for the duration and purpose authorised under the applicable visa or residency framework. Residency procedures can involve applications, documentation, approvals, medical examinations, Emirates ID procedures and other requirements depending on the individual's circumstances. Professional coordination helps make these stages easier to understand and manage. Documentation and communication can often be handled remotely where permitted, while any mandatory physical requirements are clearly identified in advance. A clearer process, fewer unnecessary visits and greater convenience from start to finish." />
+        }
         quickLinks={servicePillarMeta.map((pillar) => ({
           icon: IdCard,
           label: pillar.label,
           to: `/residency/${pillar.pillar}`,
         }))}
-        primaryCta={{ label: "Get Started", to: "#lead-form" }}
         secondaryCta={{ label: "Speak to Our Experts", to: "/contact" }}
+      />
+
+      <Marquee
+        phrases={[
+          "UAE Residency & Visas",
+          "Emirates ID Procedures",
+          "Remote Documentation",
+          "Fewer Unnecessary Visits",
+          "Greater Convenience From Start To Finish",
+        ]}
+        ctaLabel="Apply Now"
+        ctaTo="#lead-form"
       />
 
       <div className="mx-auto max-w-3xl px-4 pt-10 md:px-6">
@@ -78,7 +93,9 @@ export function ServicesPage() {
         <LeadForm
           defaultMainService="residency"
           title="Apply for UAE Residency"
-          description="Get expert assistance for your UAE residency application. Fill in your details and our team will guide you through the process."
+          description={
+            <SentenceText text="Get expert assistance for your UAE residency application. Fill in your details and our team will guide you through the process." />
+          }
         />
       </section>
 

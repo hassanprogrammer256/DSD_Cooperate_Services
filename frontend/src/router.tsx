@@ -17,6 +17,7 @@ import { LegalPage } from "@/pages/legal/LegalPage";
 import { PartnerWithUsPage } from "@/pages/legal/PartnerWithUsPage";
 import { PrivacyPolicyPage } from "@/pages/legal/PrivacyPolicyPage";
 import { WebsiteDisclaimerPage } from "@/pages/legal/WebsiteDisclaimerPage";
+import { LocalSponsorshipPage } from "@/pages/LocalSponsorshipPage";
 import { LoginPage } from "@/pages/LoginPage";
 import { MOHREPage } from "@/pages/MOHREPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
@@ -47,6 +48,7 @@ export const router = createBrowserRouter([
       { path: "/mohre", element: <MOHREPage /> },
       { path: "/immigration", element: <ImmigrationPage /> },
       { path: "/immigration/regulations", element: <ImmigrationRegulationsPage /> },
+      { path: "/local-sponsorship", element: <LocalSponsorshipPage /> },
       { path: "/team/:slug", element: <TeamMemberDetailPage /> },
       { path: "/pricing", element: <PricingPage /> },
       { path: "/login", element: <LoginPage /> },

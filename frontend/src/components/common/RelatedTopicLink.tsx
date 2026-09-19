@@ -19,14 +19,14 @@ export function RelatedTopicLink({ icon: Icon, title, description, to, ctaLabel 
   return (
     <Link
       to={to}
-      className="group flex items-center justify-between gap-4 rounded-lg border border-border bg-surface-secondary p-5 transition-colors hover:border-primary"
+      className="group flex items-center justify-between gap-4 rounded-lg border border-accent/30 bg-surface-secondary p-5 transition-colors hover:border-primary"
     >
       <div className="flex items-center gap-4">
         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-light text-primary">
           <Icon size={20} />
         </div>
         <div>
-          <p className="font-display text-sm font-semibold text-text-primary">{title}</p>
+          <p className="font-display text-sm font-bold capitalize text-accent">{title}</p>
           <p className="mt-0.5 text-sm text-text-secondary">{description}</p>
         </div>
       </div>

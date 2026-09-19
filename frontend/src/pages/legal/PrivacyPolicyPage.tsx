@@ -14,13 +14,13 @@ const SECTIONS: LegalSectionData[] = [
     heading: "Personal information we collect",
     paragraphs: ["Depending on the nature of your enquiry or service, we may collect the following categories of personal information:"],
     list: [
-      "Identity information — name, date and place of birth, nationality, gender, photograph, signature, passport, Emirates ID, visa and immigration information  other government-issued identification",
-      "Contact information — address, email, telephone number, emergency contact  preferred communication method",
-      "Corporate and professional information — company name and legal form, trade licence information, business activities, shareholding, director/manager/authorised-signatory information, beneficial ownership information  constitutional documents",
-      "Financial and transactional information — bank account details, payment and invoice records, transaction references, source of funds or source of wealth information  tax registration information",
-      "Service and communication information — enquiry details, services requested or purchased, contracts and quotations, correspondence, complaints and support records  feedback",
-      "Website and technical information — IP address, browser and device type, approximate location, pages visited, referral source  cookie identifiers (see our Cookie Policy)",
-      "Sensitive personal information — where necessary for a requested service or legal obligation, such as biometric, health, criminal-record, family or religious information",
+      "Identity information: name, date and place of birth, nationality, gender, photograph, signature, passport, Emirates ID, visa and immigration information and other government-issued identification",
+      "Contact information: address, email, telephone number, emergency contact and preferred communication method",
+      "Corporate and professional information: company name and legal form, trade licence information, business activities, shareholding, director/manager/authorised-signatory information, beneficial ownership information and constitutional documents",
+      "Financial and transactional information: bank account details, payment and invoice records, transaction references, source of funds or source of wealth information and tax registration information",
+      "Service and communication information: enquiry details, services requested or purchased, contracts and quotations, correspondence, complaints and support records and feedback",
+      "Website and technical information: IP address, browser and device type, approximate location, pages visited, referral source and cookie identifiers (see our Cookie Policy)",
+      "Sensitive personal information: where necessary for a requested service or legal obligation, such as biometric, health, criminal-record, family or religious information",
     ],
   },
   {
@@ -50,7 +50,7 @@ const SECTIONS: LegalSectionData[] = [
     heading: "Grounds for processing",
     paragraphs: [
       "Depending on the circumstances, we process personal information with your consent, to respond to your request before entering into an agreement, to perform a contract or provide a requested service, to comply with a legal or regulatory obligation, to protect public or data-subject interests, to establish or defend legal claims or for legitimate business purposes appropriately balanced against individual rights.",
-      "Where processing is based on consent, you may withdraw it at any time — withdrawal does not affect processing already lawfully completed. Refusing to provide required information may prevent us from accepting an engagement or providing the requested service.",
+      "Where processing is based on consent, you may withdraw it at any time, withdrawal does not affect processing already lawfully completed. Refusing to provide required information may prevent us from accepting an engagement or providing the requested service.",
     ],
   },
   {
@@ -132,7 +132,7 @@ const SECTIONS: LegalSectionData[] = [
   {
     heading: "External websites",
     paragraphs: [
-      "Our website may contain links to government portals and third-party websites. DSD does not control the privacy or security practices of those websites — review each site's own privacy policy before providing personal information.",
+      "Our website may contain links to government portals and third-party websites. DSD does not control the privacy or security practices of those websites, review each site's own privacy policy before providing personal information.",
     ],
   },
   {

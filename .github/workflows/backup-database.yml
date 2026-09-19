@@ -1,0 +1,67 @@
+name: Weekly Database Backup
+
+on:
+  schedule:
+    # Every Sunday at 03:00 UTC — low-traffic window, well clear of the deploy
+    # workflow which only runs on pushes to master.
+    - cron: "0 3 * * 0"
+  workflow_dispatch: {}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump production database on EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            command -v pg_dump >/dev/null || sudo apt-get update && sudo apt-get install -y postgresql-client
+
+            cd ~/DSD_Cooperate_Services/backend
+            source venv/bin/activate
+            export DJANGO_SETTINGS_MODULE=config.settings.prod
+
+            mkdir -p ~/db-backups
+            # Fixed filename, overwritten each run — the runner downloads this
+            # exact path below, and GitHub's own per-run artifact (named with
+            # today's date) is what actually keeps the weekly history, so
+            # nothing needs to accumulate on the server itself.
+            DUMP_PATH=~/db-backups/latest.dump
+
+            # Reconstructs the connection string from Django's own parsed
+            # DATABASES setting rather than re-parsing the server's .env file
+            # here — one source of truth, works regardless of how DATABASE_URL
+            # is formatted or quoted on disk.
+            python -c "
+            import django, os
+            os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.prod')
+            django.setup()
+            from django.conf import settings
+            d = settings.DATABASES['default']
+            print(f\"postgresql://{d['USER']}:{d['PASSWORD']}@{d['HOST']}:{d['PORT'] or 5432}/{d['NAME']}\")
+            " > /tmp/dsn.txt
+
+            pg_dump --format=custom --file="$DUMP_PATH" "$(cat /tmp/dsn.txt)"
+            rm -f /tmp/dsn.txt
+
+      - name: Download the dump to the runner
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "~/db-backups/latest.dump"
+          target: "./db-backups"
+          strip_components: 0
+
+      - name: Upload backup as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dsd-db-backup-${{ github.run_id }}
+          path: db-backups/**/latest.dump
+          retention-days: 90
+          if-no-files-found: error

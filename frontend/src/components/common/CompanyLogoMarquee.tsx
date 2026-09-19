@@ -21,7 +21,12 @@ export function CompanyLogoMarquee() {
             key={`${logo.alt}-${index}`}
             src={logo.src}
             alt=""
-            className="h-8 w-auto shrink-0 object-contain grayscale opacity-60 transition hover:opacity-100 hover:grayscale-0 md:h-10"
+            // These logo files are plain white marks on transparent backgrounds —
+            // made for a dark backdrop. On light theme's light background they'd
+            // be nearly invisible, so they're inverted to render dark there;
+            // dark theme already has a dark backdrop, so invert-0 leaves them
+            // white as authored.
+            className="h-8 w-auto shrink-0 object-contain opacity-70 invert transition hover:opacity-100 dark:opacity-60 dark:invert-0 dark:hover:opacity-100 md:h-10"
           />
         ))}
       </div>

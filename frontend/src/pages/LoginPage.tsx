@@ -42,7 +42,7 @@ export function LoginPage() {
       setFormError(
         err instanceof ApiError && err.status === 401
           ? "Incorrect email or password."
-          : "Couldn't log you in right now — please try again shortly.",
+          : "Couldn't log you in right now, please try again shortly.",
       );
     }
   }
