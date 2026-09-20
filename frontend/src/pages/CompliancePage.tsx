@@ -8,7 +8,7 @@ import { PillarProcessSteps } from "@/components/common/PillarProcessSteps";
 import { RelatedTopicLink } from "@/components/common/RelatedTopicLink";
 import { ServicesShowcase } from "@/components/common/ServicesShowcase";
 import { WhyStrip } from "@/components/common/WhyStrip";
-import placeholderPhoto from "@/assets/images/placeholders/placeholder-photo.svg";
+import placeholderPhoto from "@/assets/images/hero/comp.jpg";
 import { curatedComplianceAreas, useComplianceAreasQuery } from "@/lib/api/compliance";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 

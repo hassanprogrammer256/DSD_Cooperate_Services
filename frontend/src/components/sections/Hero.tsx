@@ -29,7 +29,7 @@ const PILLAR_LINKS = [
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-150 items-center bg-cover bg-center pt-24 md:min-h-150"
+      className="relative flex min-h-150 items-center bg-[#0a1b33] bg-[length:100%_auto] bg-center bg-no-repeat pt-24 md:min-h-150"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div

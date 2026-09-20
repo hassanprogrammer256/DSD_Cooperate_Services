@@ -24,9 +24,7 @@ export function ComplianceDetailPage() {
       {area && (
         <>
           <PageHeroBanner image={area.heroImage} align="left" title={area.title} description={area.summary}>
-            <p className="max-w-2xl font-display text-2xl font-semibold leading-snug text-white md:text-3xl">
-              {area.description}
-            </p>
+            <p className="max-w-2xl text-white/80">{area.description}</p>
           </PageHeroBanner>
 
           <Marquee

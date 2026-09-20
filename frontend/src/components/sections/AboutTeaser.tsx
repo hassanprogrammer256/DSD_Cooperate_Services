@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import aboutImage from "@/assets/images/about/7.webp";
+import aboutImage from "@/assets/images/hero/about_hero.jpg";
 
 export function AboutTeaser() {
   return (

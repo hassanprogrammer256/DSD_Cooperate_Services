@@ -28,7 +28,7 @@ type Props = {
 // icon row and two CTAs the plainer PageHeroBanner has no slot for.
 export function PillarHero({ image, eyebrow, title, highlight, description, quickLinks, primaryCta, secondaryCta }: Props) {
   return (
-    <section className="relative flex min-h-[520px] items-center bg-cover bg-center pt-24" style={{ backgroundImage: `url(${image})` }}>
+    <section className="relative flex min-h-[520px] items-center bg-[#0a1b33] bg-[length:100%_auto] bg-center bg-no-repeat pt-24" style={{ backgroundImage: `url(${image})` }}>
       <div
         className="absolute inset-0"
         style={{

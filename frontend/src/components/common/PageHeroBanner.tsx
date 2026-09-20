@@ -15,7 +15,7 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
 
   return (
     <section
-      className="relative bg-cover bg-center py-20 md:py-28 flex flex-col gap-3"
+      className="relative bg-[#0a1b33] bg-[length:100%_auto] bg-center bg-no-repeat py-20 md:py-28 flex flex-col gap-3"
       style={{ backgroundImage: `url(${image})` }}
     >
       <div
