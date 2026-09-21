@@ -6,6 +6,7 @@ from content.models import (
     InsightArticle,
     PricingTier,
     Service,
+    ServiceFormField,
     Stat,
     Testimonial,
     TeamMember,
@@ -16,6 +17,19 @@ from content.models import (
 # model "keeps the same field names as the TypeScript type wherever reasonable," so the
 # API is a simple, boring 1:1 mapping for Phase 11's frontend migration, not a second
 # transform layer to maintain.
+
+
+class ServiceFormFieldSerializer(serializers.ModelSerializer):
+    """Read-only — the intake-form schema a Service exposes to a customer's dashboard.
+    Rows are managed via the ServiceFormFieldInline on ServiceAdmin (content/admin.py),
+    not through this API."""
+
+    fieldType = serializers.CharField(source="field_type")
+    helpText = serializers.CharField(source="help_text")
+
+    class Meta:
+        model = ServiceFormField
+        fields = ["key", "label", "fieldType", "required", "options", "helpText", "order"]
 
 
 class ServiceSerializer(serializers.ModelSerializer):
@@ -31,13 +45,14 @@ class ServiceSerializer(serializers.ModelSerializer):
     teamMemberSlugs = serializers.SlugRelatedField(
         source="team_members", slug_field="slug", many=True, queryset=TeamMember.objects.all(), required=False
     )
+    formFields = ServiceFormFieldSerializer(source="form_fields", many=True, read_only=True)
 
     class Meta:
         model = Service
         fields = [
             "slug", "title", "pillar", "icon", "summary", "description", "philosophy_title",
             "included", "heroImage", "relatedInsightSlugs", "teamMemberSlugs", "stats",
-            "process", "faqs", "ctaLabel",
+            "process", "faqs", "ctaLabel", "formFields",
         ]
 
 
@@ -111,11 +126,14 @@ class StatSerializer(serializers.ModelSerializer):
 
 class PricingTierSerializer(serializers.ModelSerializer):
     id = serializers.CharField(source="key")
+    # Read-only here — the admin-curated allow-list is managed from the PricingTier
+    # admin screen (a plain M2M widget), not through this public-facing serializer.
+    services = serializers.SlugRelatedField(slug_field="slug", many=True, read_only=True)
 
     class Meta:
         model = PricingTier
         # `order` added for Phase 14 (admin app) — same reasoning as StatSerializer above.
         fields = [
             "id", "name", "description", "price", "amount",
-            "currency", "period", "features", "highlighted", "order",
+            "currency", "period", "features", "highlighted", "order", "services",
         ]

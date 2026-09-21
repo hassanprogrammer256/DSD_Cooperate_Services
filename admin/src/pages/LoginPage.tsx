@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import FormControl from "@mui/joy/FormControl";
 import FormHelperText from "@mui/joy/FormHelperText";
 import FormLabel from "@mui/joy/FormLabel";
@@ -8,6 +6,7 @@ import Button from "@mui/joy/Button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import { NotStaffError, useAuth } from "@/contexts/AuthContext";
 import { ApiError } from "@/lib/api/client";
@@ -17,7 +16,6 @@ export function LoginPage() {
   const { login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const [formError, setFormError] = useState<string | null>(null);
 
   const {
     register,
@@ -28,18 +26,17 @@ export function LoginPage() {
   const from = (location.state as { from?: string } | null)?.from ?? "/dashboard";
 
   async function onSubmit(values: LoginFormValues) {
-    setFormError(null);
     try {
       await login(values.email, values.password);
       void navigate(from, { replace: true });
     } catch (err) {
       console.error("[LoginPage/onSubmit]", err);
       if (err instanceof NotStaffError) {
-        setFormError("This account doesn't have admin access.");
+        toast.error("This account doesn't have admin access.");
       } else if (err instanceof ApiError && err.status === 401) {
-        setFormError("Incorrect email or password.");
+        toast.error("Incorrect email or password.");
       } else {
-        setFormError("Couldn't log you in right now — please try again shortly.");
+        toast.error("Couldn't log you in right now — please try again shortly.");
       }
     }
   }
@@ -50,8 +47,6 @@ export function LoginPage() {
         <h1 className="text-center font-display text-2xl font-bold text-text-primary">DSD Admin</h1>
 
         <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="mt-8 flex flex-col gap-4" noValidate>
-          {formError && <p className="rounded-lg bg-error-light px-4 py-3 text-sm text-error">{formError}</p>}
-
           <FormControl error={!!errors.email} required>
             <FormLabel>Email Address</FormLabel>
             <Input type="email" {...register("email")} />

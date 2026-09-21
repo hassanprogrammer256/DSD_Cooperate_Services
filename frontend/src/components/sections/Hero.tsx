@@ -29,7 +29,7 @@ const PILLAR_LINKS = [
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-150 items-center bg-[#0a1b33] bg-[length:100%_auto] bg-center bg-no-repeat pt-24 md:min-h-150"
+      className="relative flex min-h-150 items-center bg-[#0a1b33] bg-size-[100%_auto] bg-center bg-no-repeat pt-24 md:min-h-150"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div
@@ -49,7 +49,7 @@ export function Hero() {
    
         <motion.h1
           variants={itemVariants}
-          className="mt-4 max-w-2xl font-display text-4xl font-bold text-white md:text-5xl md:leading-[1.15]"
+          className="mt-4 max-w-2xl font-geist text-4xl font-bold text-white md:text-5xl md:leading-[1.15]"
         >
         Strategic Advisory,
         <br />

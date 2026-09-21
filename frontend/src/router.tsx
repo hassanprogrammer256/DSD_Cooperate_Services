@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import { App } from "@/App";
 import { AboutPage } from "@/pages/AboutPage";
@@ -6,6 +6,12 @@ import { AccountPage } from "@/pages/AccountPage";
 import { CompliancePage } from "@/pages/CompliancePage";
 import { ComplianceDetailPage } from "@/pages/ComplianceDetailPage";
 import { ContactPage } from "@/pages/ContactPage";
+import { DashboardLayout } from "@/pages/dashboard/DashboardLayout";
+import { DashboardNotificationsPage } from "@/pages/dashboard/DashboardNotificationsPage";
+import { DashboardProfilePage } from "@/pages/dashboard/DashboardProfilePage";
+import { DashboardServicesPage } from "@/pages/dashboard/DashboardServicesPage";
+import { DashboardSubscriptionPage } from "@/pages/dashboard/DashboardSubscriptionPage";
+import { ServiceRequestFormPage } from "@/pages/dashboard/ServiceRequestFormPage";
 import { HomePage } from "@/pages/HomePage";
 import { ImmigrationPage } from "@/pages/ImmigrationPage";
 import { ImmigrationRegulationsPage } from "@/pages/ImmigrationRegulationsPage";
@@ -27,6 +33,7 @@ import { ServiceDetailPage } from "@/pages/ServiceDetailPage";
 import { ServicesPage } from "@/pages/ServicesPage";
 import { TeamMemberDetailPage } from "@/pages/TeamMemberDetailPage";
 import { ProtectedRoute } from "@/components/common/ProtectedRoute";
+import { AuthLayout } from "@/components/layout/AuthLayout";
 
 export const router = createBrowserRouter([
   {
@@ -51,8 +58,6 @@ export const router = createBrowserRouter([
       { path: "/local-sponsorship", element: <LocalSponsorshipPage /> },
       { path: "/team/:slug", element: <TeamMemberDetailPage /> },
       { path: "/pricing", element: <PricingPage /> },
-      { path: "/login", element: <LoginPage /> },
-      { path: "/register", element: <RegisterPage /> },
       {
         path: "/account",
         element: (
@@ -68,6 +73,33 @@ export const router = createBrowserRouter([
       { path: "/website-disclaimer", element: <WebsiteDisclaimerPage /> },
       { path: "/partner-with-us", element: <PartnerWithUsPage /> },
       { path: "*", element: <NotFoundPage /> },
+    ],
+  },
+  // Outside <App/> — login/register must not carry the marketing site's
+  // Navbar/Footer/Testimonials/mobile tab bar. See AuthLayout.tsx.
+  {
+    element: <AuthLayout />,
+    children: [
+      { path: "/login", element: <LoginPage /> },
+      { path: "/register", element: <RegisterPage /> },
+    ],
+  },
+  // Also outside <App/> — a real dashboard app shell (sidebar + topbar), not a
+  // marketing page. See DashboardLayout.tsx.
+  {
+    path: "/dashboard",
+    element: (
+      <ProtectedRoute>
+        <DashboardLayout />
+      </ProtectedRoute>
+    ),
+    children: [
+      { index: true, element: <Navigate to="profile" replace /> },
+      { path: "profile", element: <DashboardProfilePage /> },
+      { path: "notifications", element: <DashboardNotificationsPage /> },
+      { path: "subscription", element: <DashboardSubscriptionPage /> },
+      { path: "services", element: <DashboardServicesPage /> },
+      { path: "services/:slug", element: <ServiceRequestFormPage /> },
     ],
   },
 ]);

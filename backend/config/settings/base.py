@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     "content",
     "orders",
     "leads",
+    "notifications",
+    "service_requests",
 ]
 
 MIDDLEWARE = [
@@ -119,6 +121,11 @@ SIMPLE_JWT = {
 # read here, used only in orders/services.py, never logged, never in an API response.
 TAP_SECRET_KEY = env("TAP_SECRET_KEY", default="")
 
+# Not a secret — a Firebase project id is public (it's in the frontend's own web
+# config). Used by accounts/firebase.py to check a Google ID token's audience/issuer
+# claims against Google's public keys; no service-account credentials involved.
+FIREBASE_PROJECT_ID = env("FIREBASE_PROJECT_ID", default="dsd-sites-fb2ac")
+
 PUBLIC_SITE_URL = env("PUBLIC_SITE_URL", default="http://localhost:5173")
 
 EMAIL_HOST = env("EMAIL_HOST", default="")
@@ -135,3 +142,7 @@ LEAD_NOTIFICATION_EMAIL = env("LEAD_NOTIFICATION_EMAIL", default=DEFAULT_FROM_EM
 # Inert until a real external CRM exists — empty by default, see leads/webhooks.py.
 # Never assume a value here; an empty string is the correct, honest default.
 LEAD_WEBHOOK_URL = env("LEAD_WEBHOOK_URL", default="")
+
+# Where the internal "new service request" notification goes — defaults to the same
+# inbox as LEAD_NOTIFICATION_EMAIL. See service_requests/emails.py.
+SERVICE_REQUEST_NOTIFICATION_EMAIL = env("SERVICE_REQUEST_NOTIFICATION_EMAIL", default=LEAD_NOTIFICATION_EMAIL)

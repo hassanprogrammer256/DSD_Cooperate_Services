@@ -22,6 +22,11 @@ import { PricingListPage } from "@/pages/pricing/PricingListPage";
 import { PricingFormPage } from "@/pages/pricing/PricingFormPage";
 import { OrdersListPage } from "@/pages/orders/OrdersListPage";
 import { LeadsListPage } from "@/pages/leads/LeadsListPage";
+import { SubscriptionsListPage } from "@/pages/subscriptions/SubscriptionsListPage";
+import { SubscriptionFormPage } from "@/pages/subscriptions/SubscriptionFormPage";
+import { ServiceRequestsListPage } from "@/pages/service-requests/ServiceRequestsListPage";
+import { UsersListPage } from "@/pages/users/UsersListPage";
+import { UserFormPage } from "@/pages/users/UserFormPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 
 export const router = createBrowserRouter([
@@ -55,6 +60,11 @@ export const router = createBrowserRouter([
           { path: "/pricing/:id", element: <PricingFormPage /> },
           { path: "/orders", element: <OrdersListPage /> },
           { path: "/leads", element: <LeadsListPage /> },
+          { path: "/subscriptions", element: <SubscriptionsListPage /> },
+          { path: "/subscriptions/:id", element: <SubscriptionFormPage /> },
+          { path: "/service-requests", element: <ServiceRequestsListPage /> },
+          { path: "/users", element: <UsersListPage /> },
+          { path: "/users/:id", element: <UserFormPage /> },
         ],
       },
       { path: "*", element: <NotFoundPage /> },

@@ -1,6 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-toastify";
 
-import { apiClient } from "@/lib/api/client";
+import { apiClient, ApiError } from "@/lib/api/client";
 import type { Lead, LeadStats, LeadStatus } from "@/types";
 
 // Leads don't fit createResourceHooks' create/update/delete CRUD shape (no create from
@@ -37,8 +38,13 @@ export function useUpdateLeadStatusMutation() {
     mutationFn: ({ id, status }: { id: number; status: LeadStatus }) =>
       apiClient.patch<Lead>(`/api/admin/leads/${id}/`, { status }),
     onSuccess: () => {
+      toast.success("Lead status updated.");
       void queryClient.invalidateQueries({ queryKey: ["admin-leads"] });
       void queryClient.invalidateQueries({ queryKey: leadsKeys.stats });
+    },
+    onError: (err) => {
+      console.error("[useUpdateLeadStatusMutation]", err);
+      toast.error(err instanceof ApiError ? err.message : "Couldn't update this lead's status.");
     },
   });
 }

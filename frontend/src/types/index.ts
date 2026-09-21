@@ -42,6 +42,21 @@ export type Service = {
   process: ServiceProcessStep[];
   faqs: ServiceFaq[];
   ctaLabel?: string;
+  // The per-service intake-form schema a dashboard "Request This Service" form renders
+  // from — see backend/content/models.py's ServiceFormField.
+  formFields: ServiceFormField[];
+};
+
+export type ServiceFormFieldType = "text" | "textarea" | "number" | "date" | "select" | "file" | "checkbox";
+
+export type ServiceFormField = {
+  key: string;
+  label: string;
+  fieldType: ServiceFormFieldType;
+  required: boolean;
+  options: string[]; // SELECT choices
+  helpText: string;
+  order: number;
 };
 
 export type ServiceIncludedItem = {
@@ -135,6 +150,9 @@ export type PricingTier = {
   period?: string;
   features: string[];
   highlighted?: boolean;
+  // Admin-curated allow-list — which service slugs a subscriber on this tier can
+  // request from their dashboard's Services tab.
+  services: string[];
 };
 
 // New in Phase 12 — accounts/auth. isStaff is the only distinction between a customer
@@ -144,6 +162,8 @@ export type User = {
   email: string;
   name: string;
   phone: string;
+  company: string;
+  country: string;
   photo: string | null;
   isStaff: boolean;
 };
@@ -158,4 +178,39 @@ export type Order = {
   status: OrderStatus;
   createdAt: string; // ISO datetime
   failureReason?: string; // only meaningful when status === "failed"
+};
+
+export type SubscriptionStatus = "active" | "expired" | "cancelled";
+
+export type Subscription = {
+  id: number;
+  tierId: string;
+  tierName: string;
+  status: SubscriptionStatus;
+  startedAt: string; // ISO datetime
+  expiresAt: string | null; // ISO datetime — informational only, nothing auto-renews/expires
+};
+
+export type NotificationKind = "service_request" | "subscription" | "system";
+
+export type Notification = {
+  id: number;
+  kind: NotificationKind;
+  title: string;
+  body: string;
+  isRead: boolean;
+  createdAt: string; // ISO datetime
+};
+
+export type ServiceRequestStatus = "new" | "in_review" | "in_progress" | "completed" | "rejected";
+
+export type ServiceRequest = {
+  id: number;
+  reference: string;
+  serviceSlug: string;
+  serviceTitle: string;
+  formData: Record<string, unknown>;
+  attachment: string | null;
+  status: ServiceRequestStatus;
+  createdAt: string; // ISO datetime
 };

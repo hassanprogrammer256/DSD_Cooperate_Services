@@ -1,8 +1,10 @@
-import { Briefcase, Building2, Globe, Handshake, Users } from "lucide-react";
+import { Award, Briefcase, Building2, Clock, Globe, Handshake, Send, ShieldCheck, UserCheck, Users } from "lucide-react";
 
 import { LeadForm } from "@/components/common/LeadForm";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
+import { ProcessSteps } from "@/components/common/ProcessSteps";
 import { SentenceText } from "@/components/common/SentenceText";
+import { WhyChooseDsd } from "@/components/common/WhyChooseDsd";
 import placeholderPhoto from "@/assets/images/contact1.png";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
@@ -34,6 +36,20 @@ const PARTNER_TYPES = [
   },
 ];
 
+const PARTNER_STEPS = [
+  { step: "1", icon: UserCheck, title: "Sign Up", description: "Share your details with us and receive your unique referral link." },
+  { step: "2", icon: Send, title: "Share", description: "Introduce DSD to founders, professionals or businesses entering the UAE." },
+  { step: "3", icon: Handshake, title: "We Take It From There", description: "Our team handles the consultation, documentation and coordination." },
+  { step: "4", icon: Award, title: "Get Rewarded", description: "Once your referral becomes a client, you receive benefits under our programme terms." },
+];
+
+const PARTNER_BENEFITS = [
+  { icon: ShieldCheck, title: "Transparent Terms", description: "Clear referral terms and a reward structure defined upfront." },
+  { icon: Clock, title: "Fast Client Onboarding", description: "We respond to your referrals within one business day." },
+  { icon: Globe, title: "International Reach", description: "Partner with us from anywhere, our process is remote-first." },
+  { icon: Handshake, title: "Long-Term Relationship", description: "We keep you updated at every stage of your referral's journey." },
+];
+
 export function PartnerWithUsPage() {
   useDocumentTitle("Partner With Us");
 
@@ -55,21 +71,28 @@ export function PartnerWithUsPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {PARTNER_TYPES.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="rounded-xl border border-accent/30 bg-surface p-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-light text-primary">
-                <Icon size={20} />
-              </div>
-              <p className="mt-4 font-display text-base font-bold capitalize text-accent">{title}</p>
-              <p className="mt-2 text-sm text-text-secondary">{description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <WhyChooseDsd
+        eyebrow="Partner With DSD"
+        title="Multiple Ways to Work Together"
+        items={PARTNER_TYPES}
+        columns={3}
+      />
 
-      <section className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
+      <ProcessSteps
+        eyebrow="How It Works"
+        title="From Introduction to Reward"
+        steps={PARTNER_STEPS}
+      />
+
+      <WhyChooseDsd
+        eyebrow="Why Partner With DSD"
+        title="A Programme Built on Clarity"
+        items={PARTNER_BENEFITS}
+        columns={2}
+        background="surface-secondary"
+      />
+
+      <section className="mx-auto max-w-3xl px-4 py-16 pb-24 md:px-6">
         <LeadForm
           defaultMainService="partner"
           title="Become a Partner"

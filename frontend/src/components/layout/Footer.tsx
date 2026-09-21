@@ -95,7 +95,19 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-bold capitalize tracking-wide text-accent">Contact</h3>
+
+          <h3 className=" text-sm font-bold capitalize tracking-wide text-accent">Legal</h3>
+          <ul className="mt-4 flex flex-col gap-2">
+            {LEGAL_LINKS.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="text-sm text-white/72 hover:text-white ">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="text-sm font-bold capitalize tracking-wide text-accent mt-6">Contact</h3>
           <ul className="flex flex-col gap-3 text-sm text-white/72 mt-4">
             <li className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 shrink-0" />
@@ -113,17 +125,6 @@ export function Footer() {
                 info@dsdgrp.com
               </a>
             </li>
-          </ul>
-
-          <h3 className="mt-6 text-sm font-bold capitalize tracking-wide text-accent">Legal</h3>
-          <ul className="mt-4 flex flex-col gap-2">
-            {LEGAL_LINKS.map((link) => (
-              <li key={link.to}>
-                <Link to={link.to} className="text-sm text-white/72 hover:text-white">
-                  {link.label}
-                </Link>
-              </li>
-            ))}
           </ul>
         </div>
       </div>

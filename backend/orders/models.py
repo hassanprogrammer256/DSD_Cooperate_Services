@@ -47,3 +47,38 @@ class Payment(models.Model):
 
     def __str__(self) -> str:
         return f"Payment for Order #{self.order_id} — {self.tap_charge_id}"
+
+
+class Subscription(models.Model):
+    """The plan a user currently has (or previously had) access to. Created
+    automatically when an Order is PAID (see orders/services.py::process_order_payment)
+    or manually via this model's Django admin registration for the non-purchasable
+    Enterprise tier, which staff activate by hand.
+
+    No recurring-billing engine exists here — `expires_at` is informational only,
+    nothing auto-renews or auto-charges (there's no task queue anywhere in this repo).
+    """
+
+    class Status(models.TextChoices):
+        ACTIVE = "active", "Active"
+        EXPIRED = "expired", "Expired"
+        CANCELLED = "cancelled", "Cancelled"
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="subscriptions")
+    pricing_tier = models.ForeignKey(PricingTier, on_delete=models.PROTECT, related_name="subscriptions")
+    # The purchase that created this subscription — null for a manually-activated
+    # (e.g. Enterprise) subscription with no Tap charge behind it.
+    order = models.ForeignKey(
+        Order, on_delete=models.SET_NULL, null=True, blank=True, related_name="subscription"
+    )
+    status = models.CharField(max_length=16, choices=Status.choices, default=Status.ACTIVE)
+    started_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-started_at"]
+
+    def __str__(self) -> str:
+        return f"{self.user} — {self.pricing_tier.name} ({self.status})"

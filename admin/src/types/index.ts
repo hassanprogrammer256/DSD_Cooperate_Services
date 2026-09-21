@@ -152,3 +152,61 @@ export type AdminOrder = {
   failureReason?: string;
   createdAt: string;
 };
+
+export type AdminUser = {
+  id: number;
+  email: string;
+  name: string;
+  phone: string;
+  company: string;
+  country: string;
+  isStaff: boolean;
+  dateJoined: string;
+};
+
+export type UserStats = {
+  total: number;
+  staffCount: number;
+  newLast7Days: number;
+  newLast30Days: number;
+  signupsByDay: { date: string; count: number }[];
+};
+
+export type SubscriptionStatus = "active" | "expired" | "cancelled";
+
+export type AdminSubscription = {
+  id: number;
+  customerEmail: string;
+  customerName: string;
+  tierId: string;
+  tierName: string;
+  status: SubscriptionStatus;
+  startedAt: string;
+  expiresAt: string | null;
+};
+
+export type SubscriptionStats = {
+  total: number;
+  byStatus: Record<string, number>;
+  activeByTier: Record<string, number>;
+};
+
+export type ServiceRequestStatus = "new" | "in_review" | "in_progress" | "completed" | "rejected";
+
+export type AdminServiceRequest = {
+  id: number;
+  reference: string;
+  serviceSlug: string;
+  serviceTitle: string;
+  formData: Record<string, unknown>;
+  attachment: string | null;
+  status: ServiceRequestStatus;
+  createdAt: string;
+  customerName: string;
+  customerEmail: string;
+};
+
+export type ServiceRequestStats = {
+  total: number;
+  byStatus: Record<string, number>;
+};

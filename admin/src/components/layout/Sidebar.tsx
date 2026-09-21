@@ -1,5 +1,7 @@
 import {
   Briefcase,
+  ClipboardList,
+  CreditCard,
   FileText,
   LayoutDashboard,
   MessageSquareQuote,
@@ -7,6 +9,7 @@ import {
   Receipt,
   ShieldCheck,
   Tag,
+  UserCog,
   UserPlus,
   Users,
 } from "lucide-react";
@@ -40,6 +43,9 @@ const NAV_GROUPS = [
     items: [
       { to: "/orders", label: "Orders", icon: Receipt },
       { to: "/leads", label: "Leads", icon: UserPlus },
+      { to: "/subscriptions", label: "Subscriptions", icon: CreditCard },
+      { to: "/service-requests", label: "Service Requests", icon: ClipboardList },
+      { to: "/users", label: "Users", icon: UserCog },
     ],
   },
 ];

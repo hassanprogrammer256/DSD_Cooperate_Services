@@ -16,6 +16,7 @@
     "@hookform/resolvers": "^5.9.1",
     "@mui/joy": "^5.0.0-beta.52",
     "@tanstack/react-query": "^5.102.8",
+    "firebase": "^12.19.0",
     "framer-motion": "^13.2.0",
     "geist": "^1.7.2",
     "lucide-react": "^1.41.0",

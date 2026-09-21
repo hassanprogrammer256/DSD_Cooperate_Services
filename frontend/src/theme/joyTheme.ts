@@ -46,7 +46,7 @@ const focusStyle = {
 
 export const joyTheme = extendTheme({
   fontFamily: {
-    body: "var(--font-sans)",
+    body: "var(--font-serif)",
     display: "var(--font-display)",
   },
   colorSchemes: {

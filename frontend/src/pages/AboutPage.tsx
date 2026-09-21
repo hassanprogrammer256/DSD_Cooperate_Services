@@ -4,7 +4,6 @@ import {
   Handshake,
   Laptop,
   MessageCircle,
-  Play,
   ShieldCheck,
   Users,
 } from "lucide-react";
@@ -16,9 +15,10 @@ import { PageHeroBanner } from "@/components/common/PageHeroBanner";
 import { SentenceText } from "@/components/common/SentenceText";
 import aboutHero from "@/assets/images/hero/about_hero.jpg";
 import aboutMission from "@/assets/images/about/about_dsd.jpeg";
+import aboutVideo from "@/assets/videos/about_dsd.mp4";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
-const OFFICE_COORDINATES = { lat: 25.834608125684603, lng: 57.01326329403336 };
+const OFFICE_COORDINATES = { lat: 25.24105614966124, lng: 55.308334026794 };
 const MAPS_EMBED_URL = `https://www.google.com/maps?q=${OFFICE_COORDINATES.lat},${OFFICE_COORDINATES.lng}&output=embed`;
 
 const MISSION_PILLARS = [
@@ -224,7 +224,6 @@ export function AboutPage() {
         </div>
       </div>
 
-      {/* Network */}
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
           <div>
@@ -246,19 +245,17 @@ export function AboutPage() {
           </ul>
         </div>
       </div>
-
-      {/* Contact / office */}
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-          {/* TODO: swap the poster image + placeholder button for a real <video>
-              element (or a hosted embed) once office/team footage is available. */}
-          <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-accent/30">
-            <img src={aboutMission} alt="Inside DSD Corporate Services" className="h-full w-full object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/40">
-              <span className="flex size-16 items-center justify-center rounded-full bg-white/90 text-primary shadow-lg">
-                <Play size={26} className="ml-1" fill="currentColor" />
-              </span>
-            </div>
+          <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-accent/30 bg-navy">
+            <video
+              src={aboutVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            />
           </div>
 
           <ConsentGate

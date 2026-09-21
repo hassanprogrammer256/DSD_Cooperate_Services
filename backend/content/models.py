@@ -92,6 +92,38 @@ class Service(models.Model):
         return self.title
 
 
+class ServiceFormField(models.Model):
+    """Defines the per-service intake form a customer fills out from their dashboard's
+    Services tab (see service_requests.ServiceRequest.form_data, which is keyed by
+    this model's `key`). Staff manage these via the inline on ServiceAdmin for now —
+    there's no dedicated editor in the custom admin app yet."""
+
+    class FieldType(models.TextChoices):
+        TEXT = "text", "Text"
+        TEXTAREA = "textarea", "Textarea"
+        NUMBER = "number", "Number"
+        DATE = "date", "Date"
+        SELECT = "select", "Select"
+        FILE = "file", "File"
+        CHECKBOX = "checkbox", "Checkbox"
+
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name="form_fields")
+    key = models.SlugField()
+    label = models.CharField(max_length=200)
+    field_type = models.CharField(max_length=16, choices=FieldType.choices, default=FieldType.TEXT)
+    required = models.BooleanField(default=True)
+    options = models.JSONField(default=list, blank=True)  # list[str] — SELECT choices
+    help_text = models.CharField(max_length=300, blank=True)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["order"]
+        unique_together = [("service", "key")]
+
+    def __str__(self) -> str:
+        return f"{self.service.title} — {self.label}"
+
+
 class ComplianceArea(models.Model):
     slug = models.SlugField(unique=True)
     title = models.CharField(max_length=200)
@@ -158,6 +190,10 @@ class PricingTier(models.Model):
     features = models.JSONField(default=list)  # list[str]
     highlighted = models.BooleanField(default=False)
     order = models.PositiveIntegerField(default=0)
+    # Admin-curated allow-list: which services a subscriber on this tier can request
+    # from their dashboard's Services tab. No extra fields needed on the relation
+    # itself, so a plain M2M rather than a through-table.
+    services = models.ManyToManyField(Service, blank=True, related_name="pricing_tiers")
 
     class Meta:
         ordering = ["order"]

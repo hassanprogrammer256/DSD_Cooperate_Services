@@ -10,6 +10,7 @@ import {
   UserCheck,
 } from "lucide-react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { Marquee } from "@/components/common/Marquee";
@@ -19,7 +20,9 @@ import { SentenceText } from "@/components/common/SentenceText";
 import { TapCheckoutPanel } from "@/components/pricing/TapCheckoutPanel";
 import pricingHero from "@/assets/images/hero/pricing_hero.jpg";
 import { useAuth } from "@/contexts/AuthContext";
+import { ApiError } from "@/lib/api/client";
 import { usePricingTiersQuery } from "@/lib/api/pricing";
+import { useActivateFreeSubscriptionMutation } from "@/lib/api/subscriptions";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 import type { Order } from "@/types";
 
@@ -92,6 +95,10 @@ const QUICK_COMPARE_FALLBACKS: Record<string, { oneLiner: string; tag: string; c
   },
 };
 
+// Mirrors TapCheckoutPanel.tsx's own read of this var — checked here too so
+// handleBuyNow can skip straight past a checkout panel that can't work.
+const TAP_PUBLIC_KEY = import.meta.env.VITE_TAP_PUBLIC_KEY as string;
+
 const DEFAULT_TIER_CONTENT: Required<PricingTierExtras> = {
   subtitle: "",
   bestFor: "",
@@ -160,6 +167,8 @@ export function PricingPage() {
   // App.tsx could remount this page a beat after the effect set local state, wiping it).
   const checkoutTierId = !isBootstrapping && user ? searchParams.get("checkout") : null;
   const [paidResult, setPaidResult] = useState<{ tierId: string; order: Order } | null>(null);
+  const [activatingTierId, setActivatingTierId] = useState<string | null>(null);
+  const activateFreeSubscription = useActivateFreeSubscriptionMutation();
 
   function clearCheckout() {
     setSearchParams(
@@ -172,9 +181,29 @@ export function PricingPage() {
     );
   }
 
-  function handleBuyNow(tierId: string) {
+  async function handleBuyNow(tierId: string) {
     if (!user) {
       navigate("/login", { state: { from: `/pricing?checkout=${tierId}` } });
+      return;
+    }
+    // Online payment isn't configured in this environment (VITE_TAP_PUBLIC_KEY is
+    // blank locally) — opening TapCheckoutPanel here would just be a dead end.
+    // Instead, activate the plan directly (the backend refuses this the moment real
+    // Tap credentials exist, so this branch naturally stops mattering once payment is
+    // live — see orders/views.py's FreeSubscriptionActivateView).
+    if (!TAP_PUBLIC_KEY) {
+      setActivatingTierId(tierId);
+      try {
+        await activateFreeSubscription.mutateAsync(tierId);
+        void navigate("/dashboard/services");
+      } catch (err) {
+        console.error("[PricingPage/handleBuyNow]", err);
+        toast.error(
+          err instanceof ApiError ? err.message : "Couldn't activate this plan right now, please try again shortly.",
+        );
+      } finally {
+        setActivatingTierId(null);
+      }
       return;
     }
     setPaidResult(null);
@@ -206,6 +235,15 @@ export function PricingPage() {
       />
 
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
+        <div className="mb-10 text-center">
+          <span className="font-display text-sm font-extrabold capitalize tracking-wide text-accent md:text-base">
+            Choose Your Plan
+          </span>
+          <h2 className="mt-2 font-display text-2xl font-bold text-text-primary md:text-3xl">
+            Simple Pricing. Professional Service.
+          </h2>
+        </div>
+
         <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
           {/* Quick-compare strip: a scannable summary of the same tiers rendered
               in full below, for anyone who just wants price + one line + a button. */}
@@ -301,8 +339,8 @@ export function PricingPage() {
                       <p className="mt-1 text-sm text-text-secondary">
                         {tier.name} · {paidOrder.currency} {paidOrder.amount}
                       </p>
-                      <CtaButton to="/account" sx={{ mt: 3 }} fullWidth>
-                        View in My Account
+                      <CtaButton to="/dashboard/services" sx={{ mt: 3 }} fullWidth>
+                        Go to My Dashboard
                       </CtaButton>
                     </div>
                   ) : isCheckoutOpen ? (
@@ -317,7 +355,13 @@ export function PricingPage() {
                   ) : (
                     <div className="mt-6">
                       {purchasable ? (
-                        <CtaButton type="button" onClick={() => handleBuyNow(tier.id)} fullWidth>
+                        <CtaButton
+                          type="button"
+                          onClick={() => void handleBuyNow(tier.id)}
+                          loading={activatingTierId === tier.id}
+                          disabled={activatingTierId !== null}
+                          fullWidth
+                        >
                           {content.ctaLabel}
                         </CtaButton>
                       ) : (

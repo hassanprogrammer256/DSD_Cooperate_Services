@@ -70,6 +70,7 @@ export function Navbar() {
 
   const [scrolledPastThreshold, setScrolledPastThreshold] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [accountDropdownOpen, setAccountDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 
@@ -92,7 +93,7 @@ export function Navbar() {
         <motion.div
           animate={{ height: transparent ? 36 : 0, opacity: transparent ? 1 : 0 }}
           transition={{ duration: 0.2 }}
-          className="hidden overflow-hidden bg-navy md:block"
+          className="hidden overflow-hidden bg-accent md:block"
         >
           <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-6 text-xs text-white/75">
             <span>Advisory that saves time and costly mistakes.</span>
@@ -118,15 +119,6 @@ export function Navbar() {
           </div>
         </motion.div>
 
-        {/* Main nav */}
-        {/* The logo file itself is a solid dark/black-background PNG (not
-            transparent) — fine against a light header, but it disappears into a
-            dark-theme header's own dark surface. Rather than patching just the
-            logo, the whole header (once scrolled/non-transparent) fades from the
-            live --color-surface at its leading edge into solid white by the time
-            it reaches the logo, then stays white the rest of the way to the
-            viewport's edge — in light theme --color-surface is already white, so
-            the gradient collapses to solid white and nothing visibly changes. */}
         <header
           className={`h-16 border-b transition-colors duration-200 md:h-18 ${
             transparent ? "border-transparent bg-transparent" : "border-border shadow-sm"
@@ -208,6 +200,60 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <div
+              className="relative hidden lg:block"
+              onMouseEnter={() => !user && setAccountDropdownOpen(true)}
+              onMouseLeave={() => setAccountDropdownOpen(false)}
+            >
+              {user ? (
+                <IconButton
+                  component={Link}
+                  to="/dashboard"
+                  variant="plain"
+                  aria-label="My Dashboard"
+                  sx={{ color: transparent ? "var(--color-text-inverse)" : "var(--color-navy)" }}
+                >
+                  <User size={20} />
+                </IconButton>
+              ) : (
+                <IconButton
+                  variant="plain"
+                  aria-label="Log in or sign up"
+                  aria-haspopup="true"
+                  onClick={() => setAccountDropdownOpen((open) => !open)}
+                  sx={{ color: transparent ? "var(--color-text-inverse)" : "var(--color-navy)" }}
+                >
+                  <User size={20} />
+                </IconButton>
+              )}
+
+              <AnimatePresence>
+                {!user && accountDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full w-44 rounded-lg border border-accent/30 bg-surface p-2 shadow-lg"
+                  >
+                    <Link
+                      to="/login"
+                      onClick={() => setAccountDropdownOpen(false)}
+                      className="block rounded-md px-3 py-2 text-sm text-text-primary hover:bg-surface-secondary"
+                    >
+                      Log In
+                    </Link>
+                    <Link
+                      to="/register"
+                      onClick={() => setAccountDropdownOpen(false)}
+                      className="block rounded-md px-3 py-2 text-sm text-text-primary hover:bg-surface-secondary"
+                    >
+                      Sign Up
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <ThemeToggle inverse={transparent} color={transparent ? undefined : "var(--color-navy)"} />
             <IconButton
               component="a"
@@ -316,11 +362,11 @@ export function Navbar() {
                   ) : null,
                 )}
                 <Link
-                  to={user ? "/account" : "/login"}
+                  to={user ? "/dashboard" : "/login"}
                   onClick={closeMobile}
                   className="rounded-md px-2 py-3 text-base font-medium text-white"
                 >
-                  {user ? "My Account" : "Log In"}
+                  {user ? "My Dashboard" : "Log In"}
                 </Link>
               </nav>
 

@@ -1,16 +1,21 @@
-import { Mail, MapPin, Phone } from "lucide-react";
-
+import { Clock, Globe2, Mail, MapPin, Phone, ShieldCheck, Users } from "lucide-react";
 import contactPhoto from "@/assets/images/contact2.webp";
 import placeholderPhoto from "@/assets/images/contact1.png";
-import { CtaButton } from "@/components/common/CtaButton";
 import { LeadForm } from "@/components/common/LeadForm";
-import { Marquee } from "@/components/common/Marquee";
 import { PageHeroBanner } from "@/components/common/PageHeroBanner";
 import { SentenceText } from "@/components/common/SentenceText";
+import { WhyChooseDsd } from "@/components/common/WhyChooseDsd";
 import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 const OFFICE_ADDRESS = "1st Floor, Office 06, Al Habeb Building, Umm Hurair Street, Oud Metha, Dubai, UAE";
 const MAPS_URL = `https://www.google.com/maps?q=${encodeURIComponent(OFFICE_ADDRESS)}`;
+
+const WHY_CHOOSE_ITEMS = [
+  { icon: Clock, title: "Fast Response Times", description: "We reply to every enquiry within one business day." },
+  { icon: Globe2, title: "Remote-Friendly Process", description: "Start and manage most of your requirements without unnecessary office visits." },
+  { icon: Users, title: "One Point of Contact", description: "A single team coordinates your requirements from enquiry to completion." },
+  { icon: ShieldCheck, title: "Transparent Communication", description: "Clear guidance on requirements, costs and next steps at every stage." },
+];
 
 export function ContactPage() {
   useDocumentTitle("Contact");
@@ -24,17 +29,7 @@ export function ContactPage() {
         description="Tell us what you're trying to do in the UAE  we'll respond within one business day."
       />
 
-      <Marquee
-        phrases={[
-          "We Respond Within One Business Day",
-          "Drop By, Call Or Email",
-          "Visit Our Dubai Office",
-          "Speak To Our Team",
-          "Start Your Enquiry Today",
-        ]}
-        ctaLabel="Send an Enquiry"
-        ctaTo="#contact-form"
-      />
+
 
       <section id="contact-form" className="mx-auto max-w-3xl scroll-mt-24 px-4 py-20 md:px-6">
         <LeadForm
@@ -43,16 +38,13 @@ export function ContactPage() {
         />
       </section>
 
-      <section className="border-y border-border bg-surface-secondary px-4 py-10 text-center md:px-6">
-        <p className="mx-auto max-w-2xl text-text-secondary">
-          Prefer to talk now? Call us at{" "}
-          <a href="tel:+971585889033" className="font-mono font-semibold text-primary hover:opacity-80">
-            +971 58 588 9033
-          </a>{" "}
-          or send the form above and we'll respond within one business day.
-        </p>
-      </section>
-
+      <WhyChooseDsd
+        eyebrow="Why Choose DSD"
+        title="A Team That Makes the Process Easy"
+        items={WHY_CHOOSE_ITEMS}
+        columns={2}
+        background="surface-secondary"
+      />
       <section className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-20 md:px-6 lg:grid-cols-2">
         <img src={contactPhoto} alt="Two people shaking hands" className="w-full rounded-xl object-cover" />
 
@@ -83,11 +75,10 @@ export function ContactPage() {
             </a>
           </div>
 
-          <div className="mt-8">
-            <CtaButton to="/pricing">View Pricing</CtaButton>
-          </div>
         </div>
       </section>
+
+
     </>
   );
 }

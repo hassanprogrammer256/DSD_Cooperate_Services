@@ -1,8 +1,11 @@
 """Tap Payments integration — see library-docs.md's Tap Payments section for the full
 reasoning (status mapping, why order-then-charge, why every call is timed out)."""
 
+from datetime import timedelta
+
 import requests
 from django.conf import settings
+from django.utils import timezone
 
 from orders.emails import send_order_confirmation_email
 
@@ -39,6 +42,39 @@ def charge_tap_token(*, tap_token: str, amount, currency: str, customer_email: s
     )
     response.raise_for_status()
     return response.json()
+
+
+def _informational_expiry(period: str):
+    """`PricingTier.period` is a free-text display string ("per year", "", ...), not a
+    structured billing interval — there's no real recurring-billing engine here (no
+    task queue exists anywhere in this repo), so this is a best-effort, purely
+    informational expires_at for the "My Subscription" history view. Nothing reads
+    this to auto-renew or auto-expire anything."""
+    period = (period or "").lower()
+    if "year" in period:
+        return timezone.now() + timedelta(days=365)
+    if "month" in period:
+        return timezone.now() + timedelta(days=30)
+    return None
+
+
+def activate_subscription(*, user, pricing_tier, order=None):
+    """Supersedes any of `user`'s other active subscriptions and creates a new active
+    one. `order` is the Tap purchase that paid for this, if any — None for the
+    no-payment dev bypass (see views.py's FreeSubscriptionActivateView), which refuses
+    to run at all once real Tap credentials exist. Returns the new Subscription."""
+    from orders.models import Subscription  # local import: avoids a circular import with orders/models.py
+
+    Subscription.objects.filter(user=user, status=Subscription.Status.ACTIVE).update(
+        status=Subscription.Status.EXPIRED
+    )
+    return Subscription.objects.create(
+        user=user,
+        pricing_tier=pricing_tier,
+        order=order,
+        status=Subscription.Status.ACTIVE,
+        expires_at=_informational_expiry(pricing_tier.period),
+    )
 
 
 def process_order_payment(order, *, tap_token: str, customer_email: str, customer_name: str) -> None:
@@ -80,4 +116,5 @@ def process_order_payment(order, *, tap_token: str, customer_email: str, custome
     order.save(update_fields=["status", "failure_reason", "updated_at"])
 
     if order.status == order.Status.PAID:
+        activate_subscription(user=order.user, pricing_tier=order.pricing_tier, order=order)
         send_order_confirmation_email(order)

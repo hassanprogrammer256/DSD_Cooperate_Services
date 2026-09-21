@@ -15,7 +15,7 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
 
   return (
     <section
-      className="relative bg-[#0a1b33] bg-[length:100%_auto] bg-center bg-no-repeat py-20 md:py-28 flex flex-col gap-3"
+      className="relative bg-[#0a1b33] bg-size-[100%_auto] bg-center bg-no-repeat py-10 md:py-14 flex flex-col gap-3"
       style={{ backgroundImage: `url(${image})` }}
     >
       <div
@@ -26,13 +26,13 @@ export function PageHeroBanner({ image, eyebrow, title, description, align = "ce
         }}
       />
       <div
-        className={`relative mx-auto max-w-7xl px-4 md:px-6 ${
+        className={`relative mx-4 max-w-7xl px-4 md:px-6 ${
           isCenter ? "text-center" : "text-center lg:text-left"
         }`}
       >
         {eyebrow && <div className={`${eyebrowClassName || " mb-2 text-xs font-semibold uppercase tracking-wide text-accent"}`}>{eyebrow}</div>}
         <h1 className="font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
-        {description && <p className={`mt-4 text-white/82 ${isCenter ? "mx-auto max-w-2xl" : "mx-auto max-w-2xl lg:mx-0"}`}>{description}</p>}
+        {description && <p className={`mt-4 text-white/82 ${isCenter ? "mx-auto " : "mx-auto  lg:mx-0"}`}>{description}</p>}
         {children && (
           <div className={`mt-6 flex flex-col flex-wrap  gap-4 ${isCenter ? "justify-center" : "justify-center lg:justify-start"}`}>
             

@@ -2,9 +2,12 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from "
 
 import { useQueryClient } from "@tanstack/react-query";
 
+import { signInWithPopup } from "firebase/auth";
+
 import { apiClient, setAccessToken } from "@/lib/api/client";
 import {
   authKeys,
+  useGoogleAuthMutation,
   useLoginMutation,
   useLogoutMutation,
   useMeQuery,
@@ -12,6 +15,7 @@ import {
   useRegisterMutation,
   type RegisterInput,
 } from "@/lib/api/auth";
+import { firebaseAuth, googleAuthProvider } from "@/lib/firebase";
 import type { User } from "@/types";
 
 type AuthContextValue = {
@@ -22,6 +26,7 @@ type AuthContextValue = {
   isBootstrapping: boolean;
   login: (email: string, password: string) => Promise<void>;
   register: (input: RegisterInput) => Promise<void>;
+  loginWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
 };
 
@@ -33,6 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const loginMutation = useLoginMutation();
   const registerMutation = useRegisterMutation();
+  const googleAuthMutation = useGoogleAuthMutation();
   const refreshMutation = useRefreshMutation();
   const logoutMutation = useLogoutMutation();
   const meQuery = useMeQuery();
@@ -73,6 +79,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     queryClient.setQueryData(authKeys.me, user);
   }
 
+  async function loginWithGoogle() {
+    const credential = await signInWithPopup(firebaseAuth, googleAuthProvider);
+    const idToken = await credential.user.getIdToken();
+    const { access, user } = await googleAuthMutation.mutateAsync(idToken);
+    setAccessToken(access);
+    queryClient.setQueryData(authKeys.me, user);
+  }
+
   async function logout() {
     await logoutMutation.mutateAsync();
     setAccessToken(null);
@@ -84,6 +98,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     isBootstrapping,
     login,
     register,
+    loginWithGoogle,
     logout,
   };
 

@@ -1,6 +1,10 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from orders.models import Order
+from content.models import PricingTier
+from orders.models import Order, Subscription
+
+User = get_user_model()
 
 
 class OrderSerializer(serializers.ModelSerializer):
@@ -28,6 +32,41 @@ class AdminOrderSerializer(serializers.ModelSerializer):
         fields = [
             "id", "customerEmail", "customerName", "tierName",
             "amount", "currency", "status", "failureReason", "createdAt",
+        ]
+
+
+class SubscriptionSerializer(serializers.ModelSerializer):
+    """The logged-in customer's own subscription history — current + past rows,
+    newest first (Subscription.Meta.ordering)."""
+
+    tierId = serializers.CharField(source="pricing_tier.key", read_only=True)
+    tierName = serializers.CharField(source="pricing_tier.name", read_only=True)
+    startedAt = serializers.DateTimeField(source="started_at", read_only=True)
+    expiresAt = serializers.DateTimeField(source="expires_at", read_only=True)
+
+    class Meta:
+        model = Subscription
+        fields = ["id", "tierId", "tierName", "status", "startedAt", "expiresAt"]
+
+
+class AdminSubscriptionSerializer(serializers.ModelSerializer):
+    """Staff-only, full CRUD — the admin app's Subscriptions view. `userId`/`tierId`
+    are how a subscription is created/reassigned (write); `customerEmail`/
+    `customerName`/`tierName` are the read-only display of what those resolve to."""
+
+    userId = serializers.PrimaryKeyRelatedField(source="user", queryset=User.objects.all(), write_only=True)
+    tierId = serializers.SlugRelatedField(source="pricing_tier", slug_field="key", queryset=PricingTier.objects.all())
+    tierName = serializers.CharField(source="pricing_tier.name", read_only=True)
+    startedAt = serializers.DateTimeField(source="started_at", read_only=True)
+    expiresAt = serializers.DateTimeField(source="expires_at", required=False, allow_null=True)
+    customerEmail = serializers.CharField(source="user.email", read_only=True)
+    customerName = serializers.CharField(source="user.name", read_only=True)
+
+    class Meta:
+        model = Subscription
+        fields = [
+            "id", "userId", "customerEmail", "customerName", "tierId", "tierName",
+            "status", "startedAt", "expiresAt",
         ]
 
 

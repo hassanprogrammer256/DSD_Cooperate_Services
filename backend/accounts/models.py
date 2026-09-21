@@ -12,6 +12,8 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=150)
     phone = models.CharField(max_length=32, blank=True)
+    company = models.CharField(max_length=150, blank=True)
+    country = models.CharField(max_length=100, blank=True)
     # Shown in the admin app's sidebar (name + photo) — see progress-tracker.md's
     # 2026-09-09 entry. Set via Django's own /admin/ (accounts/admin.py) for now; no
     # self-service profile editor exists yet. Optional — the sidebar falls back to an

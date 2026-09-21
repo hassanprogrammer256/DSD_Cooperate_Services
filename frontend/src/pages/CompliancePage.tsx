@@ -14,12 +14,6 @@ import { useDocumentTitle } from "@/lib/useDocumentTitle";
 
 const SHOWCASE_ICONS = [ShieldCheck, Calculator, FileText, ShieldAlert, Scale, RefreshCw];
 
-// Same static-curated-meta pattern as IncorporationPage.tsx/ServicesPage.tsx, except
-// the showcase's descriptions come from the real ComplianceArea.summary (fetched, not
-// hardcoded) since curatedComplianceAreas only carries slug+label. The mandatory
-// "general guidance, not legal advice" disclaimer (architecture.md's Invariants) is
-// kept even though the reference design doesn't show one — a hard project rule
-// outranks matching the reference pixel-for-pixel.
 export function CompliancePage() {
   useDocumentTitle("Compliance");
   const { data: complianceAreas } = useComplianceAreasQuery();

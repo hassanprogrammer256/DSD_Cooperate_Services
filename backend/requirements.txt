@@ -7,3 +7,8 @@ django-environ>=0.11,<0.12
 requests>=2.32,<2.33
 gunicorn>=23.0,<24.0
 whitenoise>=6.7,<6.8
+# RS256 verification of Firebase Auth ID tokens (accounts/firebase.py) — PyJWT is
+# already a transitive dependency of djangorestframework-simplejwt, pinned here since
+# it's now imported directly; cryptography is PyJWT's RS256 backend.
+PyJWT>=2.13,<2.14
+cryptography>=43,<44

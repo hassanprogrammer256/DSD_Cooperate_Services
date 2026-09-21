@@ -12,6 +12,7 @@ import Select from "@mui/joy/Select";
 import Textarea from "@mui/joy/Textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 import { CtaButton } from "@/components/common/CtaButton";
 import { FileDropzone } from "@/components/common/FileDropzone";
@@ -57,6 +58,7 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
       setFile(null);
     } catch (err) {
       console.error("[LeadForm/onSubmit]", err);
+      toast.error("Something went wrong sending your enquiry, please try again or contact us directly.");
     }
   }
 
@@ -85,12 +87,6 @@ export function LeadForm({ defaultMainService, title = "Tell Us What You Need", 
     >
       <h3 className="font-display text-xl font-bold capitalize text-accent">{title}</h3>
       {description && <div className="mt-2 text-sm text-text-secondary">{description}</div>}
-
-      {createLead.isError && (
-        <p className="mt-4 rounded-lg bg-error-light px-4 py-3 text-sm text-error">
-          Something went wrong sending your enquiry, please try again or contact us directly.
-        </p>
-      )}
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
      

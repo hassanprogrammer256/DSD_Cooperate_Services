@@ -20,6 +20,15 @@ jobs:
         run: |
           echo "VITE_API_BASE_URL=http://${{ secrets.EC2_HOST }}" > .env.production
           echo "VITE_TAP_PUBLIC_KEY=${{ secrets.VITE_TAP_PUBLIC_KEY }}" >> .env.production
+          # Firebase web config is not a secret (see src/lib/firebase.ts) — safe to
+          # commit directly rather than wiring up six more GitHub Secrets.
+          echo "VITE_FIREBASE_API_KEY=AIzaSyCbgRAO-JAETOMbNng5ybmKpTRxrUnHJ9E" >> .env.production
+          echo "VITE_FIREBASE_AUTH_DOMAIN=dsd-sites-fb2ac.firebaseapp.com" >> .env.production
+          echo "VITE_FIREBASE_PROJECT_ID=dsd-sites-fb2ac" >> .env.production
+          echo "VITE_FIREBASE_STORAGE_BUCKET=dsd-sites-fb2ac.firebasestorage.app" >> .env.production
+          echo "VITE_FIREBASE_MESSAGING_SENDER_ID=70509848078" >> .env.production
+          echo "VITE_FIREBASE_APP_ID=1:70509848078:web:92c715bcdd8dd58788be5f" >> .env.production
+          echo "VITE_FIREBASE_MEASUREMENT_ID=G-J40WREJ3H9" >> .env.production
           npm ci
           npm run build
 
