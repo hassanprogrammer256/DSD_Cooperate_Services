@@ -19,7 +19,6 @@ jobs:
         working-directory: frontend
         run: |
           echo "VITE_API_BASE_URL=http://${{ secrets.EC2_HOST }}" > .env.production
-          echo "VITE_TAP_PUBLIC_KEY=${{ secrets.VITE_TAP_PUBLIC_KEY }}" >> .env.production
           # Firebase web config is not a secret (see src/lib/firebase.ts) — safe to
           # commit directly rather than wiring up six more GitHub Secrets.
           echo "VITE_FIREBASE_API_KEY=AIzaSyCbgRAO-JAETOMbNng5ybmKpTRxrUnHJ9E" >> .env.production
