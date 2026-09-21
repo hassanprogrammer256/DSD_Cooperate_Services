@@ -15,8 +15,8 @@ export function HomePage() {
       <Hero />
       <Marquee
         phrases={[
-          "Strategic Advisory, Straightforward Execution",
-          "UAE Residency • Incorporation • Compliance • Licensing",
+          "Strategic Advisory, Straight forward Execution",
+          "Residency • Incorporation • Compliance • Licensing",
           "One Senior Advisor From Start To Finish",
           "Transparent, Practical Guidance",
           "Plan With A Clear Strategy",
