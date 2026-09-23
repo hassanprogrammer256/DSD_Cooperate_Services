@@ -12,7 +12,12 @@ from content.models import ComplianceArea, Founder, InsightArticle, Service, Tea
 # so the same fix can be applied to any environment's database (local sqlite in
 # dev, the deployed Postgres instance in production) through the normal Django
 # ORM instead of hand-editing rows per environment.
-EM_DASH = re.compile(r"\s+—\s+")
+#
+# "â€”" is the same em dash mangled by a UTF-8-as-Latin-1 mis-decode somewhere
+# upstream (content pasted from another tool, then saved through the wrong
+# encoding once). Matched alongside the real character so both are caught in
+# the same pass and neither can silently reappear.
+EM_DASH = re.compile(r"\s+(?:—|â€”)\s+")
 OXFORD_AND = re.compile(r", and ")
 OXFORD_OR = re.compile(r", or ")
 
