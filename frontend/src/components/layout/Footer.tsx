@@ -37,10 +37,7 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
   const year = new Date().getFullYear();
-  // Secondary/passive nav, present on every page — deliberately no spinner/error UI
-  // here (that would be noisy site-wide); it just renders once the data arrives and
-  // stays quiet otherwise. See ui-rules.md's Loading & Error States section for why
-  // primary content areas get the full QueryState treatment and this doesn't.
+
   const { data: services } = useServicesQuery();
   const curatedFooterServices = services?.filter((service) => curatedServiceSlugs.includes(service.slug));
 

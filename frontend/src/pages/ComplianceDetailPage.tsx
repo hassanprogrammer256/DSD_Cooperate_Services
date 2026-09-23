@@ -23,7 +23,7 @@ export function ComplianceDetailPage() {
     <QueryState isLoading={isLoading} isError={isError} onRetry={() => void refetch()}>
       {area && (
         <>
-          <PageHeroBanner image={area.heroImage} align="left" title={area.title} description={area.summary}>
+          <PageHeroBanner image={area.heroImage}  title={area.title} description={area.summary}>
             <p className="max-w-2xl text-white/80">{area.description}</p>
           </PageHeroBanner>
 
