@@ -1,0 +1,4233 @@
+{
+ "/api/services/": [
+  {
+   "slug": "business-licensing",
+   "title": "Business Licensing",
+   "pillar": "business-incorporation",
+   "icon": "file-badge",
+   "summary": "Trade licence renewal, activity amendments and additional-activity filings for a company already operating.",
+   "description": "A trade licence isn't a one-time document, it needs renewing annually and any new activity or amendment has to be filed with the relevant authority before you act on it. DSD manages licence renewal, activity additions and amendment filings so a lapsed or out-of-scope licence never disrupts your operations.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Annual licence renewal",
+     "description": "We renew your trade licence ahead of expiry, avoiding fines and operational disruption.",
+     "image": "/media/uploads/b48021c005c145df82ede7a0dbc4e106.jpg"
+    },
+    {
+     "title": "Activity amendment filing",
+     "description": "We file additional business activities or licence amendments with the relevant authority.",
+     "image": "/media/uploads/business-licensing-included-1.jpg"
+    },
+    {
+     "title": "Regulatory approval coordination",
+     "description": "We coordinate any external regulatory approval your activity change requires.",
+     "image": "/media/uploads/business-licensing-included-2.jpg"
+    },
+    {
+     "title": "Licence-status monitoring",
+     "description": "We monitor your licence status so renewal deadlines and requirements never catch you off guard.",
+     "image": "/media/uploads/business-licensing-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/expand-an-existing-company_WeqqUaL.jpg",
+   "relatedInsightSlugs": [
+    "corporate-tax-registration-deadlines-2026",
+    "vat-filing-common-mistakes-uae-businesses"
+   ],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 1,
+     "suffix": "/yr",
+     "label": "Standard licence renewal cycle we track"
+    },
+    {
+     "value": 5,
+     "suffix": "+ business days",
+     "label": "Typical amendment turnaround"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "company-formation",
+   "title": "Company Formation",
+   "pillar": "business-incorporation",
+   "icon": "building-2",
+   "summary": "End to end UAE company setup from choosing mainland or free zone to your first trade licence.",
+   "description": "Company Formation covers the full path from an initial structuring decision to a live trade licence, confirming mainland versus free zone fit, reserving your trade name and submitting the licence application itself. DSD scopes this against your actual first year trading plan not a generic recommendation.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Mainland vs. free zone structuring advice",
+     "description": "We compare mainland and free zone options against your activity and target market before you commit to either.",
+     "image": "/media/uploads/company-formation-included-0.jpg"
+    },
+    {
+     "title": "Trade name reservation",
+     "description": "We reserve your trade name and secure initial approval from the relevant authority.",
+     "image": "/media/uploads/company-formation-included-1.jpg"
+    },
+    {
+     "title": "Trade licence application",
+     "description": "We prepare and submit your full trade licence application once your structure and name are confirmed.",
+     "image": "/media/uploads/company-formation-included-2.jpg"
+    },
+    {
+     "title": "Bank account introduction",
+     "description": "We introduce you to relationship bankers familiar with new UAE company accounts.",
+     "image": "/media/uploads/company-formation-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/22.webp",
+   "relatedInsightSlugs": [
+    "uae-golden-visa-property-investment-guide",
+    "vat-filing-common-mistakes-uae-businesses",
+    "ubo-filing-what-changed-in-2026"
+   ],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 100,
+     "suffix": "%",
+     "label": "Foreign ownership eligible on most routes"
+    },
+    {
+     "value": 10,
+     "suffix": "+ business days",
+     "label": "Typical licence turnaround"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "corporate-documentation",
+   "title": "Corporate Documentation",
+   "pillar": "business-incorporation",
+   "icon": "file-check",
+   "summary": "MOA/AOA drafting, resolutions and the constitutional paperwork every UAE company has to keep current.",
+   "description": "A company's constitutional documents,its Memorandum and Articles of Association, shareholder resolutions and powers of attorney need to stay accurate as the company changes not just correct at incorporation. DSD drafts and maintains this documentation so it reflects the company's real current structure.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "MOA/AOA drafting",
+     "description": "We draft Memorandum and Articles of Association matching your confirmed shareholding and governance structure.",
+     "image": "/media/uploads/corporate-documentation-included-0.jpg"
+    },
+    {
+     "title": "Board and shareholder resolutions",
+     "description": "We draft the resolutions your company needs for major decisions and approvals.",
+     "image": "/media/uploads/corporate-documentation-included-1.jpg"
+    },
+    {
+     "title": "Power of attorney preparation",
+     "description": "We prepare specific limited powers of attorney rather than broad open-ended ones.",
+     "image": "/media/uploads/corporate-documentation-included-2.jpg"
+    },
+    {
+     "title": "Document register maintenance",
+     "description": "We maintain your constitutional document register so it stays audit ready.",
+     "image": "/media/uploads/corporate-documentation-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/cp_DweWw11.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 5,
+     "suffix": "yr+",
+     "label": "Minimum record retention period under UAE company law"
+    },
+    {
+     "value": 1,
+     "label": "Document register always kept current"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "corporate-structuring",
+   "title": "Corporate Structuring",
+   "pillar": "business-incorporation",
+   "icon": "clipboard-check",
+   "summary": "Shareholding, governance and management structuring for a company being formed or reorganised.",
+   "description": "How a company's ownership, management and signing authority are structured affects everything from bank account approval to future investment rounds. DSD structures shareholding and governance arrangements to match how the business will actually be run, not just what's fastest to file.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Shareholding structure design",
+     "description": "We design a shareholding structure that reflects each founder's real ownership and control.",
+     "image": "/media/uploads/corporate-structuring-included-0.jpg"
+    },
+    {
+     "title": "Governance and signing-authority setup",
+     "description": "We set up board, management and bank-signing authority matching how the company will actually run.",
+     "image": "/media/uploads/corporate-structuring-included-1.jpg"
+    },
+    {
+     "title": "Shareholder agreement guidance",
+     "description": "We guide the drafting of shareholder agreements covering exit, transfer and dispute terms.",
+     "image": "/media/uploads/corporate-structuring-included-2.jpg"
+    },
+    {
+     "title": "Beneficial ownership filing",
+     "description": "We file the beneficial ownership information your structure requires from day one.",
+     "image": "/media/uploads/corporate-structuring-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/corporate-structuring.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 4,
+     "label": "Structural elements designed together: shares, governance, signing, exit"
+    },
+    {
+     "value": 1,
+     "label": "Structure built to match how you'll actually operate"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "ejari",
+   "title": "EJARI",
+   "pillar": "business-incorporation",
+   "icon": "file-check",
+   "summary": "Dubai's mandatory tenancy-registration system, required for a mainland licence, employee visas and DEWA activation alike.",
+   "description": "Ejari is the Dubai Land Department's official system for registering residential and commercial tenancy contracts. For a company, a valid commercial Ejari is commonly required to obtain or renew a mainland trade licence, support employee visa applications and activate DEWA at the premises, DSD manages registration, renewal and cancellation so it never becomes a bottleneck to your licence.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Tenancy contract registration",
+     "description": "We register your signed tenancy contract through Dubai REST, the Ejari system or a Trustee Centre, whichever channel fits your situation.",
+     "image": "/media/uploads/ejari-included-0.jpg"
+    },
+    {
+     "title": "Document preparation and verification",
+     "description": "We prepare and check the Emirates ID, trade licence and authority documents Ejari registration requires before submission.",
+     "image": "/media/uploads/ejari-included-1.jpg"
+    },
+    {
+     "title": "Renewal and cancellation management",
+     "description": "We track your Ejari's expiry against your tenancy and trade licence cycles and handle renewal or proper cancellation when you move or close.",
+     "image": "/media/uploads/ejari-included-2.jpg"
+    },
+    {
+     "title": "Premises suitability check",
+     "description": "We confirm your leased premises are approved for your licensed activity before you sign, so an unsuitable unit doesn't block your trade licence.",
+     "image": "/media/uploads/ejari-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/ejari.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 8,
+     "label": "Documented benefits of registering a tenancy through Ejari"
+    },
+    {
+     "value": 2,
+     "label": "Registration channels: the Dubai REST app or a Trustee Centre"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "expand-an-existing-company",
+   "title": "Expand an Existing Company",
+   "pillar": "business-incorporation",
+   "icon": "trending-up",
+   "summary": "Branch registration, licence amendments and additional activities for a company already operating elsewhere.",
+   "description": "For companies already established outside the UAE or already licensed within it, DSD structures the expansion: a new branch, an added business activity or a second jurisdiction, without disrupting the existing licence.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Branch or subsidiary structuring advice",
+     "description": "We advise on whether a branch or a subsidiary best fits your parent company's expansion into the UAE.",
+     "image": "/media/uploads/expand-an-existing-company-included-0.jpg"
+    },
+    {
+     "title": "Additional activity and amendment filing",
+     "description": "We file the additional activities or licence amendments your expansion requires with the relevant authority.",
+     "image": "/media/uploads/expand-an-existing-company-included-1.jpg"
+    },
+    {
+     "title": "Parent-company document attestation guidance",
+     "description": "We guide you through attesting your parent company's incorporation documents so they're accepted by UAE authorities.",
+     "image": "/media/uploads/expand-an-existing-company-included-2.jpg"
+    },
+    {
+     "title": "Bank account introduction support",
+     "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+     "image": "/media/uploads/expand-an-existing-company-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/expand-an-existing-company.jpg",
+   "relatedInsightSlugs": [
+    "mainland-vs-free-zone-company-setup"
+   ],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 7,
+     "label": "Emirates covered"
+    },
+    {
+     "value": 15,
+     "suffix": "+ business days",
+     "label": "Typical expansion timeline"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "international-structures",
+   "title": "International Structures",
+   "pillar": "business-incorporation",
+   "icon": "briefcase",
+   "summary": "Branch registration, holding structures and multi-jurisdiction setups for companies already operating outside the UAE.",
+   "description": "For companies already established elsewhere, entering the UAE market usually means choosing between a branch, a subsidiary or a holding structure that sits above both. DSD structures the entry to fit how the parent company actually operates and manages the parent-company document attestation UAE authorities require.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Branch vs. subsidiary structuring",
+     "description": "We advise on whether a branch or a subsidiary best fits your parent company's UAE entry.",
+     "image": "/media/uploads/international-structures-included-0.jpg"
+    },
+    {
+     "title": "Parent-company document attestation",
+     "description": "We guide you through attesting your parent company's incorporation documents for UAE authorities.",
+     "image": "/media/uploads/international-structures-included-1.jpg"
+    },
+    {
+     "title": "Multi-jurisdiction holding structuring",
+     "description": "We structure holding arrangements that sit cleanly across your UAE entity and existing jurisdictions.",
+     "image": "/media/uploads/international-structures-included-2.jpg"
+    },
+    {
+     "title": "Cross-border banking introduction",
+     "description": "We introduce you to banking relationships that work across your UAE and international structure.",
+     "image": "/media/uploads/international-structures-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/international-structures.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 7,
+     "label": "Emirates covered"
+    },
+    {
+     "value": 15,
+     "suffix": "+ business days",
+     "label": "Typical structuring timeline"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "local-sponsorship",
+   "title": "Local Sponsorship",
+   "pillar": "business-incorporation",
+   "icon": "users",
+   "summary": "Clarity on when a UAE national partner or service agent is actually required and when 100% foreign ownership already covers you.",
+   "description": "Local sponsorship rules have changed significantly: most ordinary mainland activities no longer require a UAE national shareholder or service agent. DSD checks your specific activity, legal form and Emirate against the current rules before recommending whether a local partner is legally required, commercially useful or unnecessary altogether.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Sponsorship requirement assessment",
+     "description": "We check your licensed activity, legal form and Emirate against current ownership rules before recommending any local partner or agent.",
+     "image": "/media/uploads/local-sponsorship-included-0.jpg"
+    },
+    {
+     "title": "Local partner and agent due diligence",
+     "description": "Where a UAE partner or service agent is genuinely needed, we vet the proposed party before any agreement is signed.",
+     "image": "/media/uploads/local-sponsorship-included-1.jpg"
+    },
+    {
+     "title": "Shareholder and agency agreement guidance",
+     "description": "We guide the drafting of shareholder, service-agent or agency agreements that protect your ownership, control and exit rights.",
+     "image": "/media/uploads/local-sponsorship-included-2.jpg"
+    },
+    {
+     "title": "Beneficial ownership and exit protections",
+     "description": "We help document beneficial ownership filings and exit terms so a sponsorship arrangement never becomes a lock-in.",
+     "image": "/media/uploads/local-sponsorship-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/local-sponsorship.jpg",
+   "relatedInsightSlugs": [
+    "mainland-vs-free-zone-company-setup"
+   ],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 100,
+     "suffix": "%",
+     "label": "Foreign ownership now available for most mainland activities"
+    },
+    {
+     "value": 4,
+     "label": "Distinct sponsorship arrangement types we assess"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "start-a-new-business",
+   "title": "Start a New Business in the UAE",
+   "pillar": "business-incorporation",
+   "icon": "building-2",
+   "summary": "Mainland or free zone incorporation, scoped against how and where you'll actually trade.",
+   "description": "DSD scopes mainland versus free zone against a founder's real first-year trading plan rather than a generic recommendation, then handles licence application, name reservation and initial approvals.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Mainland vs. free zone structuring advice",
+     "description": "We compare mainland and free zone options against your activity and target market before you commit to either.",
+     "image": "/media/uploads/ebf915cb397444c19adbc8d4211ac4b4.jpg"
+    },
+    {
+     "title": "Trade name reservation and initial approval",
+     "description": "We reserve your trade name and secure initial approval from the relevant authority to get your file moving.",
+     "image": "/media/uploads/dc13ed36e1e24095a77ed6f32070a96e.png"
+    },
+    {
+     "title": "Licence application and submission",
+     "description": "We prepare and submit your full trade licence application once your structure and name are confirmed.",
+     "image": "/media/uploads/aa2917d957214c86a47e69a47b193169.jpg"
+    },
+    {
+     "title": "Bank account introduction support",
+     "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+     "image": "/media/uploads/9476c2996ab94f4b812e701aadece413.jpg"
+    }
+   ],
+   "heroImage": "/media/services/uea.jpg",
+   "relatedInsightSlugs": [
+    "mainland-vs-free-zone-company-setup"
+   ],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 100,
+     "suffix": "%",
+     "label": "Foreign ownership eligible routes"
+    },
+    {
+     "value": 10,
+     "suffix": "+ business days",
+     "label": "Typical licence turnaround"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "aml-kyc-compliance",
+   "title": "AML/KYC Compliance",
+   "pillar": "compliance-governance",
+   "icon": "shield-check",
+   "summary": "Anti-money-laundering policy, client due diligence and registration support for regulated activities.",
+   "description": "For businesses in AML-regulated activities, DSD builds the internal policy, client due diligence process and goAML registration that examiners expect to see, sized to the business, not a boilerplate template.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "AML/CFT policy drafting",
+     "description": "We draft AML/CFT policies tailored to your business, not a generic template that doesn't match how you operate.",
+     "image": "/media/uploads/aml-kyc-compliance-included-0.jpg"
+    },
+    {
+     "title": "Client due diligence process design",
+     "description": "We design a client due diligence process that's actually workable day to day, not just compliant on paper.",
+     "image": "/media/uploads/aml-kyc-compliance-included-1.jpg"
+    },
+    {
+     "title": "goAML registration support",
+     "description": "We support your registration on the goAML platform, a requirement for designated non-financial businesses and professions.",
+     "image": "/media/uploads/aml-kyc-compliance-included-2.jpg"
+    },
+    {
+     "title": "Staff awareness briefing",
+     "description": "We brief your team on their AML/CFT obligations so compliance doesn't rest on one person alone.",
+     "image": "/media/uploads/aml-kyc-compliance-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/kyc.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "fatima-hussain"
+   ],
+   "stats": [
+    {
+     "value": 1,
+     "suffix": " business day",
+     "label": "Typical exposure assessment"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "annual-accounting-bookkeeping",
+   "title": "Annual Accounting & Bookkeeping",
+   "pillar": "compliance-governance",
+   "icon": "clipboard-check",
+   "summary": "Books kept audit-ready year-round, so tax filing and licence renewal never start from a backlog.",
+   "description": "DSD maintains monthly bookkeeping and produces the annual financial statements a business needs for Corporate Tax filing, licence renewal and bank relationship reviews, kept current, not reconstructed under deadline pressure.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Monthly bookkeeping",
+     "description": "We keep your books current every month, so year-end never turns into a scramble.",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-0.jpg"
+    },
+    {
+     "title": "Annual financial statement preparation",
+     "description": "We prepare your annual financial statements in the format your authority and bank expect to see.",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-1.jpg"
+    },
+    {
+     "title": "Audit-readiness review",
+     "description": "We review your records against what an auditor will actually ask for, before the audit request arrives.",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-2.jpg"
+    },
+    {
+     "title": "Bank statement reconciliation",
+     "description": "We reconcile your bank statements against your books monthly, catching discrepancies while they're still easy to trace.",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/annual-accounting-bookkeeping.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "fatima-hussain"
+   ],
+   "stats": [
+    {
+     "value": 12,
+     "suffix": "/yr",
+     "label": "Bookkeeping cycles maintained"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "beneficial-ownership-ubo-filing",
+   "title": "Beneficial Ownership & UBO Filing",
+   "pillar": "compliance-governance",
+   "icon": "file-badge",
+   "summary": "Ownership-structure mapping and UBO register filing, kept current as ownership actually changes.",
+   "description": "DSD maps an entity's real ownership and control chain, not just the names on the trade licence, files the UBO register and flags when a later ownership change means the register needs updating again.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Ownership and control structure mapping",
+     "description": "We map your full ownership and control chain to identify exactly who qualifies as a beneficial owner.",
+     "image": "/media/uploads/beneficial-ownership-ubo-filing-included-0.jpg"
+    },
+    {
+     "title": "UBO register filing",
+     "description": "We prepare and file your UBO register with the relevant authority within the required timeframe.",
+     "image": "/media/uploads/beneficial-ownership-ubo-filing-included-1.jpg"
+    },
+    {
+     "title": "Nominee/legal-representative documentation",
+     "description": "We prepare the nominee or legal-representative documentation your ownership structure requires for a compliant filing.",
+     "image": "/media/uploads/beneficial-ownership-ubo-filing-included-2.jpg"
+    },
+    {
+     "title": "Update filing on ownership change",
+     "description": "We file the required update whenever your ownership or control structure changes, keeping your register current.",
+     "image": "/media/uploads/beneficial-ownership-ubo-filing-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/beneficial-ownership-ubo-filing.jpg",
+   "relatedInsightSlugs": [
+    "ubo-filing-what-changed-in-2026"
+   ],
+   "teamMemberSlugs": [
+    "fatima-hussain"
+   ],
+   "stats": [
+    {
+     "value": 1,
+     "suffix": " business day",
+     "label": "Typical structure review"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "corporate-tax-advisory",
+   "title": "Corporate Tax Advisory",
+   "pillar": "compliance-governance",
+   "icon": "calculator",
+   "summary": "Registration, exemption assessment and filing support against your actual licence-linked deadlines.",
+   "description": "DSD confirms a business's Corporate Tax registration window against its own trade licence issue date, assesses free zone qualifying income exemptions where relevant and manages filing so no deadline is missed by accident.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Registration deadline confirmation",
+     "description": "We confirm your exact corporate tax registration deadline based on your licence issue date so nothing is missed.",
+     "image": "/media/uploads/corporate-tax-advisory-included-0.jpg"
+    },
+    {
+     "title": "Qualifying Free Zone Person exemption assessment",
+     "description": "We assess whether your free zone company actually qualifies for the 0% QFZP rate before you rely on it.",
+     "image": "/media/uploads/corporate-tax-advisory-included-1.jpg"
+    },
+    {
+     "title": "Annual return preparation support",
+     "description": "We support preparation of your annual corporate tax return so it's accurate and filed on time.",
+     "image": "/media/uploads/corporate-tax-advisory-included-2.jpg"
+    },
+    {
+     "title": "Penalty and late-filing risk review",
+     "description": "We review your filing history for gaps that could trigger a penalty, before the FTA finds them first.",
+     "image": "/media/uploads/corporate-tax-advisory-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/23.jpg",
+   "relatedInsightSlugs": [
+    "corporate-tax-registration-deadlines-2026"
+   ],
+   "teamMemberSlugs": [
+    "fatima-hussain"
+   ],
+   "stats": [
+    {
+     "value": 9,
+     "suffix": "%",
+     "label": "Standard headline rate"
+    },
+    {
+     "value": 1,
+     "suffix": " business day",
+     "label": "Typical deadline check"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "trade-licence-renewal-amendments",
+   "title": "Trade Licence Renewal & Amendments",
+   "pillar": "compliance-governance",
+   "icon": "file-check",
+   "summary": "Annual renewal and mid-cycle amendments handled ahead of the expiry date, not after it.",
+   "description": "DSD tracks a client's trade licence renewal date and manages the paperwork ahead of expiry, plus any mid-cycle amendment, a new activity, a shareholder change, a registered address update, as it comes up.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Renewal deadline tracking and reminders",
+     "description": "We track your trade licence expiry and reach out with time to renew before any grace period runs out.",
+     "image": "/media/uploads/trade-licence-renewal-amendments-included-0.jpg"
+    },
+    {
+     "title": "Annual renewal filing",
+     "description": "We handle your annual trade licence renewal filing with the relevant authority from start to finish.",
+     "image": "/media/uploads/trade-licence-renewal-amendments-included-1.jpg"
+    },
+    {
+     "title": "Activity, shareholder or address amendments",
+     "description": "We file amendments to your licensed activities, shareholding or registered address as your business changes.",
+     "image": "/media/uploads/trade-licence-renewal-amendments-included-2.jpg"
+    },
+    {
+     "title": "Immigration/establishment card renewal coordination",
+     "description": "We coordinate your immigration and establishment card renewals alongside your trade licence so nothing falls out of sync.",
+     "image": "/media/uploads/trade-licence-renewal-amendments-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/trade-licence-renewal-amendments.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 3,
+     "suffix": " business days",
+     "label": "Typical renewal turnaround"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "vat-registration-filing",
+   "title": "VAT Registration & Filing",
+   "pillar": "compliance-governance",
+   "icon": "receipt",
+   "summary": "Threshold assessment, registration and recurring return filing that holds up under review.",
+   "description": "DSD assesses whether a business has crossed the mandatory or voluntary VAT registration threshold, registers it with the Federal Tax Authority and manages recurring filings with the documentation evidence to support them.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Mandatory/voluntary threshold assessment",
+     "description": "We check your turnover against the mandatory and voluntary VAT registration thresholds to confirm where you stand.",
+     "image": "/media/uploads/vat-registration-filing-included-0.jpg"
+    },
+    {
+     "title": "FTA registration",
+     "description": "We handle your VAT registration with the Federal Tax Authority from application to confirmed TRN.",
+     "image": "/media/uploads/vat-registration-filing-included-1.jpg"
+    },
+    {
+     "title": "Recurring return preparation and filing",
+     "description": "We prepare and file your VAT returns on your filing cycle, so deadlines never catch you off guard.",
+     "image": "/media/uploads/vat-registration-filing-included-2.jpg"
+    },
+    {
+     "title": "Input-tax and export-evidence review",
+     "description": "We review your input-tax claims and export evidence to keep your filings defensible under audit.",
+     "image": "/media/uploads/vat-registration-filing-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/vat-registration-filing.jpg",
+   "relatedInsightSlugs": [
+    "vat-filing-common-mistakes-uae-businesses"
+   ],
+   "teamMemberSlugs": [
+    "fatima-hussain"
+   ],
+   "stats": [
+    {
+     "value": 5,
+     "suffix": "%",
+     "label": "Standard rate"
+    },
+    {
+     "value": 4,
+     "label": "Return cycles supported per year"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "employment-residency",
+   "title": "Employment Residency",
+   "pillar": "residency-solutions",
+   "icon": "clipboard-check",
+   "summary": "UAE employment residency connects your company, your new hire and the relevant authorities, DSD coordinates work permits, medical fitness, Emirates ID and residence issuance so onboarding stays predictable and compliant.",
+   "description": "Employment residency is not simply an immigration formality, it is part of an employer's legal workforce onboarding and compliance framework. Errors in work permits, contracts, quotas, status changes or residence processing can delay an employee's ability to commence work and expose the business to compliance risk. Our role goes beyond processing individual visa applications: we help businesses establish a structured, compliant workforce onboarding process that supports both immediate hiring needs and long-term growth. Whether you are sponsoring a new employee, relocating a senior executive or onboarding multiple members of an international team, DSD Corporate Services provides the administrative coordination and regulatory support needed to make the process more predictable, efficient and compliant.",
+   "philosophy_title": "With DSD Corporate Services, businesses can focus on building their teams and operations while we manage the complexities behind their employees' UAE work and residency requirements.",
+   "included": [
+    {
+     "title": "Employer Sponsorship & Eligibility",
+     "description": "We confirm your company's establishment and immigration records and available labour quota, before the process begins.",
+     "image": "/media/uploads/residency-support-included-0.jpg"
+    },
+    {
+     "title": "Work Permit Approval",
+     "description": "We manage the MOHRE work permit approval on your behalf, from application to issuance.",
+     "image": "/media/uploads/residency-support-included-1.jpg"
+    },
+    {
+     "title": "Entry Permit or Status Adjustment",
+     "description": "We coordinate the entry permit for an incoming hire or the in-country status adjustment if they're already in the UAE.",
+     "image": "/media/uploads/residency-support-included-2.jpg"
+    },
+    {
+     "title": "Medical Fitness & Emirates ID",
+     "description": "We schedule and track the required medical fitness examination and the Emirates ID application and biometrics.",
+     "image": "/media/uploads/residency-support-included-3.jpg"
+    },
+    {
+     "title": "Residence Issuance",
+     "description": "We complete residence issuance through the relevant immigration authority, whether the employer is mainland, free zone or another jurisdiction.",
+     "image": "/media/uploads/residency-support-included-4.jpg"
+    },
+    {
+     "title": "Ongoing Workforce Support",
+     "description": "We support new hires, executive relocations and multi-employee onboarding as your team grows.",
+     "image": "/media/uploads/residency-support-included-5.jpg"
+    }
+   ],
+   "heroImage": "/media/services/residency-support.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 6,
+     "label": "Steps we coordinate in every employment residency case"
+    },
+    {
+     "value": 1,
+     "label": "Dedicated advisor managing your workforce onboarding"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "Talk to Our Experts",
+   "formFields": []
+  },
+  {
+   "slug": "family-residency",
+   "title": "Family Residency",
+   "pillar": "residency-solutions",
+   "icon": "users",
+   "summary": "Sponsoring your spouse, children or parents under your UAE residency, governed by specific income, housing and legal requirements, managed end-to-end.",
+   "description": "Navigating mismatched names on certificates, unexpected insurance clauses or delayed attestation chains can cause costly overstay fines. DSD Corporate Services audits your eligibility, manages the paperwork end-to-end through the ICP/GDRFA portals and coordinates medical and Emirates ID appointments for every family member.",
+   "philosophy_title": "A Structured Process for Sponsoring Your Family in the UAE",
+   "included": [
+    {
+     "title": "Eligibility & Document Audit",
+     "description": "We audit your salary, employment contract and housing documentation, open your file and coordinate Arabic translation of marriage and birth certificates.",
+     "image": "/media/uploads/family-residency-why-0.jpg"
+    },
+    {
+     "title": "Entry Permit Issuance",
+     "description": "We manage the entry permit application and coordination for each sponsored family member.",
+     "image": "/media/uploads/family-residency-entry-permit-issuance-fix.jpg"
+    },
+    {
+     "title": "Medical Fitness & Emirates ID",
+     "description": "We coordinate the mandatory medical fitness test and Emirates ID issuance for dependents aged 18 and above.",
+     "image": "/media/uploads/family-residency-medical-fitness-and-emirates-id-fix.jpg"
+    },
+    {
+     "title": "Health Insurance Activation",
+     "description": "We coordinate activation of the specialised health insurance coverage required for your sponsored dependents.",
+     "image": "/media/uploads/family-residency-health-insurance-activation-fix.jpg"
+    },
+    {
+     "title": "Residence Visa Issuance",
+     "description": "We manage the final residence visa stamping to complete the sponsorship process.",
+     "image": "/media/uploads/family-residency-residence-visa-issuance-fix.jpg"
+    },
+    {
+     "title": "Document Attestation Coordination",
+     "description": "We manage the home country, UAE Embassy and MOFA attestation chain required for foreign marriage and birth certificates.",
+     "image": "/media/uploads/family-residency-document-attestation-coordination-fix.jpg"
+    }
+   ],
+   "heroImage": "/media/services/fam.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 3,
+     "label": "Family categories typically sponsorable: spouse, children, parents"
+    },
+    {
+     "value": 1,
+     "label": "Coordinated file per family, not per person"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "golden-residency",
+   "title": "Golden Residency",
+   "pillar": "residency-solutions",
+   "icon": "file-badge",
+   "summary": "A long-term UAE residency programme for qualifying investors, property owners, entrepreneurs, specialised professionals and exceptional talent, with validity of up to 10 years.",
+   "description": "With residency validity of up to 10 years depending on the qualifying category, Golden Residency offers greater continuity and stability than conventional residency arrangements, designed for individuals who have established a meaningful connection with the UAE through investment, professional expertise, entrepreneurship or recognised achievement.",
+   "philosophy_title": "Long-Term Residency for Investors, Property Owners & Exceptional Talent",
+   "included": [
+    {
+     "title": "Eligibility-Led Advice",
+     "description": "Advice built around your specific eligibility rather than a one-size-fits-all application.",
+     "image": "/media/uploads/golden-residency-why-0.jpg"
+    },
+    {
+     "title": "Category-Specific Documentation",
+     "description": "Documentation prepared around the requirements applicable to your specific Golden Residency category.",
+     "image": "/media/uploads/golden-residency-category-specific-documentation-fix.jpg"
+    },
+    {
+     "title": "Professional Application Management",
+     "description": "End-to-end application management from initial assessment through completion.",
+     "image": "/media/uploads/golden-residency-professional-application-management-fix.jpg"
+    },
+    {
+     "title": "Clear Communication",
+     "description": "Clear communication throughout the process.",
+     "image": "/media/uploads/golden-residency-clear-communication-fix.jpg"
+    },
+    {
+     "title": "Integrated Corporate & Residency Support",
+     "description": "Integrated corporate and residency support for investors, entrepreneurs and business owners.",
+     "image": "/media/uploads/golden-residency-integrated-corporate-and-residency-support-fix.jpg"
+    },
+    {
+     "title": "Long-Term Client Support",
+     "description": "Long-term client support beyond the initial residency application.",
+     "image": "/media/uploads/golden-residency-why-5.jpg"
+    }
+   ],
+   "heroImage": "/media/services/gol_bWipicu.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 10,
+     "suffix": "-yr",
+     "label": "Maximum validity period, category-dependent"
+    },
+    {
+     "value": 3,
+     "label": "Main qualifying categories we assess against"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "Assess My Eligibility",
+   "formFields": []
+  },
+  {
+   "slug": "investor-residency",
+   "title": "Investor Residency",
+   "pillar": "residency-solutions",
+   "icon": "trending-up",
+   "summary": "A pathway to UAE residency for individuals who have made a qualifying investment, through eligible property, a UAE-based business or ownership in a UAE company.",
+   "description": "If you are investing in UAE property, establishing a business or acquiring an ownership interest in a UAE company, the right residency route should be considered alongside the investment itself. DSD Corporate Services assesses your investment profile, identifies the applicable residency category and coordinates the documentation and application process from the outset.",
+   "philosophy_title": "Your Investment. Your Residency. One Coordinated Process.",
+   "included": [
+    {
+     "title": "Investment-Led Assessment",
+     "description": "We evaluate your proposed or existing investment against the relevant residency framework.",
+     "image": "/media/uploads/investor-residency-investment-led-assessment-fix.jpg"
+    },
+    {
+     "title": "Route Identification",
+     "description": "We help determine which investor residency category may be applicable to your circumstances.",
+     "image": "/media/uploads/57f31880793847d1b3cb3ecc63348144.jpg"
+    },
+    {
+     "title": "Document Preparation",
+     "description": "We coordinate the supporting corporate, property, financial and personal documentation required for the application.",
+     "image": "/media/uploads/investor-residency-why-2.jpg"
+    },
+    {
+     "title": "Application Coordination",
+     "description": "We manage the administrative stages involved in progressing your residency application.",
+     "image": "/media/uploads/investor-residency-application-coordination-fix.jpg"
+    },
+    {
+     "title": "Corporate and Residency Alignment",
+     "description": "Where residency is linked to a UAE company or business investment, we coordinate the corporate and immigration requirements together.",
+     "image": "/media/uploads/investor-residency-corporate-and-residency-alignment-fix.jpg"
+    },
+    {
+     "title": "Ongoing Guidance",
+     "description": "We remain available to support you with related corporate, immigration and government services as your circumstances develop.",
+     "image": "/media/uploads/investor-residency-ongoing-guidance-fix.jpg"
+    }
+   ],
+   "heroImage": "/media/services/inv.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 100,
+     "suffix": "%",
+     "label": "Foreign ownership eligible on most qualifying investments"
+    },
+    {
+     "value": 2,
+     "suffix": "yr+",
+     "label": "Typical minimum validity period"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "Start Your Investor Residency Journey",
+   "formFields": []
+  },
+  {
+   "slug": "residency-by-property",
+   "title": "Residency",
+   "pillar": "residency-solutions",
+   "icon": "building",
+   "summary": "UAE residency secured through a qualifying property investment, handled from eligibility check to Emirates ID.",
+   "description": "DSD guides property investors through the UAE's investor residency route end to end, confirming the property qualifies, preparing the application file and coordinating the medical and Emirates ID steps that follow approval.",
+   "philosophy_title": "Live in the UAE through Real Estate Ownership",
+   "included": [
+    {
+     "title": "Property and title-deed eligibility review",
+     "description": "We check your title deed and property value against the current investor-residency thresholds before anything is filed.",
+     "image": "/media/uploads/residency-by-property-included-0.jpg"
+    },
+    {
+     "title": "Application file preparation and submission",
+     "description": "We prepare your complete application file and submit it to the relevant authority on your behalf.",
+     "image": "/media/uploads/residency-by-property-included-1.jpg"
+    },
+    {
+     "title": "Medical test and Emirates ID coordination",
+     "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+     "image": "/media/uploads/residency-by-property-included-2.jpg"
+    },
+    {
+     "title": "Dependant sponsorship guidance once approved",
+     "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+     "image": "/media/uploads/residency-by-property-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/ChatGPT_Image_Sep_19_2026_10_46_15_AM.png",
+   "relatedInsightSlugs": [
+    "uae-golden-visa-property-investment-guide"
+   ],
+   "teamMemberSlugs": [
+    "amina-al-suwaidi"
+   ],
+   "stats": [
+    {
+     "value": 10,
+     "suffix": "yr",
+     "label": "Visa validity"
+    },
+    {
+     "value": 5,
+     "suffix": " business days",
+     "label": "Typical file review"
+    }
+   ],
+   "process": [
+    {
+     "title": "Property & Intent Review",
+     "description": "We start with your title deed, property value and ownership structure and understand what you're aiming for, residency for yourself or for your family as well."
+    },
+    {
+     "title": "Eligibility Confirmation",
+     "description": "We check your property against the current investor-residency thresholds and flag anything, an outstanding mortgage, a shared title, an under-construction unit, that needs resolving first."
+    },
+    {
+     "title": "Application Preparation & Submission",
+     "description": "We prepare your full application file and submit it to the relevant authority, coordinating every supporting document so nothing comes back for correction."
+    },
+    {
+     "title": "Medical, Emirates ID & Completion",
+     "description": "Once approved, we coordinate your medical test and Emirates ID appointment through to a completed residency, with guidance on sponsoring dependants if you plan to extend it to family."
+    }
+   ],
+   "faqs": [
+    {
+     "question": "Does my property qualify me for UAE residency?",
+     "answer": "Not every property qualifies. Eligibility depends on the property's value, its registration status and how the title is held, we run a quick check against the current thresholds before you commit to anything further."
+    },
+    {
+     "question": "How is residency by property different from other routes?",
+     "answer": "It doesn't depend on an employer or a trade licence, once approved, your residency stands on the property itself. That makes it the most stable route for an investor who isn't planning to work or run a business in the UAE."
+    },
+    {
+     "question": "Can I add my family later?",
+     "answer": "Yes. Most clients secure their own residency first, then sponsor a spouse and children once their status is active, we can scope both stages from the start if you already know you will want to."
+    }
+   ],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "uae-residency",
+   "title": "Residency",
+   "pillar": "residency-solutions",
+   "icon": "badge-check",
+   "summary": "Professional UAE residency assistance designed to make your application process clear, efficient and hassle-free, for entrepreneurs, investors, professionals, employees and family members.",
+   "description": "Establishing your life or business in the UAE starts with the right residency solution. UAE residency procedures can involve multiple documents, government requirements, medical examinations, Emirates ID procedures and application stages. DSD Corporate Services helps simplify the process by coordinating every step and keeping you informed throughout.",
+   "philosophy_title": "Your Gateway to UAE Residency",
+   "included": [
+    {
+     "title": "End-to-End Assistance",
+     "description": "From initial consultation and document preparation to application coordination and follow-up.",
+     "image": "/media/uploads/uae-residency-end-to-end-assistance-fix.jpg"
+    },
+    {
+     "title": "Expert Guidance",
+     "description": "Clear advice based on your individual circumstances and residency objectives.",
+     "image": "/media/uploads/uae-residency-expert-guidance-fix.jpg"
+    },
+    {
+     "title": "Efficient Processing",
+     "description": "We help ensure your documentation is properly prepared to minimize unnecessary delays.",
+     "image": "/media/uploads/uae-residency-efficient-processing-fix.jpg"
+    },
+    {
+     "title": "Transparent Service",
+     "description": "Straightforward communication about requirements, procedures and applicable costs.",
+     "image": "/media/uploads/uae-residency-transparent-service-fix.jpg"
+    },
+    {
+     "title": "Personalized Solutions",
+     "description": "Residency support tailored to investors, entrepreneurs, employees, families and other eligible applicants.",
+     "image": "/media/uploads/uae-residency-personalized-solutions-fix.jpg"
+    },
+    {
+     "title": "Ongoing Support",
+     "description": "Assistance doesn't have to end once your residency is issued, we help with related corporate and government services as your UAE journey develops.",
+     "image": "/media/uploads/uae-residency-ongoing-support-fix.jpg"
+    }
+   ],
+   "heroImage": "/media/services/uae-residency.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 4,
+     "label": "Distinct residency routes we scope you against"
+    },
+    {
+     "value": 1,
+     "label": "Initial call to find your starting route"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "residency-by-business",
+   "title": "Residency by Business",
+   "pillar": "residency-solutions",
+   "icon": "briefcase",
+   "summary": "Investor and partner visas tied to a UAE company you own or co-own, aligned with your incorporation timeline.",
+   "description": "For founders incorporating a UAE entity, DSD times the investor or partner visa application to land alongside company formation, so ownership documents and residency paperwork move in step rather than in separate queues.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Investor/partner visa eligibility review",
+     "description": "We confirm your shareholding or partner status actually qualifies for an investor visa before you apply.",
+     "image": "/media/uploads/residency-by-business-included-0.jpg"
+    },
+    {
+     "title": "Coordination with company incorporation timeline",
+     "description": "We sequence your visa application against your incorporation steps so neither one stalls waiting on the other.",
+     "image": "/media/uploads/residency-by-business-included-1.jpg"
+    },
+    {
+     "title": "Application file preparation and submission",
+     "description": "We prepare your full visa file and submit it once your company structure is in place.",
+     "image": "/media/uploads/residency-by-business-included-2.jpg"
+    },
+    {
+     "title": "Renewal reminders ahead of expiry",
+     "description": "We track your visa's expiry date and reach out with time to renew before it lapses.",
+     "image": "/media/uploads/residency-by-business-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/residency-by-business.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "amina-al-suwaidi",
+    "rashid-al-mansoori"
+   ],
+   "stats": [
+    {
+     "value": 2,
+     "suffix": "-3 yr",
+     "label": "Visa validity"
+    },
+    {
+     "value": 100,
+     "suffix": "%",
+     "label": "Foreign ownership eligible routes"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "residency-by-employment",
+   "title": "Residency by Employment",
+   "pillar": "residency-solutions",
+   "icon": "badge-check",
+   "summary": "Employment-sponsored residency for professionals relocating to a confirmed UAE role.",
+   "description": "DSD supports both employers and incoming employees through the labour card, entry permit and Emirates ID sequence that turns a signed offer into a resident visa.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Offer letter and labour contract review",
+     "description": "We review your offer letter and labour contract to confirm they support a clean visa application.",
+     "image": "/media/uploads/residency-by-employment-included-0.jpg"
+    },
+    {
+     "title": "Entry permit and labour card processing support",
+     "description": "We coordinate your entry permit and labour card processing with your employer's PRO from start to finish.",
+     "image": "/media/uploads/residency-by-employment-included-1.jpg"
+    },
+    {
+     "title": "Medical test and Emirates ID coordination",
+     "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+     "image": "/media/uploads/residency-by-employment-included-2.jpg"
+    },
+    {
+     "title": "Dependant sponsorship guidance once approved",
+     "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+     "image": "/media/uploads/residency-by-employment-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/residency-by-employment.jpg",
+   "relatedInsightSlugs": [],
+   "teamMemberSlugs": [
+    "amina-al-suwaidi"
+   ],
+   "stats": [
+    {
+     "value": 2,
+     "suffix": "-3 yr",
+     "label": "Visa validity"
+    },
+    {
+     "value": 1,
+     "suffix": " business day",
+     "label": "Typical eligibility answer"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  },
+  {
+   "slug": "residency-by-family-sponsorship",
+   "title": "Residency by Family Sponsorship",
+   "pillar": "residency-solutions",
+   "icon": "users",
+   "summary": "Sponsor a spouse, child or parent onto your existing UAE residency, with income and housing requirements checked upfront.",
+   "description": "Family sponsorship depends on the sponsor's income and registered accommodation as much as the family member's own documents. DSD checks both sides of the file before submission to avoid a stalled application.",
+   "philosophy_title": "",
+   "included": [
+    {
+     "title": "Sponsor income and tenancy eligibility check",
+     "description": "We confirm the sponsor's income and tenancy contract meet the minimum requirements before an application is filed.",
+     "image": "/media/uploads/residency-by-family-sponsorship-included-0.jpg"
+    },
+    {
+     "title": "Document checklist per dependant type",
+     "description": "We give you the exact document list for each dependant, spouse, child or parent, so nothing is missing.",
+     "image": "/media/uploads/residency-by-family-sponsorship-included-1.jpg"
+    },
+    {
+     "title": "Application file preparation and submission",
+     "description": "We prepare the complete sponsorship file and submit it to the relevant authority on your behalf.",
+     "image": "/media/uploads/residency-by-family-sponsorship-included-2.jpg"
+    },
+    {
+     "title": "Renewal reminders ahead of expiry",
+     "description": "We track each dependant's residency expiry and reach out with time to renew before it lapses.",
+     "image": "/media/uploads/residency-by-family-sponsorship-included-3.jpg"
+    }
+   ],
+   "heroImage": "/media/services/residency-by-family-sponsorship.jpg",
+   "relatedInsightSlugs": [
+    "family-sponsorship-residency-requirements"
+   ],
+   "teamMemberSlugs": [
+    "amina-al-suwaidi"
+   ],
+   "stats": [
+    {
+     "value": 3,
+     "suffix": " yr",
+     "label": "Typical visa validity"
+    },
+    {
+     "value": 4,
+     "label": "Dependant types supported"
+    }
+   ],
+   "process": [],
+   "faqs": [],
+   "ctaLabel": "",
+   "formFields": []
+  }
+ ],
+ "/api/compliance-areas/": [
+  {
+   "slug": "aml-kyc-compliance",
+   "title": "AML / KYC",
+   "summary": "Customer due diligence, screening and reporting obligations for businesses captured under DNFBP rules.",
+   "description": "AML/KYC obligations apply in full force to certain regulated businesses and DSD determines whether your licensed activity brings you within scope, then builds the customer due diligence, screening and reporting practice that scope requires.",
+   "obligations": [
+    "Determine whether your licensed activity falls under DNFBP obligations",
+    "Verify client and beneficial-owner identity before onboarding",
+    "Screen clients against applicable sanctions and PEP lists",
+    "Register on the goAML portal and report suspicious activity where required"
+   ],
+   "included": [
+    {
+     "title": "Licensing & Registration",
+     "description": "Determine whether your licensed activity falls under DNFBP obligations",
+     "image": "/media/uploads/aml-kyc-compliance-included-0_Fwt5Ll1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Verify client and beneficial-owner identity before onboarding",
+     "image": "/media/uploads/aml-kyc-compliance-included-1_40trAkY.jpg"
+    },
+    {
+     "title": "AML & Digital Compliance",
+     "description": "Screen clients against applicable sanctions and PEP lists",
+     "image": "/media/uploads/aml-kyc-compliance-included-2_OcbkkDq.jpg"
+    },
+    {
+     "title": "AML & Digital Compliance",
+     "description": "Register on the goAML portal and report suspicious activity where required",
+     "image": "/media/uploads/aml-kyc-compliance-included-3_ie1jxxc.jpg"
+    }
+   ],
+   "notes": "AML obligations are actively enforced against corporate service providers specifically, not just banks and financial institutions.",
+   "sourceName": "UAE Ministry of Economy and Tourism",
+   "heroImage": "/media/compliance/kyc.jpg",
+   "relatedInsightSlugs": [
+    "mainland-vs-free-zone-company-setup"
+   ]
+  },
+  {
+   "slug": "aml-kyc",
+   "title": "AML/KYC Compliance",
+   "summary": "Applies to Designated Non-Financial Businesses and Professions, not only banks and exchange houses.",
+   "description": "Businesses in specified regulated activities, including real estate brokers, precious metals dealers and certain corporate service providers, carry anti-money-laundering obligations: a written policy, client due diligence and suspicious-activity reporting through goAML.",
+   "obligations": [
+    "Assess whether your activity falls within a regulated DNFBP category",
+    "Adopt a written AML/CFT policy",
+    "Perform client due diligence before onboarding",
+    "Register and report through the goAML platform"
+   ],
+   "included": [
+    {
+     "title": "Compliance Review",
+     "description": "Assess whether your activity falls within a regulated DNFBP category",
+     "image": "/media/uploads/aml-kyc-included-0.jpg"
+    },
+    {
+     "title": "AML & Digital Compliance",
+     "description": "Adopt a written AML/CFT policy",
+     "image": "/media/uploads/aml-kyc-included-1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Perform client due diligence before onboarding",
+     "image": "/media/uploads/aml-kyc-included-2.jpg"
+    }
+   ],
+   "notes": "Obligations apply from the point an activity is regulated, regardless of transaction volume in any given period.",
+   "sourceName": "UAE Central Bank",
+   "heroImage": "/media/compliance/kyc_B2lYncW.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "accounting-reporting",
+   "title": "Accounting & Reporting",
+   "summary": "Bookkeeping and financial statements accurate enough to support tax filings, audits and bank due diligence.",
+   "description": "Every UAE company needs financial records reliable enough to support its own tax filings, not reconstructed after the fact. DSD keeps bookkeeping current and produces financial statements that hold up under audit, financing or bank scrutiny.",
+   "obligations": [
+    "Maintain complete, current bookkeeping, not reconstructed after the fact",
+    "Keep personal and company funds clearly separated",
+    "Retain invoices and supporting records for the statutory retention period",
+    "Prepare financial statements accurate enough to support an external audit"
+   ],
+   "included": [
+    {
+     "title": "Tax & Accounting",
+     "description": "Maintain complete, current bookkeeping, not reconstructed after the fact",
+     "image": "/media/uploads/accounting-reporting-included-0.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Keep personal and company funds clearly separated",
+     "image": "/media/uploads/accounting-reporting-included-1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Retain invoices and supporting records for the statutory retention period",
+     "image": "/media/uploads/accounting-reporting-included-2.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "Prepare financial statements accurate enough to support an external audit",
+     "image": "/media/uploads/accounting-reporting-included-3.jpg"
+    }
+   ],
+   "notes": "Banks and free zone authorities alike increasingly expect financial statements as a matter of course, not only at renewal time.",
+   "sourceName": "UAE Commercial Companies Law",
+   "heroImage": "/media/compliance/accounting-reporting.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "annual-accounting-bookkeeping",
+   "title": "Annual Accounting & Bookkeeping",
+   "summary": "Books are now a Corporate Tax input, not just a year-end formality.",
+   "description": "Since Corporate Tax filing depends on accurate annual financial statements, bookkeeping errors carried through the year now surface directly in a business's tax return, not just its own management reporting.",
+   "obligations": [
+    "Maintain monthly bookkeeping records",
+    "Reconcile bank statements against the general ledger",
+    "Prepare annual financial statements",
+    "Retain records for the statutory retention period"
+   ],
+   "included": [
+    {
+     "title": "Tax & Accounting",
+     "description": "Maintain monthly bookkeeping records",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-0_Nei9kMo.jpg"
+    },
+    {
+     "title": "Banking Coordination",
+     "description": "Reconcile bank statements against the general ledger",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-1_RUIjnXh.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "Prepare annual financial statements",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-2_FZGTH44.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Retain records for the statutory retention period",
+     "image": "/media/uploads/annual-accounting-bookkeeping-included-3_XKFal66.jpg"
+    }
+   ],
+   "notes": "",
+   "sourceName": "UAE Ministry of Finance",
+   "heroImage": "/media/compliance/annual-accounting-bookkeeping.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "annual-compliance",
+   "title": "Annual Compliance",
+   "summary": "The recurring calendar of renewals, filings and reviews every UAE company runs every year.",
+   "description": "Beyond any single obligation, every UAE company works against a recurring annual calendar, licence renewal, tax filings, UBO review and financial statement preparation, each on its own cycle. DSD maintains that calendar so nothing is left to memory.",
+   "obligations": [
+    "Renew your trade licence before its annual expiry",
+    "File Corporate Tax and VAT returns on their respective cycles",
+    "Review and update beneficial ownership records annually",
+    "Prepare annual financial statements, audited where required"
+   ],
+   "included": [
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Renew your trade licence before its annual expiry",
+     "image": "/media/uploads/annual-compliance-included-0.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "File Corporate Tax and VAT returns on their respective cycles",
+     "image": "/media/uploads/annual-compliance-included-1.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Review and update beneficial ownership records annually",
+     "image": "/media/uploads/annual-compliance-included-2.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "Prepare annual financial statements, audited where required",
+     "image": "/media/uploads/annual-compliance-included-3.jpg"
+    }
+   ],
+   "notes": "Most compliance failures trace back to a missed calendar date, not a misunderstood rule.",
+   "sourceName": "UAE Commercial Companies Law",
+   "heroImage": "/media/compliance/annual-compliance.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "beneficial-ownership-ubo",
+   "title": "Beneficial Ownership (UBO)",
+   "summary": "Applies to who actually owns or controls an entity, not just the names on the trade licence.",
+   "description": "UBO regulations require most UAE entities to identify and file the individuals who ultimately own or exercise control over them, a distinction that matters most where ownership sits behind holding companies or nominee arrangements.",
+   "obligations": [
+    "Identify individuals meeting the ultimate ownership/control threshold",
+    "File the UBO register with the relevant licensing authority",
+    "Maintain a register of nominee directors/managers, if any",
+    "Update the filing whenever ownership or control changes"
+   ],
+   "included": [
+    {
+     "title": "Compliance Review",
+     "description": "Identify individuals meeting the ultimate ownership/control threshold",
+     "image": "/media/uploads/beneficial-ownership-ubo-included-0.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "File the UBO register with the relevant licensing authority",
+     "image": "/media/uploads/beneficial-ownership-ubo-included-1.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Maintain a register of nominee directors/managers, if any",
+     "image": "/media/uploads/beneficial-ownership-ubo-included-2.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Update the filing whenever ownership or control changes",
+     "image": "/media/uploads/beneficial-ownership-ubo-included-3.jpg"
+    }
+   ],
+   "notes": "A correct filing at incorporation does not remain correct automatically, a later ownership change carries its own update obligation.",
+   "sourceName": "UAE Ministry of Economy",
+   "heroImage": "/media/compliance/beneficial-ownership-ubo.jpg",
+   "relatedInsightSlugs": [
+    "ubo-filing-what-changed-in-2026"
+   ]
+  },
+  {
+   "slug": "corporate-compliance",
+   "title": "Corporate Compliance",
+   "summary": "The umbrella obligation, keeping your licence, records and structure aligned with what's actually true about your company.",
+   "description": "Corporate compliance is the ongoing discipline of keeping a company's trade licence, constitutional records and operational activities aligned with what's actually true, not a single filing, but a continuous standard every UAE company is held to.",
+   "obligations": [
+    "Operate only within your trade licence's approved activities",
+    "Keep constitutional documents and shareholder records current",
+    "Notify the licensing authority when ownership, management or address changes",
+    "Maintain accurate signing-authority records for contracts and bank accounts"
+   ],
+   "included": [
+    {
+     "title": "Licensing & Registration",
+     "description": "Operate only within your trade licence's approved activities",
+     "image": "/media/uploads/corporate-compliance-included-0.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Keep constitutional documents and shareholder records current",
+     "image": "/media/uploads/corporate-compliance-included-1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Notify the licensing authority when ownership, management or address changes",
+     "image": "/media/uploads/corporate-compliance-included-2.jpg"
+    },
+    {
+     "title": "Banking Coordination",
+     "description": "Maintain accurate signing-authority records for contracts and bank accounts",
+     "image": "/media/uploads/corporate-compliance-included-3.jpg"
+    }
+   ],
+   "notes": "Compliance is assessed against your company's actual activity, not just what's on file, an outdated licence or record is treated the same as a wrong one.",
+   "sourceName": "UAE Commercial Companies Law",
+   "heroImage": "/media/compliance/ccs.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "corporate-governance",
+   "title": "Corporate Governance",
+   "summary": "The record-keeping and structural discipline most non-compliance actually traces back to, not a one-time filing.",
+   "description": "Corporate governance covers the constitutional records, resolutions and ownership documentation every UAE company must keep current, memorandum and articles of association, shareholder registers, resolutions and signing authority. DSD sees the same governance gaps recur across founders: missed renewal deadlines, informal ownership changes and undocumented management authority that only surface during a bank review or licence renewal.",
+   "obligations": [
+    "Maintain a structured compliance calendar covering trade licence, tax and permit renewal deadlines",
+    "Keep constitutional documents, shareholder registers and resolutions accurate and current",
+    "Update beneficial ownership records whenever shareholders, directors or managers change",
+    "Retain accounting records at the company's headquarters for at least five years",
+    "Ensure only properly authorised signatories operate bank accounts and sign contracts",
+    "Coordinate licence, immigration and residency renewals rather than treating them separately"
+   ],
+   "included": [
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Maintain a structured compliance calendar covering trade licence, tax and permit renewal deadlines",
+     "image": "/media/uploads/corporate-governance-included-0.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Keep constitutional documents, shareholder registers and resolutions accurate and current",
+     "image": "/media/uploads/corporate-governance-included-1.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Update beneficial ownership records whenever shareholders, directors or managers change",
+     "image": "/media/uploads/corporate-governance-included-2.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "Retain accounting records at the company's headquarters for at least five years",
+     "image": "/media/uploads/corporate-governance-included-3.jpg"
+    },
+    {
+     "title": "Banking Coordination",
+     "description": "Ensure only properly authorised signatories operate bank accounts and sign contracts",
+     "image": "/media/uploads/corporate-governance-included-4.jpg"
+    },
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Coordinate licence, immigration and residency renewals rather than treating them separately",
+     "image": "/media/uploads/corporate-governance-included-5.jpg"
+    }
+   ],
+   "notes": "Founders most often lose control of compliance not through one large mistake but by treating governance as administrative overhead rather than a risk-management function that protects the company's licence, banking relationships and reputation.",
+   "sourceName": "UAE Commercial Companies Law",
+   "heroImage": "/media/compliance/corporate-governance.jpg",
+   "relatedInsightSlugs": [
+    "ubo-filing-what-changed-in-2026"
+   ]
+  },
+  {
+   "slug": "corporate-tax",
+   "title": "Corporate Tax",
+   "summary": "Registration is tied to your trade licence issue date, not the calendar year, the most commonly missed deadline DSD sees.",
+   "description": "UAE Corporate Tax applies to most businesses operating under a UAE trade licence, with registration deadlines set relative to the licence's own issue date. A business that has not yet turned a profit still carries the registration obligation.",
+   "obligations": [
+    "Register within the deadline tied to your licence issue date",
+    "Assess Qualifying Free Zone Person exemption eligibility, if applicable",
+    "File an annual return even in a loss-making year",
+    "Retain supporting financial records for the statutory retention period"
+   ],
+   "included": [
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Register within the deadline tied to your licence issue date",
+     "image": "/media/uploads/corporate-tax-included-0.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Assess Qualifying Free Zone Person exemption eligibility, if applicable",
+     "image": "/media/uploads/corporate-tax-included-1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "File an annual return even in a loss-making year",
+     "image": "/media/uploads/corporate-tax-included-2.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Retain supporting financial records for the statutory retention period",
+     "image": "/media/uploads/corporate-tax-included-3.jpg"
+    }
+   ],
+   "notes": "Late registration triggers an administrative penalty independent of whether tax was actually owed for the period.",
+   "sourceName": "UAE Ministry of Finance",
+   "heroImage": "/media/compliance/corporate-tax.jpg",
+   "relatedInsightSlugs": [
+    "corporate-tax-registration-deadlines-2026"
+   ]
+  },
+  {
+   "slug": "regulatory-support",
+   "title": "Regulatory Support",
+   "summary": "Sector-specific approvals and regulator relationships beyond the standard trade licence.",
+   "description": "Some activities need approval from a regulator beyond the standard trade licence, healthcare, financial services and transport among them. DSD identifies which additional approvals your activity actually requires and manages the relationship with that regulator.",
+   "obligations": [
+    "Identify whether your activity requires a sector-specific regulatory approval",
+    "Prepare and submit the additional approval application",
+    "Maintain the qualifications, premises or insurance the regulator requires",
+    "Track renewal cycles for every regulatory approval held, not just the trade licence"
+   ],
+   "included": [
+    {
+     "title": "Compliance Review",
+     "description": "Identify whether your activity requires a sector-specific regulatory approval",
+     "image": "/media/uploads/regulatory-support-included-0.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Prepare and submit the additional approval application",
+     "image": "/media/uploads/regulatory-support-included-1.jpg"
+    },
+    {
+     "title": "Property & Tenancy Compliance",
+     "description": "Maintain the qualifications, premises or insurance the regulator requires",
+     "image": "/media/uploads/regulatory-support-included-2.jpg"
+    },
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Track renewal cycles for every regulatory approval held, not just the trade licence",
+     "image": "/media/uploads/regulatory-support-included-3.jpg"
+    }
+   ],
+   "notes": "A general trade licence does not substitute for a required sector-specific approval, operating without one carries its own penalty, independent of the licence itself.",
+   "sourceName": "UAE Ministry of Economy and Tourism",
+   "heroImage": "/media/compliance/regulatory-support.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "tax-compliance",
+   "title": "Tax Compliance",
+   "summary": "Corporate Tax and VAT obligations that apply from registration through filing, even in a loss-making year.",
+   "description": "UAE Corporate Tax and VAT carry registration and filing obligations independent of whether tax is ultimately owed, a business that hasn't turned a profit yet still has to register and file. DSD tracks both regimes against your specific licence date and turnover.",
+   "obligations": [
+    "Register for Corporate Tax within the deadline tied to your licence issue date",
+    "File an annual Corporate Tax return even in a loss-making year",
+    "Monitor VAT-taxable turnover against the mandatory registration threshold",
+    "File VAT returns on the assigned cycle and retain supporting invoices"
+   ],
+   "included": [
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Register for Corporate Tax within the deadline tied to your licence issue date",
+     "image": "/media/uploads/tax-compliance-included-0.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "File an annual Corporate Tax return even in a loss-making year",
+     "image": "/media/uploads/tax-compliance-included-1.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "Monitor VAT-taxable turnover against the mandatory registration threshold",
+     "image": "/media/uploads/tax-compliance-included-2.jpg"
+    },
+    {
+     "title": "Tax & Accounting",
+     "description": "File VAT returns on the assigned cycle and retain supporting invoices",
+     "image": "/media/uploads/tax-compliance-included-3.jpg"
+    }
+   ],
+   "notes": "Late registration triggers an administrative penalty independent of whether tax was actually owed for the period.",
+   "sourceName": "Federal Tax Authority",
+   "heroImage": "/media/compliance/tax-compliance.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "trade-licence-renewal",
+   "title": "Trade Licence Renewal",
+   "summary": "An expired licence affects immigration and banking standing, not just the ability to trade.",
+   "description": "Trade licences are issued on an annual cycle and must be renewed before expiry to remain valid, an expired licence can also affect an entity's establishment card and, by extension, its employees' visa status.",
+   "obligations": [
+    "Track the licence expiry date ahead of the renewal window",
+    "Settle any outstanding fines before renewal is accepted",
+    "Renew the associated establishment/immigration card in step",
+    "File any activity or shareholder amendment alongside renewal, if applicable"
+   ],
+   "included": [
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Track the licence expiry date ahead of the renewal window",
+     "image": "/media/uploads/trade-licence-renewal-included-0.jpg"
+    },
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Settle any outstanding fines before renewal is accepted",
+     "image": "/media/uploads/trade-licence-renewal-included-1.jpg"
+    },
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "Renew the associated establishment/immigration card in step",
+     "image": "/media/uploads/trade-licence-renewal-included-2.jpg"
+    },
+    {
+     "title": "Renewal & Deadline Tracking",
+     "description": "File any activity or shareholder amendment alongside renewal, if applicable",
+     "image": "/media/uploads/trade-licence-renewal-included-3.jpg"
+    }
+   ],
+   "notes": "",
+   "sourceName": "Dubai Department of Economy and Tourism",
+   "heroImage": "/media/compliance/trade-licence-renewal.jpg",
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "vat",
+   "title": "VAT (Value Added Tax)",
+   "summary": "Mandatory once taxable supplies cross the federal threshold, voluntary registration is available below it.",
+   "description": "VAT registration becomes mandatory once a business's taxable supplies and imports cross the federal threshold over a rolling 12-month period, with voluntary registration available at a lower threshold for businesses that want to reclaim input tax earlier.",
+   "obligations": [
+    "Monitor taxable turnover against the mandatory threshold",
+    "Register with the Federal Tax Authority once triggered",
+    "File returns on the assigned filing cycle",
+    "Retain export evidence for any zero-rated supply"
+   ],
+   "included": [
+    {
+     "title": "Tax & Accounting",
+     "description": "Monitor taxable turnover against the mandatory threshold",
+     "image": "/media/uploads/vat-included-0.jpg"
+    },
+    {
+     "title": "Documentation & Filing",
+     "description": "Register with the Federal Tax Authority once triggered",
+     "image": "/media/uploads/vat-included-1.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "File returns on the assigned filing cycle",
+     "image": "/media/uploads/vat-included-2.jpg"
+    },
+    {
+     "title": "Compliance Review",
+     "description": "Retain export evidence for any zero-rated supply",
+     "image": "/media/uploads/vat-included-3.jpg"
+    }
+   ],
+   "notes": "Input tax must be claimed in the return period the underlying invoice falls into, not a later period of convenience.",
+   "sourceName": "Federal Tax Authority",
+   "heroImage": "/media/compliance/vat.jpg",
+   "relatedInsightSlugs": [
+    "vat-filing-common-mistakes-uae-businesses"
+   ]
+  }
+ ],
+ "/api/insights/": [
+  {
+   "slug": "uae-golden-visa-property-investment-guide",
+   "title": "UAE Golden Visa Through Property: What Qualifies in 2026",
+   "category": "Residency",
+   "summary": "A plain breakdown of the property investment thresholds and title-deed requirements behind the 10-year Golden Visa route.",
+   "body": [
+    "Property-based residency is one of the most direct routes into the UAE for investors who already know where they want to buy. The core requirement is a minimum property value, held in the investor's own name, with the title deed registered before the visa application is submitted.",
+    "Off-plan property is treated differently to completed units and mortgaged property is only eligible once a minimum equity threshold is paid down, this is the single most common reason applications get delayed, so it is worth confirming before an offer is made, not after.",
+    "DSD reviews the title deed and payment structure with a client before any application is filed, so the eligibility question is answered in days, not after a rejected submission."
+   ],
+   "coverImage": "/media/insights/uae-golden-visa-property-investment-guide_pfPAqNX.svg",
+   "publishDate": "2026-07-14",
+   "touchesCompliance": false,
+   "relatedServiceSlugs": [
+    "company-formation",
+    "residency-by-property"
+   ],
+   "relatedInsightSlugs": [
+    "family-sponsorship-residency-requirements"
+   ]
+  },
+  {
+   "slug": "corporate-tax-registration-deadlines-2026",
+   "title": "Corporate Tax Registration: Deadlines and Late-Filing Penalties",
+   "category": "Compliance",
+   "summary": "Registration windows are tied to licence issue date, not the calendar year, missing one is the most common avoidable penalty DSD sees.",
+   "body": [
+    "UAE Corporate Tax registration deadlines are set relative to each business's own trade licence issue date, not a single fixed calendar date, which is why so many businesses miss theirs without realising a deadline had passed at all.",
+    "A late registration triggers an administrative penalty regardless of whether any tax was actually owed for the period. The registration obligation exists independently of profitability.",
+    "This is general guidance, not legal or tax advice, DSD recommends confirming your specific registration window against your trade licence with a compliance specialist before relying on any date mentioned here."
+   ],
+   "coverImage": "/media/insights/corporate-tax-registration-deadlines-2026_DOHX3xe.svg",
+   "publishDate": "2026-06-02",
+   "touchesCompliance": true,
+   "relatedServiceSlugs": [
+    "business-licensing",
+    "corporate-tax-advisory"
+   ],
+   "relatedInsightSlugs": [
+    "vat-filing-common-mistakes-uae-businesses"
+   ]
+  },
+  {
+   "slug": "vat-filing-common-mistakes-uae-businesses",
+   "title": "Five VAT Filing Mistakes DSD Sees Most Often",
+   "category": "Compliance",
+   "summary": "From late input-tax claims to misclassified zero-rated exports, the recurring errors that turn a routine filing into a corrected one.",
+   "body": [
+    "The most frequent VAT filing error DSD encounters is claiming input tax in the wrong return period, rather than the period the underlying invoice actually falls into. This alone accounts for a large share of the corrections businesses end up needing to file.",
+    "A close second is misclassifying an export as zero-rated without holding the export evidence the Federal Tax Authority actually expects to see on request, the classification itself may be correct, but the paper trail behind it is what gets checked.",
+    "This is general guidance, not legal or tax advice, treat it as a checklist of things to verify with a compliance specialist, not a substitute for reviewing your own filing."
+   ],
+   "coverImage": "/media/insights/vat-filing-common-mistakes-uae-businesses_U9VVpOc.svg",
+   "publishDate": "2026-05-19",
+   "touchesCompliance": true,
+   "relatedServiceSlugs": [
+    "business-licensing",
+    "company-formation",
+    "vat-registration-filing"
+   ],
+   "relatedInsightSlugs": [
+    "corporate-tax-registration-deadlines-2026"
+   ]
+  },
+  {
+   "slug": "mainland-vs-free-zone-company-setup",
+   "title": "Mainland or Free Zone: How to Actually Decide",
+   "category": "Incorporation",
+   "summary": "The right structure depends on where your clients are, not which jurisdiction has the lower headline fee.",
+   "body": [
+    "The mainland versus free zone decision is usually framed as a cost comparison, but the question that actually determines the right answer is where the business's clients and suppliers are based, a free zone entity trading only with mainland UAE clients adds friction a mainland licence would not.",
+    "Free zones remain the simpler route for businesses trading internationally or serving other free zone entities, with 100% foreign ownership and streamlined setup timelines.",
+    "DSD scopes this against the client's actual first-year trading plan, not a generic recommendation, before proposing a structure."
+   ],
+   "coverImage": "/media/insights/mainland-vs-free-zone-company-setup_xJGCqUz.svg",
+   "publishDate": "2026-04-08",
+   "touchesCompliance": false,
+   "relatedServiceSlugs": [
+    "expand-an-existing-company",
+    "local-sponsorship",
+    "start-a-new-business"
+   ],
+   "relatedInsightSlugs": []
+  },
+  {
+   "slug": "ubo-filing-what-changed-in-2026",
+   "title": "UBO Filing: What Changed in 2026",
+   "category": "Compliance",
+   "summary": "An update to the beneficial ownership disclosure requirements that most existing entities still haven't acted on.",
+   "body": [
+    "Beneficial ownership disclosure requirements apply to the individuals who ultimately own or control an entity, not only the names listed on the trade licence, a distinction that matters most for entities with layered or multi-jurisdiction ownership structures.",
+    "An entity that filed correctly at incorporation still has an ongoing obligation to update its UBO register whenever ownership or control actually changes, not just at renewal.",
+    "This is general guidance, not legal or tax advice, DSD reviews an entity's actual ownership structure against the current filing requirement rather than relying on what was filed at setup."
+   ],
+   "coverImage": "/media/insights/ubo-filing-what-changed-in-2026_FhII2eI.svg",
+   "publishDate": "2026-03-11",
+   "touchesCompliance": true,
+   "relatedServiceSlugs": [
+    "company-formation",
+    "beneficial-ownership-ubo-filing"
+   ],
+   "relatedInsightSlugs": [
+    "corporate-tax-registration-deadlines-2026"
+   ]
+  },
+  {
+   "slug": "family-sponsorship-residency-requirements",
+   "title": "Sponsoring Family Members: Income Thresholds and Housing Rules",
+   "category": "Residency",
+   "summary": "The income and accommodation requirements behind a spouse, child or parent sponsorship application, explained plainly.",
+   "body": [
+    "Family sponsorship eligibility is assessed against the sponsor's own residency status, minimum income and the accommodation registered under their name, a tenancy contract in someone else's name is the most common reason an otherwise-eligible application stalls.",
+    "Sponsoring a parent carries its own, stricter income threshold on top of the standard family requirements and is assessed separately from a spouse or child application.",
+    "DSD checks the sponsor's documentation against the current thresholds before submission, so gaps are caught before they cost an application cycle."
+   ],
+   "coverImage": "/media/insights/family-sponsorship-residency-requirements_k4qjFhn.svg",
+   "publishDate": "2026-02-17",
+   "touchesCompliance": false,
+   "relatedServiceSlugs": [
+    "residency-by-family-sponsorship"
+   ],
+   "relatedInsightSlugs": [
+    "uae-golden-visa-property-investment-guide"
+   ]
+  }
+ ],
+ "/api/team/": [
+  {
+   "slug": "amina-al-suwaidi",
+   "name": "Amina Al Suwaidi",
+   "role": "Head of Residency Advisory",
+   "bio": "Amina leads DSD's residency practice, guiding property investors, business owners and families through every UAE visa pathway from first eligibility check to Emirates ID in hand.",
+   "photo": "/media/team/amina-al-suwaidi_0sdzN4J.svg",
+   "email": "amina@dsdcop.com",
+   "phone": "",
+   "whatsapp": "",
+   "linkedin": "https://www.linkedin.com/"
+  },
+  {
+   "slug": "fatima-hussain",
+   "name": "Fatima Hussain",
+   "role": "Compliance & Tax Lead",
+   "bio": "Fatima keeps DSD clients ahead of corporate tax, VAT, UBO and AML obligations, translating federal requirements into a plain checklist for founders who are not tax specialists.",
+   "photo": "/media/team/fatima-hussain_9pnn1xA.svg",
+   "email": "fatima@dsdcop.com",
+   "phone": "",
+   "whatsapp": "",
+   "linkedin": "https://www.linkedin.com/"
+  },
+  {
+   "slug": "omar-el-sayed",
+   "name": "Omar El Sayed",
+   "role": "Client Relations Manager",
+   "bio": "Omar is usually the first person a prospective client speaks with, scoping the enquiry and routing it to the right specialist across residency, incorporation or compliance.",
+   "photo": "/media/team/omar-el-sayed_RsjbyYE.svg",
+   "email": "",
+   "phone": "+971 58 588 9033",
+   "whatsapp": "+971 58 588 9033",
+   "linkedin": ""
+  },
+  {
+   "slug": "rashid-al-mansoori",
+   "name": "Rashid Al Mansoori",
+   "role": "Head of Business Incorporation",
+   "bio": "Rashid structures new UAE entities and expansions for founders entering the market, weighing mainland and free zone routes against each client's actual operating plans.",
+   "photo": "/media/team/rashid-al-mansoori_dwmxLCD.svg",
+   "email": "rashid@dsdcop.com",
+   "phone": "",
+   "whatsapp": "",
+   "linkedin": "https://www.linkedin.com/"
+  }
+ ],
+ "/api/testimonials/": [
+  {
+   "id": "21",
+   "quote": "DSD walked us through the free zone versus mainland decision without pushing us toward whichever was easier for them to file. That alone made the setup worth it.",
+   "name": "Carlos Martinez",
+   "role": "H&N \\ CEO & President",
+   "avatar": "/media/testimonials/t1.webp"
+  },
+  {
+   "id": "22",
+   "quote": "Our corporate tax registration deadline was tied to a licence date I honestly hadn't tracked. DSD caught it with weeks to spare.",
+   "name": "Ben Limes",
+   "role": "MEX – CEO",
+   "avatar": "/media/testimonials/t2.webp"
+  },
+  {
+   "id": "23",
+   "quote": "The property residency process had more moving pieces than I expected. Having one advisor across the title deed, the medical and the Emirates ID made it painless.",
+   "name": "Yusuf Rahman",
+   "role": "Horizon Ventures \\ Managing Director",
+   "avatar": "/media/testimonials/t3.webp"
+  },
+  {
+   "id": "24",
+   "quote": "We'd already tried self-filing VAT before coming to DSD. The difference wasn't the filing itself, it was catching mistakes we didn't know we were making.",
+   "name": "Kate Smith",
+   "role": "Swirl – CEO & President",
+   "avatar": "/media/testimonials/t4.webp"
+  },
+  {
+   "id": "25",
+   "quote": "DSD Cooperate Services went above and beyond with our financial consulting needs. They treated us like a priority and provided valuable insights that really helped our business grow. Highly recommend!",
+   "name": "Suzane Claris",
+   "role": "Meta Mex \\ CEO & President",
+   "avatar": "/media/testimonials/t.webp"
+  },
+  {
+   "id": "27",
+   "quote": "I reached out to Finovate for some advice on a small financial issue and they treated it with the same importance as a large-scale project. Their attention to detail and thorough responses were amazing.",
+   "name": "Michael Roberts",
+   "role": "Bright Future Enterprises \\ Founder",
+   "avatar": "/media/testimonials/t_bD3Ml83.webp"
+  }
+ ],
+ "/api/stats/": [
+  {
+   "id": "clients-served",
+   "value": 250,
+   "suffix": "+",
+   "label": "Clients served",
+   "order": 0
+  },
+  {
+   "id": "years-experience",
+   "value": 8,
+   "suffix": "+",
+   "label": "Years of UAE market experience",
+   "order": 1
+  },
+  {
+   "id": "repeat-referral-rate",
+   "value": 70,
+   "suffix": "%",
+   "label": "Repeat & referral rate",
+   "order": 2
+  },
+  {
+   "id": "emirates-covered",
+   "value": 7,
+   "suffix": "",
+   "label": "Emirates covered",
+   "order": 3
+  }
+ ],
+ "/api/pricing-tiers/": [
+  {
+   "id": "basic",
+   "name": "Basic",
+   "description": "Ideal for businesses that only require PRO assistance when a specific government procedure arises.",
+   "price": "AED1,999",
+   "amount": "1999.00",
+   "currency": "AED",
+   "period": "Per service",
+   "features": [
+    "One selected PRO service",
+    "Government application preparation",
+    "Document checking",
+    "Government submission assistance",
+    "Application follow-up",
+    "Status updates",
+    "Document collection / delivery where applicable",
+    "Professional PRO guidance"
+   ],
+   "highlighted": false,
+   "order": 0,
+   "services": [
+    "business-licensing",
+    "company-formation",
+    "corporate-documentation",
+    "corporate-structuring",
+    "ejari",
+    "expand-an-existing-company",
+    "international-structures",
+    "local-sponsorship",
+    "start-a-new-business",
+    "aml-kyc-compliance",
+    "annual-accounting-bookkeeping",
+    "beneficial-ownership-ubo-filing",
+    "corporate-tax-advisory",
+    "trade-licence-renewal-amendments",
+    "vat-registration-filing",
+    "employment-residency",
+    "family-residency",
+    "golden-residency",
+    "investor-residency",
+    "residency-by-property",
+    "uae-residency",
+    "residency-by-business",
+    "residency-by-employment",
+    "residency-by-family-sponsorship"
+   ]
+  },
+  {
+   "id": "growth",
+   "name": "Growth",
+   "description": "A flexible PRO partnership for growing businesses that require regular government support without the cost of maintaining an in-house PRO.",
+   "price": "AED 3,999",
+   "amount": "3999.00",
+   "currency": "AED",
+   "period": "Per month",
+   "features": [
+    "Ongoing PRO support",
+    "Routine government liaison",
+    "Visa and immigration assistance",
+    "MOHRE-related support",
+    "Labour and employee documentation",
+    "License and permit-related assistance",
+    "Renewal date tracking",
+    "Application follow-ups",
+    "Document processing support",
+    "Priority communication",
+    "Monthly service summary"
+   ],
+   "highlighted": true,
+   "order": 1,
+   "services": [
+    "business-licensing",
+    "company-formation",
+    "corporate-documentation",
+    "corporate-structuring",
+    "ejari",
+    "expand-an-existing-company",
+    "international-structures",
+    "local-sponsorship",
+    "start-a-new-business",
+    "aml-kyc-compliance",
+    "annual-accounting-bookkeeping",
+    "beneficial-ownership-ubo-filing",
+    "corporate-tax-advisory",
+    "trade-licence-renewal-amendments",
+    "vat-registration-filing",
+    "employment-residency",
+    "family-residency",
+    "golden-residency",
+    "investor-residency",
+    "residency-by-property",
+    "uae-residency",
+    "residency-by-business",
+    "residency-by-employment",
+    "residency-by-family-sponsorship"
+   ]
+  },
+  {
+   "id": "enterprise",
+   "name": "Enterprise",
+   "description": "Our most complete option for businesses that want predictable PRO support throughout the year. Designed for companies that prefer to outsource their government administration to a professional corporate services partner.",
+   "price": "AED 12,000",
+   "amount": "12000.00",
+   "currency": "AED",
+   "period": "Per year",
+   "features": [
+    "Year-round PRO support",
+    "Immigration & residency assistance",
+    "MOHRE-related procedures",
+    "Labour documentation support",
+    "License & permit assistance",
+    "Renewal calendar management",
+    "Government application follow-ups",
+    "Employee documentation support",
+    "Document processing",
+    "Priority service",
+    "Dedicated account coordination",
+    "Annual PRO review",
+    "Consolidated service reporting"
+   ],
+   "highlighted": false,
+   "order": 2,
+   "services": [
+    "business-licensing",
+    "company-formation",
+    "corporate-documentation",
+    "corporate-structuring",
+    "ejari",
+    "expand-an-existing-company",
+    "international-structures",
+    "local-sponsorship",
+    "start-a-new-business",
+    "aml-kyc-compliance",
+    "annual-accounting-bookkeeping",
+    "beneficial-ownership-ubo-filing",
+    "corporate-tax-advisory",
+    "trade-licence-renewal-amendments",
+    "vat-registration-filing",
+    "employment-residency",
+    "family-residency",
+    "golden-residency",
+    "investor-residency",
+    "residency-by-property",
+    "uae-residency",
+    "residency-by-business",
+    "residency-by-employment",
+    "residency-by-family-sponsorship"
+   ]
+  }
+ ],
+ "/api/founder/": {
+  "name": "Sultan Al Marzooqi",
+  "role": "Founder & Managing Director",
+  "bio": "Sultan founded DSD Corporate Services to give founders and relocating professionals a single, straight-talking advisory relationship across residency, incorporation and compliance, instead of juggling three separate consultants who don't talk to each other. He still reviews every client's route personally before the first consultation.",
+  "photo": "/media/founder/founder_Clih2rc.svg",
+  "email": "info@dsdcop.com",
+  "linkedin": "https://www.linkedin.com/"
+ },
+ "/api/services/business-licensing/": {
+  "slug": "business-licensing",
+  "title": "Business Licensing",
+  "pillar": "business-incorporation",
+  "icon": "file-badge",
+  "summary": "Trade licence renewal, activity amendments and additional-activity filings for a company already operating.",
+  "description": "A trade licence isn't a one-time document, it needs renewing annually and any new activity or amendment has to be filed with the relevant authority before you act on it. DSD manages licence renewal, activity additions and amendment filings so a lapsed or out-of-scope licence never disrupts your operations.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Annual licence renewal",
+    "description": "We renew your trade licence ahead of expiry, avoiding fines and operational disruption.",
+    "image": "/media/uploads/b48021c005c145df82ede7a0dbc4e106.jpg"
+   },
+   {
+    "title": "Activity amendment filing",
+    "description": "We file additional business activities or licence amendments with the relevant authority.",
+    "image": "/media/uploads/business-licensing-included-1.jpg"
+   },
+   {
+    "title": "Regulatory approval coordination",
+    "description": "We coordinate any external regulatory approval your activity change requires.",
+    "image": "/media/uploads/business-licensing-included-2.jpg"
+   },
+   {
+    "title": "Licence-status monitoring",
+    "description": "We monitor your licence status so renewal deadlines and requirements never catch you off guard.",
+    "image": "/media/uploads/business-licensing-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/expand-an-existing-company_WeqqUaL.jpg",
+  "relatedInsightSlugs": [
+   "corporate-tax-registration-deadlines-2026",
+   "vat-filing-common-mistakes-uae-businesses"
+  ],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 1,
+    "suffix": "/yr",
+    "label": "Standard licence renewal cycle we track"
+   },
+   {
+    "value": 5,
+    "suffix": "+ business days",
+    "label": "Typical amendment turnaround"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/company-formation/": {
+  "slug": "company-formation",
+  "title": "Company Formation",
+  "pillar": "business-incorporation",
+  "icon": "building-2",
+  "summary": "End to end UAE company setup from choosing mainland or free zone to your first trade licence.",
+  "description": "Company Formation covers the full path from an initial structuring decision to a live trade licence, confirming mainland versus free zone fit, reserving your trade name and submitting the licence application itself. DSD scopes this against your actual first year trading plan not a generic recommendation.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Mainland vs. free zone structuring advice",
+    "description": "We compare mainland and free zone options against your activity and target market before you commit to either.",
+    "image": "/media/uploads/company-formation-included-0.jpg"
+   },
+   {
+    "title": "Trade name reservation",
+    "description": "We reserve your trade name and secure initial approval from the relevant authority.",
+    "image": "/media/uploads/company-formation-included-1.jpg"
+   },
+   {
+    "title": "Trade licence application",
+    "description": "We prepare and submit your full trade licence application once your structure and name are confirmed.",
+    "image": "/media/uploads/company-formation-included-2.jpg"
+   },
+   {
+    "title": "Bank account introduction",
+    "description": "We introduce you to relationship bankers familiar with new UAE company accounts.",
+    "image": "/media/uploads/company-formation-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/22.webp",
+  "relatedInsightSlugs": [
+   "uae-golden-visa-property-investment-guide",
+   "vat-filing-common-mistakes-uae-businesses",
+   "ubo-filing-what-changed-in-2026"
+  ],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 100,
+    "suffix": "%",
+    "label": "Foreign ownership eligible on most routes"
+   },
+   {
+    "value": 10,
+    "suffix": "+ business days",
+    "label": "Typical licence turnaround"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/corporate-documentation/": {
+  "slug": "corporate-documentation",
+  "title": "Corporate Documentation",
+  "pillar": "business-incorporation",
+  "icon": "file-check",
+  "summary": "MOA/AOA drafting, resolutions and the constitutional paperwork every UAE company has to keep current.",
+  "description": "A company's constitutional documents,its Memorandum and Articles of Association, shareholder resolutions and powers of attorney need to stay accurate as the company changes not just correct at incorporation. DSD drafts and maintains this documentation so it reflects the company's real current structure.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "MOA/AOA drafting",
+    "description": "We draft Memorandum and Articles of Association matching your confirmed shareholding and governance structure.",
+    "image": "/media/uploads/corporate-documentation-included-0.jpg"
+   },
+   {
+    "title": "Board and shareholder resolutions",
+    "description": "We draft the resolutions your company needs for major decisions and approvals.",
+    "image": "/media/uploads/corporate-documentation-included-1.jpg"
+   },
+   {
+    "title": "Power of attorney preparation",
+    "description": "We prepare specific limited powers of attorney rather than broad open-ended ones.",
+    "image": "/media/uploads/corporate-documentation-included-2.jpg"
+   },
+   {
+    "title": "Document register maintenance",
+    "description": "We maintain your constitutional document register so it stays audit ready.",
+    "image": "/media/uploads/corporate-documentation-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/cp_DweWw11.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 5,
+    "suffix": "yr+",
+    "label": "Minimum record retention period under UAE company law"
+   },
+   {
+    "value": 1,
+    "label": "Document register always kept current"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/corporate-structuring/": {
+  "slug": "corporate-structuring",
+  "title": "Corporate Structuring",
+  "pillar": "business-incorporation",
+  "icon": "clipboard-check",
+  "summary": "Shareholding, governance and management structuring for a company being formed or reorganised.",
+  "description": "How a company's ownership, management and signing authority are structured affects everything from bank account approval to future investment rounds. DSD structures shareholding and governance arrangements to match how the business will actually be run, not just what's fastest to file.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Shareholding structure design",
+    "description": "We design a shareholding structure that reflects each founder's real ownership and control.",
+    "image": "/media/uploads/corporate-structuring-included-0.jpg"
+   },
+   {
+    "title": "Governance and signing-authority setup",
+    "description": "We set up board, management and bank-signing authority matching how the company will actually run.",
+    "image": "/media/uploads/corporate-structuring-included-1.jpg"
+   },
+   {
+    "title": "Shareholder agreement guidance",
+    "description": "We guide the drafting of shareholder agreements covering exit, transfer and dispute terms.",
+    "image": "/media/uploads/corporate-structuring-included-2.jpg"
+   },
+   {
+    "title": "Beneficial ownership filing",
+    "description": "We file the beneficial ownership information your structure requires from day one.",
+    "image": "/media/uploads/corporate-structuring-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/corporate-structuring.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 4,
+    "label": "Structural elements designed together: shares, governance, signing, exit"
+   },
+   {
+    "value": 1,
+    "label": "Structure built to match how you'll actually operate"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/ejari/": {
+  "slug": "ejari",
+  "title": "EJARI",
+  "pillar": "business-incorporation",
+  "icon": "file-check",
+  "summary": "Dubai's mandatory tenancy-registration system, required for a mainland licence, employee visas and DEWA activation alike.",
+  "description": "Ejari is the Dubai Land Department's official system for registering residential and commercial tenancy contracts. For a company, a valid commercial Ejari is commonly required to obtain or renew a mainland trade licence, support employee visa applications and activate DEWA at the premises, DSD manages registration, renewal and cancellation so it never becomes a bottleneck to your licence.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Tenancy contract registration",
+    "description": "We register your signed tenancy contract through Dubai REST, the Ejari system or a Trustee Centre, whichever channel fits your situation.",
+    "image": "/media/uploads/ejari-included-0.jpg"
+   },
+   {
+    "title": "Document preparation and verification",
+    "description": "We prepare and check the Emirates ID, trade licence and authority documents Ejari registration requires before submission.",
+    "image": "/media/uploads/ejari-included-1.jpg"
+   },
+   {
+    "title": "Renewal and cancellation management",
+    "description": "We track your Ejari's expiry against your tenancy and trade licence cycles and handle renewal or proper cancellation when you move or close.",
+    "image": "/media/uploads/ejari-included-2.jpg"
+   },
+   {
+    "title": "Premises suitability check",
+    "description": "We confirm your leased premises are approved for your licensed activity before you sign, so an unsuitable unit doesn't block your trade licence.",
+    "image": "/media/uploads/ejari-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/ejari.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 8,
+    "label": "Documented benefits of registering a tenancy through Ejari"
+   },
+   {
+    "value": 2,
+    "label": "Registration channels: the Dubai REST app or a Trustee Centre"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/expand-an-existing-company/": {
+  "slug": "expand-an-existing-company",
+  "title": "Expand an Existing Company",
+  "pillar": "business-incorporation",
+  "icon": "trending-up",
+  "summary": "Branch registration, licence amendments and additional activities for a company already operating elsewhere.",
+  "description": "For companies already established outside the UAE or already licensed within it, DSD structures the expansion: a new branch, an added business activity or a second jurisdiction, without disrupting the existing licence.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Branch or subsidiary structuring advice",
+    "description": "We advise on whether a branch or a subsidiary best fits your parent company's expansion into the UAE.",
+    "image": "/media/uploads/expand-an-existing-company-included-0.jpg"
+   },
+   {
+    "title": "Additional activity and amendment filing",
+    "description": "We file the additional activities or licence amendments your expansion requires with the relevant authority.",
+    "image": "/media/uploads/expand-an-existing-company-included-1.jpg"
+   },
+   {
+    "title": "Parent-company document attestation guidance",
+    "description": "We guide you through attesting your parent company's incorporation documents so they're accepted by UAE authorities.",
+    "image": "/media/uploads/expand-an-existing-company-included-2.jpg"
+   },
+   {
+    "title": "Bank account introduction support",
+    "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+    "image": "/media/uploads/expand-an-existing-company-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/expand-an-existing-company.jpg",
+  "relatedInsightSlugs": [
+   "mainland-vs-free-zone-company-setup"
+  ],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 7,
+    "label": "Emirates covered"
+   },
+   {
+    "value": 15,
+    "suffix": "+ business days",
+    "label": "Typical expansion timeline"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/international-structures/": {
+  "slug": "international-structures",
+  "title": "International Structures",
+  "pillar": "business-incorporation",
+  "icon": "briefcase",
+  "summary": "Branch registration, holding structures and multi-jurisdiction setups for companies already operating outside the UAE.",
+  "description": "For companies already established elsewhere, entering the UAE market usually means choosing between a branch, a subsidiary or a holding structure that sits above both. DSD structures the entry to fit how the parent company actually operates and manages the parent-company document attestation UAE authorities require.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Branch vs. subsidiary structuring",
+    "description": "We advise on whether a branch or a subsidiary best fits your parent company's UAE entry.",
+    "image": "/media/uploads/international-structures-included-0.jpg"
+   },
+   {
+    "title": "Parent-company document attestation",
+    "description": "We guide you through attesting your parent company's incorporation documents for UAE authorities.",
+    "image": "/media/uploads/international-structures-included-1.jpg"
+   },
+   {
+    "title": "Multi-jurisdiction holding structuring",
+    "description": "We structure holding arrangements that sit cleanly across your UAE entity and existing jurisdictions.",
+    "image": "/media/uploads/international-structures-included-2.jpg"
+   },
+   {
+    "title": "Cross-border banking introduction",
+    "description": "We introduce you to banking relationships that work across your UAE and international structure.",
+    "image": "/media/uploads/international-structures-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/international-structures.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 7,
+    "label": "Emirates covered"
+   },
+   {
+    "value": 15,
+    "suffix": "+ business days",
+    "label": "Typical structuring timeline"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/local-sponsorship/": {
+  "slug": "local-sponsorship",
+  "title": "Local Sponsorship",
+  "pillar": "business-incorporation",
+  "icon": "users",
+  "summary": "Clarity on when a UAE national partner or service agent is actually required and when 100% foreign ownership already covers you.",
+  "description": "Local sponsorship rules have changed significantly: most ordinary mainland activities no longer require a UAE national shareholder or service agent. DSD checks your specific activity, legal form and Emirate against the current rules before recommending whether a local partner is legally required, commercially useful or unnecessary altogether.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Sponsorship requirement assessment",
+    "description": "We check your licensed activity, legal form and Emirate against current ownership rules before recommending any local partner or agent.",
+    "image": "/media/uploads/local-sponsorship-included-0.jpg"
+   },
+   {
+    "title": "Local partner and agent due diligence",
+    "description": "Where a UAE partner or service agent is genuinely needed, we vet the proposed party before any agreement is signed.",
+    "image": "/media/uploads/local-sponsorship-included-1.jpg"
+   },
+   {
+    "title": "Shareholder and agency agreement guidance",
+    "description": "We guide the drafting of shareholder, service-agent or agency agreements that protect your ownership, control and exit rights.",
+    "image": "/media/uploads/local-sponsorship-included-2.jpg"
+   },
+   {
+    "title": "Beneficial ownership and exit protections",
+    "description": "We help document beneficial ownership filings and exit terms so a sponsorship arrangement never becomes a lock-in.",
+    "image": "/media/uploads/local-sponsorship-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/local-sponsorship.jpg",
+  "relatedInsightSlugs": [
+   "mainland-vs-free-zone-company-setup"
+  ],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 100,
+    "suffix": "%",
+    "label": "Foreign ownership now available for most mainland activities"
+   },
+   {
+    "value": 4,
+    "label": "Distinct sponsorship arrangement types we assess"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/start-a-new-business/": {
+  "slug": "start-a-new-business",
+  "title": "Start a New Business in the UAE",
+  "pillar": "business-incorporation",
+  "icon": "building-2",
+  "summary": "Mainland or free zone incorporation, scoped against how and where you'll actually trade.",
+  "description": "DSD scopes mainland versus free zone against a founder's real first-year trading plan rather than a generic recommendation, then handles licence application, name reservation and initial approvals.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Mainland vs. free zone structuring advice",
+    "description": "We compare mainland and free zone options against your activity and target market before you commit to either.",
+    "image": "/media/uploads/ebf915cb397444c19adbc8d4211ac4b4.jpg"
+   },
+   {
+    "title": "Trade name reservation and initial approval",
+    "description": "We reserve your trade name and secure initial approval from the relevant authority to get your file moving.",
+    "image": "/media/uploads/dc13ed36e1e24095a77ed6f32070a96e.png"
+   },
+   {
+    "title": "Licence application and submission",
+    "description": "We prepare and submit your full trade licence application once your structure and name are confirmed.",
+    "image": "/media/uploads/aa2917d957214c86a47e69a47b193169.jpg"
+   },
+   {
+    "title": "Bank account introduction support",
+    "description": "We introduce you to relationship bankers familiar with new UAE company accounts and prepare you for the meeting.",
+    "image": "/media/uploads/9476c2996ab94f4b812e701aadece413.jpg"
+   }
+  ],
+  "heroImage": "/media/services/uea.jpg",
+  "relatedInsightSlugs": [
+   "mainland-vs-free-zone-company-setup"
+  ],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 100,
+    "suffix": "%",
+    "label": "Foreign ownership eligible routes"
+   },
+   {
+    "value": 10,
+    "suffix": "+ business days",
+    "label": "Typical licence turnaround"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/aml-kyc-compliance/": {
+  "slug": "aml-kyc-compliance",
+  "title": "AML/KYC Compliance",
+  "pillar": "compliance-governance",
+  "icon": "shield-check",
+  "summary": "Anti-money-laundering policy, client due diligence and registration support for regulated activities.",
+  "description": "For businesses in AML-regulated activities, DSD builds the internal policy, client due diligence process and goAML registration that examiners expect to see, sized to the business, not a boilerplate template.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "AML/CFT policy drafting",
+    "description": "We draft AML/CFT policies tailored to your business, not a generic template that doesn't match how you operate.",
+    "image": "/media/uploads/aml-kyc-compliance-included-0.jpg"
+   },
+   {
+    "title": "Client due diligence process design",
+    "description": "We design a client due diligence process that's actually workable day to day, not just compliant on paper.",
+    "image": "/media/uploads/aml-kyc-compliance-included-1.jpg"
+   },
+   {
+    "title": "goAML registration support",
+    "description": "We support your registration on the goAML platform, a requirement for designated non-financial businesses and professions.",
+    "image": "/media/uploads/aml-kyc-compliance-included-2.jpg"
+   },
+   {
+    "title": "Staff awareness briefing",
+    "description": "We brief your team on their AML/CFT obligations so compliance doesn't rest on one person alone.",
+    "image": "/media/uploads/aml-kyc-compliance-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/kyc.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "fatima-hussain"
+  ],
+  "stats": [
+   {
+    "value": 1,
+    "suffix": " business day",
+    "label": "Typical exposure assessment"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/annual-accounting-bookkeeping/": {
+  "slug": "annual-accounting-bookkeeping",
+  "title": "Annual Accounting & Bookkeeping",
+  "pillar": "compliance-governance",
+  "icon": "clipboard-check",
+  "summary": "Books kept audit-ready year-round, so tax filing and licence renewal never start from a backlog.",
+  "description": "DSD maintains monthly bookkeeping and produces the annual financial statements a business needs for Corporate Tax filing, licence renewal and bank relationship reviews, kept current, not reconstructed under deadline pressure.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Monthly bookkeeping",
+    "description": "We keep your books current every month, so year-end never turns into a scramble.",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-0.jpg"
+   },
+   {
+    "title": "Annual financial statement preparation",
+    "description": "We prepare your annual financial statements in the format your authority and bank expect to see.",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-1.jpg"
+   },
+   {
+    "title": "Audit-readiness review",
+    "description": "We review your records against what an auditor will actually ask for, before the audit request arrives.",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-2.jpg"
+   },
+   {
+    "title": "Bank statement reconciliation",
+    "description": "We reconcile your bank statements against your books monthly, catching discrepancies while they're still easy to trace.",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/annual-accounting-bookkeeping.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "fatima-hussain"
+  ],
+  "stats": [
+   {
+    "value": 12,
+    "suffix": "/yr",
+    "label": "Bookkeeping cycles maintained"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/beneficial-ownership-ubo-filing/": {
+  "slug": "beneficial-ownership-ubo-filing",
+  "title": "Beneficial Ownership & UBO Filing",
+  "pillar": "compliance-governance",
+  "icon": "file-badge",
+  "summary": "Ownership-structure mapping and UBO register filing, kept current as ownership actually changes.",
+  "description": "DSD maps an entity's real ownership and control chain, not just the names on the trade licence, files the UBO register and flags when a later ownership change means the register needs updating again.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Ownership and control structure mapping",
+    "description": "We map your full ownership and control chain to identify exactly who qualifies as a beneficial owner.",
+    "image": "/media/uploads/beneficial-ownership-ubo-filing-included-0.jpg"
+   },
+   {
+    "title": "UBO register filing",
+    "description": "We prepare and file your UBO register with the relevant authority within the required timeframe.",
+    "image": "/media/uploads/beneficial-ownership-ubo-filing-included-1.jpg"
+   },
+   {
+    "title": "Nominee/legal-representative documentation",
+    "description": "We prepare the nominee or legal-representative documentation your ownership structure requires for a compliant filing.",
+    "image": "/media/uploads/beneficial-ownership-ubo-filing-included-2.jpg"
+   },
+   {
+    "title": "Update filing on ownership change",
+    "description": "We file the required update whenever your ownership or control structure changes, keeping your register current.",
+    "image": "/media/uploads/beneficial-ownership-ubo-filing-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/beneficial-ownership-ubo-filing.jpg",
+  "relatedInsightSlugs": [
+   "ubo-filing-what-changed-in-2026"
+  ],
+  "teamMemberSlugs": [
+   "fatima-hussain"
+  ],
+  "stats": [
+   {
+    "value": 1,
+    "suffix": " business day",
+    "label": "Typical structure review"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/corporate-tax-advisory/": {
+  "slug": "corporate-tax-advisory",
+  "title": "Corporate Tax Advisory",
+  "pillar": "compliance-governance",
+  "icon": "calculator",
+  "summary": "Registration, exemption assessment and filing support against your actual licence-linked deadlines.",
+  "description": "DSD confirms a business's Corporate Tax registration window against its own trade licence issue date, assesses free zone qualifying income exemptions where relevant and manages filing so no deadline is missed by accident.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Registration deadline confirmation",
+    "description": "We confirm your exact corporate tax registration deadline based on your licence issue date so nothing is missed.",
+    "image": "/media/uploads/corporate-tax-advisory-included-0.jpg"
+   },
+   {
+    "title": "Qualifying Free Zone Person exemption assessment",
+    "description": "We assess whether your free zone company actually qualifies for the 0% QFZP rate before you rely on it.",
+    "image": "/media/uploads/corporate-tax-advisory-included-1.jpg"
+   },
+   {
+    "title": "Annual return preparation support",
+    "description": "We support preparation of your annual corporate tax return so it's accurate and filed on time.",
+    "image": "/media/uploads/corporate-tax-advisory-included-2.jpg"
+   },
+   {
+    "title": "Penalty and late-filing risk review",
+    "description": "We review your filing history for gaps that could trigger a penalty, before the FTA finds them first.",
+    "image": "/media/uploads/corporate-tax-advisory-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/23.jpg",
+  "relatedInsightSlugs": [
+   "corporate-tax-registration-deadlines-2026"
+  ],
+  "teamMemberSlugs": [
+   "fatima-hussain"
+  ],
+  "stats": [
+   {
+    "value": 9,
+    "suffix": "%",
+    "label": "Standard headline rate"
+   },
+   {
+    "value": 1,
+    "suffix": " business day",
+    "label": "Typical deadline check"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/trade-licence-renewal-amendments/": {
+  "slug": "trade-licence-renewal-amendments",
+  "title": "Trade Licence Renewal & Amendments",
+  "pillar": "compliance-governance",
+  "icon": "file-check",
+  "summary": "Annual renewal and mid-cycle amendments handled ahead of the expiry date, not after it.",
+  "description": "DSD tracks a client's trade licence renewal date and manages the paperwork ahead of expiry, plus any mid-cycle amendment, a new activity, a shareholder change, a registered address update, as it comes up.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Renewal deadline tracking and reminders",
+    "description": "We track your trade licence expiry and reach out with time to renew before any grace period runs out.",
+    "image": "/media/uploads/trade-licence-renewal-amendments-included-0.jpg"
+   },
+   {
+    "title": "Annual renewal filing",
+    "description": "We handle your annual trade licence renewal filing with the relevant authority from start to finish.",
+    "image": "/media/uploads/trade-licence-renewal-amendments-included-1.jpg"
+   },
+   {
+    "title": "Activity, shareholder or address amendments",
+    "description": "We file amendments to your licensed activities, shareholding or registered address as your business changes.",
+    "image": "/media/uploads/trade-licence-renewal-amendments-included-2.jpg"
+   },
+   {
+    "title": "Immigration/establishment card renewal coordination",
+    "description": "We coordinate your immigration and establishment card renewals alongside your trade licence so nothing falls out of sync.",
+    "image": "/media/uploads/trade-licence-renewal-amendments-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/trade-licence-renewal-amendments.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 3,
+    "suffix": " business days",
+    "label": "Typical renewal turnaround"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/vat-registration-filing/": {
+  "slug": "vat-registration-filing",
+  "title": "VAT Registration & Filing",
+  "pillar": "compliance-governance",
+  "icon": "receipt",
+  "summary": "Threshold assessment, registration and recurring return filing that holds up under review.",
+  "description": "DSD assesses whether a business has crossed the mandatory or voluntary VAT registration threshold, registers it with the Federal Tax Authority and manages recurring filings with the documentation evidence to support them.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Mandatory/voluntary threshold assessment",
+    "description": "We check your turnover against the mandatory and voluntary VAT registration thresholds to confirm where you stand.",
+    "image": "/media/uploads/vat-registration-filing-included-0.jpg"
+   },
+   {
+    "title": "FTA registration",
+    "description": "We handle your VAT registration with the Federal Tax Authority from application to confirmed TRN.",
+    "image": "/media/uploads/vat-registration-filing-included-1.jpg"
+   },
+   {
+    "title": "Recurring return preparation and filing",
+    "description": "We prepare and file your VAT returns on your filing cycle, so deadlines never catch you off guard.",
+    "image": "/media/uploads/vat-registration-filing-included-2.jpg"
+   },
+   {
+    "title": "Input-tax and export-evidence review",
+    "description": "We review your input-tax claims and export evidence to keep your filings defensible under audit.",
+    "image": "/media/uploads/vat-registration-filing-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/vat-registration-filing.jpg",
+  "relatedInsightSlugs": [
+   "vat-filing-common-mistakes-uae-businesses"
+  ],
+  "teamMemberSlugs": [
+   "fatima-hussain"
+  ],
+  "stats": [
+   {
+    "value": 5,
+    "suffix": "%",
+    "label": "Standard rate"
+   },
+   {
+    "value": 4,
+    "label": "Return cycles supported per year"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/employment-residency/": {
+  "slug": "employment-residency",
+  "title": "Employment Residency",
+  "pillar": "residency-solutions",
+  "icon": "clipboard-check",
+  "summary": "UAE employment residency connects your company, your new hire and the relevant authorities, DSD coordinates work permits, medical fitness, Emirates ID and residence issuance so onboarding stays predictable and compliant.",
+  "description": "Employment residency is not simply an immigration formality, it is part of an employer's legal workforce onboarding and compliance framework. Errors in work permits, contracts, quotas, status changes or residence processing can delay an employee's ability to commence work and expose the business to compliance risk. Our role goes beyond processing individual visa applications: we help businesses establish a structured, compliant workforce onboarding process that supports both immediate hiring needs and long-term growth. Whether you are sponsoring a new employee, relocating a senior executive or onboarding multiple members of an international team, DSD Corporate Services provides the administrative coordination and regulatory support needed to make the process more predictable, efficient and compliant.",
+  "philosophy_title": "With DSD Corporate Services, businesses can focus on building their teams and operations while we manage the complexities behind their employees' UAE work and residency requirements.",
+  "included": [
+   {
+    "title": "Employer Sponsorship & Eligibility",
+    "description": "We confirm your company's establishment and immigration records and available labour quota, before the process begins.",
+    "image": "/media/uploads/residency-support-included-0.jpg"
+   },
+   {
+    "title": "Work Permit Approval",
+    "description": "We manage the MOHRE work permit approval on your behalf, from application to issuance.",
+    "image": "/media/uploads/residency-support-included-1.jpg"
+   },
+   {
+    "title": "Entry Permit or Status Adjustment",
+    "description": "We coordinate the entry permit for an incoming hire or the in-country status adjustment if they're already in the UAE.",
+    "image": "/media/uploads/residency-support-included-2.jpg"
+   },
+   {
+    "title": "Medical Fitness & Emirates ID",
+    "description": "We schedule and track the required medical fitness examination and the Emirates ID application and biometrics.",
+    "image": "/media/uploads/residency-support-included-3.jpg"
+   },
+   {
+    "title": "Residence Issuance",
+    "description": "We complete residence issuance through the relevant immigration authority, whether the employer is mainland, free zone or another jurisdiction.",
+    "image": "/media/uploads/residency-support-included-4.jpg"
+   },
+   {
+    "title": "Ongoing Workforce Support",
+    "description": "We support new hires, executive relocations and multi-employee onboarding as your team grows.",
+    "image": "/media/uploads/residency-support-included-5.jpg"
+   }
+  ],
+  "heroImage": "/media/services/residency-support.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 6,
+    "label": "Steps we coordinate in every employment residency case"
+   },
+   {
+    "value": 1,
+    "label": "Dedicated advisor managing your workforce onboarding"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "Talk to Our Experts",
+  "formFields": []
+ },
+ "/api/services/family-residency/": {
+  "slug": "family-residency",
+  "title": "Family Residency",
+  "pillar": "residency-solutions",
+  "icon": "users",
+  "summary": "Sponsoring your spouse, children or parents under your UAE residency, governed by specific income, housing and legal requirements, managed end-to-end.",
+  "description": "Navigating mismatched names on certificates, unexpected insurance clauses or delayed attestation chains can cause costly overstay fines. DSD Corporate Services audits your eligibility, manages the paperwork end-to-end through the ICP/GDRFA portals and coordinates medical and Emirates ID appointments for every family member.",
+  "philosophy_title": "A Structured Process for Sponsoring Your Family in the UAE",
+  "included": [
+   {
+    "title": "Eligibility & Document Audit",
+    "description": "We audit your salary, employment contract and housing documentation, open your file and coordinate Arabic translation of marriage and birth certificates.",
+    "image": "/media/uploads/family-residency-why-0.jpg"
+   },
+   {
+    "title": "Entry Permit Issuance",
+    "description": "We manage the entry permit application and coordination for each sponsored family member.",
+    "image": "/media/uploads/family-residency-entry-permit-issuance-fix.jpg"
+   },
+   {
+    "title": "Medical Fitness & Emirates ID",
+    "description": "We coordinate the mandatory medical fitness test and Emirates ID issuance for dependents aged 18 and above.",
+    "image": "/media/uploads/family-residency-medical-fitness-and-emirates-id-fix.jpg"
+   },
+   {
+    "title": "Health Insurance Activation",
+    "description": "We coordinate activation of the specialised health insurance coverage required for your sponsored dependents.",
+    "image": "/media/uploads/family-residency-health-insurance-activation-fix.jpg"
+   },
+   {
+    "title": "Residence Visa Issuance",
+    "description": "We manage the final residence visa stamping to complete the sponsorship process.",
+    "image": "/media/uploads/family-residency-residence-visa-issuance-fix.jpg"
+   },
+   {
+    "title": "Document Attestation Coordination",
+    "description": "We manage the home country, UAE Embassy and MOFA attestation chain required for foreign marriage and birth certificates.",
+    "image": "/media/uploads/family-residency-document-attestation-coordination-fix.jpg"
+   }
+  ],
+  "heroImage": "/media/services/fam.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 3,
+    "label": "Family categories typically sponsorable: spouse, children, parents"
+   },
+   {
+    "value": 1,
+    "label": "Coordinated file per family, not per person"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/golden-residency/": {
+  "slug": "golden-residency",
+  "title": "Golden Residency",
+  "pillar": "residency-solutions",
+  "icon": "file-badge",
+  "summary": "A long-term UAE residency programme for qualifying investors, property owners, entrepreneurs, specialised professionals and exceptional talent, with validity of up to 10 years.",
+  "description": "With residency validity of up to 10 years depending on the qualifying category, Golden Residency offers greater continuity and stability than conventional residency arrangements, designed for individuals who have established a meaningful connection with the UAE through investment, professional expertise, entrepreneurship or recognised achievement.",
+  "philosophy_title": "Long-Term Residency for Investors, Property Owners & Exceptional Talent",
+  "included": [
+   {
+    "title": "Eligibility-Led Advice",
+    "description": "Advice built around your specific eligibility rather than a one-size-fits-all application.",
+    "image": "/media/uploads/golden-residency-why-0.jpg"
+   },
+   {
+    "title": "Category-Specific Documentation",
+    "description": "Documentation prepared around the requirements applicable to your specific Golden Residency category.",
+    "image": "/media/uploads/golden-residency-category-specific-documentation-fix.jpg"
+   },
+   {
+    "title": "Professional Application Management",
+    "description": "End-to-end application management from initial assessment through completion.",
+    "image": "/media/uploads/golden-residency-professional-application-management-fix.jpg"
+   },
+   {
+    "title": "Clear Communication",
+    "description": "Clear communication throughout the process.",
+    "image": "/media/uploads/golden-residency-clear-communication-fix.jpg"
+   },
+   {
+    "title": "Integrated Corporate & Residency Support",
+    "description": "Integrated corporate and residency support for investors, entrepreneurs and business owners.",
+    "image": "/media/uploads/golden-residency-integrated-corporate-and-residency-support-fix.jpg"
+   },
+   {
+    "title": "Long-Term Client Support",
+    "description": "Long-term client support beyond the initial residency application.",
+    "image": "/media/uploads/golden-residency-why-5.jpg"
+   }
+  ],
+  "heroImage": "/media/services/gol_bWipicu.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 10,
+    "suffix": "-yr",
+    "label": "Maximum validity period, category-dependent"
+   },
+   {
+    "value": 3,
+    "label": "Main qualifying categories we assess against"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "Assess My Eligibility",
+  "formFields": []
+ },
+ "/api/services/investor-residency/": {
+  "slug": "investor-residency",
+  "title": "Investor Residency",
+  "pillar": "residency-solutions",
+  "icon": "trending-up",
+  "summary": "A pathway to UAE residency for individuals who have made a qualifying investment, through eligible property, a UAE-based business or ownership in a UAE company.",
+  "description": "If you are investing in UAE property, establishing a business or acquiring an ownership interest in a UAE company, the right residency route should be considered alongside the investment itself. DSD Corporate Services assesses your investment profile, identifies the applicable residency category and coordinates the documentation and application process from the outset.",
+  "philosophy_title": "Your Investment. Your Residency. One Coordinated Process.",
+  "included": [
+   {
+    "title": "Investment-Led Assessment",
+    "description": "We evaluate your proposed or existing investment against the relevant residency framework.",
+    "image": "/media/uploads/investor-residency-investment-led-assessment-fix.jpg"
+   },
+   {
+    "title": "Route Identification",
+    "description": "We help determine which investor residency category may be applicable to your circumstances.",
+    "image": "/media/uploads/57f31880793847d1b3cb3ecc63348144.jpg"
+   },
+   {
+    "title": "Document Preparation",
+    "description": "We coordinate the supporting corporate, property, financial and personal documentation required for the application.",
+    "image": "/media/uploads/investor-residency-why-2.jpg"
+   },
+   {
+    "title": "Application Coordination",
+    "description": "We manage the administrative stages involved in progressing your residency application.",
+    "image": "/media/uploads/investor-residency-application-coordination-fix.jpg"
+   },
+   {
+    "title": "Corporate and Residency Alignment",
+    "description": "Where residency is linked to a UAE company or business investment, we coordinate the corporate and immigration requirements together.",
+    "image": "/media/uploads/investor-residency-corporate-and-residency-alignment-fix.jpg"
+   },
+   {
+    "title": "Ongoing Guidance",
+    "description": "We remain available to support you with related corporate, immigration and government services as your circumstances develop.",
+    "image": "/media/uploads/investor-residency-ongoing-guidance-fix.jpg"
+   }
+  ],
+  "heroImage": "/media/services/inv.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 100,
+    "suffix": "%",
+    "label": "Foreign ownership eligible on most qualifying investments"
+   },
+   {
+    "value": 2,
+    "suffix": "yr+",
+    "label": "Typical minimum validity period"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "Start Your Investor Residency Journey",
+  "formFields": []
+ },
+ "/api/services/residency-by-property/": {
+  "slug": "residency-by-property",
+  "title": "Residency",
+  "pillar": "residency-solutions",
+  "icon": "building",
+  "summary": "UAE residency secured through a qualifying property investment, handled from eligibility check to Emirates ID.",
+  "description": "DSD guides property investors through the UAE's investor residency route end to end, confirming the property qualifies, preparing the application file and coordinating the medical and Emirates ID steps that follow approval.",
+  "philosophy_title": "Live in the UAE through Real Estate Ownership",
+  "included": [
+   {
+    "title": "Property and title-deed eligibility review",
+    "description": "We check your title deed and property value against the current investor-residency thresholds before anything is filed.",
+    "image": "/media/uploads/residency-by-property-included-0.jpg"
+   },
+   {
+    "title": "Application file preparation and submission",
+    "description": "We prepare your complete application file and submit it to the relevant authority on your behalf.",
+    "image": "/media/uploads/residency-by-property-included-1.jpg"
+   },
+   {
+    "title": "Medical test and Emirates ID coordination",
+    "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+    "image": "/media/uploads/residency-by-property-included-2.jpg"
+   },
+   {
+    "title": "Dependant sponsorship guidance once approved",
+    "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+    "image": "/media/uploads/residency-by-property-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/ChatGPT_Image_Sep_19_2026_10_46_15_AM.png",
+  "relatedInsightSlugs": [
+   "uae-golden-visa-property-investment-guide"
+  ],
+  "teamMemberSlugs": [
+   "amina-al-suwaidi"
+  ],
+  "stats": [
+   {
+    "value": 10,
+    "suffix": "yr",
+    "label": "Visa validity"
+   },
+   {
+    "value": 5,
+    "suffix": " business days",
+    "label": "Typical file review"
+   }
+  ],
+  "process": [
+   {
+    "title": "Property & Intent Review",
+    "description": "We start with your title deed, property value and ownership structure and understand what you're aiming for, residency for yourself or for your family as well."
+   },
+   {
+    "title": "Eligibility Confirmation",
+    "description": "We check your property against the current investor-residency thresholds and flag anything, an outstanding mortgage, a shared title, an under-construction unit, that needs resolving first."
+   },
+   {
+    "title": "Application Preparation & Submission",
+    "description": "We prepare your full application file and submit it to the relevant authority, coordinating every supporting document so nothing comes back for correction."
+   },
+   {
+    "title": "Medical, Emirates ID & Completion",
+    "description": "Once approved, we coordinate your medical test and Emirates ID appointment through to a completed residency, with guidance on sponsoring dependants if you plan to extend it to family."
+   }
+  ],
+  "faqs": [
+   {
+    "question": "Does my property qualify me for UAE residency?",
+    "answer": "Not every property qualifies. Eligibility depends on the property's value, its registration status and how the title is held, we run a quick check against the current thresholds before you commit to anything further."
+   },
+   {
+    "question": "How is residency by property different from other routes?",
+    "answer": "It doesn't depend on an employer or a trade licence, once approved, your residency stands on the property itself. That makes it the most stable route for an investor who isn't planning to work or run a business in the UAE."
+   },
+   {
+    "question": "Can I add my family later?",
+    "answer": "Yes. Most clients secure their own residency first, then sponsor a spouse and children once their status is active, we can scope both stages from the start if you already know you will want to."
+   }
+  ],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/uae-residency/": {
+  "slug": "uae-residency",
+  "title": "Residency",
+  "pillar": "residency-solutions",
+  "icon": "badge-check",
+  "summary": "Professional UAE residency assistance designed to make your application process clear, efficient and hassle-free, for entrepreneurs, investors, professionals, employees and family members.",
+  "description": "Establishing your life or business in the UAE starts with the right residency solution. UAE residency procedures can involve multiple documents, government requirements, medical examinations, Emirates ID procedures and application stages. DSD Corporate Services helps simplify the process by coordinating every step and keeping you informed throughout.",
+  "philosophy_title": "Your Gateway to UAE Residency",
+  "included": [
+   {
+    "title": "End-to-End Assistance",
+    "description": "From initial consultation and document preparation to application coordination and follow-up.",
+    "image": "/media/uploads/uae-residency-end-to-end-assistance-fix.jpg"
+   },
+   {
+    "title": "Expert Guidance",
+    "description": "Clear advice based on your individual circumstances and residency objectives.",
+    "image": "/media/uploads/uae-residency-expert-guidance-fix.jpg"
+   },
+   {
+    "title": "Efficient Processing",
+    "description": "We help ensure your documentation is properly prepared to minimize unnecessary delays.",
+    "image": "/media/uploads/uae-residency-efficient-processing-fix.jpg"
+   },
+   {
+    "title": "Transparent Service",
+    "description": "Straightforward communication about requirements, procedures and applicable costs.",
+    "image": "/media/uploads/uae-residency-transparent-service-fix.jpg"
+   },
+   {
+    "title": "Personalized Solutions",
+    "description": "Residency support tailored to investors, entrepreneurs, employees, families and other eligible applicants.",
+    "image": "/media/uploads/uae-residency-personalized-solutions-fix.jpg"
+   },
+   {
+    "title": "Ongoing Support",
+    "description": "Assistance doesn't have to end once your residency is issued, we help with related corporate and government services as your UAE journey develops.",
+    "image": "/media/uploads/uae-residency-ongoing-support-fix.jpg"
+   }
+  ],
+  "heroImage": "/media/services/uae-residency.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 4,
+    "label": "Distinct residency routes we scope you against"
+   },
+   {
+    "value": 1,
+    "label": "Initial call to find your starting route"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/residency-by-business/": {
+  "slug": "residency-by-business",
+  "title": "Residency by Business",
+  "pillar": "residency-solutions",
+  "icon": "briefcase",
+  "summary": "Investor and partner visas tied to a UAE company you own or co-own, aligned with your incorporation timeline.",
+  "description": "For founders incorporating a UAE entity, DSD times the investor or partner visa application to land alongside company formation, so ownership documents and residency paperwork move in step rather than in separate queues.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Investor/partner visa eligibility review",
+    "description": "We confirm your shareholding or partner status actually qualifies for an investor visa before you apply.",
+    "image": "/media/uploads/residency-by-business-included-0.jpg"
+   },
+   {
+    "title": "Coordination with company incorporation timeline",
+    "description": "We sequence your visa application against your incorporation steps so neither one stalls waiting on the other.",
+    "image": "/media/uploads/residency-by-business-included-1.jpg"
+   },
+   {
+    "title": "Application file preparation and submission",
+    "description": "We prepare your full visa file and submit it once your company structure is in place.",
+    "image": "/media/uploads/residency-by-business-included-2.jpg"
+   },
+   {
+    "title": "Renewal reminders ahead of expiry",
+    "description": "We track your visa's expiry date and reach out with time to renew before it lapses.",
+    "image": "/media/uploads/residency-by-business-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/residency-by-business.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "amina-al-suwaidi",
+   "rashid-al-mansoori"
+  ],
+  "stats": [
+   {
+    "value": 2,
+    "suffix": "-3 yr",
+    "label": "Visa validity"
+   },
+   {
+    "value": 100,
+    "suffix": "%",
+    "label": "Foreign ownership eligible routes"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/residency-by-employment/": {
+  "slug": "residency-by-employment",
+  "title": "Residency by Employment",
+  "pillar": "residency-solutions",
+  "icon": "badge-check",
+  "summary": "Employment-sponsored residency for professionals relocating to a confirmed UAE role.",
+  "description": "DSD supports both employers and incoming employees through the labour card, entry permit and Emirates ID sequence that turns a signed offer into a resident visa.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Offer letter and labour contract review",
+    "description": "We review your offer letter and labour contract to confirm they support a clean visa application.",
+    "image": "/media/uploads/residency-by-employment-included-0.jpg"
+   },
+   {
+    "title": "Entry permit and labour card processing support",
+    "description": "We coordinate your entry permit and labour card processing with your employer's PRO from start to finish.",
+    "image": "/media/uploads/residency-by-employment-included-1.jpg"
+   },
+   {
+    "title": "Medical test and Emirates ID coordination",
+    "description": "We schedule your medical test and Emirates ID appointment and guide you through both from start to finish.",
+    "image": "/media/uploads/residency-by-employment-included-2.jpg"
+   },
+   {
+    "title": "Dependant sponsorship guidance once approved",
+    "description": "Once your own residency is active, we walk you through sponsoring a spouse or children under it.",
+    "image": "/media/uploads/residency-by-employment-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/residency-by-employment.jpg",
+  "relatedInsightSlugs": [],
+  "teamMemberSlugs": [
+   "amina-al-suwaidi"
+  ],
+  "stats": [
+   {
+    "value": 2,
+    "suffix": "-3 yr",
+    "label": "Visa validity"
+   },
+   {
+    "value": 1,
+    "suffix": " business day",
+    "label": "Typical eligibility answer"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/services/residency-by-family-sponsorship/": {
+  "slug": "residency-by-family-sponsorship",
+  "title": "Residency by Family Sponsorship",
+  "pillar": "residency-solutions",
+  "icon": "users",
+  "summary": "Sponsor a spouse, child or parent onto your existing UAE residency, with income and housing requirements checked upfront.",
+  "description": "Family sponsorship depends on the sponsor's income and registered accommodation as much as the family member's own documents. DSD checks both sides of the file before submission to avoid a stalled application.",
+  "philosophy_title": "",
+  "included": [
+   {
+    "title": "Sponsor income and tenancy eligibility check",
+    "description": "We confirm the sponsor's income and tenancy contract meet the minimum requirements before an application is filed.",
+    "image": "/media/uploads/residency-by-family-sponsorship-included-0.jpg"
+   },
+   {
+    "title": "Document checklist per dependant type",
+    "description": "We give you the exact document list for each dependant, spouse, child or parent, so nothing is missing.",
+    "image": "/media/uploads/residency-by-family-sponsorship-included-1.jpg"
+   },
+   {
+    "title": "Application file preparation and submission",
+    "description": "We prepare the complete sponsorship file and submit it to the relevant authority on your behalf.",
+    "image": "/media/uploads/residency-by-family-sponsorship-included-2.jpg"
+   },
+   {
+    "title": "Renewal reminders ahead of expiry",
+    "description": "We track each dependant's residency expiry and reach out with time to renew before it lapses.",
+    "image": "/media/uploads/residency-by-family-sponsorship-included-3.jpg"
+   }
+  ],
+  "heroImage": "/media/services/residency-by-family-sponsorship.jpg",
+  "relatedInsightSlugs": [
+   "family-sponsorship-residency-requirements"
+  ],
+  "teamMemberSlugs": [
+   "amina-al-suwaidi"
+  ],
+  "stats": [
+   {
+    "value": 3,
+    "suffix": " yr",
+    "label": "Typical visa validity"
+   },
+   {
+    "value": 4,
+    "label": "Dependant types supported"
+   }
+  ],
+  "process": [],
+  "faqs": [],
+  "ctaLabel": "",
+  "formFields": []
+ },
+ "/api/compliance-areas/aml-kyc-compliance/": {
+  "slug": "aml-kyc-compliance",
+  "title": "AML / KYC",
+  "summary": "Customer due diligence, screening and reporting obligations for businesses captured under DNFBP rules.",
+  "description": "AML/KYC obligations apply in full force to certain regulated businesses and DSD determines whether your licensed activity brings you within scope, then builds the customer due diligence, screening and reporting practice that scope requires.",
+  "obligations": [
+   "Determine whether your licensed activity falls under DNFBP obligations",
+   "Verify client and beneficial-owner identity before onboarding",
+   "Screen clients against applicable sanctions and PEP lists",
+   "Register on the goAML portal and report suspicious activity where required"
+  ],
+  "included": [
+   {
+    "title": "Licensing & Registration",
+    "description": "Determine whether your licensed activity falls under DNFBP obligations",
+    "image": "/media/uploads/aml-kyc-compliance-included-0_Fwt5Ll1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Verify client and beneficial-owner identity before onboarding",
+    "image": "/media/uploads/aml-kyc-compliance-included-1_40trAkY.jpg"
+   },
+   {
+    "title": "AML & Digital Compliance",
+    "description": "Screen clients against applicable sanctions and PEP lists",
+    "image": "/media/uploads/aml-kyc-compliance-included-2_OcbkkDq.jpg"
+   },
+   {
+    "title": "AML & Digital Compliance",
+    "description": "Register on the goAML portal and report suspicious activity where required",
+    "image": "/media/uploads/aml-kyc-compliance-included-3_ie1jxxc.jpg"
+   }
+  ],
+  "notes": "AML obligations are actively enforced against corporate service providers specifically, not just banks and financial institutions.",
+  "sourceName": "UAE Ministry of Economy and Tourism",
+  "heroImage": "/media/compliance/kyc.jpg",
+  "relatedInsightSlugs": [
+   "mainland-vs-free-zone-company-setup"
+  ]
+ },
+ "/api/compliance-areas/aml-kyc/": {
+  "slug": "aml-kyc",
+  "title": "AML/KYC Compliance",
+  "summary": "Applies to Designated Non-Financial Businesses and Professions, not only banks and exchange houses.",
+  "description": "Businesses in specified regulated activities, including real estate brokers, precious metals dealers and certain corporate service providers, carry anti-money-laundering obligations: a written policy, client due diligence and suspicious-activity reporting through goAML.",
+  "obligations": [
+   "Assess whether your activity falls within a regulated DNFBP category",
+   "Adopt a written AML/CFT policy",
+   "Perform client due diligence before onboarding",
+   "Register and report through the goAML platform"
+  ],
+  "included": [
+   {
+    "title": "Compliance Review",
+    "description": "Assess whether your activity falls within a regulated DNFBP category",
+    "image": "/media/uploads/aml-kyc-included-0.jpg"
+   },
+   {
+    "title": "AML & Digital Compliance",
+    "description": "Adopt a written AML/CFT policy",
+    "image": "/media/uploads/aml-kyc-included-1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Perform client due diligence before onboarding",
+    "image": "/media/uploads/aml-kyc-included-2.jpg"
+   }
+  ],
+  "notes": "Obligations apply from the point an activity is regulated, regardless of transaction volume in any given period.",
+  "sourceName": "UAE Central Bank",
+  "heroImage": "/media/compliance/kyc_B2lYncW.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/accounting-reporting/": {
+  "slug": "accounting-reporting",
+  "title": "Accounting & Reporting",
+  "summary": "Bookkeeping and financial statements accurate enough to support tax filings, audits and bank due diligence.",
+  "description": "Every UAE company needs financial records reliable enough to support its own tax filings, not reconstructed after the fact. DSD keeps bookkeeping current and produces financial statements that hold up under audit, financing or bank scrutiny.",
+  "obligations": [
+   "Maintain complete, current bookkeeping, not reconstructed after the fact",
+   "Keep personal and company funds clearly separated",
+   "Retain invoices and supporting records for the statutory retention period",
+   "Prepare financial statements accurate enough to support an external audit"
+  ],
+  "included": [
+   {
+    "title": "Tax & Accounting",
+    "description": "Maintain complete, current bookkeeping, not reconstructed after the fact",
+    "image": "/media/uploads/accounting-reporting-included-0.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Keep personal and company funds clearly separated",
+    "image": "/media/uploads/accounting-reporting-included-1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Retain invoices and supporting records for the statutory retention period",
+    "image": "/media/uploads/accounting-reporting-included-2.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "Prepare financial statements accurate enough to support an external audit",
+    "image": "/media/uploads/accounting-reporting-included-3.jpg"
+   }
+  ],
+  "notes": "Banks and free zone authorities alike increasingly expect financial statements as a matter of course, not only at renewal time.",
+  "sourceName": "UAE Commercial Companies Law",
+  "heroImage": "/media/compliance/accounting-reporting.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/annual-accounting-bookkeeping/": {
+  "slug": "annual-accounting-bookkeeping",
+  "title": "Annual Accounting & Bookkeeping",
+  "summary": "Books are now a Corporate Tax input, not just a year-end formality.",
+  "description": "Since Corporate Tax filing depends on accurate annual financial statements, bookkeeping errors carried through the year now surface directly in a business's tax return, not just its own management reporting.",
+  "obligations": [
+   "Maintain monthly bookkeeping records",
+   "Reconcile bank statements against the general ledger",
+   "Prepare annual financial statements",
+   "Retain records for the statutory retention period"
+  ],
+  "included": [
+   {
+    "title": "Tax & Accounting",
+    "description": "Maintain monthly bookkeeping records",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-0_Nei9kMo.jpg"
+   },
+   {
+    "title": "Banking Coordination",
+    "description": "Reconcile bank statements against the general ledger",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-1_RUIjnXh.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "Prepare annual financial statements",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-2_FZGTH44.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Retain records for the statutory retention period",
+    "image": "/media/uploads/annual-accounting-bookkeeping-included-3_XKFal66.jpg"
+   }
+  ],
+  "notes": "",
+  "sourceName": "UAE Ministry of Finance",
+  "heroImage": "/media/compliance/annual-accounting-bookkeeping.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/annual-compliance/": {
+  "slug": "annual-compliance",
+  "title": "Annual Compliance",
+  "summary": "The recurring calendar of renewals, filings and reviews every UAE company runs every year.",
+  "description": "Beyond any single obligation, every UAE company works against a recurring annual calendar, licence renewal, tax filings, UBO review and financial statement preparation, each on its own cycle. DSD maintains that calendar so nothing is left to memory.",
+  "obligations": [
+   "Renew your trade licence before its annual expiry",
+   "File Corporate Tax and VAT returns on their respective cycles",
+   "Review and update beneficial ownership records annually",
+   "Prepare annual financial statements, audited where required"
+  ],
+  "included": [
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Renew your trade licence before its annual expiry",
+    "image": "/media/uploads/annual-compliance-included-0.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "File Corporate Tax and VAT returns on their respective cycles",
+    "image": "/media/uploads/annual-compliance-included-1.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Review and update beneficial ownership records annually",
+    "image": "/media/uploads/annual-compliance-included-2.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "Prepare annual financial statements, audited where required",
+    "image": "/media/uploads/annual-compliance-included-3.jpg"
+   }
+  ],
+  "notes": "Most compliance failures trace back to a missed calendar date, not a misunderstood rule.",
+  "sourceName": "UAE Commercial Companies Law",
+  "heroImage": "/media/compliance/annual-compliance.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/beneficial-ownership-ubo/": {
+  "slug": "beneficial-ownership-ubo",
+  "title": "Beneficial Ownership (UBO)",
+  "summary": "Applies to who actually owns or controls an entity, not just the names on the trade licence.",
+  "description": "UBO regulations require most UAE entities to identify and file the individuals who ultimately own or exercise control over them, a distinction that matters most where ownership sits behind holding companies or nominee arrangements.",
+  "obligations": [
+   "Identify individuals meeting the ultimate ownership/control threshold",
+   "File the UBO register with the relevant licensing authority",
+   "Maintain a register of nominee directors/managers, if any",
+   "Update the filing whenever ownership or control changes"
+  ],
+  "included": [
+   {
+    "title": "Compliance Review",
+    "description": "Identify individuals meeting the ultimate ownership/control threshold",
+    "image": "/media/uploads/beneficial-ownership-ubo-included-0.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "File the UBO register with the relevant licensing authority",
+    "image": "/media/uploads/beneficial-ownership-ubo-included-1.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Maintain a register of nominee directors/managers, if any",
+    "image": "/media/uploads/beneficial-ownership-ubo-included-2.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Update the filing whenever ownership or control changes",
+    "image": "/media/uploads/beneficial-ownership-ubo-included-3.jpg"
+   }
+  ],
+  "notes": "A correct filing at incorporation does not remain correct automatically, a later ownership change carries its own update obligation.",
+  "sourceName": "UAE Ministry of Economy",
+  "heroImage": "/media/compliance/beneficial-ownership-ubo.jpg",
+  "relatedInsightSlugs": [
+   "ubo-filing-what-changed-in-2026"
+  ]
+ },
+ "/api/compliance-areas/corporate-compliance/": {
+  "slug": "corporate-compliance",
+  "title": "Corporate Compliance",
+  "summary": "The umbrella obligation, keeping your licence, records and structure aligned with what's actually true about your company.",
+  "description": "Corporate compliance is the ongoing discipline of keeping a company's trade licence, constitutional records and operational activities aligned with what's actually true, not a single filing, but a continuous standard every UAE company is held to.",
+  "obligations": [
+   "Operate only within your trade licence's approved activities",
+   "Keep constitutional documents and shareholder records current",
+   "Notify the licensing authority when ownership, management or address changes",
+   "Maintain accurate signing-authority records for contracts and bank accounts"
+  ],
+  "included": [
+   {
+    "title": "Licensing & Registration",
+    "description": "Operate only within your trade licence's approved activities",
+    "image": "/media/uploads/corporate-compliance-included-0.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Keep constitutional documents and shareholder records current",
+    "image": "/media/uploads/corporate-compliance-included-1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Notify the licensing authority when ownership, management or address changes",
+    "image": "/media/uploads/corporate-compliance-included-2.jpg"
+   },
+   {
+    "title": "Banking Coordination",
+    "description": "Maintain accurate signing-authority records for contracts and bank accounts",
+    "image": "/media/uploads/corporate-compliance-included-3.jpg"
+   }
+  ],
+  "notes": "Compliance is assessed against your company's actual activity, not just what's on file, an outdated licence or record is treated the same as a wrong one.",
+  "sourceName": "UAE Commercial Companies Law",
+  "heroImage": "/media/compliance/ccs.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/corporate-governance/": {
+  "slug": "corporate-governance",
+  "title": "Corporate Governance",
+  "summary": "The record-keeping and structural discipline most non-compliance actually traces back to, not a one-time filing.",
+  "description": "Corporate governance covers the constitutional records, resolutions and ownership documentation every UAE company must keep current, memorandum and articles of association, shareholder registers, resolutions and signing authority. DSD sees the same governance gaps recur across founders: missed renewal deadlines, informal ownership changes and undocumented management authority that only surface during a bank review or licence renewal.",
+  "obligations": [
+   "Maintain a structured compliance calendar covering trade licence, tax and permit renewal deadlines",
+   "Keep constitutional documents, shareholder registers and resolutions accurate and current",
+   "Update beneficial ownership records whenever shareholders, directors or managers change",
+   "Retain accounting records at the company's headquarters for at least five years",
+   "Ensure only properly authorised signatories operate bank accounts and sign contracts",
+   "Coordinate licence, immigration and residency renewals rather than treating them separately"
+  ],
+  "included": [
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Maintain a structured compliance calendar covering trade licence, tax and permit renewal deadlines",
+    "image": "/media/uploads/corporate-governance-included-0.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Keep constitutional documents, shareholder registers and resolutions accurate and current",
+    "image": "/media/uploads/corporate-governance-included-1.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Update beneficial ownership records whenever shareholders, directors or managers change",
+    "image": "/media/uploads/corporate-governance-included-2.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "Retain accounting records at the company's headquarters for at least five years",
+    "image": "/media/uploads/corporate-governance-included-3.jpg"
+   },
+   {
+    "title": "Banking Coordination",
+    "description": "Ensure only properly authorised signatories operate bank accounts and sign contracts",
+    "image": "/media/uploads/corporate-governance-included-4.jpg"
+   },
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Coordinate licence, immigration and residency renewals rather than treating them separately",
+    "image": "/media/uploads/corporate-governance-included-5.jpg"
+   }
+  ],
+  "notes": "Founders most often lose control of compliance not through one large mistake but by treating governance as administrative overhead rather than a risk-management function that protects the company's licence, banking relationships and reputation.",
+  "sourceName": "UAE Commercial Companies Law",
+  "heroImage": "/media/compliance/corporate-governance.jpg",
+  "relatedInsightSlugs": [
+   "ubo-filing-what-changed-in-2026"
+  ]
+ },
+ "/api/compliance-areas/corporate-tax/": {
+  "slug": "corporate-tax",
+  "title": "Corporate Tax",
+  "summary": "Registration is tied to your trade licence issue date, not the calendar year, the most commonly missed deadline DSD sees.",
+  "description": "UAE Corporate Tax applies to most businesses operating under a UAE trade licence, with registration deadlines set relative to the licence's own issue date. A business that has not yet turned a profit still carries the registration obligation.",
+  "obligations": [
+   "Register within the deadline tied to your licence issue date",
+   "Assess Qualifying Free Zone Person exemption eligibility, if applicable",
+   "File an annual return even in a loss-making year",
+   "Retain supporting financial records for the statutory retention period"
+  ],
+  "included": [
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Register within the deadline tied to your licence issue date",
+    "image": "/media/uploads/corporate-tax-included-0.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Assess Qualifying Free Zone Person exemption eligibility, if applicable",
+    "image": "/media/uploads/corporate-tax-included-1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "File an annual return even in a loss-making year",
+    "image": "/media/uploads/corporate-tax-included-2.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Retain supporting financial records for the statutory retention period",
+    "image": "/media/uploads/corporate-tax-included-3.jpg"
+   }
+  ],
+  "notes": "Late registration triggers an administrative penalty independent of whether tax was actually owed for the period.",
+  "sourceName": "UAE Ministry of Finance",
+  "heroImage": "/media/compliance/corporate-tax.jpg",
+  "relatedInsightSlugs": [
+   "corporate-tax-registration-deadlines-2026"
+  ]
+ },
+ "/api/compliance-areas/regulatory-support/": {
+  "slug": "regulatory-support",
+  "title": "Regulatory Support",
+  "summary": "Sector-specific approvals and regulator relationships beyond the standard trade licence.",
+  "description": "Some activities need approval from a regulator beyond the standard trade licence, healthcare, financial services and transport among them. DSD identifies which additional approvals your activity actually requires and manages the relationship with that regulator.",
+  "obligations": [
+   "Identify whether your activity requires a sector-specific regulatory approval",
+   "Prepare and submit the additional approval application",
+   "Maintain the qualifications, premises or insurance the regulator requires",
+   "Track renewal cycles for every regulatory approval held, not just the trade licence"
+  ],
+  "included": [
+   {
+    "title": "Compliance Review",
+    "description": "Identify whether your activity requires a sector-specific regulatory approval",
+    "image": "/media/uploads/regulatory-support-included-0.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Prepare and submit the additional approval application",
+    "image": "/media/uploads/regulatory-support-included-1.jpg"
+   },
+   {
+    "title": "Property & Tenancy Compliance",
+    "description": "Maintain the qualifications, premises or insurance the regulator requires",
+    "image": "/media/uploads/regulatory-support-included-2.jpg"
+   },
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Track renewal cycles for every regulatory approval held, not just the trade licence",
+    "image": "/media/uploads/regulatory-support-included-3.jpg"
+   }
+  ],
+  "notes": "A general trade licence does not substitute for a required sector-specific approval, operating without one carries its own penalty, independent of the licence itself.",
+  "sourceName": "UAE Ministry of Economy and Tourism",
+  "heroImage": "/media/compliance/regulatory-support.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/tax-compliance/": {
+  "slug": "tax-compliance",
+  "title": "Tax Compliance",
+  "summary": "Corporate Tax and VAT obligations that apply from registration through filing, even in a loss-making year.",
+  "description": "UAE Corporate Tax and VAT carry registration and filing obligations independent of whether tax is ultimately owed, a business that hasn't turned a profit yet still has to register and file. DSD tracks both regimes against your specific licence date and turnover.",
+  "obligations": [
+   "Register for Corporate Tax within the deadline tied to your licence issue date",
+   "File an annual Corporate Tax return even in a loss-making year",
+   "Monitor VAT-taxable turnover against the mandatory registration threshold",
+   "File VAT returns on the assigned cycle and retain supporting invoices"
+  ],
+  "included": [
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Register for Corporate Tax within the deadline tied to your licence issue date",
+    "image": "/media/uploads/tax-compliance-included-0.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "File an annual Corporate Tax return even in a loss-making year",
+    "image": "/media/uploads/tax-compliance-included-1.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "Monitor VAT-taxable turnover against the mandatory registration threshold",
+    "image": "/media/uploads/tax-compliance-included-2.jpg"
+   },
+   {
+    "title": "Tax & Accounting",
+    "description": "File VAT returns on the assigned cycle and retain supporting invoices",
+    "image": "/media/uploads/tax-compliance-included-3.jpg"
+   }
+  ],
+  "notes": "Late registration triggers an administrative penalty independent of whether tax was actually owed for the period.",
+  "sourceName": "Federal Tax Authority",
+  "heroImage": "/media/compliance/tax-compliance.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/trade-licence-renewal/": {
+  "slug": "trade-licence-renewal",
+  "title": "Trade Licence Renewal",
+  "summary": "An expired licence affects immigration and banking standing, not just the ability to trade.",
+  "description": "Trade licences are issued on an annual cycle and must be renewed before expiry to remain valid, an expired licence can also affect an entity's establishment card and, by extension, its employees' visa status.",
+  "obligations": [
+   "Track the licence expiry date ahead of the renewal window",
+   "Settle any outstanding fines before renewal is accepted",
+   "Renew the associated establishment/immigration card in step",
+   "File any activity or shareholder amendment alongside renewal, if applicable"
+  ],
+  "included": [
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Track the licence expiry date ahead of the renewal window",
+    "image": "/media/uploads/trade-licence-renewal-included-0.jpg"
+   },
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Settle any outstanding fines before renewal is accepted",
+    "image": "/media/uploads/trade-licence-renewal-included-1.jpg"
+   },
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "Renew the associated establishment/immigration card in step",
+    "image": "/media/uploads/trade-licence-renewal-included-2.jpg"
+   },
+   {
+    "title": "Renewal & Deadline Tracking",
+    "description": "File any activity or shareholder amendment alongside renewal, if applicable",
+    "image": "/media/uploads/trade-licence-renewal-included-3.jpg"
+   }
+  ],
+  "notes": "",
+  "sourceName": "Dubai Department of Economy and Tourism",
+  "heroImage": "/media/compliance/trade-licence-renewal.jpg",
+  "relatedInsightSlugs": []
+ },
+ "/api/compliance-areas/vat/": {
+  "slug": "vat",
+  "title": "VAT (Value Added Tax)",
+  "summary": "Mandatory once taxable supplies cross the federal threshold, voluntary registration is available below it.",
+  "description": "VAT registration becomes mandatory once a business's taxable supplies and imports cross the federal threshold over a rolling 12-month period, with voluntary registration available at a lower threshold for businesses that want to reclaim input tax earlier.",
+  "obligations": [
+   "Monitor taxable turnover against the mandatory threshold",
+   "Register with the Federal Tax Authority once triggered",
+   "File returns on the assigned filing cycle",
+   "Retain export evidence for any zero-rated supply"
+  ],
+  "included": [
+   {
+    "title": "Tax & Accounting",
+    "description": "Monitor taxable turnover against the mandatory threshold",
+    "image": "/media/uploads/vat-included-0.jpg"
+   },
+   {
+    "title": "Documentation & Filing",
+    "description": "Register with the Federal Tax Authority once triggered",
+    "image": "/media/uploads/vat-included-1.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "File returns on the assigned filing cycle",
+    "image": "/media/uploads/vat-included-2.jpg"
+   },
+   {
+    "title": "Compliance Review",
+    "description": "Retain export evidence for any zero-rated supply",
+    "image": "/media/uploads/vat-included-3.jpg"
+   }
+  ],
+  "notes": "Input tax must be claimed in the return period the underlying invoice falls into, not a later period of convenience.",
+  "sourceName": "Federal Tax Authority",
+  "heroImage": "/media/compliance/vat.jpg",
+  "relatedInsightSlugs": [
+   "vat-filing-common-mistakes-uae-businesses"
+  ]
+ },
+ "/api/insights/uae-golden-visa-property-investment-guide/": {
+  "slug": "uae-golden-visa-property-investment-guide",
+  "title": "UAE Golden Visa Through Property: What Qualifies in 2026",
+  "category": "Residency",
+  "summary": "A plain breakdown of the property investment thresholds and title-deed requirements behind the 10-year Golden Visa route.",
+  "body": [
+   "Property-based residency is one of the most direct routes into the UAE for investors who already know where they want to buy. The core requirement is a minimum property value, held in the investor's own name, with the title deed registered before the visa application is submitted.",
+   "Off-plan property is treated differently to completed units and mortgaged property is only eligible once a minimum equity threshold is paid down, this is the single most common reason applications get delayed, so it is worth confirming before an offer is made, not after.",
+   "DSD reviews the title deed and payment structure with a client before any application is filed, so the eligibility question is answered in days, not after a rejected submission."
+  ],
+  "coverImage": "/media/insights/uae-golden-visa-property-investment-guide_pfPAqNX.svg",
+  "publishDate": "2026-07-14",
+  "touchesCompliance": false,
+  "relatedServiceSlugs": [
+   "company-formation",
+   "residency-by-property"
+  ],
+  "relatedInsightSlugs": [
+   "family-sponsorship-residency-requirements"
+  ]
+ },
+ "/api/insights/corporate-tax-registration-deadlines-2026/": {
+  "slug": "corporate-tax-registration-deadlines-2026",
+  "title": "Corporate Tax Registration: Deadlines and Late-Filing Penalties",
+  "category": "Compliance",
+  "summary": "Registration windows are tied to licence issue date, not the calendar year, missing one is the most common avoidable penalty DSD sees.",
+  "body": [
+   "UAE Corporate Tax registration deadlines are set relative to each business's own trade licence issue date, not a single fixed calendar date, which is why so many businesses miss theirs without realising a deadline had passed at all.",
+   "A late registration triggers an administrative penalty regardless of whether any tax was actually owed for the period. The registration obligation exists independently of profitability.",
+   "This is general guidance, not legal or tax advice, DSD recommends confirming your specific registration window against your trade licence with a compliance specialist before relying on any date mentioned here."
+  ],
+  "coverImage": "/media/insights/corporate-tax-registration-deadlines-2026_DOHX3xe.svg",
+  "publishDate": "2026-06-02",
+  "touchesCompliance": true,
+  "relatedServiceSlugs": [
+   "business-licensing",
+   "corporate-tax-advisory"
+  ],
+  "relatedInsightSlugs": [
+   "vat-filing-common-mistakes-uae-businesses"
+  ]
+ },
+ "/api/insights/vat-filing-common-mistakes-uae-businesses/": {
+  "slug": "vat-filing-common-mistakes-uae-businesses",
+  "title": "Five VAT Filing Mistakes DSD Sees Most Often",
+  "category": "Compliance",
+  "summary": "From late input-tax claims to misclassified zero-rated exports, the recurring errors that turn a routine filing into a corrected one.",
+  "body": [
+   "The most frequent VAT filing error DSD encounters is claiming input tax in the wrong return period, rather than the period the underlying invoice actually falls into. This alone accounts for a large share of the corrections businesses end up needing to file.",
+   "A close second is misclassifying an export as zero-rated without holding the export evidence the Federal Tax Authority actually expects to see on request, the classification itself may be correct, but the paper trail behind it is what gets checked.",
+   "This is general guidance, not legal or tax advice, treat it as a checklist of things to verify with a compliance specialist, not a substitute for reviewing your own filing."
+  ],
+  "coverImage": "/media/insights/vat-filing-common-mistakes-uae-businesses_U9VVpOc.svg",
+  "publishDate": "2026-05-19",
+  "touchesCompliance": true,
+  "relatedServiceSlugs": [
+   "business-licensing",
+   "company-formation",
+   "vat-registration-filing"
+  ],
+  "relatedInsightSlugs": [
+   "corporate-tax-registration-deadlines-2026"
+  ]
+ },
+ "/api/insights/mainland-vs-free-zone-company-setup/": {
+  "slug": "mainland-vs-free-zone-company-setup",
+  "title": "Mainland or Free Zone: How to Actually Decide",
+  "category": "Incorporation",
+  "summary": "The right structure depends on where your clients are, not which jurisdiction has the lower headline fee.",
+  "body": [
+   "The mainland versus free zone decision is usually framed as a cost comparison, but the question that actually determines the right answer is where the business's clients and suppliers are based, a free zone entity trading only with mainland UAE clients adds friction a mainland licence would not.",
+   "Free zones remain the simpler route for businesses trading internationally or serving other free zone entities, with 100% foreign ownership and streamlined setup timelines.",
+   "DSD scopes this against the client's actual first-year trading plan, not a generic recommendation, before proposing a structure."
+  ],
+  "coverImage": "/media/insights/mainland-vs-free-zone-company-setup_xJGCqUz.svg",
+  "publishDate": "2026-04-08",
+  "touchesCompliance": false,
+  "relatedServiceSlugs": [
+   "expand-an-existing-company",
+   "local-sponsorship",
+   "start-a-new-business"
+  ],
+  "relatedInsightSlugs": []
+ },
+ "/api/insights/ubo-filing-what-changed-in-2026/": {
+  "slug": "ubo-filing-what-changed-in-2026",
+  "title": "UBO Filing: What Changed in 2026",
+  "category": "Compliance",
+  "summary": "An update to the beneficial ownership disclosure requirements that most existing entities still haven't acted on.",
+  "body": [
+   "Beneficial ownership disclosure requirements apply to the individuals who ultimately own or control an entity, not only the names listed on the trade licence, a distinction that matters most for entities with layered or multi-jurisdiction ownership structures.",
+   "An entity that filed correctly at incorporation still has an ongoing obligation to update its UBO register whenever ownership or control actually changes, not just at renewal.",
+   "This is general guidance, not legal or tax advice, DSD reviews an entity's actual ownership structure against the current filing requirement rather than relying on what was filed at setup."
+  ],
+  "coverImage": "/media/insights/ubo-filing-what-changed-in-2026_FhII2eI.svg",
+  "publishDate": "2026-03-11",
+  "touchesCompliance": true,
+  "relatedServiceSlugs": [
+   "company-formation",
+   "beneficial-ownership-ubo-filing"
+  ],
+  "relatedInsightSlugs": [
+   "corporate-tax-registration-deadlines-2026"
+  ]
+ },
+ "/api/insights/family-sponsorship-residency-requirements/": {
+  "slug": "family-sponsorship-residency-requirements",
+  "title": "Sponsoring Family Members: Income Thresholds and Housing Rules",
+  "category": "Residency",
+  "summary": "The income and accommodation requirements behind a spouse, child or parent sponsorship application, explained plainly.",
+  "body": [
+   "Family sponsorship eligibility is assessed against the sponsor's own residency status, minimum income and the accommodation registered under their name, a tenancy contract in someone else's name is the most common reason an otherwise-eligible application stalls.",
+   "Sponsoring a parent carries its own, stricter income threshold on top of the standard family requirements and is assessed separately from a spouse or child application.",
+   "DSD checks the sponsor's documentation against the current thresholds before submission, so gaps are caught before they cost an application cycle."
+  ],
+  "coverImage": "/media/insights/family-sponsorship-residency-requirements_k4qjFhn.svg",
+  "publishDate": "2026-02-17",
+  "touchesCompliance": false,
+  "relatedServiceSlugs": [
+   "residency-by-family-sponsorship"
+  ],
+  "relatedInsightSlugs": [
+   "uae-golden-visa-property-investment-guide"
+  ]
+ },
+ "/api/team/amina-al-suwaidi/": {
+  "slug": "amina-al-suwaidi",
+  "name": "Amina Al Suwaidi",
+  "role": "Head of Residency Advisory",
+  "bio": "Amina leads DSD's residency practice, guiding property investors, business owners and families through every UAE visa pathway from first eligibility check to Emirates ID in hand.",
+  "photo": "/media/team/amina-al-suwaidi_0sdzN4J.svg",
+  "email": "amina@dsdcop.com",
+  "phone": "",
+  "whatsapp": "",
+  "linkedin": "https://www.linkedin.com/"
+ },
+ "/api/team/fatima-hussain/": {
+  "slug": "fatima-hussain",
+  "name": "Fatima Hussain",
+  "role": "Compliance & Tax Lead",
+  "bio": "Fatima keeps DSD clients ahead of corporate tax, VAT, UBO and AML obligations, translating federal requirements into a plain checklist for founders who are not tax specialists.",
+  "photo": "/media/team/fatima-hussain_9pnn1xA.svg",
+  "email": "fatima@dsdcop.com",
+  "phone": "",
+  "whatsapp": "",
+  "linkedin": "https://www.linkedin.com/"
+ },
+ "/api/team/omar-el-sayed/": {
+  "slug": "omar-el-sayed",
+  "name": "Omar El Sayed",
+  "role": "Client Relations Manager",
+  "bio": "Omar is usually the first person a prospective client speaks with, scoping the enquiry and routing it to the right specialist across residency, incorporation or compliance.",
+  "photo": "/media/team/omar-el-sayed_RsjbyYE.svg",
+  "email": "",
+  "phone": "+971 58 588 9033",
+  "whatsapp": "+971 58 588 9033",
+  "linkedin": ""
+ },
+ "/api/team/rashid-al-mansoori/": {
+  "slug": "rashid-al-mansoori",
+  "name": "Rashid Al Mansoori",
+  "role": "Head of Business Incorporation",
+  "bio": "Rashid structures new UAE entities and expansions for founders entering the market, weighing mainland and free zone routes against each client's actual operating plans.",
+  "photo": "/media/team/rashid-al-mansoori_dwmxLCD.svg",
+  "email": "rashid@dsdcop.com",
+  "phone": "",
+  "whatsapp": "",
+  "linkedin": "https://www.linkedin.com/"
+ }
+}

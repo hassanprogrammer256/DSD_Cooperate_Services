@@ -1,34 +1,18 @@
 repos:
   - repo: local
     hooks:
-      - id: build-admin-app
-        name: Build Admin App
-        entry: cmd /c 'cd admin && npm run build'
+      - id: lint-site
+        name: Lint Static Site
+        entry: cmd /c 'npm run lint'
         language: system
-        files: ^admin/
+        files: ^(src/|scripts/)
         pass_filenames: false
         stages: [pre-commit]
 
-      - id: build-frontend-app
-        name: Build Frontend App
-        entry: cmd /c 'cd frontend && npm run build'
+      - id: build-site
+        name: Build Static Site
+        entry: cmd /c 'npm run build'
         language: system
-        files: ^frontend/
-        pass_filenames: false
-        stages: [pre-commit]
-
-      - id: check-dev-env
-        name: Check backend .env is dev
-        entry: cmd /c 'cd backend && venv\Scripts\python.exe scripts\check_dev_env.py'
-        language: system
-        always_run: true
-        pass_filenames: false
-        stages: [pre-commit]
-
-      - id: check-copy-style
-        name: Check Copy Style (em dash / Oxford comma)
-        entry: cmd /c 'cd backend && venv\Scripts\python.exe manage.py fix_copy_style'
-        language: system
-        files: ^backend/content/(models\.py|management/commands/fix_copy_style\.py|fixtures/)
+        files: ^(src/|public/|scripts/|index\.html|package(-lock)?\.json|vite\.config\.ts|tsconfig.*\.json)
         pass_filenames: false
         stages: [pre-commit]

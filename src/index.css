@@ -1,0 +1,255 @@
+/* Font @import MUST precede @import "tailwindcss": Tailwind expands its own import at
+   build time, so anything placed after it ends up after non-import content in the
+   generated CSS, which is an invalid position for a browser-level @import. */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Work+Sans:wght@700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("./assets/fonts/geist-mono/GeistMono-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Two-layer indirection is deliberate: @theme inline exposes Tailwind's `--color-*`
+   namespace as references to plain custom properties, which are then redefined per
+   theme below — this is what lets `bg-background` etc. actually switch at runtime
+   instead of being frozen at build time. */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-border: var(--border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-inverse: var(--text-inverse);
+
+  --color-navy: var(--navy);
+  --color-navy-elevated: var(--navy-elevated);
+
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-light: var(--accent-light);
+
+  --color-success: var(--success);
+  --color-success-light: var(--success-light);
+  --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
+  --color-error: var(--error);
+  --color-error-light: var(--error-light);
+  --color-info: var(--info);
+  --color-info-light: var(--info-light);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --font-display: "Open Sans", sans-serif;
+  --font-geist: "Open Sans", sans-serif;
+  --font-serif: "Open Sans", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --font-sans: "Open Sans", sans-serif;
+}
+
+/* Light theme (default) */
+:root {
+  /* A visibly light-gray body rather than near-white — flat white read as too
+     harsh/glaring across large page backgrounds. --surface stays closer to
+     white than --background so cards still read as raised above the page. */
+  --background: #eceef2;
+  --surface: #f9fafc;
+  --surface-secondary: #f1f3f8;
+  --border: #e3e7f0;
+  /* Darkened from the original #0b1730/#54607a/#8b93a8 — body copy read too
+     light/washed-out against light backgrounds. */
+  --text-primary: #050b18;
+  --text-secondary: #3a4360;
+  --text-muted: #6b7690;
+  --text-inverse: #ffffff; /* fixed both themes — see theme/tokens.ts */
+
+  --navy: #0a1b33; /* fixed both themes — brand color */
+  --navy-elevated: #060f1e;
+
+  --primary: #123b8c;
+  --primary-dark: #0b2760;
+  --primary-light: #e8eefb;
+  --accent: #e31e2d;
+  --accent-dark: #a9121e;
+  --accent-light: #fdeaeb;
+
+  --success: #1e9e5a;
+  --success-light: #e3f7ec;
+  --warning: #c9821d;
+  --warning-light: #fbeedc;
+  --error: #d92d3d;
+  --error-light: #fbe3e5;
+  --info: #1d6fe0;
+  --info-light: #e6effc;
+
+  color-scheme: light;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-display);}
+
+/* System-preference fallback for the instant before index.html's blocking init script
+   applies an explicit [data-theme]  for the no-JS case. Never wins over an explicit
+   choice. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #0b1220;
+    --surface: #141d31;
+    --surface-secondary: #1b2540;
+    --border: #2b3654;
+    --text-primary: #f2f5fa;
+    --text-secondary: #aab4cb;
+    --text-muted: #6f7b93;
+
+    --primary: #4c7fe0;
+    --primary-dark: #2c56b0;
+    --primary-light: #16213a;
+    --accent: #f2434c;
+    --accent-dark: #c22530;
+    --accent-light: #33161a;
+
+    --success: #3ecb84;
+    --success-light: #12291f;
+    --warning: #e3a23f;
+    --warning-light: #33260f;
+    --error: #ff6b72;
+    --error-light: #331519;
+    --info: #5b9bff;
+    --info-light: #142a46;
+
+    color-scheme: dark;
+  }
+}
+
+/* Explicit dark theme — set on <html> by src/theme/theme.ts, persisted to localStorage,
+   always wins over system preference. */
+[data-theme="dark"] {
+  --background: #0b1220;
+  --surface: #141d31;
+  --surface-secondary: #1b2540;
+  --border: #2b3654;
+  --text-primary: #f2f5fa;
+  --text-secondary: #aab4cb;
+  --text-muted: #6f7b93;
+
+  --primary: #4c7fe0;
+  --primary-dark: #2c56b0;
+  --primary-light: #16213a;
+  --accent: #f2434c;
+  --accent-dark: #c22530;
+  --accent-light: #33161a;
+
+  --success: #3ecb84;
+  --success-light: #12291f;
+  --warning: #e3a23f;
+  --warning-light: #33260f;
+  --error: #ff6b72;
+  --error-light: #331519;
+  --info: #5b9bff;
+  --info-light: #142a46;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Infinite logo marquee (CompanyLogoMarquee) — a plain CSS transform loop, not
+   framer-motion or a JS interval: smoothest option since it runs off the compositor
+   thread instead of competing with React re-renders  it doesn't need any JS to
+   stay perfectly seamless. The track renders the logo list twice back-to-back and
+   translates by exactly -50%, so the second copy lines up pixel-for-pixel with where
+   the first started — the loop never visibly resets. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Same tie-breaking problem as the html body rule above: Joy CssBaseline sets
+   color-scheme off its own (frozen-to-light) [data-joy-color-scheme] attribute, not
+   ours  wins the specificity tie by loading later. html[data-theme=...] outranks
+   Joy's bare [data-joy-color-scheme=...] attribute selector unconditionally. */
+html[data-theme="light"] {
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Typography: one style for all text, one style for all headings.
+   Body copy: Open Sans Regular (400). Headings: Work Sans Bold (700).
+   Overrides the per-component font-family / font-weight utilities so every
+   paragraph, label, link, button and list item reads the same, and every h1-h6
+   uses the same heading style. */
+:where(body) :not(:is(h1, h2, h3, h4, h5, h6), :is(h1, h2, h3, h4, h5, h6) *, svg, svg *) {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+h1, h2, h3, h4, h5, h6,
+:is(h1, h2, h3, h4, h5, h6) * {
+  font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+/* Headings ~20% larger: Tailwind's text-* utilities read these variables, so
+   redefining them on headings scales every heading size (including md:/lg:
+   variants) while keeping the relative hierarchy between levels. */
+:is(h1, h2, h3, h4, h5, h6) {
+  --text-xs: 0.9rem;
+  --text-sm: 1.05rem;
+  --text-base: 1.2rem;
+  --text-lg: 1.35rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.8rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 2.7rem;
+  --text-5xl: 3.6rem;
+  --text-6xl: 4.5rem;
+}
